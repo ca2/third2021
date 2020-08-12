@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{00cb151f-b9da-4dc7-9072-83951ce95591}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{e91e119a-e247-46ab-ac2c-cca97cc0a375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\channels">
+      <UniqueIdentifier>{4ada0f0d-8820-456a-a7e5-868e8a8af3c5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels">
+      <UniqueIdentifier>{0b248a09-2f17-4f6f-ae0e-27341ac924ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\audin">
+      <UniqueIdentifier>{1e125523-84ae-4e95-81e1-c1f43e454d4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\client">
+      <UniqueIdentifier>{042aa178-4b58-48b3-a2e6-257c3887de9f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\cliprdr">
+      <UniqueIdentifier>{3c5f5ba3-e019-4d1f-bb3a-d4ff448f4ecd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\disp">
+      <UniqueIdentifier>{6c444e88-aea0-4724-a783-edcca72c38ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\drdynvc">
+      <UniqueIdentifier>{fe03f392-40a7-4748-91b3-de809d83ec4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\drive">
+      <UniqueIdentifier>{2acb7d33-6cbc-4a35-9b97-8bab9e24f6de}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\echo">
+      <UniqueIdentifier>{e7888f58-8906-41f7-9695-34cfe18119c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\parallel">
+      <UniqueIdentifier>{3568a37a-681c-4692-a8f3-dbc6d942a230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\printer">
+      <UniqueIdentifier>{95e95781-0089-4365-bbcf-a4c40de6c1f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\rail">
+      <UniqueIdentifier>{b46d971e-58a7-4ff2-baf9-bdb1bda2d92f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\rdpdr">
+      <UniqueIdentifier>{ecfe8745-1ec4-45e3-9938-99f516fdfedd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\rdpei">
+      <UniqueIdentifier>{cf1d6639-cd18-4350-aee4-dba31640e106}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\rdpgfx">
+      <UniqueIdentifier>{69653765-c5dd-450e-bf97-0513e93ad825}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\rdpsnd">
+      <UniqueIdentifier>{b3a3d9c7-d085-4b20-a601-35c46fcf9826}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\rdpsnd\winmm">
+      <UniqueIdentifier>{92f9b75d-539d-4654-ad27-47b2aff16b91}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\serial">
+      <UniqueIdentifier>{d8cfedc7-c0e0-4e12-8609-b6c84c669c7c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\smartcard">
+      <UniqueIdentifier>{c101e72f-ce5f-46e1-ac65-e87378c44b3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\audin\winmm">
+      <UniqueIdentifier>{5ff49877-cb0e-45b5-8565-a1e30792750e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\encomsp">
+      <UniqueIdentifier>{68fb77ee-6a74-4b60-99d4-d53d558aa085}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\remdesk">
+      <UniqueIdentifier>{99d42a8c-f8aa-4769-8db4-482447a99760}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ca2">
+      <UniqueIdentifier>{4723dc1f-a0d9-44e3-a735-f3c15fde1cae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\printer\client">
+      <UniqueIdentifier>{985ec2e1-3ce0-41b6-bf2d-22662dfb7f83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\channels\printer\client\win">
+      <UniqueIdentifier>{3d3f685e-05d1-4e0a-a63c-b59241d3156b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\channels\audin">
+      <UniqueIdentifier>{13e9514e-288d-4150-b29c-b14f2242bc82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\channels\audin\winmm">
+      <UniqueIdentifier>{6ae68259-cf27-4869-8599-f6f222b405a1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="channels\drive\client\drive_file.h">
+      <Filter>Source Files\channels\drive</Filter>
+    </ClInclude>
+    <ClInclude Include="channels\audin\client\audin_main.h">
+      <Filter>Header Files\channels\audin</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="channels\audin\client\audin_main.c">
+      <Filter>Source Files\channels\audin</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\cliprdr\client\cliprdr_format.c">
+      <Filter>Source Files\channels\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\cliprdr\client\cliprdr_main.c">
+      <Filter>Source Files\channels\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\disp\client\disp_main.c">
+      <Filter>Source Files\channels\disp</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\drdynvc\client\drdynvc_main.c">
+      <Filter>Source Files\channels\drdynvc</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\drive\client\drive_file.c">
+      <Filter>Source Files\channels\drive</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\drive\client\drive_main.c">
+      <Filter>Source Files\channels\drive</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\echo\client\echo_main.c">
+      <Filter>Source Files\channels\echo</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\parallel\client\parallel_main.c">
+      <Filter>Source Files\channels\parallel</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rail\client\rail_main.c">
+      <Filter>Source Files\channels\rail</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rail\client\rail_orders.c">
+      <Filter>Source Files\channels\rail</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rail\rail_common.c">
+      <Filter>Source Files\channels\rail</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpdr\client\devman.c">
+      <Filter>Source Files\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpdr\client\irp.c">
+      <Filter>Source Files\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpdr\client\rdpdr_capabilities.c">
+      <Filter>Source Files\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpdr\client\rdpdr_main.c">
+      <Filter>Source Files\channels\rdpdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpei\client\rdpei_main.c">
+      <Filter>Source Files\channels\rdpei</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpgfx\client\rdpgfx_main.c">
+      <Filter>Source Files\channels\rdpgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpsnd\client\rdpsnd_main.c">
+      <Filter>Source Files\channels\rdpsnd</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\serial\client\serial_main.c">
+      <Filter>Source Files\channels\serial</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\smartcard\client\smartcard_main.c">
+      <Filter>Source Files\channels\smartcard</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\smartcard\client\smartcard_operations.c">
+      <Filter>Source Files\channels\smartcard</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\smartcard\client\smartcard_pack.c">
+      <Filter>Source Files\channels\smartcard</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpgfx\client\rdpgfx_codec.c">
+      <Filter>Source Files\channels\rdpgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\client\addin.c">
+      <Filter>Source Files\channels\client</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\audin\client\winmm\audin_winmm.c">
+      <Filter>Source Files\channels\audin\winmm</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\encomsp\client\encomsp_main.c">
+      <Filter>Source Files\channels\encomsp</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\remdesk\client\remdesk_main.c">
+      <Filter>Source Files\channels\remdesk</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpei\rdpei_common.c">
+      <Filter>Source Files\channels\rdpei</Filter>
+    </ClCompile>
+    <ClCompile Include="ca2\tables_windows.c">
+      <Filter>Source Files\ca2</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\rdpgfx\rdpgfx_common.c">
+      <Filter>Source Files\channels\rdpgfx</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\printer\client\printer_main.c">
+      <Filter>Source Files\channels\printer\client</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\printer\client\win\printer_win.c">
+      <Filter>Source Files\channels\printer\client\win</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\cliprdr\cliprdr_common.c">
+      <Filter>Source Files\channels\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\disp\disp_common.c">
+      <Filter>Source Files\channels\disp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="clientchannels.def" />
+  </ItemGroup>
+</Project>

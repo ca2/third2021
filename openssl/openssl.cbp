@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+<Project>
+		<Option title="axisopenssl" />
+		<Option pch_mode="2" />
+  		<Option compiler="gcc" />
+		<Build>
+			<Target title="basis">
+				<Option output="$(#time_dir)/x64/$(TARGET_NAME)/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$(#time_dir)/x64/$(TARGET_NAME)/" />
+				<Option object_output="$(#time_dir)/intermediate/$(TARGET_NAME)/$(PROJECT_NAME)" />
+				<Option type="3" />
+		 		<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DOPENSSL_NO_ASM" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(#time_dir)/x64/$(TARGET_NAME)" />
+				</Linker>
+			</Target>
+			<Target title="memdleak">
+				<Option output="$(#time_dir)/x64/$(TARGET_NAME)/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$(#time_dir)/x64/$(TARGET_NAME)/" />
+				<Option object_output="$(#time_dir)/intermediate/$(TARGET_NAME)/$(PROJECT_NAME)" />
+				<Option type="3" />
+		 		<Option compiler="gcc" />
+				<Option createDefFile="1" />
+				<Option createStaticLib="1" />
+				<Compiler>
+					<Add option="-g" />
+					<Add option="-D_DEBUG" />
+					<Add option="-DMEMDLEAK" />
+					<Add option="-DOPENSSL_NO_ASM" />
+				</Compiler>
+				<Linker>
+					<Add directory="$(#time_dir)/x64/$(TARGET_NAME)" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++0x" />
+			<Add option="-fexceptions" />
+			<Add option="-fnon-call-exceptions" />
+			<Add option="-fno-pie" />
+			<Add option="-fno-stack-protector" />
+			<Add option="-Wno-pointer-arith" />
+			<Add option="-Wno-attributes" />
+			<Add option="-Winvalid-pch" />
+			<Add option="-fPIC" />
+			<Add option="-DLINUX" />
+			<Add option="-DOPENSSL_NO_ASM" />
+			<Add directory="." />
+			<Add directory="$(PROJECT_DIR)" />
+			<Add directory="$(#archive.include)" />
+			<Add directory="$(WORKSPACE_DIR)/../.." />
+			<Add directory="$(WORKSPACE_DIR)/../../inc" />
+			<Add directory="$(WORKSPACE_DIR)/../../include" />
+			<Add directory="$(WORKSPACE_DIR)/../../platform-linux" />
+			<Add directory="$(WORKSPACE_DIR)/../../app/_include" />
+			<Add directory="$(WORKSPACE_DIR)/../../app" />
+			<Add directory="$(#sensitive)/sensitive/include" />
+			<Add directory="$(#archive.include)/platform-linux/third/include" />
+		</Compiler>
+		<Linker>
+			<Add option="-Wl,-rpath=\\$$$ORIGIN" />
+			
+			<Add option="-ldl" />
+			<Add option="-lpthread" />
+			<Add option="-laxiscrypto" />
+			<Add option="-Wl,-z,defs" />
+			<Add directory="$(#time_dir)/x64/$(TARGET_NAME)" />
+		</Linker>
+		<Unit filename="ssl/bio_ssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_both.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_clnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_meth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_pkt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_srtp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/d1_srvr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/dtls1.h" />
+		<Unit filename="ssl/kssl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/kssl.h" />
+		<Unit filename="ssl/kssl_lcl.h" />
+		<Unit filename="ssl/s23_clnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s23_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s23_meth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s23_pkt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s23_srvr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s2_clnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s2_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s2_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s2_meth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s2_pkt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s2_srvr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_both.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_cbc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_clnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_meth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_pkt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/s3_srvr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/srtp.h" />
+		<Unit filename="ssl/ssl.h" />
+		<Unit filename="ssl/ssl2.h" />
+		<Unit filename="ssl/ssl23.h" />
+		<Unit filename="ssl/ssl3.h" />
+		<Unit filename="ssl/ssl_algs.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_asn1.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_cert.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_ciph.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_err.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_err2.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_locl.h" />
+		<Unit filename="ssl/ssl_rsa.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_sess.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_stat.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_txt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/ssl_utst.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/t1_clnt.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/t1_enc.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/t1_lib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/t1_meth.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/t1_reneg.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/t1_srvr.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ssl/tls1.h" />
+		<Unit filename="ssl/tls_srp.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions>
+			<code_completion />
+			<debugger />
+			<envvars />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

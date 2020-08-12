@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ca2\tables_metrowin.c" />
+    <ClCompile Include="ca2\tables_windows.c" />
+    <ClCompile Include="ca2\xaudio\rdpsnd_xaudio.c" />
+    <ClCompile Include="ca2\xaudio\rdpsnd_xaudio_out.cpp" />
+    <ClCompile Include="channels\audin\client\audin_main.c" />
+    <ClCompile Include="channels\client\addin.c" />
+    <ClCompile Include="channels\drdynvc\client\drdynvc_main.c" />
+    <ClCompile Include="channels\echo\client\echo_main.c" />
+    <ClCompile Include="channels\encomsp\client\encomsp_main.c" />
+    <ClCompile Include="channels\parallel\client\parallel_main.c" />
+    <ClCompile Include="channels\printer\client\printer_main.c" />
+    <ClCompile Include="channels\printer\client\printer_win.c" />
+    <ClCompile Include="channels\rail\client\rail_main.c" />
+    <ClCompile Include="channels\rail\client\rail_orders.c" />
+    <ClCompile Include="channels\rail\rail_common.c" />
+    <ClCompile Include="channels\rdpdr\client\devman.c" />
+    <ClCompile Include="channels\rdpdr\client\irp.c" />
+    <ClCompile Include="channels\rdpdr\client\rdpdr_capabilities.c" />
+    <ClCompile Include="channels\rdpdr\client\rdpdr_main.c" />
+    <ClCompile Include="channels\rdpei\client\rdpei_main.c" />
+    <ClCompile Include="channels\rdpei\rdpei_common.c" />
+    <ClCompile Include="channels\rdpgfx\client\rdpgfx_codec.c" />
+    <ClCompile Include="channels\rdpgfx\client\rdpgfx_main.c" />
+    <ClCompile Include="channels\rdpgfx\rdpgfx_common.c" />
+    <ClCompile Include="channels\rdpsnd\client\rdpsnd_main.c" />
+    <ClCompile Include="channels\remdesk\client\remdesk_main.c" />
+    <ClCompile Include="channels\serial\client\serial_main.c" />
+    <ClCompile Include="channels\smartcard\client\smartcard_main.c" />
+    <ClCompile Include="channels\smartcard\client\smartcard_operations.c" />
+    <ClCompile Include="channels\smartcard\client\smartcard_pack.c" />
+    <ClCompile Include="channels\cliprdr\client\cliprdr_main.c">
+      <Filter>Source Files\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\cliprdr\client\cliprdr_format.c">
+      <Filter>Source Files\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\drive\client\drive_file.c">
+      <Filter>Source Files\drive</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\drive\client\drive_main.c">
+      <Filter>Source Files\drive</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\cliprdr\cliprdr_common.c">
+      <Filter>Source Files\cliprdr</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\disp\client\disp_main.c">
+      <Filter>Source Files\disp</Filter>
+    </ClCompile>
+    <ClCompile Include="channels\disp\disp_common.c">
+      <Filter>Source Files\disp</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="channels\audin\client\audin_main.h" />
+    <ClInclude Include="channels\client\addin.h" />
+    <ClInclude Include="channels\client\tables.h" />
+    <ClInclude Include="channels\drdynvc\client\drdynvc_main.h" />
+    <ClInclude Include="channels\drive\client\dirent.h" />
+    <ClInclude Include="channels\drive\client\statvfs.h" />
+    <ClInclude Include="channels\echo\client\echo_main.h" />
+    <ClInclude Include="channels\printer\client\printer_cups.h" />
+    <ClInclude Include="channels\printer\client\printer_main.h" />
+    <ClInclude Include="channels\printer\client\printer_win.h" />
+    <ClInclude Include="channels\rail\client\rail_main.h" />
+    <ClInclude Include="channels\rail\client\rail_orders.h" />
+    <ClInclude Include="channels\rdpdr\client\devman.h" />
+    <ClInclude Include="channels\rdpdr\client\irp.h" />
+    <ClInclude Include="channels\rdpdr\client\rdpdr_capabilities.h" />
+    <ClInclude Include="channels\rdpdr\client\rdpdr_main.h" />
+    <ClInclude Include="channels\rdpei\client\rdpei_main.h" />
+    <ClInclude Include="channels\rdpgfx\client\rdpgfx_main.h" />
+    <ClInclude Include="channels\rdpgfx\rdpgfx_common.h" />
+    <ClInclude Include="channels\rdpsnd\client\rdpsnd_main.h" />
+    <ClInclude Include="channels\smartcard\client\smartcard_main.h" />
+    <ClInclude Include="channels\tsmf\client\tsmf_audio.h" />
+    <ClInclude Include="channels\tsmf\client\tsmf_codec.h" />
+    <ClInclude Include="channels\tsmf\client\tsmf_constants.h" />
+    <ClInclude Include="channels\tsmf\client\tsmf_ifman.h" />
+    <ClInclude Include="channels\tsmf\client\tsmf_main.h" />
+    <ClInclude Include="channels\tsmf\client\tsmf_media.h" />
+    <ClInclude Include="channels\tsmf\client\tsmf_types.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="channels\cliprdr\client\cliprdr_main.h">
+      <Filter>Header Files\cliprdr</Filter>
+    </ClInclude>
+    <ClInclude Include="channels\cliprdr\client\cliprdr_format.h">
+      <Filter>Header Files\cliprdr</Filter>
+    </ClInclude>
+    <ClInclude Include="channels\drive\client\drive_file.h">
+      <Filter>Header Files\drive</Filter>
+    </ClInclude>
+    <ClInclude Include="channels\disp\client\disp_main.h">
+      <Filter>Header Files\disp</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\basis\avcodec-57.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\basis\avformat-57.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\basis\avutil-55.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\basis\swresample-2.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\basis\swscale-4.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\stage\avcodec-57.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\stage\avformat-57.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\stage\avutil-55.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\stage\swresample-2.dll" />
+    <None Include="..\..\..\platform\thirdparty\binary\Win32\stage\swscale-4.dll" />
+    <None Include="axisclientchannels.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{d0bfd53a-d3f9-4be7-af1b-f1d0727a97f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{5fcde687-1a9c-4f80-bb81-048b7cb529b9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\cliprdr">
+      <UniqueIdentifier>{37715afb-3992-4255-a90e-9b7f1e699a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\cliprdr">
+      <UniqueIdentifier>{ba6d793a-65a6-426e-938c-64dce42a1a62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\drive">
+      <UniqueIdentifier>{205ad51f-ead0-41fc-bb44-018b02e5395b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\drive">
+      <UniqueIdentifier>{b29321b2-2d25-48bd-a774-778fd1f17627}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\disp">
+      <UniqueIdentifier>{5a9f29fa-54ae-4e88-ba79-d1354018d170}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\disp">
+      <UniqueIdentifier>{7766f9ad-fb75-4f5b-b1f3-47bc66fa8481}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

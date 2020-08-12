@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0762212E1CA21CEF007D4F43 /* libresolv.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 0762212D1CA21CEF007D4F43 /* libresolv.tbd */; };
+		078DD9401CA1EFAD00290384 /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD91C1CA1EFAD00290384 /* auth.c */; };
+		078DD9421CA1EFAD00290384 /* conn.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD91E1CA1EFAD00290384 /* conn.c */; };
+		078DD9431CA1EFAD00290384 /* ctx.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD91F1CA1EFAD00290384 /* ctx.c */; };
+		078DD9441CA1EFAD00290384 /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9201CA1EFAD00290384 /* event.c */; };
+		078DD9451CA1EFAD00290384 /* handler.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9211CA1EFAD00290384 /* handler.c */; };
+		078DD9461CA1EFAD00290384 /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9221CA1EFAD00290384 /* hash.c */; };
+		078DD9481CA1EFAD00290384 /* jid.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9241CA1EFAD00290384 /* jid.c */; };
+		078DD9491CA1EFAD00290384 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9251CA1EFAD00290384 /* md5.c */; };
+		078DD94F1CA1EFAD00290384 /* parser_expat.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD92B1CA1EFAD00290384 /* parser_expat.c */; };
+		078DD9511CA1EFAD00290384 /* sasl.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD92D1CA1EFAD00290384 /* sasl.c */; };
+		078DD9531CA1EFAD00290384 /* scram.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD92F1CA1EFAD00290384 /* scram.c */; };
+		078DD9551CA1EFAD00290384 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9311CA1EFAD00290384 /* sha1.c */; };
+		078DD9571CA1EFAD00290384 /* snprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9331CA1EFAD00290384 /* snprintf.c */; };
+		078DD9581CA1EFAD00290384 /* sock.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9341CA1EFAD00290384 /* sock.c */; };
+		078DD95A1CA1EFAD00290384 /* stanza.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9361CA1EFAD00290384 /* stanza.c */; };
+		078DD95B1CA1EFAD00290384 /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9371CA1EFAD00290384 /* thread.c */; };
+		078DD9601CA1EFAD00290384 /* tls_openssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD93C1CA1EFAD00290384 /* tls_openssl.c */; };
+		078DD9621CA1EFAD00290384 /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD93E1CA1EFAD00290384 /* util.c */; };
+		9A415C652473942800EF2BCD /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB431CEE3B5D008916A4 /* rand.c */; };
+		9A415C662473942800EF2BCD /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB451CEE3B5D008916A4 /* resolver.c */; };
+		9A415C672473942800EF2BCD /* ca2_stanza.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB3C1CEE3B2E008916A4 /* ca2_stanza.c */; };
+		9A415C682473942800EF2BCD /* crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB3D1CEE3B2E008916A4 /* crypto.c */; };
+		9A415C692473942800EF2BCD /* auth.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD91C1CA1EFAD00290384 /* auth.c */; };
+		9A415C6A2473942800EF2BCD /* conn.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD91E1CA1EFAD00290384 /* conn.c */; };
+		9A415C6B2473942800EF2BCD /* ctx.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD91F1CA1EFAD00290384 /* ctx.c */; };
+		9A415C6C2473942800EF2BCD /* event.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9201CA1EFAD00290384 /* event.c */; };
+		9A415C6D2473942800EF2BCD /* handler.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9211CA1EFAD00290384 /* handler.c */; };
+		9A415C6E2473942800EF2BCD /* hash.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9221CA1EFAD00290384 /* hash.c */; };
+		9A415C6F2473942800EF2BCD /* jid.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9241CA1EFAD00290384 /* jid.c */; };
+		9A415C702473942800EF2BCD /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9251CA1EFAD00290384 /* md5.c */; };
+		9A415C712473942800EF2BCD /* parser_expat.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD92B1CA1EFAD00290384 /* parser_expat.c */; };
+		9A415C722473942800EF2BCD /* sasl.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD92D1CA1EFAD00290384 /* sasl.c */; };
+		9A415C732473942800EF2BCD /* scram.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD92F1CA1EFAD00290384 /* scram.c */; };
+		9A415C742473942800EF2BCD /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9311CA1EFAD00290384 /* sha1.c */; };
+		9A415C752473942800EF2BCD /* snprintf.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9331CA1EFAD00290384 /* snprintf.c */; };
+		9A415C762473942800EF2BCD /* sock.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9341CA1EFAD00290384 /* sock.c */; };
+		9A415C772473942800EF2BCD /* stanza.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9361CA1EFAD00290384 /* stanza.c */; };
+		9A415C782473942800EF2BCD /* thread.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD9371CA1EFAD00290384 /* thread.c */; };
+		9A415C792473942800EF2BCD /* tls_openssl.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD93C1CA1EFAD00290384 /* tls_openssl.c */; };
+		9A415C7A2473942800EF2BCD /* util.c in Sources */ = {isa = PBXBuildFile; fileRef = 078DD93E1CA1EFAD00290384 /* util.c */; };
+		9A5DFB3E1CEE3B2E008916A4 /* ca2_stanza.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB3C1CEE3B2E008916A4 /* ca2_stanza.c */; };
+		9A5DFB3F1CEE3B2E008916A4 /* crypto.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB3D1CEE3B2E008916A4 /* crypto.c */; };
+		9A5DFB471CEE3B5D008916A4 /* rand.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB431CEE3B5D008916A4 /* rand.c */; };
+		9A5DFB491CEE3B5D008916A4 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB451CEE3B5D008916A4 /* resolver.c */; };
+		9AAECB0C2321CC6A005CEB43 /* libexpat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAECAD42321CAFF005CEB43 /* libexpat.dylib */; };
+		9ACFCCED24CF0D600058092D /* libstrophe.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AEB75A316F78DF10085103B /* libstrophe.dylib */; };
+		9AD45C9124CE3634006637AC /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C8F24CE3634006637AC /* libcrypto.dylib */; };
+		9AD45C9224CE3634006637AC /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9024CE3634006637AC /* libssl.dylib */; };
+		9AE24EA11904CFFD001AEFFB /* libios_strophe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24E8A1904CFFD001AEFFB /* libios_strophe.a */; };
+		9AE24EA71904CFFD001AEFFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AE24EA51904CFFD001AEFFB /* InfoPlist.strings */; };
+		9AE24EA91904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE24EA81904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9AAECAD32321CAFF005CEB43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AAECACE2321CAFF005CEB43 /* expat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 9AA539B119B763C400B9F861;
+			remoteInfo = expat;
+		};
+		9AAECAD52321CAFF005CEB43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AAECACE2321CAFF005CEB43 /* expat.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 07D6A8471B4CBB45004FEBC2;
+			remoteInfo = ios_expat;
+		};
+		9AAECB0A2321CC5D005CEB43 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AAECACE2321CAFF005CEB43 /* expat.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AA5E4C216F7C61B005C45CE;
+			remoteInfo = expat;
+		};
+		9AE24E9F1904CFFD001AEFFB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9AEB759B16F78DF10085103B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9AE24E891904CFFD001AEFFB;
+			remoteInfo = app_core_hellomultiverse_ios;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9ACFCCEB24CF0D4C0058092D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(HOME)/__archive/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(CONFIGURATION)";
+			dstSubfolderSpec = 0;
+			files = (
+				9ACFCCED24CF0D600058092D /* libstrophe.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE24E881904CFFD001AEFFB /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0762212B1CA21CCF007D4F43 /* libdns_services.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libdns_services.tbd; path = usr/lib/libdns_services.tbd; sourceTree = SDKROOT; };
+		0762212D1CA21CEF007D4F43 /* libresolv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libresolv.tbd; path = usr/lib/libresolv.tbd; sourceTree = SDKROOT; };
+		078DD91C1CA1EFAD00290384 /* auth.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = auth.c; sourceTree = "<group>"; };
+		078DD91E1CA1EFAD00290384 /* conn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = conn.c; sourceTree = "<group>"; };
+		078DD91F1CA1EFAD00290384 /* ctx.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ctx.c; sourceTree = "<group>"; };
+		078DD9201CA1EFAD00290384 /* event.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = event.c; sourceTree = "<group>"; };
+		078DD9211CA1EFAD00290384 /* handler.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = handler.c; sourceTree = "<group>"; };
+		078DD9221CA1EFAD00290384 /* hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hash.c; sourceTree = "<group>"; };
+		078DD9241CA1EFAD00290384 /* jid.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = jid.c; sourceTree = "<group>"; };
+		078DD9251CA1EFAD00290384 /* md5.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = md5.c; sourceTree = "<group>"; };
+		078DD92B1CA1EFAD00290384 /* parser_expat.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = parser_expat.c; sourceTree = "<group>"; };
+		078DD92D1CA1EFAD00290384 /* sasl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sasl.c; sourceTree = "<group>"; };
+		078DD92F1CA1EFAD00290384 /* scram.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = scram.c; sourceTree = "<group>"; };
+		078DD9311CA1EFAD00290384 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		078DD9331CA1EFAD00290384 /* snprintf.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = snprintf.c; sourceTree = "<group>"; };
+		078DD9341CA1EFAD00290384 /* sock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sock.c; sourceTree = "<group>"; };
+		078DD9361CA1EFAD00290384 /* stanza.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = stanza.c; sourceTree = "<group>"; };
+		078DD9371CA1EFAD00290384 /* thread.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = thread.c; sourceTree = "<group>"; };
+		078DD93C1CA1EFAD00290384 /* tls_openssl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tls_openssl.c; sourceTree = "<group>"; };
+		078DD93E1CA1EFAD00290384 /* util.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = util.c; sourceTree = "<group>"; };
+		9A5DFB3C1CEE3B2E008916A4 /* ca2_stanza.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ca2_stanza.c; sourceTree = "<group>"; };
+		9A5DFB3D1CEE3B2E008916A4 /* crypto.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = crypto.c; sourceTree = "<group>"; };
+		9A5DFB431CEE3B5D008916A4 /* rand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
+		9A5DFB451CEE3B5D008916A4 /* resolver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resolver.c; sourceTree = "<group>"; };
+		9AAECACE2321CAFF005CEB43 /* expat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = expat.xcodeproj; path = ../expat/expat.xcodeproj; sourceTree = "<group>"; };
+		9AD45C8F24CE3634006637AC /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = "../../time-macos/library/Debug/libcrypto.dylib"; sourceTree = "<group>"; };
+		9AD45C9024CE3634006637AC /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = "../../time-macos/library/Debug/libssl.dylib"; sourceTree = "<group>"; };
+		9AE24E8A1904CFFD001AEFFB /* libios_strophe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libios_strophe.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE24E991904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_core_hellomultiverse_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE24EA41904CFFD001AEFFB /* app_core_hellomultiverse_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "app_core_hellomultiverse_iosTests-Info.plist"; sourceTree = "<group>"; };
+		9AE24EA61904CFFD001AEFFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9AE24EA81904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = app_core_hellomultiverse_iosTests.m; sourceTree = "<group>"; };
+		9AEB75A316F78DF10085103B /* libstrophe.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libstrophe.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9AE24E871904CFFD001AEFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE24E961904CFFD001AEFFB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE24EA11904CFFD001AEFFB /* libios_strophe.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AEB75A016F78DF10085103B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAECB0C2321CC6A005CEB43 /* libexpat.dylib in Frameworks */,
+				0762212E1CA21CEF007D4F43 /* libresolv.tbd in Frameworks */,
+				9AD45C9124CE3634006637AC /* libcrypto.dylib in Frameworks */,
+				9AD45C9224CE3634006637AC /* libssl.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		078DD91B1CA1EFAD00290384 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				9A5DFB431CEE3B5D008916A4 /* rand.c */,
+				9A5DFB451CEE3B5D008916A4 /* resolver.c */,
+				9A5DFB3C1CEE3B2E008916A4 /* ca2_stanza.c */,
+				9A5DFB3D1CEE3B2E008916A4 /* crypto.c */,
+				078DD91C1CA1EFAD00290384 /* auth.c */,
+				078DD91E1CA1EFAD00290384 /* conn.c */,
+				078DD91F1CA1EFAD00290384 /* ctx.c */,
+				078DD9201CA1EFAD00290384 /* event.c */,
+				078DD9211CA1EFAD00290384 /* handler.c */,
+				078DD9221CA1EFAD00290384 /* hash.c */,
+				078DD9241CA1EFAD00290384 /* jid.c */,
+				078DD9251CA1EFAD00290384 /* md5.c */,
+				078DD92B1CA1EFAD00290384 /* parser_expat.c */,
+				078DD92D1CA1EFAD00290384 /* sasl.c */,
+				078DD92F1CA1EFAD00290384 /* scram.c */,
+				078DD9311CA1EFAD00290384 /* sha1.c */,
+				078DD9331CA1EFAD00290384 /* snprintf.c */,
+				078DD9341CA1EFAD00290384 /* sock.c */,
+				078DD9361CA1EFAD00290384 /* stanza.c */,
+				078DD9371CA1EFAD00290384 /* thread.c */,
+				078DD93C1CA1EFAD00290384 /* tls_openssl.c */,
+				078DD93E1CA1EFAD00290384 /* util.c */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		9AAECACB2321C97D005CEB43 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		9AAECACF2321CAFF005CEB43 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AAECAD42321CAFF005CEB43 /* libexpat.dylib */,
+				9AAECAD62321CAFF005CEB43 /* libios_expat.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9ACBD20A1DE0438C004AF08F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9AD45C8F24CE3634006637AC /* libcrypto.dylib */,
+				9AD45C9024CE3634006637AC /* libssl.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9AE24EA21904CFFD001AEFFB /* app_core_hellomultiverse_iosTests */ = {
+			isa = PBXGroup;
+			children = (
+				9AE24EA81904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.m */,
+				9AE24EA31904CFFD001AEFFB /* Supporting Files */,
+			);
+			path = app_core_hellomultiverse_iosTests;
+			sourceTree = "<group>";
+		};
+		9AE24EA31904CFFD001AEFFB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9AE24EA41904CFFD001AEFFB /* app_core_hellomultiverse_iosTests-Info.plist */,
+				9AE24EA51904CFFD001AEFFB /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9AEB759A16F78DF10085103B = {
+			isa = PBXGroup;
+			children = (
+				9AAECACE2321CAFF005CEB43 /* expat.xcodeproj */,
+				0762212D1CA21CEF007D4F43 /* libresolv.tbd */,
+				0762212B1CA21CCF007D4F43 /* libdns_services.tbd */,
+				9AEB75AA16F78E600085103B /* strophe */,
+				9AE24EA21904CFFD001AEFFB /* app_core_hellomultiverse_iosTests */,
+				9ACBD20A1DE0438C004AF08F /* Frameworks */,
+				9AAECACB2321C97D005CEB43 /* Library */,
+				9AEB75A416F78DF10085103B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9AEB75A416F78DF10085103B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9AEB75A316F78DF10085103B /* libstrophe.dylib */,
+				9AE24E8A1904CFFD001AEFFB /* libios_strophe.a */,
+				9AE24E991904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9AEB75AA16F78E600085103B /* strophe */ = {
+			isa = PBXGroup;
+			children = (
+				078DD91B1CA1EFAD00290384 /* src */,
+			);
+			name = strophe;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		9AEB75A116F78DF10085103B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		9AE24E891904CFFD001AEFFB /* ios_strophe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE24EBA1904CFFD001AEFFB /* Build configuration list for PBXNativeTarget "ios_strophe" */;
+			buildPhases = (
+				9AE24E861904CFFD001AEFFB /* Sources */,
+				9AE24E871904CFFD001AEFFB /* Frameworks */,
+				9AE24E881904CFFD001AEFFB /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ios_strophe;
+			productName = app_core_hellomultiverse_ios;
+			productReference = 9AE24E8A1904CFFD001AEFFB /* libios_strophe.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		9AE24E981904CFFD001AEFFB /* app_core_hellomultiverse_iosTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AE24EBB1904CFFD001AEFFB /* Build configuration list for PBXNativeTarget "app_core_hellomultiverse_iosTests" */;
+			buildPhases = (
+				9AE24E951904CFFD001AEFFB /* Sources */,
+				9AE24E961904CFFD001AEFFB /* Frameworks */,
+				9AE24E971904CFFD001AEFFB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AE24EA01904CFFD001AEFFB /* PBXTargetDependency */,
+			);
+			name = app_core_hellomultiverse_iosTests;
+			productName = app_core_hellomultiverse_iosTests;
+			productReference = 9AE24E991904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9AEB75A216F78DF10085103B /* strophe */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9AEB75A716F78DF10085103B /* Build configuration list for PBXNativeTarget "strophe" */;
+			buildPhases = (
+				9AEB759F16F78DF10085103B /* Sources */,
+				9AEB75A016F78DF10085103B /* Frameworks */,
+				9AEB75A116F78DF10085103B /* Headers */,
+				9ACFCCEB24CF0D4C0058092D /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9AAECB0B2321CC5D005CEB43 /* PBXTargetDependency */,
+			);
+			name = strophe;
+			productName = app_core_hellomultiverse;
+			productReference = 9AEB75A316F78DF10085103B /* libstrophe.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9AEB759B16F78DF10085103B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Camilo Sasuke Tsumanuma";
+				TargetAttributes = {
+					9AE24E981904CFFD001AEFFB = {
+						TestTargetID = 9AEB75A216F78DF10085103B;
+					};
+				};
+			};
+			buildConfigurationList = 9AEB759E16F78DF10085103B /* Build configuration list for PBXProject "strophe" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9AEB759A16F78DF10085103B;
+			productRefGroup = 9AEB75A416F78DF10085103B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9AAECACF2321CAFF005CEB43 /* Products */;
+					ProjectRef = 9AAECACE2321CAFF005CEB43 /* expat.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				9AEB75A216F78DF10085103B /* strophe */,
+				9AE24E891904CFFD001AEFFB /* ios_strophe */,
+				9AE24E981904CFFD001AEFFB /* app_core_hellomultiverse_iosTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9AAECAD42321CAFF005CEB43 /* libexpat.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libexpat.dylib;
+			remoteRef = 9AAECAD32321CAFF005CEB43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		9AAECAD62321CAFF005CEB43 /* libios_expat.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libios_expat.a;
+			remoteRef = 9AAECAD52321CAFF005CEB43 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9AE24E971904CFFD001AEFFB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE24EA71904CFFD001AEFFB /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9AE24E861904CFFD001AEFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A415C652473942800EF2BCD /* rand.c in Sources */,
+				9A415C662473942800EF2BCD /* resolver.c in Sources */,
+				9A415C672473942800EF2BCD /* ca2_stanza.c in Sources */,
+				9A415C682473942800EF2BCD /* crypto.c in Sources */,
+				9A415C692473942800EF2BCD /* auth.c in Sources */,
+				9A415C6A2473942800EF2BCD /* conn.c in Sources */,
+				9A415C6B2473942800EF2BCD /* ctx.c in Sources */,
+				9A415C6C2473942800EF2BCD /* event.c in Sources */,
+				9A415C6D2473942800EF2BCD /* handler.c in Sources */,
+				9A415C6E2473942800EF2BCD /* hash.c in Sources */,
+				9A415C6F2473942800EF2BCD /* jid.c in Sources */,
+				9A415C702473942800EF2BCD /* md5.c in Sources */,
+				9A415C712473942800EF2BCD /* parser_expat.c in Sources */,
+				9A415C722473942800EF2BCD /* sasl.c in Sources */,
+				9A415C732473942800EF2BCD /* scram.c in Sources */,
+				9A415C742473942800EF2BCD /* sha1.c in Sources */,
+				9A415C752473942800EF2BCD /* snprintf.c in Sources */,
+				9A415C762473942800EF2BCD /* sock.c in Sources */,
+				9A415C772473942800EF2BCD /* stanza.c in Sources */,
+				9A415C782473942800EF2BCD /* thread.c in Sources */,
+				9A415C792473942800EF2BCD /* tls_openssl.c in Sources */,
+				9A415C7A2473942800EF2BCD /* util.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AE24E951904CFFD001AEFFB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AE24EA91904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9AEB759F16F78DF10085103B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				078DD9491CA1EFAD00290384 /* md5.c in Sources */,
+				078DD9431CA1EFAD00290384 /* ctx.c in Sources */,
+				078DD9511CA1EFAD00290384 /* sasl.c in Sources */,
+				078DD9401CA1EFAD00290384 /* auth.c in Sources */,
+				078DD9621CA1EFAD00290384 /* util.c in Sources */,
+				078DD94F1CA1EFAD00290384 /* parser_expat.c in Sources */,
+				078DD9451CA1EFAD00290384 /* handler.c in Sources */,
+				078DD9441CA1EFAD00290384 /* event.c in Sources */,
+				078DD9531CA1EFAD00290384 /* scram.c in Sources */,
+				9A5DFB491CEE3B5D008916A4 /* resolver.c in Sources */,
+				078DD9581CA1EFAD00290384 /* sock.c in Sources */,
+				078DD9571CA1EFAD00290384 /* snprintf.c in Sources */,
+				078DD9461CA1EFAD00290384 /* hash.c in Sources */,
+				078DD95B1CA1EFAD00290384 /* thread.c in Sources */,
+				9A5DFB3E1CEE3B2E008916A4 /* ca2_stanza.c in Sources */,
+				9A5DFB3F1CEE3B2E008916A4 /* crypto.c in Sources */,
+				078DD9421CA1EFAD00290384 /* conn.c in Sources */,
+				9A5DFB471CEE3B5D008916A4 /* rand.c in Sources */,
+				078DD95A1CA1EFAD00290384 /* stanza.c in Sources */,
+				078DD9481CA1EFAD00290384 /* jid.c in Sources */,
+				078DD9601CA1EFAD00290384 /* tls_openssl.c in Sources */,
+				078DD9551CA1EFAD00290384 /* sha1.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9AAECB0B2321CC5D005CEB43 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = expat;
+			targetProxy = 9AAECB0A2321CC5D005CEB43 /* PBXContainerItemProxy */;
+		};
+		9AE24EA01904CFFD001AEFFB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9AE24E891904CFFD001AEFFB /* ios_strophe */;
+			targetProxy = 9AE24E9F1904CFFD001AEFFB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9AE24EA51904CFFD001AEFFB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9AE24EA61904CFFD001AEFFB /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9AE24EAA1904CFFD001AEFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				PLATFORM_MODIFIER = ios;
+				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-ios/include $(HOME)/__archive/archive/platform-ios/third/include $(HOME)/__archive/archive/platform-ios/third/include/include $(WorkspaceDir)/platform-ios $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR) $(HOME)/__archive/archive/platform-ios/iPhoneSimulator13.4-x86_64.sdk/include";
+			};
+			name = Debug;
+		};
+		9AE24EAB1904CFFD001AEFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				PLATFORM_MODIFIER = ios;
+				SDKROOT = iphoneos;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-ios/include $(HOME)/__archive/archive/platform-ios/third/include $(HOME)/__archive/archive/platform-ios/third/include/include $(WorkspaceDir)/platform-ios $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR) $(HOME)/__archive/archive/platform-ios/iPhoneSimulator13.4-x86_64.sdk/include";
+			};
+			name = Release;
+		};
+		9AE24EAC1904CFFD001AEFFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libapp_core_hellomultiverse.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "app_core_hellomultiverse_ios/app_core_hellomultiverse_ios-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "app_core_hellomultiverse_iosTests/app_core_hellomultiverse_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca2.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9AE24EAD1904CFFD001AEFFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/libapp_core_hellomultiverse.dylib";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				ENABLE_NS_ASSERTIONS = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "app_core_hellomultiverse_ios/app_core_hellomultiverse_ios-Prefix.pch";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = "app_core_hellomultiverse_iosTests/app_core_hellomultiverse_iosTests-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "ca2.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		9AEB75A516F78DF10085103B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-macos/third/include/strophe";
+				INSTALL_PATH = "@executable_path";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(HOME)/__archive/archive/storage-$(PLATFORM_MODIFIER)/library/$(CONFIGURATION)",
+					"$(HOME)/__archive/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(CONFIGURATION)",
+					"$(WorkspaceDir)/time/$(PLATFORM_MODIFIER)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
+				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/app/core $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/app/_include/strophe $(PROJECT_DIR)/.. SYSTEM_HEADER_SEARCH_PATHS = $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include //:configuration = Release SYSTEM_HEADER_SEARCH_PATHS = $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include //:completeSettings = some SYSTEM_HEADER_SEARCH_PATHS $(PROJECT_DIR) .";
+				USE_HEADERMAP = NO;
+				WorkspaceDir = "$(SRCROOT)/../..";
+			};
+			name = Debug;
+		};
+		9AEB75A616F78DF10085103B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEPLOYMENT_POSTPROCESSING = YES;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = c11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_INHIBIT_ALL_WARNINGS = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-macos/third/include/strophe";
+				INSTALL_PATH = "@executable_path";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(HOME)/__archive/archive/storage-$(PLATFORM_MODIFIER)/library/$(CONFIGURATION)",
+					"$(HOME)/__archive/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(CONFIGURATION)",
+					"$(WorkspaceDir)/time/$(PLATFORM_MODIFIER)",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = "-all_load";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
+				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/app/core $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/app/_include/strophe $(PROJECT_DIR)/.. SYSTEM_HEADER_SEARCH_PATHS = $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include //:configuration = Release SYSTEM_HEADER_SEARCH_PATHS = $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include //:completeSettings = some SYSTEM_HEADER_SEARCH_PATHS $(PROJECT_DIR) .";
+				USE_HEADERMAP = NO;
+				WorkspaceDir = "$(SRCROOT)/../..";
+			};
+			name = Release;
+		};
+		9AEB75A816F78DF10085103B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				PLATFORM_MODIFIER = macos;
+			};
+			name = Debug;
+		};
+		9AEB75A916F78DF10085103B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				PLATFORM_MODIFIER = macos;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9AE24EBA1904CFFD001AEFFB /* Build configuration list for PBXNativeTarget "ios_strophe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE24EAA1904CFFD001AEFFB /* Debug */,
+				9AE24EAB1904CFFD001AEFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AE24EBB1904CFFD001AEFFB /* Build configuration list for PBXNativeTarget "app_core_hellomultiverse_iosTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AE24EAC1904CFFD001AEFFB /* Debug */,
+				9AE24EAD1904CFFD001AEFFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AEB759E16F78DF10085103B /* Build configuration list for PBXProject "strophe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AEB75A516F78DF10085103B /* Debug */,
+				9AEB75A616F78DF10085103B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9AEB75A716F78DF10085103B /* Build configuration list for PBXNativeTarget "strophe" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AEB75A816F78DF10085103B /* Debug */,
+				9AEB75A916F78DF10085103B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9AEB759B16F78DF10085103B /* Project object */;
+}

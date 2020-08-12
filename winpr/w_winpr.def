@@ -1,0 +1,16 @@
+LIBRARY		"winpr"
+EXPORTS
+   ;get_version_ex_a
+	;InitializeListHead		
+	;IsListEmpty				
+	;RemoveEntryList			
+	;InsertHeadList			
+	;RemoveHeadList			
+	;InsertTailList			
+	;RemoveTailList			
+	;AppendTailList			
+	;PushEntryList			
+	;PopEntryList			
+	;FunctionA
+	;FunctionB
+	;gettimeofday

@@ -1,0 +1,10 @@
+LIBRARY      "aqua"
+
+EXPORTS
+nsvgParse
+nsvgDelete
+nsvgCreateRasterizer
+nsvgRasterize
+nsvgDeleteRasterizer
+prime100k
+prime100k_count

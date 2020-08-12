@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="ssl\_ssl.c">
+      <Filter>Source Files\ssl</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{4588b894-957f-4444-b875-d9071e79805b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{eec86ab3-5996-4aab-a2a4-cbc44cd36fab}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ssl">
+      <UniqueIdentifier>{4e2122de-c546-455c-a6b3-a887e71ec5b5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

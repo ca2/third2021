@@ -1,0 +1,6 @@
+; baseid3lib.def : Declares the module parameters for the DLL.
+
+LIBRARY      "baseid3lib"
+	;DESCRIPTION  'baseid3lib Windows Dynamic Link Library'
+
+EXPORTS
