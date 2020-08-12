@@ -542,7 +542,7 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(__archive)\third-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
+      <OutputFile>$(__archive)\platform-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">
@@ -698,7 +698,7 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(__archive)\third-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
+      <OutputFile>$(__archive)\platform-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
     </Lib>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">
@@ -949,7 +949,7 @@
       </Command>
     </PreLinkEvent>
     <Lib>
-      <OutputFile>$(__archive)\third-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
+      <OutputFile>$(__archive)\platform-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
     </Lib>
     <Xdcmake>
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
@@ -1117,7 +1117,7 @@
       </Command>
     </PreLinkEvent>
     <Lib>
-      <OutputFile>$(__archive)\third-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
+      <OutputFile>$(__archive)\platform-windows\thirdparty\library\$(PlatformName)\$(Configuration)\$(TargetName).lib</OutputFile>
     </Lib>
     <Xdcmake>
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
