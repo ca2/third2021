@@ -64,7 +64,7 @@
 			<Add directory="$(WORKSPACE_DIR)/../../app/_include" />
 			<Add directory="$(WORKSPACE_DIR)/../../app" />
 			<Add directory="$(#sensitive)/sensitive/include" />
-			<Add directory="$(#archive)/platform-linux/third/include/strophe" />
+			<Add directory="$(#archive)/third-linux/third/include/strophe" />
 		</Compiler>
 		<Linker>
 			<Add option="-Wl,-rpath=\\$$$ORIGIN" />

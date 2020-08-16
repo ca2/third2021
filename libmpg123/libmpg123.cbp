@@ -21,7 +21,7 @@
 					<Add option="-fPIC" />
 					<Add option="-g" />
 					<Add option="-D_DEBUG" />
-					<Add directory="$(#archive)/platform-linux/third/include/libmpg123" />
+					<Add directory="$(#archive)/third-linux/third/include/libmpg123" />
 				</Compiler>
 			</Target>
 			<Target title="memdleak">
@@ -68,7 +68,7 @@
 			<Add directory="$(#archive.include)/platform-linux/third/include" />
 			<Add directory="$(PROJECT_DIR)/src/compat" />
 			<Add directory="$(PROJECT_DIR)/src" />
-			<Add directory="$(#archive)/platform-linux/third/include/libmpg123" />
+			<Add directory="$(#archive)/third-linux/third/include/libmpg123" />
 		</Compiler>
 		<Linker>
 			<Add option="-Wl,-rpath,\\$$$ORIGIN" />
