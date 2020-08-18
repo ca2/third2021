@@ -932,7 +932,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/src/libmpg123 $(PROJECT_DIR)/src $(PROJECT_DIR)/src/compat $(PROJECT_DIR) $(WorkspaceDir)";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
@@ -993,7 +993,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/src/libmpg123 $(PROJECT_DIR)/src $(PROJECT_DIR)/src/compat $(PROJECT_DIR) $(WorkspaceDir)";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";

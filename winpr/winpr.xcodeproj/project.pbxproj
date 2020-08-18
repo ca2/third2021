@@ -2007,7 +2007,7 @@
 				MACH_O_TYPE = staticlib;
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-ios/include $(HOME)/__archive/archive/platform-ios/third/include $(WorkspaceDir)/platform-ios $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR) $(HOME)/__archive/archive/platform-ios/iPhoneSimulator13.4-x86_64.sdk/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/third-ios/include $(HOME)/__archive/archive/third-ios/third/include $(WorkspaceDir)/platform-ios $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR) $(HOME)/__archive/archive/third-ios/iPhoneSimulator13.4-x86_64.sdk/include";
 			};
 			name = Debug;
 		};
@@ -2029,7 +2029,7 @@
 				MACH_O_TYPE = staticlib;
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-ios/include $(HOME)/__archive/archive/platform-ios/third/include $(WorkspaceDir)/platform-ios $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR) $(HOME)/__archive/archive/platform-ios/iPhoneSimulator13.4-x86_64.sdk/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/third-ios/include $(HOME)/__archive/archive/third-ios/third/include $(WorkspaceDir)/platform-ios $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR) $(HOME)/__archive/archive/third-ios/iPhoneSimulator13.4-x86_64.sdk/include";
 			};
 			name = Release;
 		};
@@ -2109,7 +2109,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include $(HOME)/__archive/archive/platform-macos/third/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include $(HOME)/__archive/archive/third-macos/third/include";
 				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(PROJECT_DIR)/libwinpr/utils $(PROJECT_DIR)/.. $(PROJECT_DIR) . $(PROJECT_DIR)/libwinpr/utils/trio $(PROJECT_DIR)/libwinpr/utils $(PROJECT_DIR)/libwinpr";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
@@ -2186,7 +2186,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include $(HOME)/__archive/archive/platform-macos/third/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include $(HOME)/__archive/archive/third-macos/third/include";
 				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(PROJECT_DIR)/libwinpr/utils $(PROJECT_DIR)/.. $(PROJECT_DIR) . $(PROJECT_DIR)/libwinpr/utils/trio $(PROJECT_DIR)/libwinpr/utils $(PROJECT_DIR)/libwinpr";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
@@ -2197,7 +2197,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PLATFORM_MODIFIER = macos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-macos/include $(HOME)/__archive/archive/platform-macos/third/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/third-macos/include $(HOME)/__archive/archive/third-macos/third/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR)";
 			};
 			name = Debug;
 		};
@@ -2205,7 +2205,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				PLATFORM_MODIFIER = macos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-macos/include $(HOME)/__archive/archive/platform-macos/third/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/third-macos/include $(HOME)/__archive/archive/third-macos/third/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(PROJECT_DIR)";
 			};
 			name = Release;
 		};

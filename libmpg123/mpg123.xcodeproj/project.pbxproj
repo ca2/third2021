@@ -574,12 +574,12 @@
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"$(HOME)/__archive/archive/platform-macos/include",
+					"$(HOME)/__archive/archive/third-macos/include",
 					"$(WorkspaceDir)/third/include",
 					"$(WorkspaceDir)/platform-macos",
 					"$(WorkspaceDir)/app/_include",
 					"$(PROJECT_DIR)",
-					"$(HOME)/__archive/archive/platform-macos/third/include/idn",
+					"$(HOME)/__archive/archive/third-macos/third/include/idn",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)/include",
@@ -680,12 +680,12 @@
 				SKIP_INSTALL = YES;
 				STRINGS_FILE_OUTPUT_ENCODING = "UTF-8";
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"$(HOME)/__archive/archive/platform-macos/include",
+					"$(HOME)/__archive/archive/third-macos/include",
 					"$(WorkspaceDir)/third/include",
 					"$(WorkspaceDir)/platform-macos",
 					"$(WorkspaceDir)/app/_include",
 					"$(PROJECT_DIR)",
-					"$(HOME)/__archive/archive/platform-macos/third/include/idn",
+					"$(HOME)/__archive/archive/third-macos/third/include/idn",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)/include",
@@ -726,10 +726,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"$(HOME)/__archive/archive/platform-macos/include",
+					"$(HOME)/__archive/archive/third-macos/include",
 					"$(WorkspaceDir)/third/include",
 					"$(WorkspaceDir)/app/_include",
-					"$(HOME)/__archive/archive/platform-macos/third/include/",
+					"$(HOME)/__archive/archive/third-macos/third/include/",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)",
@@ -767,10 +767,10 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = (
-					"$(HOME)/__archive/archive/platform-macos/include",
+					"$(HOME)/__archive/archive/third-macos/include",
 					"$(WorkspaceDir)/third/include",
 					"$(WorkspaceDir)/app/_include",
-					"$(HOME)/__archive/archive/platform-macos/third/include/",
+					"$(HOME)/__archive/archive/third-macos/third/include/",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)",
@@ -822,8 +822,8 @@
 					"$(PROJECT_DIR)/src/libout123",
 					"$(PROJECT_DIR)/src/libmpg123",
 					"$(PROJECT_DIR)/src/compat",
-					"$(HOME)/__archive/archive/platform-ios/third/include/libmpg123",
-					"$(HOME)/__archive/archive/platform-ios/third/include",
+					"$(HOME)/__archive/archive/third-ios/third/include/libmpg123",
+					"$(HOME)/__archive/archive/third-ios/third/include",
 				);
 			};
 			name = Debug;
@@ -859,8 +859,8 @@
 					"$(PROJECT_DIR)/src/libout123",
 					"$(PROJECT_DIR)/src/libmpg123",
 					"$(PROJECT_DIR)/src/compat",
-					"$(HOME)/__archive/archive/platform-ios/third/include/libmpg123",
-					"$(HOME)/__archive/archive/platform-ios/third/include",
+					"$(HOME)/__archive/archive/third-ios/third/include/libmpg123",
+					"$(HOME)/__archive/archive/third-ios/third/include",
 				);
 			};
 			name = Release;

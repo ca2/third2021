@@ -478,8 +478,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
-				USER_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-macos/third/include/pcre $(WorkspaceDir)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
+				USER_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/third-macos/third/include/pcre $(WorkspaceDir)";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
 			};
@@ -553,8 +553,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
-				USER_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/platform-macos/third/include/pcre $(WorkspaceDir)";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
+				USER_HEADER_SEARCH_PATHS = "$(HOME)/__archive/archive/third-macos/third/include/pcre $(WorkspaceDir)";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
 			};

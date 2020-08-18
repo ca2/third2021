@@ -1155,7 +1155,7 @@
 				MACH_O_TYPE = staticlib;
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/third/include $(HOME)/__archive/archive/platform-ios/iPhoneSimulator13.4-x86_64.sdk/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/__archive/archive/third-ios/iPhoneSimulator13.4-x86_64.sdk/include";
 			};
 			name = Debug;
 		};
@@ -1168,7 +1168,7 @@
 				MACH_O_TYPE = staticlib;
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/third/include $(HOME)/__archive/archive/platform-ios/iPhoneSimulator13.4-x86_64.sdk/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/__archive/archive/third-ios/iPhoneSimulator13.4-x86_64.sdk/include";
 			};
 			name = Release;
 		};
@@ -1231,7 +1231,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/third/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/third/include";
 				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-$(PLATFORM_MODIFIER) $(PROJECT_DIR)/.. $(PROJECT_DIR) .";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
@@ -1294,7 +1294,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/platform-$(PLATFORM_MODIFIER)/third/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/third-$(PLATFORM_MODIFIER)/third/include";
 				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-$(PLATFORM_MODIFIER) $(PROJECT_DIR)/.. $(PROJECT_DIR) .";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";

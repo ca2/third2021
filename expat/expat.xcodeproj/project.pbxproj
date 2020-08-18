@@ -255,7 +255,7 @@
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/platform-ios/third/include/include";
+				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/third-ios/third/include/include";
 			};
 			name = Debug;
 		};
@@ -269,7 +269,7 @@
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/platform-ios/third/include/include";
+				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(HOME)/__archive/archive/third-ios/third/include/include";
 			};
 			name = Release;
 		};
@@ -336,7 +336,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include";
 				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
@@ -403,7 +403,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include";
 				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/app $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../..";
@@ -415,7 +415,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				PLATFORM_MODIFIER = macos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include $(WorkspaceDir)/third/include/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include $(WorkspaceDir)/third/include/include";
 			};
 			name = Debug;
 		};
@@ -424,7 +424,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				PLATFORM_MODIFIER = macos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/platform-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include $(WorkspaceDir)/third/include/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform_root/include $(WorkspaceDir)/third/include/include";
 			};
 			name = Release;
 		};

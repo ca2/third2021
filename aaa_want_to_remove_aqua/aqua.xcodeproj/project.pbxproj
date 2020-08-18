@@ -635,7 +635,7 @@
 					"$(inherited)",
 					"$(WorkspaceDir)/platform/thirdparty/library",
 				);
-				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(WorkspaceDir)/app . $(PROJECT_DIR) $(HOME)/__archive/archive/platform-macos/third/include";
+				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(WorkspaceDir)/app . $(PROJECT_DIR) $(HOME)/__archive/archive/third-macos/third/include";
 			};
 			name = Debug;
 		};
@@ -647,7 +647,7 @@
 					"$(inherited)",
 					"$(WorkspaceDir)/platform/thirdparty/library",
 				);
-				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(WorkspaceDir)/app . $(PROJECT_DIR) $(HOME)/__archive/archive/platform-macos/third/include";
+				USER_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/include $(WorkspaceDir)/platform-macos $(WorkspaceDir)/app/_include $(WorkspaceDir)/third/include $(WorkspaceDir)/app . $(PROJECT_DIR) $(HOME)/__archive/archive/third-macos/third/include";
 			};
 			name = Release;
 		};
