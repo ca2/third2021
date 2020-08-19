@@ -9,6 +9,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="split.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\app\include\qrencode.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
     <ClInclude Include="bitstream.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -33,13 +39,9 @@
     <ClInclude Include="rsecc.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="split.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="config.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\app\include\qrencode.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="bitstream.c">
