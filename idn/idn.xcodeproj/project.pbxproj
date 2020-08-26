@@ -424,7 +424,6 @@
 				OTHER_LDFLAGS = "-all_load";
 				PLATFORM_DIR = macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
@@ -493,7 +492,6 @@
 				OTHER_LDFLAGS = "-all_load";
 				PLATFORM_DIR = macos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/app/_include $(WorkspaceDir)/platform-macos $(HOME)/__archive/archive/third-macos/include $(WorkspaceDir)/third/include $(HOME)/archive/platform/include";
 				USER_HEADER_SEARCH_PATHS = "$(PROJECT_DIR) $(WorkspaceDir) $(HOME)/__archive/archive/third-macos/third/include/idn";
