@@ -1019,7 +1019,7 @@ Save(FreeImageIO *io, FIBITMAP *dib, fi_handle handle, int page, int flags, void
 //
 //Gdiplus::Bitmap * pbitmap = new Gdiplus::Bitmap(m_p->m_size.cx,m_p->m_size.cy,m_p->m_iScan,PixelFormat32bppARGB,(BYTE *)m_p->m_pcolorref);
 //
-//#define new AURA_NEW
+//#define new ACME_NEW
 //
 ////if(psaveimage->m_eformat == ::visual::image::format_jpeg)
 ////{
