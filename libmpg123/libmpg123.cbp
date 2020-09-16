@@ -9,7 +9,7 @@
 			<Target title="basis">
 				<Option output="$(#archive)/storage-linux/third/library/x64/mpg123" prefix_auto="1" extension_auto="1" />
 				<Option working_dir="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/" />
-				<Option object_output="$(#time_dir)/intermediate/third/basempg123" />
+				<Option object_output="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/third/basempg123" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters=" : app=app-veriwell/mplite build_number=basis locale=_std schema=_std" />
@@ -27,7 +27,7 @@
 			<Target title="memdleak">
 				<Option output="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
 				<Option working_dir="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/" />
-				<Option object_output="$(#time_dir)/intermediate/$(TARGET_NAME)/$(PROJECT_NAME)" />
+				<Option object_output="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/$(TARGET_NAME)/$(PROJECT_NAME)" />
 				<Option type="3" />
 				<Option compiler="gcc" />
 				<Option parameters=' : app=app/sphere/userstack app=app-cidadedecuritiba/alphaclock app=app-core/projection app-core/projection.countries=br,ru,us,se,jp app-core/projection.br.link=&quot;http://ca2.etc.br&quot; app-core/projection.ru.link=&quot;http://ca2.ru&quot; app-core/projection.us.link=&quot;http://ca2.us&quot; app-core/projection.se.link=&quot;http://ca2.se&quot; app-core/projection.jp.link=&quot;http://ca2.jp&quot; app=app-core/flag app-core/flag.file=&quot;http://ca2.se/image/_std/domain/symbol/se.png&quot; app=app-core/hellomultiverse build_number=&quot;basis&quot; locale=_std schema=_std' />
