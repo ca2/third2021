@@ -8,7 +8,7 @@
 		<Build>
 			<Target title="basis">
 				<Option output="$(#archive)/storage-linux/third/library/x64/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
-				<Option working_dir="$(#time_dir)/x64/$(TARGET_NAME)/" />
+				<Option working_dir="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/" />
 				<Option object_output="$(#time_dir)/intermediate/$(TARGET_NAME)/$(PROJECT_NAME)" />
 				<Option type="3" />
 				<Option compiler="clang" />
@@ -28,12 +28,12 @@
 					<Add option="-lX11-xcb" />
 					<Add option="-lxcb" />
 					<Add option="-Wl,-z,defs" />
-					<Add directory="$(#time_dir)/x64/$(TARGET_NAME)" />
+					<Add directory="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)" />
 				</Linker>
 			</Target>
 			<Target title="stage">
-				<Option output="$(#time_dir)/x64/$(TARGET_NAME)/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
-				<Option working_dir="$(#time_dir)/x64/$(TARGET_NAME)/" />
+				<Option output="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/" />
 				<Option object_output="$(#time_dir)/intermediate/$(TARGET_NAME)/$(PROJECT_NAME)" />
 				<Option type="3" />
 				<Option compiler="clang" />
@@ -54,12 +54,12 @@
 					<Add option="-lX11-xcb" />
 					<Add option="-lxcb" />
 					<Add option="-Wl,-z,defs" />
-					<Add directory="$(#time_dir)/x64/$(TARGET_NAME)" />
+					<Add directory="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)" />
 				</Linker>
 			</Target>
 			<Target title="memdleak">
-				<Option output="$(#time_dir)/x64/$(TARGET_NAME)/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
-				<Option working_dir="$(#time_dir)/x64/$(TARGET_NAME)/" />
+				<Option output="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/lib$(PROJECT_NAME).so" prefix_auto="0" extension_auto="0" />
+				<Option working_dir="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)/" />
 				<Option object_output="$(#time_dir)/intermediate/$(TARGET_NAME)/$(PROJECT_NAME)" />
 				<Option type="3" />
 				<Option compiler="clang" />
@@ -71,7 +71,7 @@
 					<Add option="-DMEMDLEAK" />
 				</Compiler>
 				<Linker>
-					<Add directory="$(#time_dir)/x64/$(TARGET_NAME)" />
+					<Add directory="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)" />
 				</Linker>
 			</Target>
 		</Build>
@@ -106,7 +106,7 @@
 		<Linker>
 			<Add option="-Wl,-rpath=\\$$$ORIGIN" />
 			<Add option="-Wl,-z,defs" />
-			<Add directory="$(#time_dir)/x64/$(TARGET_NAME)" />
+			<Add directory="$(WORKSPACEDIR)/../../time-$(#platform_modifier)/x64/$(TARGET_NAME)" />
 		</Linker>
 		<Unit filename="config.h" />
 		<Unit filename="sn-common.c">
