@@ -8,12 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9A74229F247422EE003902E5 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A74229E247422EE003902E5 /* Default-568h@2x.png */; };
-		9AFC0E672473856100AF47B7 /* libios_freerdp.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAECAAD2321C1EC005CEB43 /* libios_freerdp.a */; };
-		9AFC0E682473856100AF47B7 /* libios_winpr.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAECABF2321C21E005CEB43 /* libios_winpr.a */; };
-		9AFC0E692473856100AF47B7 /* libios_clientchannels.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAECAA32321C1D9005CEB43 /* libios_clientchannels.a */; };
 		9AFC0E6C2473856100AF47B7 /* libios_idn.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAECAB62321C1FF005CEB43 /* libios_idn.a */; };
 		9AFC0E6D2473856100AF47B7 /* libios_pcre.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AAECA982321C1B1005CEB43 /* libios_pcre.a */; };
-		9AFC0E6E2473856100AF47B7 /* libios_strophe.a in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACC2DA0230B19ED00F24275 /* libios_strophe.a */; };
 		9AFC0E81247385E200AF47B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9AFC0E7E247385E200AF47B7 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -32,34 +28,6 @@
 			remoteGlobalIDString = 07D6A8471B4CBB45004FEBC2;
 			remoteInfo = ios_aurapcre;
 		};
-		9AAECAA02321C1D9005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECA992321C1D8005CEB43 /* clientchannels.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A1B358C16A2D7A500875A94;
-			remoteInfo = axisclientchannels;
-		};
-		9AAECAA22321C1D9005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECA992321C1D8005CEB43 /* clientchannels.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07DD6E341B5F0C87003A1CE1;
-			remoteInfo = ios_axisclientchannels;
-		};
-		9AAECAAA2321C1EC005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAA42321C1EC005CEB43 /* freerdp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A1B358C16A2D7A500875A94;
-			remoteInfo = axisfreerdp;
-		};
-		9AAECAAC2321C1EC005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAA42321C1EC005CEB43 /* freerdp.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07DD674C1B5F0C16003A1CE1;
-			remoteInfo = ios_axisfreerdp;
-		};
 		9AAECAB32321C1FF005CEB43 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9AAECAAE2321C1FF005CEB43 /* idn.xcodeproj */;
@@ -74,34 +42,6 @@
 			remoteGlobalIDString = 077A00AB1B4D4F9E001C85FF;
 			remoteInfo = ios_axisidn;
 		};
-		9AAECABC2321C21E005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAB72321C21E005CEB43 /* winpr.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9A1B358C16A2D7A500875A94;
-			remoteInfo = axiswinpr;
-		};
-		9AAECABE2321C21E005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAB72321C21E005CEB43 /* winpr.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07DD5DF91B5F0A1E003A1CE1;
-			remoteInfo = ios_axiswinpr;
-		};
-		9AAECAC52321C239005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAC02321C238005CEB43 /* expat.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9AA539B119B763C400B9F861;
-			remoteInfo = auraexpat;
-		};
-		9AAECAC72321C239005CEB43 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAC02321C238005CEB43 /* expat.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 07D6A8471B4CBB45004FEBC2;
-			remoteInfo = ios_auraexpat;
-		};
 		9ACA48C02454097D007277DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9ACA48B72454097D007277DD /* mpg123.xcodeproj */;
@@ -115,55 +55,6 @@
 			proxyType = 2;
 			remoteGlobalIDString = 9ACA482A2453EEAE007277DD;
 			remoteInfo = ios_audio;
-		};
-		9ACC2D9D230B19ED00F24275 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9ACC2D97230B19ED00F24275 /* strophe.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9AEB75A316F78DF10085103B;
-			remoteInfo = strophe;
-		};
-		9ACC2D9F230B19ED00F24275 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9ACC2D97230B19ED00F24275 /* strophe.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9AE24E8A1904CFFD001AEFFB;
-			remoteInfo = ios_strophe;
-		};
-		9ACC2DA1230B19ED00F24275 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9ACC2D97230B19ED00F24275 /* strophe.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 9AE24E991904CFFD001AEFFB;
-			remoteInfo = app_core_hellomultiverse_iosTests;
-		};
-		9AFC0E502473853000AF47B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECA992321C1D8005CEB43 /* clientchannels.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 07DD6D8D1B5F0C87003A1CE1;
-			remoteInfo = ios_clientchannels;
-		};
-		9AFC0E522473853000AF47B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAA42321C1EC005CEB43 /* freerdp.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 07DD66A51B5F0C16003A1CE1;
-			remoteInfo = ios_freerdp;
-		};
-		9AFC0E562473853000AF47B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAB72321C21E005CEB43 /* winpr.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 07DD5D521B5F0A1E003A1CE1;
-			remoteInfo = ios_winpr;
-		};
-		9AFC0E582473853000AF47B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9AAECAC02321C238005CEB43 /* expat.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 07D6A8271B4CBB45004FEBC2;
-			remoteInfo = ios_expat;
 		};
 		9AFC0E5A2473853000AF47B7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -186,13 +77,6 @@
 			remoteGlobalIDString = 07D6A8271B4CBB45004FEBC2;
 			remoteInfo = ios_pcre;
 		};
-		9AFC0E602473853000AF47B7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9ACC2D97230B19ED00F24275 /* strophe.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 9AE24E891904CFFD001AEFFB;
-			remoteInfo = ios_strophe;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -202,12 +86,8 @@
 			dstPath = "$(WorkspaceDir)/time-ios/library/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)";
 			dstSubfolderSpec = 0;
 			files = (
-				9AFC0E672473856100AF47B7 /* libios_freerdp.a in CopyFiles */,
-				9AFC0E682473856100AF47B7 /* libios_winpr.a in CopyFiles */,
-				9AFC0E692473856100AF47B7 /* libios_clientchannels.a in CopyFiles */,
 				9AFC0E6C2473856100AF47B7 /* libios_idn.a in CopyFiles */,
 				9AFC0E6D2473856100AF47B7 /* libios_pcre.a in CopyFiles */,
-				9AFC0E6E2473856100AF47B7 /* libios_strophe.a in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,13 +97,8 @@
 		9A74229B24741709003902E5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 		9A74229E247422EE003902E5 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		9AAECA902321C1B1005CEB43 /* pcre.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = pcre.xcodeproj; path = ../pcre/pcre.xcodeproj; sourceTree = "<group>"; };
-		9AAECA992321C1D8005CEB43 /* clientchannels.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = clientchannels.xcodeproj; path = ../clientchannels/clientchannels.xcodeproj; sourceTree = "<group>"; };
-		9AAECAA42321C1EC005CEB43 /* freerdp.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = freerdp.xcodeproj; path = ../freerdp/freerdp.xcodeproj; sourceTree = "<group>"; };
 		9AAECAAE2321C1FF005CEB43 /* idn.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = idn.xcodeproj; path = ../idn/idn.xcodeproj; sourceTree = "<group>"; };
-		9AAECAB72321C21E005CEB43 /* winpr.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = winpr.xcodeproj; path = ../winpr/winpr.xcodeproj; sourceTree = "<group>"; };
-		9AAECAC02321C238005CEB43 /* expat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = expat.xcodeproj; path = ../expat/expat.xcodeproj; sourceTree = "<group>"; };
 		9ACA48B72454097D007277DD /* mpg123.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = mpg123.xcodeproj; path = ../libmpg123/mpg123.xcodeproj; sourceTree = "<group>"; };
-		9ACC2D97230B19ED00F24275 /* strophe.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = strophe.xcodeproj; path = ../strophe/strophe.xcodeproj; sourceTree = "<group>"; };
 		9AFC0D7C24737B0500AF47B7 /* __third.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = __third.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AFC0E7E247385E200AF47B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9AFC0E7F247385E200AF47B7 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
@@ -235,14 +110,9 @@
 			isa = PBXGroup;
 			children = (
 				9A74229E247422EE003902E5 /* Default-568h@2x.png */,
-				9AAECA992321C1D8005CEB43 /* clientchannels.xcodeproj */,
-				9AAECAC02321C238005CEB43 /* expat.xcodeproj */,
-				9AAECAA42321C1EC005CEB43 /* freerdp.xcodeproj */,
 				9AAECAAE2321C1FF005CEB43 /* idn.xcodeproj */,
 				9ACA48B72454097D007277DD /* mpg123.xcodeproj */,
 				9AAECA902321C1B1005CEB43 /* pcre.xcodeproj */,
-				9ACC2D97230B19ED00F24275 /* strophe.xcodeproj */,
-				9AAECAB72321C21E005CEB43 /* winpr.xcodeproj */,
 				9AFC0E7D247385E200AF47B7 /* ios */,
 				070B8EEB1B6E53F900D26137 /* Products */,
 			);
@@ -265,24 +135,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9AAECA9A2321C1D8005CEB43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9AAECAA12321C1D9005CEB43 /* libclientchannels.dylib */,
-				9AAECAA32321C1D9005CEB43 /* libios_clientchannels.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9AAECAA52321C1EC005CEB43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9AAECAAB2321C1EC005CEB43 /* libfreerdp.dylib */,
-				9AAECAAD2321C1EC005CEB43 /* libios_freerdp.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9AAECAAF2321C1FF005CEB43 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -292,39 +144,11 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		9AAECAB82321C21E005CEB43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9AAECABD2321C21E005CEB43 /* libwinpr.dylib */,
-				9AAECABF2321C21E005CEB43 /* libios_winpr.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9AAECAC12321C238005CEB43 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9AAECAC62321C239005CEB43 /* libexpat.dylib */,
-				9AAECAC82321C239005CEB43 /* libios_expat.a */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9ACA48B82454097D007277DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
 				9ACA48C12454097D007277DD /* libmpg123.dylib */,
 				9ACA48C32454097D007277DD /* aios_mpg123.dylib */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9ACC2D98230B19ED00F24275 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9ACC2D9E230B19ED00F24275 /* libstrophe.dylib */,
-				9ACC2DA0230B19ED00F24275 /* libios_strophe.a */,
-				9ACC2DA2230B19ED00F24275 /* app_core_hellomultiverse_iosTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -354,14 +178,9 @@
 			buildRules = (
 			);
 			dependencies = (
-				9AFC0E512473853000AF47B7 /* PBXTargetDependency */,
-				9AFC0E532473853000AF47B7 /* PBXTargetDependency */,
-				9AFC0E572473853000AF47B7 /* PBXTargetDependency */,
-				9AFC0E592473853000AF47B7 /* PBXTargetDependency */,
 				9AFC0E5B2473853000AF47B7 /* PBXTargetDependency */,
 				9AFC0E5D2473853000AF47B7 /* PBXTargetDependency */,
 				9AFC0E5F2473853000AF47B7 /* PBXTargetDependency */,
-				9AFC0E612473853000AF47B7 /* PBXTargetDependency */,
 			);
 			name = ios_group_third;
 			productName = "Hello Multiverse!!";
@@ -396,18 +215,6 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 9AAECA9A2321C1D8005CEB43 /* Products */;
-					ProjectRef = 9AAECA992321C1D8005CEB43 /* clientchannels.xcodeproj */;
-				},
-				{
-					ProductGroup = 9AAECAC12321C238005CEB43 /* Products */;
-					ProjectRef = 9AAECAC02321C238005CEB43 /* expat.xcodeproj */;
-				},
-				{
-					ProductGroup = 9AAECAA52321C1EC005CEB43 /* Products */;
-					ProjectRef = 9AAECAA42321C1EC005CEB43 /* freerdp.xcodeproj */;
-				},
-				{
 					ProductGroup = 9AAECAAF2321C1FF005CEB43 /* Products */;
 					ProjectRef = 9AAECAAE2321C1FF005CEB43 /* idn.xcodeproj */;
 				},
@@ -418,14 +225,6 @@
 				{
 					ProductGroup = 9AAECA912321C1B1005CEB43 /* Products */;
 					ProjectRef = 9AAECA902321C1B1005CEB43 /* pcre.xcodeproj */;
-				},
-				{
-					ProductGroup = 9ACC2D98230B19ED00F24275 /* Products */;
-					ProjectRef = 9ACC2D97230B19ED00F24275 /* strophe.xcodeproj */;
-				},
-				{
-					ProductGroup = 9AAECAB82321C21E005CEB43 /* Products */;
-					ProjectRef = 9AAECAB72321C21E005CEB43 /* winpr.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -450,34 +249,6 @@
 			remoteRef = 9AAECA972321C1B1005CEB43 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9AAECAA12321C1D9005CEB43 /* libclientchannels.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libclientchannels.dylib;
-			remoteRef = 9AAECAA02321C1D9005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AAECAA32321C1D9005CEB43 /* libios_clientchannels.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libios_clientchannels.a;
-			remoteRef = 9AAECAA22321C1D9005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AAECAAB2321C1EC005CEB43 /* libfreerdp.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libfreerdp.dylib;
-			remoteRef = 9AAECAAA2321C1EC005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AAECAAD2321C1EC005CEB43 /* libios_freerdp.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libios_freerdp.a;
-			remoteRef = 9AAECAAC2321C1EC005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		9AAECAB42321C1FF005CEB43 /* libidn.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
@@ -492,34 +263,6 @@
 			remoteRef = 9AAECAB52321C1FF005CEB43 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		9AAECABD2321C21E005CEB43 /* libwinpr.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libwinpr.dylib;
-			remoteRef = 9AAECABC2321C21E005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AAECABF2321C21E005CEB43 /* libios_winpr.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libios_winpr.a;
-			remoteRef = 9AAECABE2321C21E005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AAECAC62321C239005CEB43 /* libexpat.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libexpat.dylib;
-			remoteRef = 9AAECAC52321C239005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9AAECAC82321C239005CEB43 /* libios_expat.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libios_expat.a;
-			remoteRef = 9AAECAC72321C239005CEB43 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		9ACA48C12454097D007277DD /* libmpg123.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
@@ -532,27 +275,6 @@
 			fileType = "compiled.mach-o.dylib";
 			path = aios_mpg123.dylib;
 			remoteRef = 9ACA48C22454097D007277DD /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9ACC2D9E230B19ED00F24275 /* libstrophe.dylib */ = {
-			isa = PBXReferenceProxy;
-			fileType = "compiled.mach-o.dylib";
-			path = libstrophe.dylib;
-			remoteRef = 9ACC2D9D230B19ED00F24275 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9ACC2DA0230B19ED00F24275 /* libios_strophe.a */ = {
-			isa = PBXReferenceProxy;
-			fileType = archive.ar;
-			path = libios_strophe.a;
-			remoteRef = 9ACC2D9F230B19ED00F24275 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9ACC2DA2230B19ED00F24275 /* app_core_hellomultiverse_iosTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = app_core_hellomultiverse_iosTests.xctest;
-			remoteRef = 9ACC2DA1230B19ED00F24275 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -580,26 +302,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9AFC0E512473853000AF47B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ios_clientchannels;
-			targetProxy = 9AFC0E502473853000AF47B7 /* PBXContainerItemProxy */;
-		};
-		9AFC0E532473853000AF47B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ios_freerdp;
-			targetProxy = 9AFC0E522473853000AF47B7 /* PBXContainerItemProxy */;
-		};
-		9AFC0E572473853000AF47B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ios_winpr;
-			targetProxy = 9AFC0E562473853000AF47B7 /* PBXContainerItemProxy */;
-		};
-		9AFC0E592473853000AF47B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ios_expat;
-			targetProxy = 9AFC0E582473853000AF47B7 /* PBXContainerItemProxy */;
-		};
 		9AFC0E5B2473853000AF47B7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ios_idn;
@@ -614,11 +316,6 @@
 			isa = PBXTargetDependency;
 			name = ios_pcre;
 			targetProxy = 9AFC0E5E2473853000AF47B7 /* PBXContainerItemProxy */;
-		};
-		9AFC0E612473853000AF47B7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = ios_strophe;
-			targetProxy = 9AFC0E602473853000AF47B7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
