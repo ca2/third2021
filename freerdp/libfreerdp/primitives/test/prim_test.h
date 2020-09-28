@@ -46,14 +46,14 @@ extern int test_sizes[];
 extern BOOL g_TestPrimitivesPerformance;
 extern UINT32 g_Iterations;
 
-extern primitives_t* generic;
+extern primitives_t* elemental;
 extern primitives_t* optimized;
 
 void prim_test_setup(BOOL performance);
 
 typedef pstatus_t (*speed_test_fkt)();
 
-BOOL speed_test(const char* name, const char* dsc, UINT32 iterations, speed_test_fkt generic,
+BOOL speed_test(const char* name, const char* dsc, UINT32 iterations, speed_test_fkt elemental,
                 speed_test_fkt optimized, ...);
 
 #endif /* FREERDP_LIB_PRIMTEST_H */

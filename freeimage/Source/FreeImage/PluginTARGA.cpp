@@ -498,7 +498,7 @@ loadTrueColor(FIBITMAP* dib, int width, int height, int file_pixel_size, FreeIma
 }
 
 /**
-For the generic RLE loader we need to abstract away the pixel format.
+For the elemental RLE loader we need to abstract away the pixel format.
 We use a specific overload based on bits-per-pixel for each type of pixel
 */
 
@@ -761,7 +761,7 @@ Load(FreeImageIO *io, fi_handle handle, int page, int flags, void *data) {
 						case 16: {
 							WORD *rgb555 = (WORD*)&cmap[0];
 							unsigned start = (unsigned)header.cm_first_entry;
-							unsigned stop = MIN((unsigned)256, (unsigned)header.cm_length);
+							unsigned stop = min((unsigned)256, (unsigned)header.cm_length);
 
 							for (count = start; count < stop; count++) {
 								palette[count].rgbRed   = (BYTE)((((*rgb555 & FI16_555_RED_MASK) >> FI16_555_RED_SHIFT) * 0xFF) / 0x1F);
@@ -775,7 +775,7 @@ Load(FreeImageIO *io, fi_handle handle, int page, int flags, void *data) {
 						case 24: {
 							FILE_BGR *bgr = (FILE_BGR*)&cmap[0];
 							unsigned start = (unsigned)header.cm_first_entry;
-							unsigned stop = MIN((unsigned)256, (unsigned)header.cm_length);
+							unsigned stop = min((unsigned)256, (unsigned)header.cm_length);
 
 							for (count = start; count < stop; count++) {
 								palette[count].rgbBlue  = bgr->b;
@@ -794,7 +794,7 @@ Load(FreeImageIO *io, fi_handle handle, int page, int flags, void *data) {
 
 							FILE_BGRA *bgra = (FILE_BGRA*)&cmap[0];
 							unsigned start = (unsigned)header.cm_first_entry;
-							unsigned stop = MIN((unsigned)256, (unsigned)header.cm_length);
+							unsigned stop = min((unsigned)256, (unsigned)header.cm_length);
 
 							for (count = start; count < stop; count++) {
 								palette[count].rgbBlue  = bgra->b;

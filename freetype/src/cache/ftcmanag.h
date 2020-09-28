@@ -20,7 +20,7 @@
    *
    * A cache manager is in charge of the following:
    *
-   * - Maintain a mapping between generic FTC_FaceIDs and live FT_Face
+   * - Maintain a mapping between elemental FTC_FaceIDs and live FT_Face
    *   objects.  The mapping itself is performed through a user-provided
    *   callback.  However, the manager maintains a small cache of FT_Face
    *   and FT_Size objects in order to speed up things considerably.

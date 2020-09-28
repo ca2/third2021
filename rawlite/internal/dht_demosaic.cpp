@@ -632,8 +632,8 @@ void DHT::make_gline(int i) {
 		b2 *= b2;
 		float eg = nraw[nr_offset(y, x)][kc] * (b1 * h1 + b2 * h2) / (b1 + b2);
 		float min, max;
-		min = MIN(nraw[nr_offset(y + dy, x + dx)][1], nraw[nr_offset(y + dy2, x + dx2)][1]);
-		max = MAX(nraw[nr_offset(y + dy, x + dx)][1], nraw[nr_offset(y + dy2, x + dx2)][1]);
+		min = min(nraw[nr_offset(y + dy, x + dx)][1], nraw[nr_offset(y + dy2, x + dx2)][1]);
+		max = max(nraw[nr_offset(y + dy, x + dx)][1], nraw[nr_offset(y + dy2, x + dx2)][1]);
 		min /= 1.2;
 		max *= 1.2;
 		if (eg < min)
@@ -721,8 +721,8 @@ void DHT::make_rbdiag(int i) {
 						+ g2 * nraw[nr_offset(y + dy2, x + dx2)][cl]
 								/ nraw[nr_offset(y + dy2, x + dx2)][1]) / (g1 + g2);
 		float min, max;
-		min = MIN(nraw[nr_offset(y + dy, x + dx)][cl], nraw[nr_offset(y + dy2, x + dx2)][cl]);
-		max = MAX(nraw[nr_offset(y + dy, x + dx)][cl], nraw[nr_offset(y + dy2, x + dx2)][cl]);
+		min = min(nraw[nr_offset(y + dy, x + dx)][cl], nraw[nr_offset(y + dy2, x + dx2)][cl]);
+		max = max(nraw[nr_offset(y + dy, x + dx)][cl], nraw[nr_offset(y + dy2, x + dx2)][cl]);
 		min /= 1.2;
 		max *= 1.2;
 		if (eg < min)
@@ -778,11 +778,11 @@ void DHT::make_rbhv(int i) {
 						+ g2 * nraw[nr_offset(y + dy2, x + dx2)][2]
 								/ nraw[nr_offset(y + dy2, x + dx2)][1]) / (g1 + g2);
 		float min_r, max_r;
-		min_r = MIN(nraw[nr_offset(y + dy, x + dx)][0], nraw[nr_offset(y + dy2, x + dx2)][0]);
-		max_r = MAX(nraw[nr_offset(y + dy, x + dx)][0], nraw[nr_offset(y + dy2, x + dx2)][0]);
+		min_r = min(nraw[nr_offset(y + dy, x + dx)][0], nraw[nr_offset(y + dy2, x + dx2)][0]);
+		max_r = max(nraw[nr_offset(y + dy, x + dx)][0], nraw[nr_offset(y + dy2, x + dx2)][0]);
 		float min_b, max_b;
-		min_b = MIN(nraw[nr_offset(y + dy, x + dx)][2], nraw[nr_offset(y + dy2, x + dx2)][2]);
-		max_b = MAX(nraw[nr_offset(y + dy, x + dx)][2], nraw[nr_offset(y + dy2, x + dx2)][2]);
+		min_b = min(nraw[nr_offset(y + dy, x + dx)][2], nraw[nr_offset(y + dy2, x + dx2)][2]);
+		max_b = max(nraw[nr_offset(y + dy, x + dx)][2], nraw[nr_offset(y + dy2, x + dx2)][2]);
 		min_r /= 1.2;
 		max_r *= 1.2;
 		min_b /= 1.2;

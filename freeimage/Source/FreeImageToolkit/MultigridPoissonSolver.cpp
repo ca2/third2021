@@ -2,7 +2,7 @@
 // Poisson solver based on a full multigrid algorithm
 //
 // Design and implementation by
-// - Hervé Drolon (drolon@infonie.fr)
+// - Hervï¿½ Drolon (drolon@infonie.fr)
 // Reference:
 // PRESS, W. H., TEUKOLSKY, S. A., VETTERLING, W. T., AND FLANNERY, B. P.
 // 1992. Numerical Recipes in C: The Art of Scientific Computing, 2nd ed. Cambridge University Press.
@@ -292,7 +292,7 @@ static void fmg_addint(FIBITMAP *UF, FIBITMAP *UC, FIBITMAP *RES, int nf) {
 
 /**
 Full Multigrid Algorithm for solution of linear elliptic equation, here the model problem (19.0.6).
-On input u[0..n-1][0..n-1] contains the right-hand side ñ, while on output it returns the solution.
+On input u[0..n-1][0..n-1] contains the right-hand side ï¿½, while on output it returns the solution.
 The dimension n must be of the form 2^j + 1 for some integer j. (j is actually the number of
 grid levels used in the solution, called ng below.) ncycle is the number of V-cycles to be
 used at each level.
@@ -457,7 +457,7 @@ static BOOL fmg_mglin(FIBITMAP *U, int n, int ncycle) {
 Poisson solver based on a multigrid algorithm. 
 This routine solves a Poisson equation, remap result pixels to [0..1] and returns the solution. 
 NB: The input image is first stored inside a square image whose size is (2^j + 1)x(2^j + 1) for some integer j, 
-where j is such that 2^j is the nearest larger dimension corresponding to MAX(image width, image height). 
+where j is such that 2^j is the nearest larger dimension corresponding to max(image width, image height). 
 @param Laplacian Laplacian image
 @param ncycle Number of cycles in the multigrid algorithm (usually 2 or 3)
 @return Returns the solved PDE equations if successful, returns NULL otherwise
@@ -470,10 +470,10 @@ FreeImage_MultigridPoissonSolver(FIBITMAP *Laplacian, int ncycle) {
 	int height = FreeImage_GetHeight(Laplacian);
 
 	// get nearest larger dimension length that is acceptable by the algorithm
-	int n = MAX(width, height);
+	int n = max(width, height);
 	int size = 0;
 	while((n >>= 1) > 0) size++;
-	if((1 << size) < MAX(width, height)) {
+	if((1 << size) < max(width, height)) {
 		size++;
 	}
 	// size must be of the form 2^j + 1 for some integer j

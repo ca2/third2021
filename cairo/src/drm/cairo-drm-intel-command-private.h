@@ -838,7 +838,7 @@
 #define SS2_LOD_BIAS_MASK             (0x1ff<<5)
 /* Shadow requires:
  *  MT_X8{I,L,A}24 or MT_{I,L,A}16 texture format
- *  FILTER_4X4_x  MIN and MAG filters
+ *  FILTER_4X4_x  min and MAG filters
  */
 #define SS2_SHADOW_ENABLE             (1<<4)
 #define SS2_MAX_ANISO_MASK            (1<<3)

@@ -256,7 +256,7 @@ STIN void mdct_butterfly_first(DATA_TYPE *T,
   }while(x2>=x);
 }
 
-/* N/stage point generic N stage butterfly (in place, 2 register) */
+/* N/stage point elemental N stage butterfly (in place, 2 register) */
 STIN void mdct_butterfly_generic(DATA_TYPE *T,
                                           DATA_TYPE *x,
                                           int32_t points,

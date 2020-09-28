@@ -34,8 +34,8 @@
 
 
 //#undef new
-//#define min MIN
-//#define max MAX
+//#define min min
+//#define max max
 //
 //#ifdef WINDOWS_DESKTOP
 ////#include <gdiplus.h>
@@ -217,7 +217,7 @@ typedef struct {
 //			tag = FreeImage_CreateTag();
 //			if(!tag) return FALSE;
 //
-//			DWORD tag_length = (DWORD) MAX(text_ptr[i].text_length, text_ptr[i].itxt_length);
+//			DWORD tag_length = (DWORD) max(text_ptr[i].text_length, text_ptr[i].itxt_length);
 //
 //			FreeImage_SetTagLength(tag, tag_length);
 //			FreeImage_SetTagCount(tag, tag_length);
@@ -738,7 +738,7 @@ if(SUCCEEDED(hr))
 
 					//png_get_PLTE(png_ptr,info_ptr, &png_palette, &palette_entries);
 
-					//palette_entries = MIN((unsigned)palette_entries, FreeImage_GetColorsUsed(dib));
+					//palette_entries = min((unsigned)palette_entries, FreeImage_GetColorsUsed(dib));
 					//palette = FreeImage_GetPalette(dib);
 
 					//// store the palette

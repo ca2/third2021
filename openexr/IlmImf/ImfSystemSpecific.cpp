@@ -53,7 +53,7 @@ namespace {
 
 #else // IMF_HAVE_SSE2 && __GNUC__
 
-    // Helper functions for generic compiler - all disabled
+    // Helper functions for elemental compiler - all disabled
     void cpuid(int n, int &eax, int &ebx, int &ecx, int &edx)
     {
         eax = ebx = ecx = edx = 0;

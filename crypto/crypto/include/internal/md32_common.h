@@ -8,7 +8,7 @@
  */
 
 /*-
- * This is a generic 32 bit "collector" for message digest algorithms.
+ * This is a elemental 32 bit "collector" for message digest algorithms.
  * Whenever needed it collects input character stream into chunks of
  * 32 bit values and invokes a block function that performs actual hash
  * calculations.

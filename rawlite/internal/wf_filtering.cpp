@@ -55,8 +55,8 @@ int LibRaw::wf_remove_banding()
 #define WF_BAYERGAU(l, row, col) (gauss_pyramid[l])[((row) >> IO.shrink)*S.iwidth + ((col) >> IO.shrink)] 
 #define WF_BAYERDFG(l, row, col) (difwg_pyramid[l])[((row) >> IO.shrink)*S.iwidth + ((col) >> IO.shrink)] 
 	
-#define MIN(a,b) ((a) < (b) ? (a) : (b))
-#define MAX(a,b) ((a) > (b) ? (a) : (b))
+#define min(a,b) ((a) < (b) ? (a) : (b))
+#define max(a,b) ((a) > (b) ? (a) : (b))
 
 #define WF_i_1TO4 for(int i=0; i<4; i++)
 
@@ -132,7 +132,7 @@ int LibRaw::wf_remove_banding()
 		{
 			// Do
 
-			WF_i_1TO4 val_max_c[i]=MAX(val_max_c[i], *src[i]);
+			WF_i_1TO4 val_max_c[i]=max(val_max_c[i], *src[i]);
 
 			// Next 4 pixel or exit
 
@@ -150,7 +150,7 @@ int LibRaw::wf_remove_banding()
 		while(1);
 	}
 
-	val_max=MAX(MAX(val_max_c[0], val_max_c[1]), MAX(val_max_c[2], val_max_c[3]));
+	val_max=max(max(val_max_c[0], val_max_c[1]), max(val_max_c[2], val_max_c[3]));
 	
 	// end of searching max value
 
@@ -431,7 +431,7 @@ int LibRaw::wf_remove_banding()
 
 	WF_i_1TO4 treshold[i]=imgdata.params.wf_deband_treshold[FC(i>>1,i&1)];
 
-	val_accepted = val_max-3*MAX(MAX(treshold[0],treshold[1]),MAX(treshold[2],treshold[3]));
+	val_accepted = val_max-3*max(max(treshold[0],treshold[1]),max(treshold[2],treshold[3]));
 
 	float (*tr_weight)[4];
 
@@ -1121,7 +1121,7 @@ void LibRaw::wf_bayer4_igauss_filter(int radius, void* src_image, int src_imgmod
 		{12870, 11440, 8008, 4368, 1820, 560, 120, 16, 1},
 	};
 
-	int line_memory_len = (MAX(S.height, S.width)+1)/2+radius*2+1;
+	int line_memory_len = (max(S.height, S.width)+1)/2+radius*2+1;
     line_filtered       = (long int(*)[4]) calloc(line_memory_len, sizeof(long int[4]));
 
 	int src_h_shift, src_v_shift;
@@ -1172,7 +1172,7 @@ void LibRaw::wf_bayer4_igauss_filter(int radius, void* src_image, int src_imgmod
 	
 	for(row=0; row<S.height; row+=2)
 	{
-		int row_p1=MIN(row+1, S.height-1);
+		int row_p1=min(row+1, S.height-1);
 
 		switch (src_imgmode)
 		{
@@ -1336,7 +1336,7 @@ void LibRaw::wf_bayer4_igauss_filter(int radius, void* src_image, int src_imgmod
 
 	for(col=0; col<S.width; col+=2)
 	{
-		int col_p1=MIN(col+1, S.width-1);	
+		int col_p1=min(col+1, S.width-1);	
 
 		switch (dst_imgmode)
 		{
@@ -1551,7 +1551,7 @@ void LibRaw::wf_bayer4_block_filter(int* radius_list, void* src_image, int src_i
 	long int (*source_line)[4];
 	long int (*line_block_filtered)[4];
  
-	line_memory_len = (MAX(S.height, S.width)+1)/2+block_radius_max_x2_p1*2;
+	line_memory_len = (max(S.height, S.width)+1)/2+block_radius_max_x2_p1*2;
 
 	line_block_filtered=(long int(*)[4]) calloc(line_memory_len, sizeof(long int[4]));
 	source_line        =(long int(*)[4]) calloc(line_memory_len, sizeof(long int[4]));
@@ -1590,7 +1590,7 @@ void LibRaw::wf_bayer4_block_filter(int* radius_list, void* src_image, int src_i
 
 	for(row=0; row<S.height; row+=2)
 	{
-		int row_p1=MIN(row+1, S.height-1);
+		int row_p1=min(row+1, S.height-1);
 
 		switch (src_imgmode)
 		{
@@ -1765,7 +1765,7 @@ void LibRaw::wf_bayer4_block_filter(int* radius_list, void* src_image, int src_i
 
 	for(col=0; col<S.width; col+=2)
 	{
-		int col_p1=MIN(col+1, S.width-1);
+		int col_p1=min(col+1, S.width-1);
 
 		switch (dst_imgmode)
 		{

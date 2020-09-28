@@ -152,36 +152,36 @@
 
    These macros may evaluate their arguments zero or multiple times,
    so the arguments should not have side effects.  The arithmetic
-   arguments (including the MIN and MAX arguments) must be of the same
+   arguments (including the min and max arguments) must be of the same
    integer type after the usual arithmetic conversions, and the type
-   must have minimum value MIN and maximum MAX.  Unsigned types should
-   use a zero MIN of the proper type.
+   must have minimum value min and maximum max.  Unsigned types should
+   use a zero min of the proper type.
 
-   These macros are tuned for constant MIN and MAX.  For commutative
+   These macros are tuned for constant min and max.  For commutative
    operations such as A + B, they are also tuned for constant B.  */
 
-/* Return 1 if A + B would overflow in [MIN,MAX] arithmetic.
+/* Return 1 if A + B would overflow in [min,max] arithmetic.
    See above for restrictions.  */
 #define INT_ADD_RANGE_OVERFLOW(a, b, min, max)          \
   ((b) < 0                                              \
    ? (a) < (min) - (b)                                  \
    : (max) - (b) < (a))
 
-/* Return 1 if A - B would overflow in [MIN,MAX] arithmetic.
+/* Return 1 if A - B would overflow in [min,max] arithmetic.
    See above for restrictions.  */
 #define INT_SUBTRACT_RANGE_OVERFLOW(a, b, min, max)     \
   ((b) < 0                                              \
    ? (max) + (b) < (a)                                  \
    : (a) < (min) + (b))
 
-/* Return 1 if - A would overflow in [MIN,MAX] arithmetic.
+/* Return 1 if - A would overflow in [min,max] arithmetic.
    See above for restrictions.  */
 #define INT_NEGATE_RANGE_OVERFLOW(a, min, max)          \
   ((min) < 0                                            \
    ? (a) < - (max)                                      \
    : 0 < (a))
 
-/* Return 1 if A * B would overflow in [MIN,MAX] arithmetic.
+/* Return 1 if A * B would overflow in [min,max] arithmetic.
    See above for restrictions.  Avoid && and || as they tickle
    bugs in Sun C 5.11 2010/08/13 and other compilers; see
    <http://lists.gnu.org/archive/html/bug-gnulib/2011-05/msg00401.html>.  */
@@ -198,12 +198,12 @@
       ? (a) < (min) / (b)                               \
       : (max) / (b) < (a)))
 
-/* Return 1 if A / B would overflow in [MIN,MAX] arithmetic.
+/* Return 1 if A / B would overflow in [min,max] arithmetic.
    See above for restrictions.  Do not check for division by zero.  */
 #define INT_DIVIDE_RANGE_OVERFLOW(a, b, min, max)       \
   ((min) < 0 && (b) == -1 && (a) < - (max))
 
-/* Return 1 if A % B would overflow in [MIN,MAX] arithmetic.
+/* Return 1 if A % B would overflow in [min,max] arithmetic.
    See above for restrictions.  Do not check for division by zero.
    Mathematically, % should never overflow, but on x86-like hosts
    INT_MIN % -1 traps, and the C standard permits this, so treat this
@@ -211,8 +211,8 @@
 #define INT_REMAINDER_RANGE_OVERFLOW(a, b, min, max)    \
   INT_DIVIDE_RANGE_OVERFLOW (a, b, min, max)
 
-/* Return 1 if A << B would overflow in [MIN,MAX] arithmetic.
-   See above for restrictions.  Here, MIN and MAX are for A only, and B need
+/* Return 1 if A << B would overflow in [min,max] arithmetic.
+   See above for restrictions.  Here, min and max are for A only, and B need
    not be of the same type as the other arguments.  The C standard says that
    behavior is undefined for shifts unless 0 <= B < wordwidth, and that when
    A is negative then A << B has undefined behavior and A >> B has
@@ -226,7 +226,7 @@
 
 /* The _GL*_OVERFLOW macros have the same restrictions as the
    *_RANGE_OVERFLOW macros, except that they do not assume that operands
-   (e.g., A and B) have the same type as MIN and MAX.  Instead, they assume
+   (e.g., A and B) have the same type as min and max.  Instead, they assume
    that the result (e.g., A + B) has that type.  */
 #define _GL_ADD_OVERFLOW(a, b, min, max)                                \
   ((min) < 0 ? INT_ADD_RANGE_OVERFLOW (a, b, min, max)                  \
@@ -251,7 +251,7 @@
    : (b) < 0 && ! _GL_UNSIGNED_NEG_MULTIPLE (a, b, max))
 
 /* Return a nonzero value if A is a mathematical multiple of B, where
-   A is unsigned, B is negative, and MAX is the maximum value of A's
+   A is unsigned, B is negative, and max is the maximum value of A's
    type.  A's type must be the same as (A % B)'s type.  Normally (A %
    -B == 0) suffices, but things get tricky if -B would overflow.  */
 #define _GL_UNSIGNED_NEG_MULTIPLE(a, b, max)                            \
@@ -308,8 +308,8 @@
                                  _GL_INT_MINIMUM (a), _GL_INT_MAXIMUM (a))
 
 /* Return 1 if the expression A <op> B would overflow,
-   where OP_RESULT_OVERFLOW (A, B, MIN, MAX) does the actual test,
-   assuming MIN and MAX are the minimum and maximum for the result type.
+   where OP_RESULT_OVERFLOW (A, B, min, max) does the actual test,
+   assuming min and max are the minimum and maximum for the result type.
    Arguments should be free of side effects.  */
 #define _GL_BINARY_OP_OVERFLOW(a, b, op_result_overflow)        \
   op_result_overflow (a, b,                                     \

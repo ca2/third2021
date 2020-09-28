@@ -355,7 +355,7 @@ typedef const gchar *   (*GTranslateFunc)       (const gchar   *str,
 #    ifndef GUINT64_SWAP_LE_BE
 #      define GUINT64_SWAP_LE_BE(val) (GUINT64_SWAP_LE_BE_X86_64 (val))
 #    endif
-#  else /* generic gcc */
+#  else /* elemental gcc */
 #    define GUINT16_SWAP_LE_BE(val) (GUINT16_SWAP_LE_BE_CONSTANT (val))
 #    ifndef GUINT32_SWAP_LE_BE
 #      define GUINT32_SWAP_LE_BE(val) (GUINT32_SWAP_LE_BE_CONSTANT (val))
@@ -364,11 +364,11 @@ typedef const gchar *   (*GTranslateFunc)       (const gchar   *str,
 #      define GUINT64_SWAP_LE_BE(val) (GUINT64_SWAP_LE_BE_CONSTANT (val))
 #    endif
 #  endif
-#else /* generic */
+#else /* elemental */
 #  define GUINT16_SWAP_LE_BE(val) (GUINT16_SWAP_LE_BE_CONSTANT (val))
 #  define GUINT32_SWAP_LE_BE(val) (GUINT32_SWAP_LE_BE_CONSTANT (val))
 #  define GUINT64_SWAP_LE_BE(val) (GUINT64_SWAP_LE_BE_CONSTANT (val))
-#endif /* generic */
+#endif /* elemental */
 
 #define GUINT16_SWAP_LE_PDP(val)	((guint16) (val))
 #define GUINT16_SWAP_BE_PDP(val)	(GUINT16_SWAP_LE_BE (val))

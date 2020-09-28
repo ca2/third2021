@@ -800,11 +800,11 @@
 #define	TRUE	(!FALSE)
 #endif
 
-#undef	MAX
-#define MAX(a, b)  (((a) > (b)) ? (a) : (b))
+#undef	max
+#define max(a, b)  (((a) > (b)) ? (a) : (b))
 
-#undef	MIN
-#define MIN(a, b)  (((a) < (b)) ? (a) : (b))
+#undef	min
+#define min(a, b)  (((a) < (b)) ? (a) : (b))
 
 #undef	ABS
 #define ABS(a)	   (((a) < 0) ? -(a) : (a))

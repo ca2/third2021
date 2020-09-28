@@ -292,7 +292,7 @@ case "${UNAME_MACHINE}:${UNAME_SYSTEM}:${UNAME_RELEASE}:${UNAME_VERSION}" in
 	trap '' 0
 	exit $exitcode ;;
     Alpha\ *:Windows_NT*:*)
-	# How do we know it's Interix rather than the generic POSIX subsystem?
+	# How do we know it's Interix rather than the elemental POSIX subsystem?
 	# Should we change UNAME_MACHINE based on the output of uname instead
 	# of the specific Alpha model?
 	echo alpha-pc-interix
@@ -856,7 +856,7 @@ EOF
 	echo x86_64-pc-mks
 	exit ;;
     i*:Windows_NT*:* | Pentium*:Windows_NT*:*)
-	# How do we know it's Interix rather than the generic POSIX subsystem?
+	# How do we know it's Interix rather than the elemental POSIX subsystem?
 	# It also conflicts with pre-2.0 versions of AT&T UWIN. Should we
 	# UNAME_MACHINE based on the output of uname instead of i386?
 	echo i586-pc-interix

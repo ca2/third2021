@@ -2,7 +2,7 @@
 // Upsampling / downsampling filters
 //
 // Design and implementation by
-// - Hervé Drolon (drolon@infonie.fr)
+// - Hervï¿½ Drolon (drolon@infonie.fr)
 //
 // This file is part of FreeImage 3
 //
@@ -23,7 +23,7 @@
 #define _FILTERS_H_
 
 /**
- CGenericFilter is a generic abstract filter class used to access to the filter library.<br>
+ CGenericFilter is a elemental abstract filter class used to access to the filter library.<br>
  Filters used in this library have been mainly taken from the following references : <br>
 <b>Main reference</b> : <br>
 Paul Heckbert, C code to zoom raster images up or down, with nice filtering. 

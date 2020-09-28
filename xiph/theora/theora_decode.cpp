@@ -1427,7 +1427,7 @@ static void oc_dec_dc_unpredict_mcu_plane(oc_dec_ctx *_dec,
           ref=OC_FRAME_FOR_MODE(frags[fragi].mb_mode);
           /*We break out a separate case based on which of our neighbors use
              the same reference frames.
-            This is somewhat faster than trying to make a generic case which
+            This is somewhat faster than trying to make a elemental case which
              handles all of them, since it reduces lots of poorly predicted
              jumps to one switch statement, and also lets a number of the
              multiplications be optimized out by strength reduction.*/

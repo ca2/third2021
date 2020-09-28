@@ -2009,8 +2009,8 @@ int LibRaw::raw2image_ex(int do_subtract_black)
           }
         do_crop = 1;
 
-        crop[2] = MIN (crop[2], (signed) S.width-crop[0]);
-        crop[3] = MIN (crop[3], (signed) S.height-crop[1]);
+        crop[2] = min (crop[2], (signed) S.width-crop[0]);
+        crop[3] = min (crop[3], (signed) S.height-crop[1]);
         if (crop[2] <= 0 || crop[3] <= 0)
           throw LIBRAW_EXCEPTION_BAD_CROP;
 
@@ -2499,9 +2499,9 @@ void LibRaw::kodak_thumb_loader()
   }
 
   // copy-n-paste from image pipe
-#define MIN(a,b) ((a) < (b) ? (a) : (b))
-#define MAX(a,b) ((a) > (b) ? (a) : (b))
-#define LIM(x,min,max) MAX(min,MIN(x,max))
+#define min(a,b) ((a) < (b) ? (a) : (b))
+#define max(a,b) ((a) > (b) ? (a) : (b))
+#define LIM(x,min,max) max(min,min(x,max))
 #define CLIP(x) LIM(x,0,65535)
 #define SWAP(a,b) { a ^= b; a ^= (b ^= a); }
 
@@ -2635,8 +2635,8 @@ void LibRaw::kodak_thumb_loader()
   P1.filters = s_filters;
   libraw_internal_data.unpacker_data.load_flags = s_flags;
 }
-#undef MIN
-#undef MAX
+#undef min
+#undef max
 #undef LIM
 #undef CLIP
 #undef SWAP
@@ -2832,9 +2832,9 @@ int LibRaw::subtract_black_internal()
           cblk[i] = C.cblack[i];
 
         int size = S.iheight * S.iwidth;
-#define MIN(a,b) ((a) < (b) ? (a) : (b))
-#define MAX(a,b) ((a) > (b) ? (a) : (b))
-#define LIM(x,min,max) MAX(min,MIN(x,max))
+#define min(a,b) ((a) < (b) ? (a) : (b))
+#define max(a,b) ((a) > (b) ? (a) : (b))
+#define LIM(x,min,max) max(min,min(x,max))
 #define CLIP(x) LIM(x,0,65535)
         int dmax = 0;
         if(C.cblack[4] && C.cblack[5])
@@ -2860,8 +2860,8 @@ int LibRaw::subtract_black_internal()
               }
           }
         C.data_maximum = dmax & 0xffff;
-#undef MIN
-#undef MAX
+#undef min
+#undef max
 #undef LIM
 #undef CLIP
         C.maximum -= C.black;
@@ -2946,9 +2946,9 @@ void LibRaw::exp_bef(float shift, float smooth)
   free(lut);
 }
 
-#define MIN(a,b) ((a) < (b) ? (a) : (b))
-#define MAX(a,b) ((a) > (b) ? (a) : (b))
-#define LIM(x,min,max) MAX(min,MIN(x,max))
+#define min(a,b) ((a) < (b) ? (a) : (b))
+#define max(a,b) ((a) > (b) ? (a) : (b))
+#define LIM(x,min,max) max(min,min(x,max))
 #define ULIM(x,y,z) ((y) < (z) ? LIM(x,y,z) : LIM(x,z,y))
 #define CLIP(x) LIM(x,0,65535)
 

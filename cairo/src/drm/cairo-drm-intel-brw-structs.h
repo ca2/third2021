@@ -1210,7 +1210,7 @@ struct brw_instruction {
 	    unsigned int msg_target:4;
 	    unsigned int pad1:3;
 	    unsigned int end_of_thread:1;
-	} generic;
+	} elemental;
 
 	uint32_t ud;
 	int32_t d;

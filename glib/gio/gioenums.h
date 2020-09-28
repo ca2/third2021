@@ -1037,7 +1037,7 @@ typedef enum
 /**
  * GDBusError:
  * @G_DBUS_ERROR_FAILED:
- * A generic error; "something went wrong" - see the error message for
+ * A elemental error; "something went wrong" - see the error message for
  * more.
  * @G_DBUS_ERROR_NO_MEMORY:
  * There was not enough memory to complete an operation.

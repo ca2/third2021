@@ -64,7 +64,7 @@ hb_ft_face_create (FT_Face           ft_face,
 		   hb_destroy_func_t destroy);
 
 /* This version is like hb_ft_face_create(), except that it caches
- * the hb-face using the generic pointer of the ft-face.  This means
+ * the hb-face using the elemental pointer of the ft-face.  This means
  * that subsequent calls to this function with the same ft-face will
  * return the same hb-face (correctly referenced).
  *

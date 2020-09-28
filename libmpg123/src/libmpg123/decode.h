@@ -203,7 +203,7 @@ void dct64_i386   (real *,real *,real *);
 void dct64_altivec(real *,real *,real *);
 void dct64_i486(int*, int* , real*); /* Yeah, of no use outside of synth_i486.c .*/
 
-/* This is used by the layer 3 decoder, one generic function and 3DNow variants. */
+/* This is used by the layer 3 decoder, one elemental function and 3DNow variants. */
 void dct36         (real *,real *,real *,real *,real *);
 void dct36_3dnow   (real *,real *,real *,real *,real *);
 void dct36_3dnowext(real *,real *,real *,real *,real *);

@@ -258,12 +258,12 @@ struct  _GObject
  *  set. The first thing a @constructor implementation must do is chain up to the
  *  @constructor of the parent class. Overriding @constructor should be rarely 
  *  needed, e.g. to handle construct properties, or to implement singletons.
- * @set_property: the generic setter for all properties of this type. Should be
+ * @set_property: the elemental setter for all properties of this type. Should be
  *  overridden for every type with properties. If implementations of
  *  @set_property don't emit property change notification explicitly, this will
  *  be done implicitly by the type system. However, if the notify signal is
  *  emitted explicitly, the type system will not emit it a second time.
- * @get_property: the generic getter for all properties of this type. Should be
+ * @get_property: the elemental getter for all properties of this type. Should be
  *  overridden for every type with properties.
  * @dispose: the @dispose function is supposed to drop all references to other 
  *  objects, but keep the instance otherwise intact, so that client method 

@@ -1566,7 +1566,7 @@ static const ASN1_OBJECT nid_objs[NUM_NID] = {
     {"setct-CRLNotificationTBS", "setct-CRLNotificationTBS", NID_setct_CRLNotificationTBS, 4, &so[4224]},
     {"setct-CRLNotificationResTBS", "setct-CRLNotificationResTBS", NID_setct_CRLNotificationResTBS, 4, &so[4228]},
     {"setct-BCIDistributionTBS", "setct-BCIDistributionTBS", NID_setct_BCIDistributionTBS, 4, &so[4232]},
-    {"setext-genCrypt", "generic cryptogram", NID_setext_genCrypt, 4, &so[4236]},
+    {"setext-genCrypt", "elemental cryptogram", NID_setext_genCrypt, 4, &so[4236]},
     {"setext-miAuth", "merchant initiated auth", NID_setext_miAuth, 4, &so[4240]},
     {"setext-pinSecure", "setext-pinSecure", NID_setext_pinSecure, 4, &so[4244]},
     {"setext-pinAny", "setext-pinAny", NID_setext_pinAny, 4, &so[4248]},
@@ -3495,7 +3495,7 @@ static const unsigned int ln_objs[NUM_LN] = {
      156,    /* "friendlyName" */
      631,    /* "generate cryptogram" */
      509,    /* "generationQualifier" */
-     601,    /* "generic cryptogram" */
+     601,    /* "elemental cryptogram" */
       99,    /* "givenName" */
      976,    /* "gost-mac-12" */
     1009,    /* "gost89-cbc" */

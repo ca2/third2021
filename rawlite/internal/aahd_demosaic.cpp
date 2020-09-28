@@ -169,7 +169,7 @@ AAHD::AAHD(LibRaw& _libraw) :
 			}
 		}
 	}
-	channels_max = MAX(MAX(channel_maximum[0], channel_maximum[1]), channel_maximum[2]);
+	channels_max = max(max(channel_maximum[0], channel_maximum[1]), channel_maximum[2]);
 }
 
 void AAHD::hide_hots() {
@@ -346,8 +346,8 @@ void AAHD::evaluate_ahd() {
 							+ SQR(ynr[0][2] - ynr[hvdir[k]][2]);
 				}
 			}
-			float yeps = MIN(MAX(ydiff[0][0], ydiff[0][1]), MAX(ydiff[1][2], ydiff[1][3]));
-			int uveps = MIN(MAX(uvdiff[0][0], uvdiff[0][1]), MAX(uvdiff[1][2], uvdiff[1][3]));
+			float yeps = min(max(ydiff[0][0], ydiff[0][1]), max(ydiff[1][2], ydiff[1][3]));
+			int uveps = min(max(uvdiff[0][0], uvdiff[0][1]), max(uvdiff[1][2], uvdiff[1][3]));
 			for (int d = 0; d < 2; d++) {
 				ynr = &yuv[d][moff];
 				for (int k = 0; k < 4; k++)
@@ -534,8 +534,8 @@ void AAHD::make_ahd_gline(int i) {
 			int h2 = 2 * cnr[+hvdir[d]][1] - int(cnr[+2 * hvdir[d]][kc] + cnr[0][kc]);
 			int h0 = (h1 + h2) / 4;
 			int eg = cnr[0][kc] + h0;
-			int min = MIN(cnr[-hvdir[d]][1], cnr[+hvdir[d]][1]);
-			int max = MAX(cnr[-hvdir[d]][1], cnr[+hvdir[d]][1]);
+			int min = min(cnr[-hvdir[d]][1], cnr[+hvdir[d]][1]);
+			int max = max(cnr[-hvdir[d]][1], cnr[+hvdir[d]][1]);
 			min -= min / OverFraction;
 			max += max / OverFraction;
 			if (eg < min)
@@ -600,8 +600,8 @@ void AAHD::make_ahd_rb_hv(int i) {
 			int h2 = cnr[+hvdir[d]][c] - cnr[+hvdir[d]][1];
 			int h0 = (h1 + h2) / 2;
 			int eg = cnr[0][1] + h0;
-//			int min = MIN(cnr[-hvdir[d]][c], cnr[+hvdir[d]][c]);
-//			int max = MAX(cnr[-hvdir[d]][c], cnr[+hvdir[d]][c]);
+//			int min = min(cnr[-hvdir[d]][c], cnr[+hvdir[d]][c]);
+//			int max = max(cnr[-hvdir[d]][c], cnr[+hvdir[d]][c]);
 //			min -= min / OverFraction;
 //			max += max / OverFraction;
 //			if (eg < min)
@@ -672,8 +672,8 @@ void AAHD::make_ahd_rb_last(int i) {
 			int h1 = cnr[+dirs[d][bk]][c] - cnr[+dirs[d][bk]][1];
 			int h2 = cnr[-dirs[d][bh]][c] - cnr[-dirs[d][bh]][1];
 			int eg = cnr[0][1] + (h1 + h2) / 2;
-//			int min = MIN(cnr[+dirs[d][bk]][c], cnr[-dirs[d][bh]][c]);
-//			int max = MAX(cnr[+dirs[d][bk]][c], cnr[-dirs[d][bh]][c]);
+//			int min = min(cnr[+dirs[d][bk]][c], cnr[-dirs[d][bh]][c]);
+//			int max = max(cnr[+dirs[d][bk]][c], cnr[-dirs[d][bh]][c]);
 //			min -= min / OverFraction;
 //			max += max / OverFraction;
 //			if (eg < min)

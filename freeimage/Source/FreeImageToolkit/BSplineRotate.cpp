@@ -2,9 +2,9 @@
 // Bitmap rotation using B-Splines
 //
 // Design and implementation by
-// - Philippe Thévenaz (philippe.thevenaz@epfl.ch)
+// - Philippe Thï¿½venaz (philippe.thevenaz@epfl.ch)
 // Adaptation for FreeImage by
-// - Hervé Drolon (drolon@infonie.fr)
+// - Hervï¿½ Drolon (drolon@infonie.fr)
 //
 // This file is part of FreeImage 3
 //
@@ -25,7 +25,7 @@
 ==========================================================
 This code was taken and adapted from the following reference : 
 
-[1] Philippe Thévenaz, Spline interpolation, a C source code 
+[1] Philippe Thï¿½venaz, Spline interpolation, a C source code 
 implementation. http://bigwww.epfl.ch/thevenaz/
 
 It implements ideas described in the following papers : 
@@ -622,7 +622,7 @@ Rotate8Bit(FIBITMAP *dib, double angle, double x_shift, double y_shift, double x
 				p = (double)InterpolatedValue(ImageRasterArray, width, height, x1, y1, spline);
 			}
 			// clamp and convert to BYTE
-			dst_bits[x] = (BYTE)MIN(MAX((int)0, (int)(p + 0.5)), (int)255);
+			dst_bits[x] = (BYTE)min(max((int)0, (int)(p + 0.5)), (int)255);
 		}
 	}
 

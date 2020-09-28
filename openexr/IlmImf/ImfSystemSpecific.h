@@ -110,7 +110,7 @@ static void EXRFreeAligned(void* ptr)
 
 #else
 
-// generic compiler
+// elemental compiler
 #define EXR_FORCEINLINE inline
 #define EXR_RESTRICT
 

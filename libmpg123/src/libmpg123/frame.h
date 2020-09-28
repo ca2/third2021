@@ -335,7 +335,7 @@ struct mpg123_handle_struct
 	void (*wrapperclean)(void*);
 };
 
-/* generic init, does not include dynamic buffers */
+/* elemental init, does not include dynamic buffers */
 void frame_init(mpg123_handle *fr);
 void frame_init_par(mpg123_handle *fr, mpg123_pars *mp);
 /* output buffer and format */

@@ -195,12 +195,12 @@ test_report_cmp_name (const void *a,
 
 #define CAIRO_PERF_DECL(func) CAIRO_PERF_RUN_DECL(func); CAIRO_PERF_ENABLED_DECL(func)
 
-#ifndef MIN
-#define MIN(a, b) ((a) < (b) ? (a) : (b))
+#ifndef min
+#define min(a, b) ((a) < (b) ? (a) : (b))
 #endif
 
-#ifndef MAX
-#define MAX(a, b) ((a) > (b) ? (a) : (b))
+#ifndef max
+#define max(a, b) ((a) > (b) ? (a) : (b))
 #endif
 
 CAIRO_PERF_DECL (fill);

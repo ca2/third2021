@@ -5,7 +5,7 @@
 
 	copyright 2017 by the mpg123 project, license: LGPL 2.1
 
-	This originates from Thomas' DerMixD, but the idea is probably generic
+	This originates from Thomas' DerMixD, but the idea is probably elemental
 	enough: Construct a buffer containing a lookup table that covers some
 	periods (for fractinal relations between sampling frequency and generated
 	wave frequency).

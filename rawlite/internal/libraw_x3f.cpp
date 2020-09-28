@@ -43,7 +43,7 @@ BSD-style License
 #define SIZE_WHITE_BALANCE 32
 #define NUM_EXT_DATA 32
 
-#define X3F_VERSION(MAJ,MIN) (uint32_t)(((MAJ)<<16) + MIN)
+#define X3F_VERSION(MAJ,min) (uint32_t)(((MAJ)<<16) + min)
 #define X3F_VERSION_2_0 X3F_VERSION(2,0)
 #define X3F_VERSION_2_1 X3F_VERSION(2,1)
 

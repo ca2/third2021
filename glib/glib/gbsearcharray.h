@@ -188,7 +188,7 @@ g_bsearch_array_get_index (GBSearchArray        *barray,
 
   distance /= bconfig->sizeof_node;
 
-  return MIN (distance, barray->n_nodes + 1); /* may return one after end */
+  return min (distance, barray->n_nodes + 1); /* may return one after end */
 }
 static inline GBSearchArray*
 g_bsearch_array_grow (GBSearchArray        *barray,

@@ -5,7 +5,7 @@
 // - Floris van den Berg (flvdberg@wxs.nl)
 // - Mark Sibly (marksibly@blitzbasic.com)
 // - Aaron Shumate (trek@startreker.com)
-// - Hervé Drolon (drolon@infonie.fr)
+// - Hervï¿½ Drolon (drolon@infonie.fr)
 //
 // This file is part of FreeImage 3
 //
@@ -86,7 +86,7 @@ typedef DWORD IFF_ID;
 #define ID_RGBN     MAKE_ID('R', 'G', 'B', 'N')     /* RGB image forms, Turbo Silver (Impulse) */
 #define ID_PBM      MAKE_ID('P', 'B', 'M', ' ')     /* 256-color chunky format (DPaint 2 ?) */
 #define ID_ACBM     MAKE_ID('A', 'C', 'B', 'M')     /* Amiga Contiguous Bitmap (AmigaBasic) */
-/* generic */
+/* elemental */
 #define ID_FVER     MAKE_ID('F', 'V', 'E', 'R')     /* AmigaOS version string */
 #define ID_JUNK     MAKE_ID('J', 'U', 'N', 'K')     /* always ignore this chunk */
 #define ID_ANNO     MAKE_ID('A', 'N', 'N', 'O')     /* EA IFF 85 Generic Annotation chunk */
@@ -277,7 +277,7 @@ Load(FreeImageIO *io, fi_handle handle, int page, int flags, void *data) {
 
 				RGBQUAD *pal = FreeImage_GetPalette(dib);
 				if(pal != NULL) {
-					unsigned palette_entries = MIN((unsigned)ch_size / 3, FreeImage_GetColorsUsed(dib));
+					unsigned palette_entries = min((unsigned)ch_size / 3, FreeImage_GetColorsUsed(dib));
 					for (unsigned k = 0; k < palette_entries; k++) {					
 						io->read_proc(&pal[k].rgbRed, 1, 1, handle );
 						io->read_proc(&pal[k].rgbGreen, 1, 1, handle );

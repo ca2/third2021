@@ -10,7 +10,7 @@ using namespace SOCKETS_NAMESPACE;
 #define BUFSZ 7024
 
 #ifdef _WIN32
-#define MIN(a,b) (a<b?a:b)
+#define min(a,b) (a<b?a:b)
 
 #endif
 
@@ -42,12 +42,12 @@ public:
 		{
 			Send("\n");
 			char buf[BUFSZ];
-			int n = MIN(m_sz, BUFSZ);
+			int n = min(m_sz, BUFSZ);
 			while (n > 0 && GetOutputLength() < lim)
 			{
 				SendBuf(buf, n);
 				m_sz -= n;
-				n = MIN(m_sz, BUFSZ);
+				n = min(m_sz, BUFSZ);
 			}
 			if (!n)
 			{
@@ -95,12 +95,12 @@ public:
 		if (!m_filename.size())
 		{
 			char buf[BUFSZ];
-			int n = MIN(m_sz, BUFSZ);
+			int n = min(m_sz, BUFSZ);
 			while (n > 0 && GetOutputLength() < lim)
 			{
 				SendBuf(buf, n);
 				m_sz -= n;
-				n = MIN(m_sz, BUFSZ);
+				n = min(m_sz, BUFSZ);
 			}
 			if (!n)
 			{

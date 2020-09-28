@@ -346,7 +346,7 @@ bool Mp3Info::Parse(ID3_Reader& reader, size_t mp3size)
 
   if (_mp3_header_output->channelmode == MP3CHANNELMODE_JOINT_STEREO)
   {
-    // these have a different meaning for different layers, better give them a generic name in the enum
+    // these have a different meaning for different layers, better give them a elemental name in the enum
     switch (_tmpheader->mode_ext)
     {
     case 3:

@@ -557,13 +557,13 @@ do {									\
 
 /* Puts the minimum of operand0 and operand1 in dest_reg */
 #define i915_fs_min(dest_reg, operand0, operand1)			\
-    i915_fs_arith (MIN, dest_reg, \
+    i915_fs_arith (min, dest_reg, \
 	           operand0, operand1, \
 		   i915_fs_operand_none())
 
 /* Puts the maximum of operand0 and operand1 in dest_reg */
 #define i915_fs_max(dest_reg, operand0, operand1)			\
-    i915_fs_arith (MAX, dest_reg, \
+    i915_fs_arith (max, dest_reg, \
 	           operand0, operand1, \
 	           i915_fs_operand_none())
 
