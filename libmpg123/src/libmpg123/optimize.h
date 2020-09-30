@@ -94,7 +94,7 @@ EOT
 enum optdec
 {
 	 autodec=0
-	,elemental
+	,generic
 	,generic_dither
 	,idrei
 	,ivier
