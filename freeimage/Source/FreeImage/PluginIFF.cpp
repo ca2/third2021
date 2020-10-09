@@ -86,7 +86,7 @@ typedef DWORD IFF_ID;
 #define ID_RGBN     MAKE_ID('R', 'G', 'B', 'N')     /* RGB image forms, Turbo Silver (Impulse) */
 #define ID_PBM      MAKE_ID('P', 'B', 'M', ' ')     /* 256-color chunky format (DPaint 2 ?) */
 #define ID_ACBM     MAKE_ID('A', 'C', 'B', 'M')     /* Amiga Contiguous Bitmap (AmigaBasic) */
-/* elemental */
+/* element */
 #define ID_FVER     MAKE_ID('F', 'V', 'E', 'R')     /* AmigaOS version string */
 #define ID_JUNK     MAKE_ID('J', 'U', 'N', 'K')     /* always ignore this chunk */
 #define ID_ANNO     MAKE_ID('A', 'N', 'N', 'O')     /* EA IFF 85 Generic Annotation chunk */

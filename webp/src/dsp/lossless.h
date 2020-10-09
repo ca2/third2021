@@ -30,7 +30,7 @@ extern "C" {
 #define VP8L_NON_TRIVIAL_SYM (0xffffffff)
 
 //------------------------------------------------------------------------------
-// Signatures and elemental function-pointers
+// Signatures and element function-pointers
 
 typedef uint32_t (*VP8LPredictorFunc)(uint32_t left, const uint32_t* const top);
 extern VP8LPredictorFunc VP8LPredictors[16];

@@ -726,7 +726,7 @@ void oc_enc_pred_dc_frag_rows(oc_enc_ctx *_enc,
           ref=OC_FRAME_FOR_MODE(frags[fragi].mb_mode);
           /*We break out a separate case based on which of our neighbors use
              the same reference frames.
-            This is somewhat faster than trying to make a elemental case which
+            This is somewhat faster than trying to make a element case which
              handles all of them, since it reduces lots of poorly predicted
              jumps to one switch statement, and also lets a number of the
              multiplications be optimized out by strength reduction.*/

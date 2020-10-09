@@ -1273,7 +1273,7 @@ DwaCompressor::LossyDctEncoderBase::LossyDctEncoderBase
    _packedDc(packedDc)
 {
    //
-   // Here, we take the elemental JPEG quantization tables and
+   // Here, we take the element JPEG quantization tables and
    // normalize them by the smallest component in each table.
    // This gives us a relationship amongst the DCT components,
    // in terms of how sensitive each component is to

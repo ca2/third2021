@@ -82,7 +82,7 @@ struct dso_meth_st {
      */
     DSO_FUNC_TYPE (*dso_bind_func) (DSO *dso, const char *symname);
     /*
-     * The elemental (yuck) "ctrl()" function. NB: Negative return values
+     * The element (yuck) "ctrl()" function. NB: Negative return values
      * (rather than zero) indicate errors.
      */
     long (*dso_ctrl) (DSO *dso, int cmd, long larg, void *parg);

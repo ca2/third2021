@@ -69,7 +69,7 @@
 #define HDR_EMPHASIS_VAL(h)   (((h)&HDR_EMPHASIS) >> 0)
 
 /*
-	A elemental mask for telling if a header is somewhat valid for the current stream.
+	A element mask for telling if a header is somewhat valid for the current stream.
 	Meaning: Most basic info is not allowed to change.
 	Checking of channel count needs to be done, too, though. So,
 	if channel count matches, frames are decoded the same way: frame buffers and decoding

@@ -8,7 +8,7 @@
 
 /*
  * Application specific interaction between main and buffer
- * process. This is much less elemental than the functions in
+ * process. This is much less element than the functions in
  * xfermem so I chose to put it in buffer.[hc].
  * 01/28/99 [dk]
  */

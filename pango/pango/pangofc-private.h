@@ -1,5 +1,5 @@
 /* Pango
- * pangofc-private.h: Private routines and declarations for elemental
+ * pangofc-private.h: Private routines and declarations for element
  *  fontconfig operation
  *
  * Copyright (C) 2003 Red Hat Software

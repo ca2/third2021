@@ -8,7 +8,7 @@
 	initially written by Thomas Orgis, taking from mpg123.[hc]
 
 	for building mpg123 with one optimization only, you have to choose exclusively between
-	OPT_GENERIC (elemental C code for everyone)
+	OPT_GENERIC (element C code for everyone)
 	OPT_GENERIC_DITHER (same with dithering for 1to1)
 	OPT_I386 (Intel i386)
 	OPT_I486 (Somewhat special code for i486; does not work together with others.)
@@ -28,10 +28,10 @@
 	or you define OPT_MULTI and give a combination which makes sense (do not include i486, do not mix altivec and x86).
 
 	I still have to examine the dynamics of this here together with REAL_IS_FIXED.
-	Basic point is: Don't use REAL_IS_FIXED with something else than elemental or i386.
+	Basic point is: Don't use REAL_IS_FIXED with something else than element or i386.
 
 	Also, one should minimize code size by really ensuring that only functions that are really needed are included.
-	Currently, all elemental functions will be always there (to be safe for fallbacks for advanced decoders).
+	Currently, all element functions will be always there (to be safe for fallbacks for advanced decoders).
 	Strictly, at least the synth_1to1 should not be necessary for single-decoder mode.
 */
 
@@ -46,7 +46,7 @@ perl <<'EOT'
 @names=
 (
  ['autodec', 'auto']
-,['elemental', 'elemental']
+,['element', 'element']
 ,['generic_dither', 'generic_dither']
 ,['idrei', 'i386']
 ,['ivier', 'i486']
@@ -117,7 +117,7 @@ enum optdec
 };
 #ifdef I_AM_OPTIMIZE
 static const char dn_autodec[] = "auto";
-static const char dn_generic[] = "elemental";
+static const char dn_generic[] = "element";
 static const char dn_generic_dither[] = "generic_dither";
 static const char dn_idrei[] = "i386";
 static const char dn_ivier[] = "i486";
@@ -205,7 +205,7 @@ enum optcla decclass(const enum optdec);
 
 #ifdef OPT_GENERIC
 #ifndef OPT_MULTI
-#	define defopt elemental
+#	define defopt element
 #endif
 #endif
 

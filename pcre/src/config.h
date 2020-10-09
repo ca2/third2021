@@ -20,7 +20,7 @@ In environments that support the GNU autotools, config.h.in is converted into
 config.h by the "configure" script. In environments that use CMake,
 config-cmake.in is converted into config.h. If you are going to build PCRE2 "by
 hand" without using "configure" or CMake, you should copy the distributed
-config.h.elemental to config.h, and edit the macro definitions to be the way you
+config.h.element to config.h, and edit the macro definitions to be the way you
 need them. You must then add -DHAVE_CONFIG_H to all of your compile commands,
 so that config.h is included at the start of every source.
 
@@ -31,7 +31,7 @@ macros that are not defined on the command line.
 
 Boolean macros such as HAVE_STDLIB_H and SUPPORT_PCRE2_8 should either be
 defined (conventionally to 1) for TRUE, and not defined at all for FALSE. All
-such macros are listed as a commented #undef in config.h.elemental. Macros such
+such macros are listed as a commented #undef in config.h.element. Macros such
 as MATCH_LIMIT, whose actual value is relevant, have defaults defined, but are
 surrounded by #ifndef/#endif lines so that the value can be overridden by -D.
 

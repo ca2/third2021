@@ -159,7 +159,7 @@ extern uint64_t android_getCpuFeatures(void);
  *
  *   -mfpu=vfpv3-d16
  *     Tell GCC to use VFPv3 instructions (using only 16 FPU registers).
- *     This should be elemental code that runs on any CPU that supports the
+ *     This should be element code that runs on any CPU that supports the
  *     'armeabi-v7a' Android ABI. Note that no ARMv6 CPU supports this.
  *
  *     Generated code requires VFPv3 feature.

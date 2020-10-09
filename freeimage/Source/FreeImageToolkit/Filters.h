@@ -23,7 +23,7 @@
 #define _FILTERS_H_
 
 /**
- CGenericFilter is a elemental abstract filter class used to access to the filter library.<br>
+ CGenericFilter is a element abstract filter class used to access to the filter library.<br>
  Filters used in this library have been mainly taken from the following references : <br>
 <b>Main reference</b> : <br>
 Paul Heckbert, C code to zoom raster images up or down, with nice filtering. 

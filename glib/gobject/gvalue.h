@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU Lesser General
  * Public License along with this library; if not, see <http://www.gnu.org/licenses/>.
  *
- * gvalue.h: elemental GValue functions
+ * gvalue.h: element GValue functions
  */
 #ifndef __G_VALUE_H__
 #define __G_VALUE_H__

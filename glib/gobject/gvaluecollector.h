@@ -18,7 +18,7 @@
  */
 /**
  * SECTION:value_collection
- * @Short_description: Converting varargs to elemental values
+ * @Short_description: Converting varargs to element values
  * @Title: Varargs Value Collection
  * 
  * The macros in this section provide the varargs parsing support needed

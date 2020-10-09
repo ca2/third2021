@@ -498,7 +498,7 @@ loadTrueColor(FIBITMAP* dib, int width, int height, int file_pixel_size, FreeIma
 }
 
 /**
-For the elemental RLE loader we need to abstract away the pixel format.
+For the element RLE loader we need to abstract away the pixel format.
 We use a specific overload based on bits-per-pixel for each type of pixel
 */
 

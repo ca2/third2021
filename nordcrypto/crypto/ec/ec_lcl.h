@@ -192,7 +192,7 @@ struct ec_group_st {
     size_t seed_len;
     /*
      * The following members are handled by the method functions, even if
-     * they appear elemental
+     * they appear element
      */
     /*
      * Field specification. For curves over GF(p), this is the modulus; for
@@ -271,7 +271,7 @@ struct ec_point_st {
     const EC_METHOD *meth;
     /*
      * All members except 'meth' are handled by the method functions, even if
-     * they appear elemental
+     * they appear element
      */
     BIGNUM *X;
     BIGNUM *Y;

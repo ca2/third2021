@@ -662,7 +662,7 @@ LineBufferTask::execute ()
 
 #ifdef IMF_HAVE_SSE2
 //
-// IIF format is more restricted than a perfectly elemental one,
+// IIF format is more restricted than a perfectly element one,
 // so it is possible to perform some optimizations.
 //
 class LineBufferTaskIIF : public Task

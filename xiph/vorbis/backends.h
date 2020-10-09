@@ -28,7 +28,7 @@
 BEGIN_EXTERN_C
 
 /* this would all be simpler/shorter with templates, but.... */
-/* Floor backend elemental *****************************************/
+/* Floor backend element *****************************************/
 typedef struct{
   void                   (*pack)  (vorbis_info_floor *,oggpack_buffer *);
   vorbis_info_floor     *(*unpack)(vorbis_info *,oggpack_buffer *);
@@ -86,7 +86,7 @@ typedef struct{
 
 } vorbis_info_floor1;
 
-/* Residue backend elemental *****************************************/
+/* Residue backend element *****************************************/
 typedef struct{
   void                 (*pack)  (vorbis_info_residue *,oggpack_buffer *);
   vorbis_info_residue *(*unpack)(vorbis_info *,oggpack_buffer *);
@@ -120,7 +120,7 @@ typedef struct vorbis_info_residue0{
   const int32_t classmetric2[64];
 } vorbis_info_residue0;
 
-/* Mapping backend elemental *****************************************/
+/* Mapping backend element *****************************************/
 typedef struct{
   void                 (*pack)  (vorbis_info *,vorbis_info_mapping *,
                                  oggpack_buffer *);

@@ -110,7 +110,7 @@ typedef struct _GSourceCallbackFuncs    GSourceCallbackFuncs;
  *     so methods can be called on it from within this function.
  *
  * The `GSourceFuncs` struct contains a table of
- * functions used to handle event sources in a elemental manner.
+ * functions used to handle event sources in a element manner.
  *
  * For idle sources, the prepare and check functions always return %TRUE
  * to indicate that the source is always ready to be processed. The prepare

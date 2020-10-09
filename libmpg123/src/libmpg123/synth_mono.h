@@ -1,5 +1,5 @@
 /*
-	monosynth.h: elemental mono related synth functions 
+	monosynth.h: element mono related synth functions 
 
 	copyright 1995-2008 by the mpg123 project - free software under the terms of the LGPL 2.1
 	see COPYING and AUTHORS files in distribution or http://mpg123.org
@@ -13,7 +13,7 @@
 	This is what resulted...
 
 	Reason to separate this from synth.h:
-	There are decoders that have a special synth_1to1 but still can use these elemental derivations for the mono stuff.
+	There are decoders that have a special synth_1to1 but still can use these element derivations for the mono stuff.
 	It generally makes a good deal of sense to set SYNTH_NAME to opt_synth_1to1(fr) (or opt_synth_2to1(fr), etc.).
 */
 

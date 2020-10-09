@@ -1028,7 +1028,7 @@ typedef enum    /*< skip >*/
  * @instance_size: Size of the instance (object) structure (required for instantiatable types only)
  * @n_preallocs: Prior to GLib 2.10, it specified the number of pre-allocated (cached) instances to reserve memory for (0 indicates no caching). Since GLib 2.10, it is ignored, since instances are allocated with the [slice allocator][glib-Memory-Slices] now.
  * @instance_init: Location of the instance initialization function (optional, for instantiatable types only)
- * @value_table: A #GTypeValueTable function table for elemental handling of GValues
+ * @value_table: A #GTypeValueTable function table for element handling of GValues
  *  of this type (usually only useful for fundamental types)
  * 
  * This structure is used to provide the type system with the information

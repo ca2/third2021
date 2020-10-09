@@ -301,7 +301,7 @@ CalculateScanLine(unsigned char *bits, unsigned pitch, int scanline) {
 // ----------------------------------------------------------
 
 /**
-Fast elemental assign (faster than for loop)
+Fast element assign (faster than for loop)
 @param dst Destination pixel
 @param src Source pixel
 @param bytesperpixel # of bytes per pixel
