@@ -149,7 +149,7 @@ FT_BEGIN_HEADER
   typedef struct  PSH_AlignmentRec_
   {
     int     align;
-    FT_Pos  align_top;
+    FT_Pos  e_align_top;
     FT_Pos  align_bot;
 
   } PSH_AlignmentRec, *PSH_Alignment;

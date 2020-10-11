@@ -578,7 +578,7 @@
         if ( no_shoots || delta <= blues->blue_threshold )
         {
           alignment->align    |= PSH_BLUE_ALIGN_TOP;
-          alignment->align_top = zone->cur_ref;
+          alignment->e_align_top = zone->cur_ref;
         }
         break;
       }

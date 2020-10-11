@@ -475,7 +475,7 @@
 
       /* check blue zones for horizontal stems */
       align.align     = PSH_BLUE_ALIGN_NONE;
-      align.align_bot = align.align_top = 0;
+      align.align_bot = align.e_align_top = 0;
 
       if ( dimension == 1 )
         psh_blues_snap_stem( &globals->blues,
@@ -487,7 +487,7 @@
       {
       case PSH_BLUE_ALIGN_TOP:
         /* the top of the stem is aligned against a blue zone */
-        hint->cur_pos = align.align_top - fit_len;
+        hint->cur_pos = align.e_align_top - fit_len;
         break;
 
       case PSH_BLUE_ALIGN_BOT:
@@ -498,7 +498,7 @@
       case PSH_BLUE_ALIGN_TOP | PSH_BLUE_ALIGN_BOT:
         /* both edges of the stem are aligned against blue zones */
         hint->cur_pos = align.align_bot;
-        hint->cur_len = align.align_top - align.align_bot;
+        hint->cur_len = align.e_align_top - align.align_bot;
         break;
 
       default:
@@ -620,7 +620,7 @@
         switch ( align.align )
         {
           case PSH_BLUE_ALIGN_TOP:
-            hint->cur_pos = align.align_top - len;
+            hint->cur_pos = align.e_align_top - len;
             hint->cur_len = len;
             break;
 
@@ -699,7 +699,7 @@
 
       /* check blue zones for horizontal stems */
       align.align = PSH_BLUE_ALIGN_NONE;
-      align.align_bot = align.align_top = 0;
+      align.align_bot = align.e_align_top = 0;
 
       if ( dimension == 1 )
         psh_blues_snap_stem( &globals->blues,
@@ -711,7 +711,7 @@
       {
       case PSH_BLUE_ALIGN_TOP:
         /* the top of the stem is aligned against a blue zone */
-        hint->cur_pos = align.align_top - fit_len;
+        hint->cur_pos = align.e_align_top - fit_len;
         break;
 
       case PSH_BLUE_ALIGN_BOT:
@@ -722,7 +722,7 @@
       case PSH_BLUE_ALIGN_TOP | PSH_BLUE_ALIGN_BOT:
         /* both edges of the stem are aligned against blue zones */
         hint->cur_pos = align.align_bot;
-        hint->cur_len = align.align_top - align.align_bot;
+        hint->cur_len = align.e_align_top - align.align_bot;
         break;
 
       default:
