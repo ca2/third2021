@@ -48,7 +48,7 @@ typedef gsize GType;
  * and g_object_get().
  *
  * |[
- * g_object_class_install_property (object_class,
+ * g_object_class_install_property (pobjectclass,
  *                                  PROP_AUTHORS,
  *                                  g_param_spec_boxed ("authors",
  *                                                      _("Authors"),
