@@ -497,11 +497,6 @@
   <ItemGroup>
     <None Include="freerdp.def" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\winpr\w_axiswinpr.vcxproj">
-      <Project>{1c08b221-eb36-4b25-a764-84f5bd143bf4}</Project>
-    </ProjectReference>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
