@@ -22,8 +22,6 @@
 #ifndef _BZLIB_PRIVATE_H
 #define _BZLIB_PRIVATE_H
 
-#include "platform/third_private_config.h"
-
 #include <stdlib.h>
 
 #ifndef BZ_NO_STDIO
@@ -513,6 +511,6 @@ BZ2_hbCreateDecodeTables ( Int32*, Int32*, Int32*, UChar*,
 
 #ifdef WIN32
 #include <wchar.h>
-#include "__standard_type.h"
+//#include "__standard_type.h"
 #endif
 
