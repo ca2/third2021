@@ -88,7 +88,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;_AURA_SQLITE</PreprocessorDefinitions>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
@@ -108,7 +108,7 @@
     <ClCompile>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;_AURA_SQLITE</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -126,7 +126,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
     <ClCompile>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -151,7 +151,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/app;$(SolutionDir)../../platform-android;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../..;$(ProjectDir)..;$(StlIncludeDirectories);$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/_include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <PreprocessorDefinitions>__ANDROID_API__=19;_AURA_SQLITE</PreprocessorDefinitions>

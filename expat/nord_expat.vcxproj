@@ -110,7 +110,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/;$(SolutionDir)../../;$(SolutionDir)../../app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/;$(SolutionDir)../../../;$(SolutionDir)../../../source/app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;HAVE_EXPAT_CONFIG_H</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
@@ -131,7 +131,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/;$(SolutionDir)../../;$(SolutionDir)../../app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/;$(SolutionDir)../../../;$(SolutionDir)../../../source/app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;HAVE_EXPAT_CONFIG_H</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -150,7 +150,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
     <ClCompile>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/;$(SolutionDir)../../;$(SolutionDir)../../app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/;$(SolutionDir)../../../;$(SolutionDir)../../../source/app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -175,7 +175,7 @@
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../app/;$(SolutionDir)../../;$(SolutionDir)../../app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android;$(__archive)\platform-android\include;$(__archive)\platform-android\third\include;$(SolutionDir)../../../source/app/;$(SolutionDir)../../../;$(SolutionDir)../../../source/app/_include;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <PreprocessorDefinitions>__ANDROID_API__=19;HAVE_EXPAT_CONFIG_H</PreprocessorDefinitions>

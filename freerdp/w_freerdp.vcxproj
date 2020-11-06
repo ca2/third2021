@@ -138,7 +138,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../app/_include/freerdp;$(SolutionDir)../../app/_include;$(SolutionDir)../../third/include;$(SolutionDir)../../app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../include;$(__archive)/local/include;$(SolutionDir)../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>FREERDP_EXPORTS;_UWP;_WINDLL;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -161,7 +161,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../app/_include/freerdp;$(SolutionDir)../../app/_include;$(SolutionDir)../../third/include;$(SolutionDir)../../app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../include;$(__archive)/local/include;$(SolutionDir)../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>FREERDP_EXPORTS;_UWP;_WINDLL;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -183,7 +183,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../app/_include/freerdp;$(SolutionDir)../../app/_include;$(SolutionDir)../../third/include;$(SolutionDir)../../app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../include;$(__archive)/local/include;$(SolutionDir)../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>FREERDP_EXPORTS;_UWP;_WINDLL;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -205,7 +205,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../app/_include/freerdp;$(SolutionDir)../../app/_include;$(SolutionDir)../../third/include;$(SolutionDir)../../app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../include;$(__archive)/local/include;$(SolutionDir)../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>FREERDP_EXPORTS;_UWP;_WINDLL;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -227,7 +227,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../app/_include/freerdp;$(SolutionDir)../../app/_include;$(SolutionDir)../../third/include;$(SolutionDir)../../app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../include;$(__archive)/local/include;$(SolutionDir)../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>FREERDP_EXPORTS;_UWP;_WINDLL;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -250,7 +250,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../app/_include/freerdp;$(SolutionDir)../../app/_include;$(SolutionDir)../../third/include;$(SolutionDir)../../app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../include;$(__archive)/local/include;$(SolutionDir)../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(__archive)/third-uwp/include;$(__archive)/third-windows-common/include;$(__archive)/third-uwp/third/include/include;$(__archive)/third-uwp/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>FREERDP_EXPORTS;_UWP;_WINDLL;HAVE_CONFIG_H;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>

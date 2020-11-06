@@ -313,7 +313,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../../source/app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -382,7 +382,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../../source/app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -459,7 +459,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../../source/app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -531,7 +531,7 @@
     </Midl>
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
-      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)..;$(ProjectDir);$(ProjectDir)..;$(ProjectDir)../..;$(SolutionDir)../../../source/app/_include;$(ProjectDir)../../..;$(ProjectDir)../..;$(ProjectDir)../apr/include;$(ProjectDir)../apr-util/include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
