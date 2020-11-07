@@ -43,7 +43,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\app\include\qrencode.h" />
+    <ClInclude Include="..\..\..\source\app\include\qrencode.h" />
     <ClInclude Include="bitstream.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="mask.h" />

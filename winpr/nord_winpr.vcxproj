@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\app\include\winpr\sysinfo.h" />
+    <ClInclude Include="..\..\..\source\app\include\winpr\sysinfo.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="libwinpr\crt\utf.h" />
     <ClInclude Include="libwinpr\crypto\crypto.h" />

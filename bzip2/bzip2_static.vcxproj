@@ -55,7 +55,7 @@
     <None Include="bzip2.def" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\app\ace\_ace.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\ace\_ace.vcxproj">
       <Project>{699d6807-4f43-40e9-86ab-2a8b856707a9}</Project>
     </ProjectReference>
   </ItemGroup>

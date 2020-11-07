@@ -178,10 +178,10 @@
     <ClCompile Include="libfreerdp\utils\stopwatch.c" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\app\ace\w_ace.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\ace\w_ace.vcxproj">
       <Project>{e8826c3e-de08-4292-b797-4802c710e2c3}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\app\ace\_w_ace.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\ace\_w_ace.vcxproj">
       <Project>{f9116331-25d4-4634-8eea-078aedb82161}</Project>
     </ProjectReference>
     <ProjectReference Include="..\openh264\codec\build\win32\dec\w_WelsDecPlus.vcxproj">

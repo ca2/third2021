@@ -27,44 +27,44 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\app\ace\w_ace.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\ace\w_ace.vcxproj">
       <Project>{e8826c3e-de08-4292-b797-4802c710e2c3}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\app\ace\_w_ace.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\ace\_w_ace.vcxproj">
       <Project>{f9116331-25d4-4634-8eea-078aedb82161}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\app\aura\w_aura.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\aura\w_aura.vcxproj">
       <Project>{b3e5b8e7-9e3b-44dd-9ede-e0a74d52c1c5}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\app\axis\w_axis.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\axis\w_axis.vcxproj">
       <Project>{b3a245f9-c92f-4487-aef7-cb0531f665bd}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\app\base\w_base.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\base\w_base.vcxproj">
       <Project>{bd7d3626-ada6-4ca2-9566-ed7b131e3d51}</Project>
     </ProjectReference>
-    <ProjectReference Include="..\..\app\aura\w_core.vcxproj">
+    <ProjectReference Include="..\..\..\source\app\aura\w_core.vcxproj">
       <Project>{b000ffaf-392f-4e32-bf51-fd7ed638991f}</Project>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\app\include\id3.h" />
-    <ClInclude Include="..\..\app\include\id3\field.h" />
-    <ClInclude Include="..\..\app\include\id3\globals.h" />
-    <ClInclude Include="..\..\app\include\id3\helpers.h" />
-    <ClInclude Include="..\..\app\include\id3\id3lib_frame.h" />
-    <ClInclude Include="..\..\app\include\id3\id3lib_streams.h" />
-    <ClInclude Include="..\..\app\include\id3\id3lib_strings.h" />
-    <ClInclude Include="..\..\app\include\id3\io_decorators.h" />
-    <ClInclude Include="..\..\app\include\id3\io_helpers.h" />
-    <ClInclude Include="..\..\app\include\id3\io_strings.h" />
-    <ClInclude Include="..\..\app\include\id3\misc_support.h" />
-    <ClInclude Include="..\..\app\include\id3\reader.h" />
-    <ClInclude Include="..\..\app\include\id3\readers.h" />
-    <ClInclude Include="..\..\app\include\id3\sized_types.h" />
-    <ClInclude Include="..\..\app\include\id3\tag.h" />
-    <ClInclude Include="..\..\app\include\id3\utils.h" />
-    <ClInclude Include="..\..\app\include\id3\writer.h" />
-    <ClInclude Include="..\..\app\include\id3\writers.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\field.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\globals.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\helpers.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\id3lib_frame.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\id3lib_streams.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\id3lib_strings.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\io_decorators.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\io_helpers.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\io_strings.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\misc_support.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\reader.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\readers.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\sized_types.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\tag.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\utils.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\writer.h" />
+    <ClInclude Include="..\..\..\source\app\include\id3\writers.h" />
     <ClInclude Include="config.h" />
     <ClInclude Include="src\field_def.h" />
     <ClInclude Include="src\field_impl.h" />
@@ -79,7 +79,7 @@
     <ClInclude Include="src\tag_impl.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\app\include\id3\id3lib_bitset" />
+    <None Include="..\..\..\source\app\include\id3\id3lib_bitset" />
     <None Include="baseid3lib.def" />
   </ItemGroup>
   <ItemGroup>
