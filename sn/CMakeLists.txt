@@ -3,7 +3,22 @@ project(sn C)
 
 set(CMAKE_C_STANDARD 11)
 
-include_directories(.)
+if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
+    set(LINUX TRUE)
+    set(PLATFORM_NAME "linux")
+    message("System is Linux")
+    include(FindPkgConfig)
+elseif(WIN32)
+    set(PLATFORM_NAME "windows")
+elseif(UWP)
+    set(PLATFORM_NAME "uwp")
+    set(WINDOWS_TSF TRUE)
+endif()
+
+
+set(LIBRARY_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../../time-${PLATFORM_NAME}/cmake)
+set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../../../time-${PLATFORM_NAME}/cmake)
+
 
 add_library(sn SHARED
         config.h
