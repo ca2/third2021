@@ -1,8 +1,5 @@
 #pragma once
 
-
-#include "platform/third_private_config.h"
-
 // rawlite was never removed warnings, I guess... (disabling a lot of them)
 #pragma warning( disable : 4018)
 #pragma warning( disable : 4305)

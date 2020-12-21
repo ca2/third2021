@@ -238,7 +238,7 @@
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAsManaged>false</CompileAsManaged>
       <StringPooling>false</StringPooling>
@@ -273,7 +273,7 @@
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <ShowProgress>NotSet</ShowProgress>
@@ -291,14 +291,14 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
       <Outputs>$(TimeDir)$(PlatformName)\$(Configuration)\zlib.dll;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -315,7 +315,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <CompileAsManaged>false</CompileAsManaged>
       <StringPooling>false</StringPooling>
@@ -349,7 +349,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <ShowProgress>NotSet</ShowProgress>
@@ -367,14 +367,14 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
       <Outputs>$(TimeDir)$(PlatformName)\$(Configuration)\zlib.dll;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -391,7 +391,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Disabled</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -426,7 +426,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <ShowProgress>NotSet</ShowProgress>
@@ -444,14 +444,14 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
       <Outputs>$(TimeDir)$(PlatformName)\$(Configuration)\zlib.dll;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -468,7 +468,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -509,7 +509,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <FixedBaseAddress>false</FixedBaseAddress>
@@ -529,14 +529,14 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
       <Outputs>$(TimeDir)$(PlatformName)\$(Configuration)\zlib.dll;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -553,7 +553,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>MinSpace</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -594,7 +594,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <EntryPointSymbol>
       </EntryPointSymbol>
       <FixedBaseAddress>false</FixedBaseAddress>
@@ -614,14 +614,14 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
       <Outputs>$(TimeDir)$(PlatformName)\$(Configuration)\zlib.dll;%(Outputs)</Outputs>
     </CustomBuildStep>
@@ -638,7 +638,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
@@ -673,7 +673,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
       <MapFileName>
       </MapFileName>
@@ -683,14 +683,14 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
     </CustomBuildStep>
     <CustomBuildStep>
@@ -713,7 +713,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
@@ -747,7 +747,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
       <MapFileName>
       </MapFileName>
@@ -781,7 +781,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -816,7 +816,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <SubSystem>Windows</SubSystem>
       <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
     </Link>
@@ -825,14 +825,14 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
     </CustomBuildStep>
     <CustomBuildStep>
@@ -855,7 +855,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -895,7 +895,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SubSystem>Windows</SubSystem>
       <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
@@ -906,14 +906,14 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       </Command>
     </PreBuildEvent>
     <CustomBuildStep>
-      <Command>copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
+      <Command>copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\*.sys $(OutDir)
 
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
-copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.dll $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.pdb $(OutDir)
+copy $(__archive)storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe $(OutDir)
 </Command>
     </CustomBuildStep>
     <CustomBuildStep>
@@ -936,7 +936,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>_APP_AQUA_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <PrecompiledHeader>Use</PrecompiledHeader>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(__archive)/third-windows/include;$(__archive)/third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -976,7 +976,7 @@ copy $(__archive)\storage-windows\binary\$(PlatformName)\$(Configuration)\*.exe 
     <Link>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)\storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-windows\third\library\$(PlatformName)\$(Configuration)\;$(__archive)storage-windows\library\$(PlatformName)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <FixedBaseAddress>false</FixedBaseAddress>
       <SubSystem>Windows</SubSystem>
       <MapFileName>$(TargetDir)$(TargetName).map</MapFileName>
