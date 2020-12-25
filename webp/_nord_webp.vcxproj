@@ -270,34 +270,45 @@
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
-  <ImportGroup Label="PropertySheets" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
-    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetName>libaura$(ProjectName)</TargetName>
     <TargetExt>.a</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
-    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetName>libaura$(ProjectName)</TargetName>
     <TargetExt>.a</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
-    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetName>libaura$(ProjectName)</TargetName>
     <TargetExt>.a</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
-    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetName>libaura$(ProjectName)</TargetName>
     <TargetExt>.a</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
@@ -315,7 +326,7 @@
     </ClCompile>
     <Link>
       <LibraryDependencies>ace;$(StlLibraryName);log;android</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
@@ -333,7 +344,7 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <LibraryDependencies>ace;ace;$(StlLibraryName);log;android</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -353,7 +364,7 @@
       <Optimization>Disabled</Optimization>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <LibraryDependencies>ace;ace;$(StlLibraryName);log;android</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -372,7 +383,7 @@
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)platform-android\thirdparty\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <LibraryDependencies>ace;ace;$(StlLibraryName);log;android</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>

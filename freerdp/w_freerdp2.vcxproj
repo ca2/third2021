@@ -269,37 +269,37 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
-    <OutDir>$(__archive)\third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__archive)third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
-    <OutDir>$(__archive)\third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__archive)third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
-    <OutDir>$(__archive)\third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__archive)third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
-    <OutDir>$(__archive)\third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__archive)third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|x64'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
-    <OutDir>$(__archive)\third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__archive)third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|x64'">
     <GenerateManifest>false</GenerateManifest>
     <IgnoreImportLibrary>false</IgnoreImportLibrary>
-    <OutDir>$(__archive)\third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__archive)third-uwp\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(MSBuildProjectName)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">
@@ -307,7 +307,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <PreprocessorDefinitions>_UWP;_UWP;FREERDP_EXPORTS;WITH_OPENH264;_X86_;UNICODE;_UNICODE</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(__archive)/third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)/third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
@@ -329,11 +329,11 @@
       <SubSystem>Windows</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <GenerateDebugInformation>Debug</GenerateDebugInformation>
       <FixedBaseAddress>false</FixedBaseAddress>
       <AdditionalDependencies>avutil.lib;avcodec.lib;WindowsApp.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <ImportLibrary>$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <ImportLibrary>$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -342,7 +342,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__archive)/third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)/third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_UWP;_UWP;FREERDP_EXPORTS;WITH_OPENH264;_X86_;UNICODE;_UNICODE</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <CompileAsManaged>false</CompileAsManaged>
@@ -351,8 +351,8 @@
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ImportLibrary>$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -362,7 +362,7 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <CompileAsManaged>false</CompileAsManaged>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__archive)/third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)/third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_UWP;_UWP;FREERDP_EXPORTS;WITH_OPENH264;_X86_;UNICODE;_UNICODE</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
     </ClCompile>
@@ -370,8 +370,8 @@
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ImportLibrary>$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -380,7 +380,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__archive)/third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)/third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_UWP;_UWP;FREERDP_EXPORTS;WITH_OPENH264;_X86_;UNICODE;_UNICODE</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <CompileAsManaged>false</CompileAsManaged>
@@ -389,8 +389,8 @@
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ImportLibrary>$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -400,7 +400,7 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <CompileAsManaged>false</CompileAsManaged>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__archive)/third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)/third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_UWP;_UWP;FREERDP_EXPORTS;WITH_OPENH264;_X86_;UNICODE;_UNICODE</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -409,8 +409,8 @@
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ImportLibrary>$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>
@@ -419,7 +419,7 @@
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__archive)/third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)/third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-uwp/$(PlatformName)/$(Configuration)/include;$(__archive)third-uwp/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include/freerdp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../platform-uwp;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/app;$(ProjectDir);$(ProjectDir)../../include;.;framework;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../../;$(ProjectDir)../;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_UWP;_UWP;FREERDP_EXPORTS;WITH_OPENH264;_X86_;UNICODE;_UNICODE</PreprocessorDefinitions>
       <UseFullPaths>true</UseFullPaths>
       <CompileAsManaged>false</CompileAsManaged>
@@ -428,8 +428,8 @@
       <SubSystem>Console</SubSystem>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
-      <ImportLibrary>$(__archive)/third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>$(__archive)third-uwp/thirdparty/library/$(PlatformName)/$(Configuration)/$(TargetName).lib</ImportLibrary>
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
     </Link>
   </ItemDefinitionGroup>

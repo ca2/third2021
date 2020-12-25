@@ -767,19 +767,19 @@ unsigned CLASS getbithuff (int nbits, ushort *huff)
  */
 ushort * CLASS make_decoder_ref (const uchar **source)
 {
-  int max, len, h, i, j;
+  int MAX, len, h, i, j;
   const uchar *count;
   ushort *huff;
 
   count = (*source += 16) - 17;
-  for (max=16; max && !count[max]; max--);
-  huff = (ushort *) calloc (1 + (1 << max), sizeof *huff);
+  for (MAX=16; MAX && !count[MAX]; MAX--);
+  huff = (ushort *) calloc (1 + (1 << MAX), sizeof *huff);
   merror (huff, "make_decoder()");
-  huff[0] = max;
-  for (h=len=1; len <= max; len++)
+  huff[0] = MAX;
+  for (h=len=1; len <= MAX; len++)
     for (i=0; i < count[len]; i++, ++*source)
-      for (j=0; j < 1 << (max-len); j++)
-	if (h <= 1 << max)
+      for (j=0; j < 1 << (MAX-len); j++)
+	if (h <= 1 << MAX)
 	  huff[h++] = len << 8 | **source;
   return huff;
 }
@@ -1460,7 +1460,7 @@ void CLASS nikon_load_raw()
     { 0,1,4,2,2,3,1,2,0,0,0,0,0,0,0,0,	/* 14-bit lossless */
       7,6,8,5,9,4,10,3,11,12,2,0,1,13,14 } };
   ushort *huff, ver0, ver1, vpred[2][2], hpred[2], csize;
-  int i, min, max, step=0, tree=0, split=0, row, col, len, shl, diff;
+  int i, MIN, MAX, step=0, tree=0, split=0, row, col, len, shl, diff;
 
   fseek (ifp, meta_offset, SEEK_SET);
   ver0 = fgetc(ifp);
@@ -1470,34 +1470,34 @@ void CLASS nikon_load_raw()
   if (ver0 == 0x46) tree = 2;
   if (tiff_bps == 14) tree += 3;
   read_shorts (vpred[0], 4);
-  max = 1 << tiff_bps & 0x7fff;
+  MAX = 1 << tiff_bps & 0x7fff;
   if ((csize = get2()) > 1)
-    step = max / (csize-1);
+    step = MAX / (csize-1);
   if (ver0 == 0x44 && ver1 == 0x20 && step > 0) {
     for (i=0; i < csize; i++)
       curve[i*step] = get2();
-    for (i=0; i < max; i++)
+    for (i=0; i < MAX; i++)
       curve[i] = ( curve[i-i%step]*(step-i%step) +
 		   curve[i-i%step+step]*(i%step) ) / step;
     fseek (ifp, meta_offset+562, SEEK_SET);
     split = get2();
   } else if (ver0 != 0x46 && csize <= 0x4001)
-    read_shorts (curve, max=csize);
-  while (curve[max-2] == curve[max-1]) max--;
+    read_shorts (curve, MAX=csize);
+  while (curve[MAX-2] == curve[MAX-1]) MAX--;
   huff = make_decoder (nikon_tree[tree]);
   fseek (ifp, data_offset, SEEK_SET);
   getbits(-1);
 #ifdef LIBRAW_LIBRARY_BUILD
   try {
 #endif
-  for (min=row=0; row < height; row++) {
+  for (MIN=row=0; row < height; row++) {
 #ifdef LIBRAW_LIBRARY_BUILD
     checkCancel();
 #endif
     if (split && row == split) {
       free (huff);
       huff = make_decoder (nikon_tree[tree+1]);
-      max += (min = 16) << 1;
+      MAX += (MIN = 16) << 1;
     }
     for (col=0; col < raw_width; col++) {
       i = gethuff(huff);
@@ -1508,7 +1508,7 @@ void CLASS nikon_load_raw()
 	diff -= (1 << len) - !shl;
       if (col < 2) hpred[col] = vpred[row & 1][col] += diff;
       else	   hpred[col & 1] += diff;
-      if ((ushort)(hpred[col & 1] + min) >= max) derror();
+      if ((ushort)(hpred[col & 1] + MIN) >= MAX) derror();
       RAW(row,col) = curve[LIM((short)hpred[col & 1],0,0x3fff)];
     }
   }
@@ -1772,7 +1772,7 @@ void CLASS phase_one_flat_field (int is_float, int nc)
 int CLASS phase_one_correct()
 {
   unsigned entries, tag, data, save, col, row, type;
-  int len, i, j, k, cip, val[4], dev[4], sum, max;
+  int len, i, j, k, cip, val[4], dev[4], sum, MAX;
   int head[9], diff, mindiff=INT_MAX, off_412=0;
   static const signed char dir[12][2] =
     { {-1,-1}, {-1,1}, {1,-1}, {1,1}, {-2,0}, {0,-2}, {0,2}, {2,0},
@@ -1838,11 +1838,11 @@ int CLASS phase_one_correct()
 	    if (FC(row-top_margin,col-left_margin) == 1) {
 	      for (sum=i=0; i < 4; i++)
 		sum += val[i] = raw (row+dir[i][0], col+dir[i][1]);
-	      for (max=i=0; i < 4; i++) {
+	      for (MAX=i=0; i < 4; i++) {
 		dev[i] = abs((val[i] << 2) - sum);
-		if (dev[max] < dev[i]) max = i;
+		if (dev[MAX] < dev[i]) MAX = i;
 	      }
-	      RAW(row,col) = (sum - val[max])/3.0 + 0.5;
+	      RAW(row,col) = (sum - val[MAX])/3.0 + 0.5;
 	    } else {
 	      for (sum=0, i=8; i < 12; i++)
 		sum += raw (row+dir[i][0], col+dir[i][1]);
@@ -3498,7 +3498,7 @@ void CLASS sony_arw2_load_raw()
 {
   uchar *data, *dp;
   ushort pix[16];
-  int row, col, val, max, min, imax, imin, sh, bit, i;
+  int row, col, val, MAX, MIN, imax, imin, sh, bit, i;
 
   data = (uchar *) malloc (raw_width+1);
   merror (data, "sony_arw2_load_raw()");
@@ -3511,11 +3511,11 @@ void CLASS sony_arw2_load_raw()
 #endif
     fread (data, 1, raw_width, ifp);
     for (dp=data, col=0; col < raw_width-30; dp+=16) {
-      max = 0x7ff & (val = sget4(dp));
-      min = 0x7ff & val >> 11;
+      MAX = 0x7ff & (val = sget4(dp));
+      MIN = 0x7ff & val >> 11;
       imax = 0x0f & val >> 22;
       imin = 0x0f & val >> 26;
-      for (sh=0; sh < 4 && 0x80 << sh <= max-min; sh++);
+      for (sh=0; sh < 4 && 0x80 << sh <= MAX-MIN; sh++);
 #ifdef LIBRAW_LIBRARY_BUILD
       /* flag checks if outside of loop */
       if(imgdata.params.sony_arw2_options == LIBRAW_SONYARW2_NONE
@@ -3523,10 +3523,10 @@ void CLASS sony_arw2_load_raw()
          )
         {
           for (bit=30, i=0; i < 16; i++)
-            if      (i == imax) pix[i] = max;
-            else if (i == imin) pix[i] = min;
+            if      (i == imax) pix[i] = MAX;
+            else if (i == imin) pix[i] = MIN;
             else {
-              pix[i] = ((sget2(dp+(bit >> 3)) >> (bit & 7) & 0x7f) << sh) + min;
+              pix[i] = ((sget2(dp+(bit >> 3)) >> (bit & 7) & 0x7f) << sh) + MIN;
               if (pix[i] > 0x7ff) pix[i] = 0x7ff;
               bit += 7;
             }
@@ -3534,8 +3534,8 @@ void CLASS sony_arw2_load_raw()
       else if(imgdata.params.sony_arw2_options == LIBRAW_SONYARW2_BASEONLY)
         {
           for (bit=30, i=0; i < 16; i++)
-            if      (i == imax) pix[i] = max;
-            else if (i == imin) pix[i] = min;
+            if      (i == imax) pix[i] = MAX;
+            else if (i == imin) pix[i] = MIN;
             else pix[i]=0;
         }
       else if(imgdata.params.sony_arw2_options == LIBRAW_SONYARW2_DELTAONLY)
@@ -3544,7 +3544,7 @@ void CLASS sony_arw2_load_raw()
             if      (i == imax) pix[i] = 0;
             else if (i == imin) pix[i] = 0;
             else {
-              pix[i] = ((sget2(dp+(bit >> 3)) >> (bit & 7) & 0x7f) << sh) + min;
+              pix[i] = ((sget2(dp+(bit >> 3)) >> (bit & 7) & 0x7f) << sh) + MIN;
               if (pix[i] > 0x7ff) pix[i] = 0x7ff;
               bit += 7;
             }
@@ -3563,10 +3563,10 @@ void CLASS sony_arw2_load_raw()
 #else
       /* unaltered dcraw processing */
       for (bit=30, i=0; i < 16; i++)
-	if      (i == imax) pix[i] = max;
-	else if (i == imin) pix[i] = min;
+	if      (i == imax) pix[i] = MAX;
+	else if (i == imin) pix[i] = MIN;
 	else {
-	  pix[i] = ((sget2(dp+(bit >> 3)) >> (bit & 7) & 0x7f) << sh) + min;
+	  pix[i] = ((sget2(dp+(bit >> 3)) >> (bit & 7) & 0x7f) << sh) + MIN;
 	  if (pix[i] > 0x7ff) pix[i] = 0x7ff;
 	  bit += 7;
 	}
@@ -3797,15 +3797,15 @@ void CLASS smal_v6_load_raw()
 
 int CLASS median4 (int *p)
 {
-  int min, max, sum, i;
+  int MIN, MAX, sum, i;
 
-  min = max = sum = p[0];
+  MIN = MAX = sum = p[0];
   for (i=1; i < 4; i++) {
     sum += p[i];
-    if (min > p[i]) min = p[i];
-    if (max < p[i]) max = p[i];
+    if (MIN > p[i]) MIN = p[i];
+    if (MAX < p[i]) MAX = p[i];
   }
-  return (sum - min - max) >> 1;
+  return (sum - MIN - MAX) >> 1;
 }
 
 void CLASS fill_holes (int holes)
@@ -4212,31 +4212,31 @@ int CLASS foveon_fixed (void *ptr, int size, const char *name)
 float CLASS foveon_avg (short *pix, int range[2], float cfilt)
 {
   int i;
-  float val, min=FLT_MAX, max=-FLT_MAX, sum=0;
+  float val, MIN=FLT_MAX, MAX=-FLT_MAX, sum=0;
 
   for (i=range[0]; i <= range[1]; i++) {
     sum += val = pix[i*4] + (pix[i*4]-pix[(i-1)*4]) * cfilt;
-    if (min > val) min = val;
-    if (max < val) max = val;
+    if (MIN > val) MIN = val;
+    if (MAX < val) MAX = val;
   }
   if (range[1] - range[0] == 1) return sum/2;
-  return (sum - min - max) / (range[1] - range[0] - 1);
+  return (sum - MIN - MAX) / (range[1] - range[0] - 1);
 }
 
-short * CLASS foveon_make_curve (double max, double mul, double filt)
+short * CLASS foveon_make_curve (double MAX, double mul, double filt)
 {
   short *curve;
   unsigned i, size;
   double x;
 
   if (!filt) filt = 0.8;
-  size = 4*M_PI*max / filt;
+  size = 4*M_PI*MAX / filt;
   if (size == UINT_MAX) size--;
   curve = (short *) calloc (size+1, sizeof *curve);
   merror (curve, "foveon_make_curve()");
   curve[0] = size;
   for (i=0; i < size; i++) {
-    x = i*filt/max/4;
+    x = i*filt/MAX/4;
     curve[i+1] = (cos(x)+1)/2 * tanh(i*filt/mul) * mul + 0.5;
   }
   return curve;
@@ -4245,12 +4245,12 @@ short * CLASS foveon_make_curve (double max, double mul, double filt)
 void CLASS foveon_make_curves
 	(short **curvep, float dq[3], float div[3], float filt)
 {
-  double mul[3], max=0;
+  double mul[3], MAX=0;
   int c;
 
   FORC3 mul[c] = dq[c]/div[c];
-  FORC3 if (max < mul[c]) max = mul[c];
-  FORC3 curvep[c] = foveon_make_curve (max, mul[c], filt);
+  FORC3 if (MAX < mul[c]) MAX = mul[c];
+  FORC3 curvep[c] = foveon_make_curve (MAX, mul[c], filt);
 }
 
 int CLASS foveon_apply_curve (short *curve, int i)
@@ -4270,7 +4270,7 @@ void CLASS foveon_interpolate()
   float chroma_dq[3], color_dq[3], diag[3][3], div[3];
   float (*black)[3], (*sgain)[3], (*sgrow)[3];
   float fsum[3], val, frow, num;
-  int row, col, c, i, j, diff, sgx, irow, sum, min, max, limit;
+  int row, col, c, i, j, diff, sgx, irow, sum, MIN, MAX, limit;
   int dscr[2][2], dstb[4], (*smrow[7])[3], total[4], ipix[3];
   int work[3][3], smlast, smred, smred_p=0, dev[3];
   int satlev[3], keep[4], active[4];
@@ -4500,27 +4500,27 @@ void CLASS foveon_interpolate()
   }
 
   /* Adjust the brighter pixels for better linearity */
-  min = 0xffff;
+  MIN = 0xffff;
   FORC3 {
     i = satlev[c] / div[c];
-    if (min > i) min = i;
+    if (MIN > i) MIN = i;
   }
-  limit = min * 9 >> 4;
+  limit = MIN * 9 >> 4;
   for (pix=image[0]; pix < image[height*width]; pix+=4) {
     if (pix[0] <= limit || pix[1] <= limit || pix[2] <= limit)
       continue;
-    min = max = pix[0];
+    MIN = MAX = pix[0];
     for (c=1; c < 3; c++) {
-      if (min > pix[c]) min = pix[c];
-      if (max < pix[c]) max = pix[c];
+      if (MIN > pix[c]) MIN = pix[c];
+      if (MAX < pix[c]) MAX = pix[c];
     }
-    if (min >= limit*2) {
-      pix[0] = pix[1] = pix[2] = max;
+    if (MIN >= limit*2) {
+      pix[0] = pix[1] = pix[2] = MAX;
     } else {
-      i = 0x4000 - ((min - limit) << 14) / limit;
+      i = 0x4000 - ((MIN - limit) << 14) / limit;
       i = 0x4000 - (i*i >> 14);
       i = i*i >> 14;
-      FORC3 pix[c] += (max - pix[c]) * i >> 14;
+      FORC3 pix[c] += (MAX - pix[c]) * i >> 14;
     }
   }
 /*
@@ -5963,7 +5963,7 @@ void CLASS xtrans_interpolate (int passes)
 			{ 0,1,0,-2,1,0,-2,0,1,1,-2,-2,1,-1,-1,1 } },
 	dir[4] = { 1,TS,TS+1,TS-1 };
   short allhex[3][3][2][8], *hex;
-  ushort min, max, sgrow, sgcol;
+  ushort MIN, MAX, sgrow, sgcol;
   ushort (*rgb)[TS][TS][3], (*rix)[3], (*pix)[4];
    short (*lab)    [TS][3], (*lix)[3];
    float (*drv)[TS][TS], diff[6], tr;
@@ -6000,20 +6000,20 @@ void CLASS xtrans_interpolate (int passes)
 
 /* Set green1 and green3 to the minimum and maximum allowed values:	*/
   for (row=2; row < height-2; row++)
-    for (min=~(max=0), col=2; col < width-2; col++) {
-      if (fcol(row,col) == 1 && (min=~(max=0))) continue;
+    for (MIN=~(MAX=0), col=2; col < width-2; col++) {
+      if (fcol(row,col) == 1 && (MIN=~(MAX=0))) continue;
       pix = image + row*width + col;
       hex = allhex[row % 3][col % 3][0];
-      if (!max) FORC(6) {
+      if (!MAX) FORC(6) {
 	val = pix[hex[c]][1];
-	if (min > val) min = val;
-	if (max < val) max = val;
+	if (MIN > val) MIN = val;
+	if (MAX < val) MAX = val;
       }
-      pix[0][1] = min;
-      pix[0][3] = max;
+      pix[0][1] = MIN;
+      pix[0][3] = MAX;
       switch ((row-sgrow) % 3) {
 	case 1: if (row < height-3) { row++; col--; } break;
-	case 2: if ((min=~(max=0)) && (col+=2) < width-3 && row > 2) row--;
+	case 2: if ((MIN=~(MAX=0)) && (col+=2) < width-3 && row > 2) row--;
       }
     }
 
@@ -6166,12 +6166,12 @@ void CLASS xtrans_interpolate (int passes)
 	  for (d=0; d < ndir-4; d++)
 	    if (hm[d] < hm[d+4]) hm[d  ] = 0; else
 	    if (hm[d] > hm[d+4]) hm[d+4] = 0;
-	  for (max=hm[0],d=1; d < ndir; d++)
-	    if (max < hm[d]) max = hm[d];
-	  max -= max >> 3;
+	  for (MAX=hm[0],d=1; d < ndir; d++)
+	    if (MAX < hm[d]) MAX = hm[d];
+	  MAX -= MAX >> 3;
 	  memset (avg, 0, sizeof avg);
 	  for (d=0; d < ndir; d++)
-	    if (hm[d] >= max) {
+	    if (hm[d] >= MAX) {
 	      FORC3 avg[c] += rgb[d][row][col][c];
 	      avg[3]++;
 	    }
@@ -13124,7 +13124,7 @@ void CLASS identify()
   static const struct {
     unsigned fsize;
     ushort rw, rh;
-    uchar lm, tm, rm, bm, lf, cf, max, flags;
+    uchar lm, tm, rm, bm, lf, cf, MAX, flags;
     char t_make[10], t_model[20];
     ushort offset;
   } table[] = {
@@ -13502,7 +13502,7 @@ void CLASS identify()
 	    tiff_bps -= load_flags = load_flags >> 1 & 7;
 	    load_raw = &CLASS unpacked_load_raw;
 	}
-	maximum = (1 << tiff_bps) - (1 << table[i].max);
+	maximum = (1 << tiff_bps) - (1 << table[i].MAX);
       }
   if (zero_fsize) fsize = 0;
   if (make[0] == 0) parse_smal (0, flen);

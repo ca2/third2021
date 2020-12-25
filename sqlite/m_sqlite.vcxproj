@@ -234,7 +234,7 @@
       <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__archive)/third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__archive)third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
     </Link>
     <PreBuildEvent>
@@ -263,7 +263,7 @@
       <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__archive)/third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__archive)third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImportLibrary>$(SolutionDir)../../time/library/x86/$(Configuration)/$(TargetName).lib</ImportLibrary>
     </Link>
     <PreBuildEvent>
@@ -296,8 +296,8 @@
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)..\..\..\platform\stage\matter\msvc++\msvcp110d.dll" "$(OutDir)"
 copy "$(SolutionDir)..\..\..\platform\stage\matter\msvc++\msvcr110d.dll" "$(OutDir)"
-copy "$(__archive)\third-uwp\thirdparty\binary\m_freetype.dll" "$(OutDir)"
-copy "$(__archive)\third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
+copy "$(__archive)third-uwp\thirdparty\binary\m_freetype.dll" "$(OutDir)"
+copy "$(__archive)third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -392,7 +392,7 @@ copy "$(__archive)\third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
       <GenerateWindowsMetadata>false</GenerateWindowsMetadata>
       <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(IntDir);$(SolutionDir)../../time/library/$(PlatformName)/$(Configuration)/;$(__archive)/third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(IntDir);$(SolutionDir)../../time/library/$(PlatformName)/$(Configuration)/;$(__archive)third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
       <AdditionalDependencies>aura.lib;kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>

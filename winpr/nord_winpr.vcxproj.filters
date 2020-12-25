@@ -339,7 +339,7 @@
     <ClInclude Include="libwinpr\sspi\Kerberos\kerberos.h">
       <Filter>Header Files\libwinpr\sspi\Kerberos</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\app\include\winpr\sysinfo.h" />
+    <ClInclude Include="..\..\..\source\app\include\winpr\sysinfo.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="libwinpr\asn1\asn1.c">

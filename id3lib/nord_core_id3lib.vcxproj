@@ -60,16 +60,16 @@
   <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="Shared" />
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='basis|ARM'">
-    <Import Project="..\..\platform-android\Common.props" />
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
-    <Import Project="..\..\platform-android\Common.props" />
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
-    <Import Project="..\..\platform-android\Common.props" />
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='basis|x86'">
-    <Import Project="..\..\platform-android\Common.props" />
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|x86'">
@@ -97,7 +97,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android/platform_configuration/$(Platform)/$(Configuration);$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../platform-android/platform_configuration/$(Platform)/$(Configuration);$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <CppLanguageStandard>gnu++14</CppLanguageStandard>
@@ -110,7 +110,7 @@
     </ClCompile>
     <Link>
       <LibraryDependencies>z;aura;ace;$(StlLibraryName);android;m</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath);$(Sysroot)\usr\lib</SharedLibrarySearchPath>
     </Link>
   </ItemDefinitionGroup>
@@ -119,7 +119,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;ID3_LIBRARY</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -134,7 +134,7 @@
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath);$(Sysroot)\usr\lib</SharedLibrarySearchPath>
     </Link>
     <Link>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\$(PlatformShortName);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\$(PlatformShortName);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <LibraryDependencies>axiszlib;aura;$(StlLibraryName);android;m</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -150,7 +150,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <CLanguageStandard>gnu11</CLanguageStandard>
       <CppLanguageStandard>gnu++14</CppLanguageStandard>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <PreprocessorDefinitions>HAVE_CONFIG_H;ID3_LIBRARY</PreprocessorDefinitions>
@@ -159,7 +159,7 @@
     </ClCompile>
     <Link>
       <LibraryDependencies>axiszlib;aura;$(StlLibraryName);android;m</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
@@ -168,7 +168,7 @@
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
       <DebugInformationFormat>FullDebug</DebugInformationFormat>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);include;include/id3;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -184,7 +184,7 @@
     </ClCompile>
     <Link>
       <LibraryDependencies>axiszlib;aura;$(StlLibraryName);android;m</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\$(PlatformShortName);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\$(ToolchainName)\$(ToolchainVersion)\$(PlatformShortName);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>

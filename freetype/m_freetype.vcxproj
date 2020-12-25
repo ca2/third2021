@@ -746,7 +746,7 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>_DEBUG;WIN32;_LIB;_CRT_SECURE_NO_WARNINGS;FT_DEBUG_LEVEL_ERROR;FT_DEBUG_LEVEL_TRACE;FT2_BUILD_LIBRARY;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <ExceptionHandling>Async</ExceptionHandling>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -768,7 +768,7 @@
       <AdditionalDependencies>kernel32.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__archive)/third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__archive)third-uwp/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImportLibrary>$(SolutionDir)../../time/library/x86/$(Configuration)/$(TargetName).lib</ImportLibrary>
     </Link>
     <PreBuildEvent>
@@ -782,7 +782,7 @@
       <CompileAsWinRT>true</CompileAsWinRT>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>__C__DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <ExceptionHandling>Async</ExceptionHandling>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -801,8 +801,8 @@
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)..\..\..\platform\stage\matter\msvc++\msvcp110d.dll" "$(OutDir)"
 copy "$(SolutionDir)..\..\..\platform\stage\matter\msvc++\msvcr110d.dll" "$(OutDir)"
-copy "$(__archive)\third-uwp\thirdparty\binary\m_freetype.dll" "$(OutDir)"
-copy "$(__archive)\third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
+copy "$(__archive)third-uwp\thirdparty\binary\m_freetype.dll" "$(OutDir)"
+copy "$(__archive)third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>
@@ -821,7 +821,7 @@ copy "$(__archive)\third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>_BASE_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
@@ -839,7 +839,7 @@ copy "$(__archive)\third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -863,7 +863,7 @@ copy "$(__archive)\third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -876,7 +876,7 @@ copy "$(__archive)\third-uwp\thirdparty\binary\FreeImage.dll" "$(OutDir)"
     <ClCompile>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>

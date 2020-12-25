@@ -542,37 +542,48 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="Shared" />
-  <ImportGroup Label="PropertySheets" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <Import Project="..\..\..\archive\platform-android\Common.props" />
+  </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
     <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
-    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
-    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
-    <OutDir>$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
-    <TargetName>lib$(ProjectName)</TargetName>
+    <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\include;$(__archive)/platform-android/third/include/libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-android\third\include\include;$(__archive)third-android\include;$(__archive)third-android\third\include\libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
@@ -582,7 +593,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
     </ClCompile>
     <Link>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <LibraryDependencies>m;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -590,7 +601,7 @@
     <ClCompile>
       <PrecompiledHeaderFile>
       </PrecompiledHeaderFile>
-      <AdditionalIncludeDirectories>$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\include;$(__archive)/platform-android/third/include/libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-android\third\include\include;$(__archive)third-android\include;$(__archive)platform-android/third/include/libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;_BASE_LIBMPG123_LIBRARY;OPT_MULTI;OPT_GENERIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -603,7 +614,7 @@
       <SharedLibrarySearchPath>%(SharedLibrarySearchPath);$(Sysroot)\usr\lib</SharedLibrarySearchPath>
     </Link>
     <Link>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <LibraryDependencies>ace;m;android;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
@@ -614,14 +625,14 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
-      <AdditionalIncludeDirectories>$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\include;$(__archive)/platform-android/third/include/libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-android\third\include\include;$(__archive)third-android\include;$(__archive)platform-android/third/include/libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
       <PreprocessorDefinitions>__ANDROID_API__=19;_BASE_LIBMPG123_LIBRARY;OPT_MULTI;OPT_GENERIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
     </ClCompile>
     <Link>
       <LibraryDependencies>m;android;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
@@ -631,14 +642,14 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
-      <AdditionalIncludeDirectories>$(__archive)\platform-android\third\include\include;$(__archive)\platform-android\include;$(__archive)/platform-android/third/include/libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)/local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__archive)third-android\third\include\include;$(__archive)third-android\include;$(__archive)platform-android/third/include/libmpg123;$(ProjectDir)/src/compat;$(ProjectDir)/src;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
       <PreprocessorDefinitions>__ANDROID_API__=19;_BASE_LIBMPG123_LIBRARY;OPT_MULTI;OPT_GENERIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Enabled</ExceptionHandling>
     </ClCompile>
     <Link>
       <LibraryDependencies>ace;m;android;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)\storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)\storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
