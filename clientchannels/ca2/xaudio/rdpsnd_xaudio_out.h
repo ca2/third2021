@@ -63,14 +63,14 @@ struct xaudio_out:
 {
 public:
 
-   enum  e_state
+   enum  enum_state
    {
-      state_initial,
-      state_opened,
-      state_playing,
-      state_stopping,
+      e_state_initial,
+      e_state_opened,
+      e_state_playing,
+      e_state_stopping,
       state_stopped,
-      state_paused,
+      e_state_paused,
    };
    pfn_xaudio_callback_function m_pcallback;
    DWORD_PTR m_instance;
@@ -97,7 +97,7 @@ public:
    STDMETHOD_(void,OnBufferStart(void * pBufferContext));
    STDMETHOD_(void,OnLoopEnd(void * pBufferContext));
    STDMETHOD_(void,OnVoiceError(void * pBufferContext,HRESULT Error));
-   e_state m_estate;
+   enum_state m_estate;
    IXAudio2 *                       m_pxaudio;
    IXAudio2MasteringVoice *         m_pvoice;
    IXAudio2SourceVoice *            m_psourcevoice;
