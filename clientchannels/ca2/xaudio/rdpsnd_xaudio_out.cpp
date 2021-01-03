@@ -56,7 +56,7 @@ xaudio_out::xaudio_out()
    m_pvoice             = NULL;
    m_psourcevoice       = NULL;
    m_iBufferedCount     = 0;
-   m_estate             = state_initial;
+   m_estate             = e_state_initial;
    m_mmr = 0;
    hsem = CreateSemaphore(NULL,64,64,NULL);
 }
@@ -73,7 +73,7 @@ xaudio_out::~xaudio_out()
 int xaudio_out::out_open_ex(int32_t iBufferCount,int32_t iBufferSampleCount,uint32_t uiSamplesPerSec,uint32_t uiChannelCount,uint32_t uiBitsPerSample)
 {
 
-   if(m_pxaudio != NULL && m_pvoice != NULL && m_psourcevoice != NULL && m_estate != state_initial)
+   if(m_pxaudio != NULL && m_pvoice != NULL && m_psourcevoice != NULL && m_estate != e_state_initial)
       return MMSYSERR_ERROR;
 
    m_iBuffer = 0;
@@ -82,7 +82,7 @@ int xaudio_out::out_open_ex(int32_t iBufferCount,int32_t iBufferSampleCount,uint
    assert(m_pxaudio == NULL);
    assert(m_pvoice == NULL);
    assert(m_psourcevoice == NULL);
-   assert(m_estate == state_initial);
+   assert(m_estate == e_state_initial);
 
    CoInitializeEx(nullptr,COINIT_MULTITHREADED);
 
@@ -149,7 +149,7 @@ Opened:
 
 
 
-   m_estate = state_opened;
+   m_estate = e_state_opened;
 
    return MMSYSERR_NOERROR;
 
@@ -162,12 +162,12 @@ int xaudio_out::out_close()
 
    //single_lock sLock(&m_mutex,TRUE);
 
-   if(m_estate == state_playing)
+   if(m_estate == e_state_playing)
    {
       out_stop();
    }
 
-   if(m_estate != state_opened)
+   if(m_estate != e_state_opened)
       return MMSYSERR_NOERROR;
 
    int mmr;
@@ -229,7 +229,7 @@ int xaudio_out::out_close()
 
 //   m_pprebuffer->Reset();
 
-   m_estate = state_initial;
+   m_estate = e_state_initial;
 
    return MMSYSERR_NOERROR;
 
@@ -240,9 +240,9 @@ int xaudio_out::out_close()
 //void xaudio_out::out_buffer_ready(int iBuffer)
 //{
 //
-//   if(m_estate != state_playing)
+//   if(m_estate != e_state_playing)
 //   {
-//      //TRACE("ERROR xaudio_out::BufferReady while out_get_state() != state_playing");
+//      //TRACE("ERROR xaudio_out::BufferReady while out_get_state() != e_state_playing");
 //      return;
 //   }
 //
@@ -286,14 +286,14 @@ int xaudio_out::out_stop()
 
    //single_lock sLock(&m_mutex,TRUE);
 
-   if(m_estate != state_playing && m_estate != state_paused)
+   if(m_estate != e_state_playing && m_estate != e_state_paused)
       return MMSYSERR_ERROR;
 
    //m_eventStopped.ResetEvent();
 
    //m_pprebuffer->Stop();
 
-   m_estate = state_stopping;
+   m_estate = e_state_stopping;
 
    //// waveOutReset
    //// The waveOutReset function stops playback on the given
@@ -305,7 +305,7 @@ int xaudio_out::out_stop()
    if(m_mmr == MMSYSERR_NOERROR)
    {
 
-      m_estate = state_opened;
+      m_estate = e_state_opened;
 
    }
 
@@ -319,9 +319,9 @@ int xaudio_out::out_pause()
 
 //   single_lock sLock(&m_mutex,TRUE);
 
-   assert(m_estate == state_playing);
+   assert(m_estate == e_state_playing);
 
-   if(m_estate != state_playing)
+   if(m_estate != e_state_playing)
       return MMSYSERR_ERROR;
 
    // waveOutReset
@@ -336,7 +336,7 @@ int xaudio_out::out_pause()
 
    if(m_mmr == MMSYSERR_NOERROR)
    {
-      m_estate = state_paused;
+      m_estate = e_state_paused;
    }
 
    return m_mmr;
@@ -346,12 +346,12 @@ int xaudio_out::out_pause()
 int xaudio_out::out_start()
 {
 
-   if(m_estate == state_playing)
+   if(m_estate == e_state_playing)
       return MMSYSERR_NOERROR;
 
-   assert(m_estate == state_opened || m_estate == state_stopped);
+   assert(m_estate == e_state_opened || m_estate == state_stopped);
 
-   m_estate = state_playing;
+   m_estate = e_state_playing;
 
 
    m_mmr = SUCCEEDED(m_psourcevoice->Start(0,XAUDIO2_COMMIT_NOW)) ? MMSYSERR_NOERROR : MMSYSERR_ERROR;
@@ -367,9 +367,9 @@ int xaudio_out::out_start()
 int xaudio_out::out_restart()
 {
 
-   assert(m_estate == state_paused);
+   assert(m_estate == e_state_paused);
 
-   if(m_estate != state_paused)
+   if(m_estate != e_state_paused)
       return MMSYSERR_ERROR;
 
    // waveOutReset
@@ -384,7 +384,7 @@ int xaudio_out::out_restart()
    if(m_mmr == MMSYSERR_NOERROR)
    {
 
-      m_estate = state_playing;
+      m_estate = e_state_playing;
 
    }
 
@@ -553,7 +553,7 @@ extern "C"
          b.pAudioData = (const BYTE *)pwh->lpData;
       
       
-         if(hwo->m_estate != xaudio_out::state_playing)
+         if(hwo->m_estate != xaudio_out::e_state_playing)
          {
             hwo->out_start();
             
