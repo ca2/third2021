@@ -35,7 +35,7 @@
 #include <cairo-qt.h>
 
 #include <qapplication.h>
-#include <X11/Xlib.h>
+//!!!#include <X11/Xlib.h>
 
 typedef struct _qt_closure {
     Display *dpy;
