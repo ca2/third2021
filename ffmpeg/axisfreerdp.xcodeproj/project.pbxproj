@@ -2049,7 +2049,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(WorkspaceDir)/app/thirdparty/include",
+					"$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/thirdparty/include",
 					"$(WorkspaceDir)/platform/thirdparty/include",
 				);
 				INSTALL_PATH = "@executable_path";
@@ -2064,8 +2064,8 @@
 				PRODUCT_NAME = axisfreerdp;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "../../include . framework $(WorkspaceDir)/include $(WorkspaceDir)/ $(WorkspaceDir)/app / ../../ ../";
-				WorkspaceDir = "$(SRCROOT)/../..";
+				USER_HEADER_SEARCH_PATHS = "../../include . framework $(WorkspaceDir)/source $(WorkspaceDir)/source/include $(WorkspaceDir)/ $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER) / ../../ ../";
+				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
 			name = Debug;
 		};
@@ -2101,7 +2101,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				HEADER_SEARCH_PATHS = (
-					"$(WorkspaceDir)/app/thirdparty/include",
+					"$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/thirdparty/include",
 					"$(WorkspaceDir)/platform/thirdparty/include",
 				);
 				INSTALL_PATH = "@executable_path";
@@ -2115,8 +2115,8 @@
 				PRODUCT_NAME = axisfreerdp;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = "../../include . framework $(WorkspaceDir)/include $(WorkspaceDir)/ $(WorkspaceDir)/app / ../../ ../";
-				WorkspaceDir = "$(SRCROOT)/../..";
+				USER_HEADER_SEARCH_PATHS = "../../include . framework $(WorkspaceDir)/source $(WorkspaceDir)/source/include $(WorkspaceDir)/ $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER) / ../../ ../";
+				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
 			name = Release;
 		};

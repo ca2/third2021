@@ -2064,7 +2064,7 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYSTEM_HEADER_SEARCH_PATHS = "$(PROJECT_DIR) $(WorkspaceDir)/platform/include";
 				USE_HEADERMAP = NO;
-				WorkspaceDir = "$(SRCROOT)/../..";
+				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
 			name = Debug;
 		};
@@ -2125,7 +2125,7 @@
 				SKIP_INSTALL = YES;
 				SYSTEM_HEADER_SEARCH_PATHS = "$(PROJECT_DIR) $(WorkspaceDir)/platform/include";
 				USE_HEADERMAP = NO;
-				WorkspaceDir = "$(SRCROOT)/../..";
+				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
 			name = Release;
 		};
