@@ -3,16 +3,9 @@ project(sn C)
 
 set(CMAKE_C_STANDARD 11)
 
-if(${CMAKE_SYSTEM_NAME} STREQUAL "Linux")
-    set(LINUX TRUE)
-    set(PLATFORM_NAME "linux")
-    message("System is Linux")
-    include(FindPkgConfig)
+if(LINUX)
 elseif(WIN32)
-    set(PLATFORM_NAME "windows")
 elseif(UWP)
-    set(PLATFORM_NAME "uwp")
-    set(WINDOWS_TSF TRUE)
 endif()
 
 
