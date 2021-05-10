@@ -3,16 +3,13 @@
 //
 
 
-#include <cairo/cairo.h>
-
-
 inline void copy(rectangle_i32 * prectangleDst, const cairo_rectangle_int_t * prectangleSrc)
 {
 
    prectangleDst->left = prectangleSrc->x;
    prectangleDst->top = prectangleSrc->y;
    prectangleDst->right = prectangleSrc->x + prectangleSrc->width;
-   prectangleDst->top = prectangleSrc->y + prectangleSrc->height;
+   prectangleDst->bottom = prectangleSrc->y + prectangleSrc->height;
 
 }
 
