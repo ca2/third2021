@@ -57,21 +57,7 @@
 		9A26A6291D7EFA86001F47A8 /* strerror-punycode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14819C6E1DC0018DF7D /* strerror-punycode.c */; };
 		9A26A62A1D7EFA86001F47A8 /* strerror-stringprep.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14919C6E1DC0018DF7D /* strerror-stringprep.c */; };
 		9A26A62B1D7EFA86001F47A8 /* strerror-tld.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14A19C6E1DC0018DF7D /* strerror-tld.c */; };
-		9ACFCCE624CF0D170058092D /* libidn.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AA5E6D616F7C61B005C45CE /* libidn.dylib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		9ACFCCE524CF0CF90058092D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(WorkspaceDir)/archive $(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/storage-$(PLATFORM_MODIFIER)/third/library/$(CONFIGURATION)";
-			dstSubfolderSpec = 0;
-			files = (
-				9ACFCCE624CF0D170058092D /* libidn.dylib in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		077A00AB1B4D4F9E001C85FF /* libios_idn.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libios_idn.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -237,10 +223,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9AA5E6D316F7C61B005C45CE /* Build configuration list for PBXNativeTarget "idn" */;
 			buildPhases = (
+				9AA5E5FE16F7C61B005C45CE /* Headers */,
 				9AA5E4C316F7C61B005C45CE /* Sources */,
 				9AA5E5FC16F7C61B005C45CE /* Frameworks */,
-				9AA5E5FE16F7C61B005C45CE /* Headers */,
-				9ACFCCE524CF0CF90058092D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -387,7 +372,6 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_POSTPROCESSING = YES;
-				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				EXECUTABLE_EXTENSION = dylib;
@@ -417,9 +401,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/storage-$(PLATFORM_MODIFIER)/library/$(CONFIGURATION)",
-					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/storage-$(PLATFORM_MODIFIER)/third/library/$(CONFIGURATION)",
+					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(CONFIGURATION)",
 					"$(WorkspaceDir)/time/$(PLATFORM_MODIFIER)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -489,9 +471,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/storage-$(PLATFORM_MODIFIER)/library/$(CONFIGURATION)",
-					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/storage-$(PLATFORM_MODIFIER)/third/library/$(CONFIGURATION)",
+					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(CONFIGURATION)",
 					"$(WorkspaceDir)/time/$(PLATFORM_MODIFIER)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
