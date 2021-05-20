@@ -139,7 +139,7 @@ static OpDef optable[] =
 /* 0x08 */  { "PnMode",            2, "pen mode (word)" },
 /* 0x09 */  { "PnPat",             8, "pen pattern" },
 /* 0x0a */  { "FillPat",           8, "fill pattern" },
-/* 0x0b */  { "OvSize",            4, "oval size (point)" },
+/* 0x0b */  { "OvSize",            4, "ellipse size (point)" },
 /* 0x0c */  { "Origin",            4, "dh, dv (word)" },
 /* 0x0d */  { "TxSize",            2, "text size (word)" },
 /* 0x0e */  { "FgColor",           4, "foreground color (longword)" },
