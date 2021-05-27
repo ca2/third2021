@@ -28,10 +28,13 @@
 #include "sn-internals.h"
 
 #include <xcb/xcb.h>
-#include <xcb/xcb_aux.h> // libxcb-util0-dev xcb-util-devel
+// apt install libxcb-util0-dev
+// dnf install xcb-util-devel
+#include <xcb/xcb_aux.h>
 #include <xcb/xcb_event.h>
 
-#include <X11/Xlib-xcb.h> // libx11-xcb-dev
+// apt install libx11-xcb-dev
+#include <X11/Xlib-xcb.h>
 
 struct SnDisplay
 {
