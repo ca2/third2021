@@ -1,7 +1,7 @@
 /* src/config.h.  Generated from config.h.in by configure.  */
 /* src/config.h.in.  Generated from configure.ac by autoheader.  */
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 
 //#if defined(AMD64)
