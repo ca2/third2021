@@ -36,10 +36,10 @@
 
 #include "fribidi-begindecls.h"
 
-#define fribidi_char_set_name_cap_rtl "CapRTL"
-#define fribidi_char_set_title_cap_rtl "CapRTL (Test)"
+#define fribidi_e_character_set_name_cap_rtl "CapRTL"
+#define fribidi_e_character_set_title_cap_rtl "CapRTL (Test)"
 
-const char *fribidi_char_set_desc_cap_rtl (
+const char *fribidi_e_character_set_desc_cap_rtl (
   void
 );
 

@@ -86,15 +86,15 @@ FRIBIDI_ENTRY FriBidiCharSet fribidi_parse_charset (
 );
 
 
-FRIBIDI_ENTRY const char *fribidi_char_set_name (
+FRIBIDI_ENTRY const char *fribidi_e_character_set_name (
   FriBidiCharSet char_set
 );
 
-FRIBIDI_ENTRY const char *fribidi_char_set_title (
+FRIBIDI_ENTRY const char *fribidi_e_character_set_title (
   FriBidiCharSet char_set
 );
 
-FRIBIDI_ENTRY const char *fribidi_char_set_desc (
+FRIBIDI_ENTRY const char *fribidi_e_character_set_desc (
   FriBidiCharSet char_set
 );
 

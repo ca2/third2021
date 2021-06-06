@@ -36,9 +36,9 @@
 
 #include "fribidi-begindecls.h"
 
-#define fribidi_char_set_name_cp1255 "CP1255"
-#define fribidi_char_set_title_cp1255 "CP1255 (MS Hebrew/Yiddish)"
-#define fribidi_char_set_desc_cp1255 NULL
+#define fribidi_e_character_set_name_cp1255 "CP1255"
+#define fribidi_e_character_set_title_cp1255 "CP1255 (MS Hebrew/Yiddish)"
+#define fribidi_e_character_set_desc_cp1255 NULL
 
 FriBidiChar fribidi_cp1255_to_unicode_c (
   char ch

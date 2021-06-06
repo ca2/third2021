@@ -36,9 +36,9 @@
 
 #include "fribidi-begindecls.h"
 
-#define fribidi_char_set_name_iso8859_6 "ISO8859-6"
-#define fribidi_char_set_title_iso8859_6 "ISO8859-6 (Arabic)"
-#define fribidi_char_set_desc_iso8859_6 NULL
+#define fribidi_e_character_set_name_iso8859_6 "ISO8859-6"
+#define fribidi_e_character_set_title_iso8859_6 "ISO8859-6 (Arabic)"
+#define fribidi_e_character_set_desc_iso8859_6 NULL
 
 FriBidiChar fribidi_iso8859_6_to_unicode_c (
   char ch

@@ -36,9 +36,9 @@
 
 #include "fribidi-begindecls.h"
 
-#define fribidi_char_set_name_cp1256 "CP1256"
-#define fribidi_char_set_title_cp1256 "CP1256 (MS Arabic)"
-#define fribidi_char_set_desc_cp1256 NULL
+#define fribidi_e_character_set_name_cp1256 "CP1256"
+#define fribidi_e_character_set_title_cp1256 "CP1256 (MS Arabic)"
+#define fribidi_e_character_set_desc_cp1256 NULL
 
 FriBidiChar fribidi_cp1256_to_unicode_c (
   char ch

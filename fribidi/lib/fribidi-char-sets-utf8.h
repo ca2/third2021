@@ -36,9 +36,9 @@
 
 #include "fribidi-begindecls.h"
 
-#define fribidi_char_set_name_utf8 "UTF-8"
-#define fribidi_char_set_title_utf8 "UTF-8 (Unicode)"
-#define fribidi_char_set_desc_utf8 NULL
+#define fribidi_e_character_set_name_utf8 "UTF-8"
+#define fribidi_e_character_set_title_utf8 "UTF-8 (Unicode)"
+#define fribidi_e_character_set_desc_utf8 NULL
 
 FriBidiStrIndex fribidi_utf8_to_unicode (
   const char *s,
