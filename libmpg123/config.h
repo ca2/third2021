@@ -1,6 +1,6 @@
    /* src/config.h.in.  Generated from configure.ac by autoheader.  */
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 /* Define if your architecture wants/needs/can use attribute_align_arg and
    alignment checks. It is for 32bit x86... */
