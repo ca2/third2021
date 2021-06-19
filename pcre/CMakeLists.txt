@@ -89,7 +89,7 @@
 PROJECT(PCRE2 C)
 
 # Increased minimum to 2.8.0 to support newer add_test features.
-CMAKE_MINIMUM_REQUIRED(VERSION 2.8.0)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.17)
 
 # Set policy CMP0026 to avoid warnings for the use of LOCATION in
 # GET_TARGET_PROPERTY. This should no longer be required.
@@ -102,8 +102,8 @@ SET(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -I${PROJECT_SOURCE_DIR}/src")
 # external packages
 FIND_PACKAGE( BZip2 )
 FIND_PACKAGE( ZLIB )
-FIND_PACKAGE( Readline )
-FIND_PACKAGE( Editline )
+#FIND_PACKAGE( Readline )
+#FIND_PACKAGE( Editline )
 
 # Configuration checks
 
