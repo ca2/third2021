@@ -638,7 +638,7 @@ static void draw_cursor(struct dc_capture *capture, HDC hdc, HWND window)
       POINT pos;
 
       if (window)
-         ClientToScreen(window, &win_pos);
+         client_to_screen(window, &win_pos);
 
       pos.x = ci->ptScreenPos.x - (int)ii.xHotspot - win_pos.x;
       pos.y = ci->ptScreenPos.y - (int)ii.yHotspot - win_pos.y;
