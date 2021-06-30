@@ -27,6 +27,6 @@ add_library(sn SHARED
         sn.h)
 
 
-target_link_options(sn PRIVATE -Wl,-rpath=\$ORIGIN)
+#target_link_options(sn PRIVATE -Wl,-rpath=$ORIGIN)
 target_link_libraries(sn PRIVATE X11-xcb xcb xcb-util)
 target_link_options(sn PRIVATE -Wl,-z,defs)
