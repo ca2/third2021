@@ -286,8 +286,8 @@ using namespace dami;
  **
  ** \param name The filename of the mp3 file to link to
  **/
-ID3_Tag::ID3_Tag(const char *name)
-  : _impl(new ID3_TagImpl(name))
+ID3_Tag::ID3_Tag(ID3_Reader* preader)
+  : _impl(new ID3_TagImpl(preader))
 {
 }
 
@@ -701,10 +701,10 @@ size_t ID3_Tag::Render(ID3_Writer& writer, ID3_TagType tt) const
  ** @see IsV2Tag
  ** @param fileInfo The filename of the file to link to.
  **/
-size_t ID3_Tag::Link(const char *fileInfo, flags_t flags)
-{
-  return _impl->Link(fileInfo, flags);
-}
+//size_t ID3_Tag::Link(const char *fileInfo, flags_t flags)
+//{
+//  return _impl->Link(fileInfo, flags);
+//}
 
 /**
  ** Same as above, but takes a ID3_Reader as argument.
@@ -993,10 +993,10 @@ void ID3_Tag::AddFrames(const ID3_Frame *frames, size_t numFrames)
   }
 }
 
-size_t ID3_Tag::Link(const char *fileInfo, bool parseID3v1, bool parseLyrics3)
-{
-  return _impl->Link(fileInfo, parseID3v1, parseLyrics3);
-}
+//size_t ID3_Tag::Link(const char *fileInfo, bool parseID3v1, bool parseLyrics3)
+//{
+//  return _impl->Link(fileInfo, parseID3v1, parseLyrics3);
+//}
 
 void ID3_Tag::SetCompression(bool b)
 {

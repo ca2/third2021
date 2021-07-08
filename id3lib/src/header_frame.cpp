@@ -162,7 +162,7 @@ void ID3_FrameHeader::Render(ID3_Writer& writer) const
 
 const char* ID3_FrameHeader::GetTextID() const
 {
-  char *textID = "";
+  const char *textID = "";
   if (_info && _frame_def)
   {
     if (_info->frame_bytes_id == strlen(_frame_def->sShortTextID))

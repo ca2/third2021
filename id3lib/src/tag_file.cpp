@@ -115,36 +115,36 @@ static int truncate(const char *path, size_t length)
 
 #endif
 
-size_t ID3_TagImpl::Link(const char *fileInfo, bool parseID3v1, bool parseLyrics3)
-{
-  flags_t tt = ID3TT_NONE;
-  if (parseID3v1)
-  {
-    tt |= ID3TT_ID3V1;
-  }
-  if (parseLyrics3)
-  {
-    tt |= ID3TT_LYRICS;
-  }
-  return this->Link(fileInfo, tt);
-}
+//size_t ID3_TagImpl::Link(const char *fileInfo, bool parseID3v1, bool parseLyrics3)
+//{
+//  flags_t tt = ID3TT_NONE;
+//  if (parseID3v1)
+//  {
+//    tt |= ID3TT_ID3V1;
+//  }
+//  if (parseLyrics3)
+//  {
+//    tt |= ID3TT_LYRICS;
+//  }
+//  return this->Link(fileInfo, tt);
+//}
 
-size_t ID3_TagImpl::Link(const char *fileInfo, flags_t tag_types)
-{
-  _tags_to_parse.set(tag_types);
-
-  if (NULL == fileInfo)
-  {
-    return 0;
-  }
-
-  _file_name = fileInfo;
-  _changed = true;
-
-  this->ParseFile();
-
-  return this->GetPrependedBytes();
-}
+//size_t ID3_TagImpl::Link(const char *fileInfo, flags_t tag_types)
+//{
+//  _tags_to_parse.set(tag_types);
+//
+//  if (NULL == fileInfo)
+//  {
+//    return 0;
+//  }
+//
+//  _file_name = fileInfo;
+//  _changed = true;
+//
+//  this->ParseFile();
+//
+//  return this->GetPrependedBytes();
+//}
 
 // used for streaming:
 size_t ID3_TagImpl::Link(ID3_Reader &reader, flags_t tag_types)

@@ -172,7 +172,7 @@ extern "C"
   }
 
 
-  ID3_C_EXPORT size_t CCONV
+  /*ID3_C_EXPORT size_t CCONV
   ID3Tag_Link(ID3Tag *tag, const char *fileName)
   {
     size_t offset = 0;
@@ -181,18 +181,18 @@ extern "C"
       ID3_CATCH(offset = reinterpret_cast<ID3_Tag *>(tag)->Link(fileName));
     }
     return offset;
-  }
+  }*/
 
-  ID3_C_EXPORT size_t CCONV
-  ID3Tag_LinkWithFlags(ID3Tag *tag, const char *fileName, flags_t flags)
-  {
-    size_t offset = 0;
-    if (tag)
-    {
-      ID3_CATCH(offset = reinterpret_cast<ID3_Tag *>(tag)->Link(fileName,flags));
-    }
-    return offset;
-  }
+  //ID3_C_EXPORT size_t CCONV
+  //ID3Tag_LinkWithFlags(ID3Tag *tag, const char *fileName, flags_t flags)
+  //{
+  //  size_t offset = 0;
+  //  if (tag)
+  //  {
+  //    ID3_CATCH(offset = reinterpret_cast<ID3_Tag *>(tag)->Link(fileName,flags));
+  //  }
+  //  return offset;
+  //}
 
 
 

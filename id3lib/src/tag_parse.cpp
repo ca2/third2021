@@ -202,18 +202,18 @@ bool id3::v2::parse(ID3_TagImpl& tag, ID3_Reader& reader)
   return true;
 }
 
-void ID3_TagImpl::ParseFile()
-{
-  ifstream file;
-  if (ID3E_NoError != openReadableFile(this->GetFileName(), file))
-  {
-    // log this...
-    return;
-  }
-  ID3_IFStreamReader ifsr(file);
-  ParseReader(ifsr);
-  file.close();
-}
+//void ID3_TagImpl::ParseFile()
+//{
+//  ifstream file;
+//  if (ID3E_NoError != openReadableFile(this->GetFileName(), file))
+//  {
+//    // log this...
+//    return;
+//  }
+//  ID3_IFStreamReader ifsr(file);
+//  ParseReader(ifsr);
+//  file.close();
+//}
 
 //used for streaming media
 void ID3_TagImpl::ParseReader(ID3_Reader &reader)

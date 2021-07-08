@@ -30,7 +30,7 @@
 #endif
 
 //#include "frame.h"
-#include "readers.h"
+#include <id3/readers.h>
 #include "frame_impl.h"
 
 /** \class ID3_Frame frame.h id3/frame.h

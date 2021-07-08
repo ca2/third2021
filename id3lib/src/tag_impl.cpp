@@ -88,7 +88,7 @@ size_t ID3_TagImpl::IsV2Tag(ID3_Reader& reader)
   return tagSize;
 }
 
-ID3_TagImpl::ID3_TagImpl(const char *name)
+ID3_TagImpl::ID3_TagImpl(ID3_Reader * preader)
   : _frames(),
     _cursor(_frames.begin()),
     _file_name(),
@@ -99,9 +99,9 @@ ID3_TagImpl::ID3_TagImpl(const char *name)
     _mp3_info(NULL) // need to do this before this->Clear()
 {
   this->Clear();
-  if (name)
+  if (preader)
   {
-    this->Link(name);
+     this->Link(*preader);
   }
 }
 
