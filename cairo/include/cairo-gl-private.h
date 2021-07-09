@@ -48,6 +48,10 @@
 
 #include "cairoint.h"
 
+#ifdef WIN32 // included by camilo on 2021-07-08 22:30 BRT
+#include <GL/glew.h>
+#endif
+
 #include "cairo-gl.h"
 #include "cairo-gl-gradient-private.h"
 
