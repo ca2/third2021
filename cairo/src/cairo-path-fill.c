@@ -35,12 +35,12 @@
  *	Carl D. Worth <cworth@cworth.org>
  */
 
-#include "cairoint.h"
-#include "cairo-boxes-private.h"
-#include "cairo-error-private.h"
-#include "cairo-path-fixed-private.h"
-#include "cairo-region-private.h"
-#include "cairo-traps-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-path-fixed-private.h>
+#include <cairo/cairo-region-private.h>
+#include <cairo/cairo-traps-private.h>
 
 typedef struct cairo_filler {
     cairo_polygon_t *polygon;

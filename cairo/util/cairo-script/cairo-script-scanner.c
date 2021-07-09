@@ -34,7 +34,7 @@
 
 #include "config.h"
 
-#include "cairo-script-private.h"
+#include <cairo/cairo-script-private.h>
 
 #include <limits.h> /* INT_MAX */
 #include <math.h> /* pow */

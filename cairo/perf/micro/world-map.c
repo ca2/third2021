@@ -24,7 +24,7 @@
  * Author: Carl D. Worth <cworth@cworth.org>
  */
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 #ifdef HAVE_UNISTD_H
 #include <unistd.h>

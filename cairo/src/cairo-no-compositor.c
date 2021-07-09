@@ -39,9 +39,9 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-compositor-private.h"
+#include <cairo/cairo-compositor-private.h>
 
 static cairo_int_status_t
 _cairo_no_compositor_paint (const cairo_compositor_t *_compositor,

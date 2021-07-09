@@ -24,8 +24,8 @@
 #endif
 
 #include "strophe.h"
-#include "common.h"
-#include "thread.h"
+#include <strophe/common.h>
+#include <strophe/thread.h>
 
 struct _mutex_t {
     const xmpp_ctx_t *ctx;

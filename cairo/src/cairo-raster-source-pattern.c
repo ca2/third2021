@@ -34,9 +34,9 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
-#include "cairo-error-private.h"
-#include "cairo-pattern-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-pattern-private.h>
 
 /**
  * SECTION:cairo-raster-source

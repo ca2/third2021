@@ -37,15 +37,15 @@
  */
 
 #define _DEFAULT_SOURCE /* for hypot() */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-box-inline.h"
-#include "cairo-boxes-private.h"
-#include "cairo-error-private.h"
-#include "cairo-path-fixed-private.h"
-#include "cairo-slope-private.h"
-#include "cairo-stroke-dash-private.h"
-#include "cairo-traps-private.h"
+#include <cairo/cairo-box-inline.h>
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-path-fixed-private.h>
+#include <cairo/cairo-slope-private.h>
+#include <cairo/cairo-stroke-dash-private.h>
+#include <cairo/cairo-traps-private.h>
 
 typedef struct cairo_stroker {
     cairo_stroke_style_t style;

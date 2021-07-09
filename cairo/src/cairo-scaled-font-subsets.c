@@ -41,13 +41,13 @@
  */
 
 #define _DEFAULT_SOURCE /* for snprintf(), strdup() */
-#include "cairoint.h"
-#include "cairo-error-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-error-private.h>
 
 #if CAIRO_HAS_FONT_SUBSET
 
-#include "cairo-scaled-font-subsets-private.h"
-#include "cairo-user-font-private.h"
+#include <cairo/cairo-scaled-font-subsets-private.h>
+#include <cairo/cairo-user-font-private.h>
 
 #define MAX_GLYPHS_PER_SIMPLE_FONT 256
 #define MAX_GLYPHS_PER_COMPOSITE_FONT 65536

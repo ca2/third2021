@@ -26,7 +26,7 @@
  * http://labs.trolltech.com/blogs/2007/08/31/rasterizing-dragons/
  */
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 static inline int
 next_pot (int v)

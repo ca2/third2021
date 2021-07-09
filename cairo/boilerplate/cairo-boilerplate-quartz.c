@@ -24,7 +24,7 @@
  * Author: Carl D. Worth <cworth@cworth.org>
  */
 
-#include "cairo-boilerplate-private.h"
+#include <cairo/cairo-boilerplate-private.h>
 
 #include <cairo-quartz.h>
 

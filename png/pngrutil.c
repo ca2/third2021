@@ -14,7 +14,7 @@
  * libpng itself during the course of reading an image.
  */
 
-#include "pngpriv.h"
+#include <png/pngpriv.h>
 
 #ifdef PNG_READ_SUPPORTED
 

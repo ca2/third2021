@@ -38,17 +38,17 @@
  *	Karl Tomlinson <karlt+@karlt.net>, Mozilla Corporation
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xcb.h"
-#include "cairo-xcb-private.h"
+#include <cairo/cairo-xcb.h>
+#include <cairo/cairo-xcb-private.h>
 
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-list-inline.h"
-#include "cairo-surface-backend-private.h"
-#include "cairo-compositor-private.h"
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-surface-backend-private.h>
+#include <cairo/cairo-compositor-private.h>
 
 #if CAIRO_HAS_XLIB_XCB_FUNCTIONS
 slim_hidden_proto (cairo_xcb_surface_create);

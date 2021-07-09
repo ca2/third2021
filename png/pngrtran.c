@@ -16,7 +16,7 @@
  * in pngtrans.c.
  */
 
-#include "pngpriv.h"
+#include <png/pngpriv.h>
 
 #ifdef PNG_ARM_NEON_IMPLEMENTATION
 #  if PNG_ARM_NEON_IMPLEMENTATION == 1

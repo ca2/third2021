@@ -1,12 +1,12 @@
 #ifndef CAIRO_DRM_I965_PRIVATE_H
 #define CAIRO_DRM_I965_PRIVATE_H
 
-#include "cairo-drm-intel-private.h"
+#include <cairo/cairo-drm-intel-private.h>
 
-#include "cairo-hash-private.h"
-#include "cairo-freelist-private.h"
+#include <cairo/cairo-hash-private.h>
+#include <cairo/cairo-freelist-private.h>
 
-#include "cairo-drm-intel-brw-defines.h"
+#include <cairo/cairo-drm-intel-brw-defines.h>
 
 #include <setjmp.h>
 

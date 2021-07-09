@@ -26,7 +26,7 @@
  *          Carl Worth <cworth@cworth.org>
  */
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 static cairo_time_t
 do_unaligned_clip (cairo_t *cr, int width, int height, int loops)

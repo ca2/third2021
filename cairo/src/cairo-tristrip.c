@@ -33,10 +33,10 @@
  *	Chris Wilson <chris@chris-wilsonc.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-tristrip-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-tristrip-private.h>
 
 void
 _cairo_tristrip_init (cairo_tristrip_t *strip)

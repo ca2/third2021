@@ -46,7 +46,7 @@
 # define _WIN32_WINNT 0x0500
 #endif
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 #include "cairo-win32-private.h"
 
 #include <wchar.h>

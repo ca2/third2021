@@ -28,11 +28,11 @@
  * Contributor(s):
  *      Robert Bragg <robert@linux.intel.com>
  */
-//#include "cairoint.h"
+//#include <cairo/cairoint.h>
 
-#include "cairo-cogl-private.h"
-#include "cairo-cogl-gradient-private.h"
-#include "cairo-image-surface-private.h"
+#include <cairo/cairo-cogl-private.h>
+#include <cairo/cairo-cogl-gradient-private.h>
+#include <cairo/cairo-image-surface-private.h>
 
 #include <cogl/cogl2-experimental.h>
 #include <glib.h>

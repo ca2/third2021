@@ -20,8 +20,8 @@
 #include <expat.h>
 
 #include <strophe.h>
-#include "common.h"
-#include "parser.h"
+#include <strophe/common.h>
+#include <strophe/parser.h>
 
 /* Use the Unit Separator to delimit namespace and name in our XML*/
 #define NAMESPACE_SEP ('\x1F')

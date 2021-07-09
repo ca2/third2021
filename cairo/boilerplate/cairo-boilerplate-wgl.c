@@ -33,7 +33,7 @@
  *	Zoxc <zoxc32@gmail.com>
  */
 
-#include "cairo-boilerplate-private.h"
+#include <cairo/cairo-boilerplate-private.h>
 
 #include <cairo-gl.h>
 

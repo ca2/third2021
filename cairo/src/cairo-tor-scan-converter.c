@@ -93,9 +93,9 @@
  *      V
  *   coverage blitter
  */
-#include "cairoint.h"
-#include "cairo-spans-private.h"
-#include "cairo-error-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-spans-private.h>
+#include <cairo/cairo-error-private.h>
 
 #include <stdlib.h>
 #include <string.h>

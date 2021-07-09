@@ -25,8 +25,8 @@
  *
  **************************************************************************/
 
-#include "cairoint.h"
-#include "cairo-drm-intel-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-drm-intel-private.h>
 
 struct debug_stream {
     unsigned offset;	/* current gtt offset */

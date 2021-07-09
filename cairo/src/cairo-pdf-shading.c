@@ -34,14 +34,14 @@
  *	Adrian Johnson <ajohnson@redneon.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if CAIRO_HAS_PDF_OPERATORS
 
-#include "cairo-pdf-shading-private.h"
+#include <cairo/cairo-pdf-shading-private.h>
 
-#include "cairo-array-private.h"
-#include "cairo-error-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-error-private.h>
 #include <float.h>
 
 static unsigned char *

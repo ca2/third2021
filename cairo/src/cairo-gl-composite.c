@@ -43,14 +43,14 @@
  *	Martin Robinson <mrobinson@igalia.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-gl-private.h"
+#include <cairo/cairo-gl-private.h>
 
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-clip-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-clip-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
 
 /* FIXME: Copy of same routine in cairo-gl-msaa-compositor.c */
 static cairo_int_status_t

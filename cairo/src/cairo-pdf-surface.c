@@ -40,28 +40,28 @@
  */
 
 #define _DEFAULT_SOURCE /* for snprintf() */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-pdf.h"
-#include "cairo-pdf-surface-private.h"
-#include "cairo-pdf-operators-private.h"
-#include "cairo-pdf-shading-private.h"
+#include <cairo/cairo-pdf.h>
+#include <cairo/cairo-pdf-surface-private.h>
+#include <cairo/cairo-pdf-operators-private.h>
+#include <cairo/cairo-pdf-shading-private.h>
 
-#include "cairo-array-private.h"
-#include "cairo-analysis-surface-private.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-image-info-private.h"
-#include "cairo-recording-surface-private.h"
-#include "cairo-output-stream-private.h"
-#include "cairo-paginated-private.h"
-#include "cairo-scaled-font-subsets-private.h"
-#include "cairo-surface-clipper-private.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-subsurface-private.h"
-#include "cairo-type3-glyph-surface-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-analysis-surface-private.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-image-info-private.h>
+#include <cairo/cairo-recording-surface-private.h>
+#include <cairo/cairo-output-stream-private.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-scaled-font-subsets-private.h>
+#include <cairo/cairo-surface-clipper-private.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-subsurface-private.h>
+#include <cairo/cairo-type3-glyph-surface-private.h>
 
 #include <zlib.h>
 

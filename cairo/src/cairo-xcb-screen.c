@@ -30,12 +30,12 @@
  *    Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xcb-private.h"
-#include "cairo-list-inline.h"
+#include <cairo/cairo-xcb-private.h>
+#include <cairo/cairo-list-inline.h>
 
-#include "cairo-fontconfig-private.h"
+#include <cairo/cairo-fontconfig-private.h>
 
 static void
 _cairo_xcb_init_screen_font_options (cairo_xcb_screen_t *screen)

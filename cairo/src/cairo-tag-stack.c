@@ -34,9 +34,9 @@
  *	Adrian Johnson <ajohnson@redneon.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-tag-stack-private.h"
+#include <cairo/cairo-tag-stack-private.h>
 
 /* Tagged PDF must have one of these tags at the top level */
 static const char * _cairo_tag_stack_tagged_pdf_top_level_element_list[] =

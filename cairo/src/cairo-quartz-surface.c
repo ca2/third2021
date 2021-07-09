@@ -35,19 +35,19 @@
  */
 
 #define _GNU_SOURCE /* required for RTLD_DEFAULT */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-quartz-private.h"
+#include <cairo/cairo-quartz-private.h>
 
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-compositor-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-pattern-private.h"
-#include "cairo-surface-backend-private.h"
-#include "cairo-surface-clipper-private.h"
-#include "cairo-recording-surface-private.h"
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-surface-backend-private.h>
+#include <cairo/cairo-surface-clipper-private.h>
+#include <cairo/cairo-recording-surface-private.h>
 
 #include <dlfcn.h>
 

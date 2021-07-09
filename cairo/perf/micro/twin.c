@@ -1,7 +1,7 @@
 #define WIDTH 1350
 #define HEIGHT 900
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 static cairo_time_t
 do_twin (cairo_t *cr,

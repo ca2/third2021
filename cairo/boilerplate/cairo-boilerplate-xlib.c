@@ -24,8 +24,8 @@
  * Author: Carl D. Worth <cworth@cworth.org>
  */
 
-#include "cairo-boilerplate-private.h"
-#include "cairo-boilerplate-xlib.h"
+#include <cairo/cairo-boilerplate-private.h>
+#include <cairo/cairo-boilerplate-xlib.h>
 
 #include <cairo-xlib.h>
 #if CAIRO_HAS_XLIB_XRENDER_SURFACE

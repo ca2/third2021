@@ -29,9 +29,9 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xcb-private.h"
+#include <cairo/cairo-xcb-private.h>
 
 #include <xcb/xcbext.h>
 

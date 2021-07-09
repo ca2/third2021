@@ -45,21 +45,21 @@
  *
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-drm-private.h"
-#include "cairo-drm-ioctl-private.h"
-#include "cairo-drm-intel-private.h"
-#include "cairo-drm-intel-command-private.h"
-#include "cairo-drm-intel-ioctl-private.h"
-#include "cairo-drm-i965-private.h"
+#include <cairo/cairo-drm-private.h>
+#include <cairo/cairo-drm-ioctl-private.h>
+#include <cairo/cairo-drm-intel-private.h>
+#include <cairo/cairo-drm-intel-command-private.h>
+#include <cairo/cairo-drm-intel-ioctl-private.h>
+#include <cairo/cairo-drm-i965-private.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-region-private.h"
-#include "cairo-surface-offset-private.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-region-private.h>
+#include <cairo/cairo-surface-offset-private.h>
 
 #include <sys/ioctl.h>
 #include <errno.h>

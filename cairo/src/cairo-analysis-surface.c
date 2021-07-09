@@ -34,17 +34,17 @@
  *      Adrian Johnson <ajohnson@redneon.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-analysis-surface-private.h"
-#include "cairo-box-inline.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-paginated-private.h"
-#include "cairo-recording-surface-inline.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-subsurface-inline.h"
-#include "cairo-region-private.h"
+#include <cairo/cairo-analysis-surface-private.h>
+#include <cairo/cairo-box-inline.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-recording-surface-inline.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-subsurface-inline.h>
+#include <cairo/cairo-region-private.h>
 
 typedef struct {
     cairo_surface_t base;

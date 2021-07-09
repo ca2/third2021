@@ -34,14 +34,14 @@
  *      Kristian Høgsberg <krh@bitplanet.net>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-drm-i965-private.h"
-#include "cairo-surface-subsurface-private.h"
-#include "cairo-surface-snapshot-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-drm-i965-private.h>
+#include <cairo/cairo-surface-subsurface-private.h>
+#include <cairo/cairo-surface-snapshot-private.h>
 
-#include "cairo-drm-intel-brw-eu.h"
+#include <cairo/cairo-drm-intel-brw-eu.h>
 
 /* Theory of shaders:
  *

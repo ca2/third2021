@@ -11,7 +11,7 @@
  * and license in png.h
  */
 
-#include "pngpriv.h"
+#include <png/pngpriv.h>
 
 #ifdef PNG_PROGRESSIVE_READ_SUPPORTED
 

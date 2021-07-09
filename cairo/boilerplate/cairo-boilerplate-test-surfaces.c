@@ -26,7 +26,7 @@
 
 #include "../cairo-version.h"
 
-#include "cairo-boilerplate-private.h"
+#include <cairo/cairo-boilerplate-private.h>
 
 #include <cairo-types-private.h>
 

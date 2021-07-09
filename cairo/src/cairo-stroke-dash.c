@@ -36,9 +36,9 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-stroke-dash-private.h"
+#include <cairo/cairo-stroke-dash-private.h>
 
 void
 _cairo_stroker_dash_start (cairo_stroker_dash_t *dash)

@@ -36,13 +36,13 @@
  */
 
 /* Provide definitions for standalone compilation */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-combsort-inline.h"
-#include "cairo-error-private.h"
-#include "cairo-freelist-private.h"
-#include "cairo-line-inline.h"
-#include "cairo-traps-private.h"
+#include <cairo/cairo-combsort-inline.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-freelist-private.h>
+#include <cairo/cairo-line-inline.h>
+#include <cairo/cairo-traps-private.h>
 
 #define DEBUG_PRINT_STATE 0
 #define DEBUG_EVENTS 0

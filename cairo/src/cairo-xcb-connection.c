@@ -30,12 +30,12 @@
  */
 
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xcb-private.h"
-#include "cairo-hash-private.h"
-#include "cairo-freelist-private.h"
-#include "cairo-list-inline.h"
+#include <cairo/cairo-xcb-private.h>
+#include <cairo/cairo-hash-private.h>
+#include <cairo/cairo-freelist-private.h>
+#include <cairo/cairo-list-inline.h>
 
 #include <xcb/xcbext.h>
 #include <xcb/bigreq.h>

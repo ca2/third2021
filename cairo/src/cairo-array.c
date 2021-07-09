@@ -36,9 +36,9 @@
  *	Carl Worth <cworth@cworth.org>
  */
 
-#include "cairoint.h"
-#include "cairo-array-private.h"
-#include "cairo-error-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-error-private.h>
 
 /**
  * _cairo_array_init:

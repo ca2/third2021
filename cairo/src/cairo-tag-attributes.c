@@ -34,11 +34,11 @@
  *	Adrian Johnson <ajohnson@redneon.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-array-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-tag-attributes-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-tag-attributes-private.h>
 
 #include <string.h>
 

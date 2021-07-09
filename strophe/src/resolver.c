@@ -26,9 +26,9 @@
 #include "android-resolv.h"
 #endif
 
-#include "ostypes.h"
-#include "snprintf.h"
-#include "resolver.h"
+#include <strophe/ostypes.h>
+#include <strophe/snprintf.h>
+#include <strophe/resolver.h>
 
 #define MESSAGE_HEADER_LEN 12
 #define MESSAGE_RESPONSE 1

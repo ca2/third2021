@@ -28,17 +28,17 @@
  *	    Carl Worth <cworth@cworth.org>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-array-private.h"
-#include "cairo-error-private.h"
-#include "cairo-freed-pool-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-path-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-recording-surface-inline.h"
-#include "cairo-surface-snapshot-inline.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-freed-pool-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-path-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-recording-surface-inline.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
 
 #include <float.h>
 

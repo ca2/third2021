@@ -19,10 +19,10 @@
 #include <assert.h>
 #include <string.h>
 
-#include "sha1.h"
-#include "ostypes.h"
+#include <strophe/sha1.h>
+#include <strophe/ostypes.h>
 
-#include "scram.h"
+#include <strophe/scram.h>
 
 #define HMAC_BLOCK_SIZE 64
 

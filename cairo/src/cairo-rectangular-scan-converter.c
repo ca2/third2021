@@ -31,13 +31,13 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-combsort-inline.h"
-#include "cairo-error-private.h"
-#include "cairo-freelist-private.h"
-#include "cairo-list-private.h"
-#include "cairo-spans-private.h"
+#include <cairo/cairo-combsort-inline.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-freelist-private.h>
+#include <cairo/cairo-list-private.h>
+#include <cairo/cairo-spans-private.h>
 
 #include <setjmp.h>
 

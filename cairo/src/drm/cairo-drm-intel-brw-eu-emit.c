@@ -29,8 +29,8 @@
  *   Keith Whitwell <keith@tungstengraphics.com>
  */
 
-#include "cairoint.h"
-#include "cairo-drm-intel-brw-eu.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-drm-intel-brw-eu.h>
 
 #include <string.h>
 

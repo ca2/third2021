@@ -37,24 +37,24 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-clip-private.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-compositor-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-paginated-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-pixman-private.h"
-#include "cairo-recording-surface-private.h"
-#include "cairo-region-private.h"
-#include "cairo-scaled-font-private.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-snapshot-private.h"
-#include "cairo-surface-subsurface-private.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-clip-private.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-pixman-private.h>
+#include <cairo/cairo-recording-surface-private.h>
+#include <cairo/cairo-region-private.h>
+#include <cairo/cairo-scaled-font-private.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-snapshot-private.h>
+#include <cairo/cairo-surface-subsurface-private.h>
 
 /* Limit on the width / height of an image surface in pixels.  This is
  * mainly determined by coordinates of things sent to pixman at the

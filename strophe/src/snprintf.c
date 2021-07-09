@@ -64,7 +64,7 @@
 /* JAM: changed declarations to xmpp_snprintf and xmpp_vsnprintf to
    avoid namespace collision. */
 
-#include "snprintf.h"
+#include <strophe/snprintf.h>
 
 /* varargs declarations: */
 

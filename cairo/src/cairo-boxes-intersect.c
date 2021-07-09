@@ -37,12 +37,12 @@
  */
 
 /* Provide definitions for standalone compilation */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-error-private.h"
-#include "cairo-combsort-inline.h"
-#include "cairo-list-private.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-combsort-inline.h>
+#include <cairo/cairo-list-private.h>
 
 #include <setjmp.h>
 

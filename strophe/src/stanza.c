@@ -20,8 +20,8 @@
 #include <string.h>
 
 #include "strophe.h"
-#include "common.h"
-#include "hash.h"
+#include <strophe/common.h>
+#include <strophe/hash.h>
 
 #ifdef _WIN32
 #define inline __inline

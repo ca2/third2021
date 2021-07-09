@@ -30,10 +30,10 @@
 
 #include "../cairo-version.h" /* for the real version */
 
-#include "cairo-perf.h"
-#include "cairo-stats.h"
+#include <cairo/cairo-perf.h>
+#include <cairo/cairo-stats.h>
 
-#include "cairo-boilerplate-getopt.h"
+#include <cairo/cairo-boilerplate-getopt.h>
 
 /* For basename */
 #ifdef HAVE_LIBGEN_H

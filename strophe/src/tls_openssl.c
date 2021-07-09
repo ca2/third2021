@@ -25,9 +25,9 @@
 #include <openssl/ssl.h>
 #include <openssl/err.h>
 
-#include "common.h"
-#include "tls.h"
-#include "sock.h"
+#include <strophe/common.h>
+#include <strophe/tls.h>
+#include <strophe/sock.h>
 
 struct _tls {
     xmpp_ctx_t *ctx;

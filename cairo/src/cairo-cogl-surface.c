@@ -28,29 +28,29 @@
  * Contributor(s):
  *      Robert Bragg <robert@linux.intel.com>
  */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-cache-private.h"
-#include "cairo-error-private.h"
-#include "cairo-path-fixed-private.h"
-#include "cairo-recording-surface-private.h"
-#include "cairo-surface-clipper-private.h"
-#include "cairo-fixed-private.h"
-#include "cairo-device-private.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-cogl-private.h"
-#include "cairo-cogl-gradient-private.h"
-#include "cairo-arc-private.h"
-#include "cairo-traps-private.h"
-#include "cairo-cogl-context-private.h"
-#include "cairo-cogl-utils-private.h"
-#include "cairo-box-inline.h"
-#include "cairo-surface-subsurface-inline.h"
-#include "cairo-surface-fallback-private.h"
-#include "cairo-surface-offset-private.h"
+#include <cairo/cairo-cache-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-path-fixed-private.h>
+#include <cairo/cairo-recording-surface-private.h>
+#include <cairo/cairo-surface-clipper-private.h>
+#include <cairo/cairo-fixed-private.h>
+#include <cairo/cairo-device-private.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-cogl-private.h>
+#include <cairo/cairo-cogl-gradient-private.h>
+#include <cairo/cairo-arc-private.h>
+#include <cairo/cairo-traps-private.h>
+#include <cairo/cairo-cogl-context-private.h>
+#include <cairo/cairo-cogl-utils-private.h>
+#include <cairo/cairo-box-inline.h>
+#include <cairo/cairo-surface-subsurface-inline.h>
+#include <cairo/cairo-surface-fallback-private.h>
+#include <cairo/cairo-surface-offset-private.h>
 
-#include "cairo-cogl.h"
+#include <cairo/cairo-cogl.h>
 
 #include <cogl/cogl2-experimental.h>
 #include <glib.h>

@@ -76,20 +76,20 @@
  * copy-on-write implementation for _cairo_surface_snapshot.
  **/
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-array-private.h"
-#include "cairo-analysis-surface-private.h"
-#include "cairo-clip-private.h"
-#include "cairo-combsort-inline.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-recording-surface-inline.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-wrapper-private.h"
-#include "cairo-traps-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-analysis-surface-private.h>
+#include <cairo/cairo-clip-private.h>
+#include <cairo/cairo-combsort-inline.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-recording-surface-inline.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-wrapper-private.h>
+#include <cairo/cairo-traps-private.h>
 
 typedef enum {
     CAIRO_RECORDING_REPLAY,

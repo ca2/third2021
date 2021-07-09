@@ -36,13 +36,13 @@
  *     Rich Walsh <dragtext@e-vertise.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-os2-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-surface-fallback-private.h"
-#include "cairo-image-surface-private.h"
+#include <cairo/cairo-os2-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-surface-fallback-private.h>
+#include <cairo/cairo-image-surface-private.h>
 
 #if CAIRO_HAS_FC_FONT
 #include <fontconfig/fontconfig.h>

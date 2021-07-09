@@ -11,7 +11,7 @@
  * and license in png.h
  */
 
-#include "pngpriv.h"
+#include <png/pngpriv.h>
 #ifdef PNG_SIMPLIFIED_WRITE_STDIO_SUPPORTED
 #  include <errno.h>
 #endif /* SIMPLIFIED_WRITE_STDIO */

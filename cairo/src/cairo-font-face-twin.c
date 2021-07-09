@@ -34,8 +34,8 @@
  *      Behdad Esfahbod <behdad@behdad.org>
  */
 
-#include "cairoint.h"
-#include "cairo-error-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-error-private.h>
 
 #include <math.h>
 

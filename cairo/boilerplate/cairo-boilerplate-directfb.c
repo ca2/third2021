@@ -9,7 +9,7 @@ make check
 
 */
 
-#include "cairo-boilerplate-private.h"
+#include <cairo/cairo-boilerplate-private.h>
 
 #include <cairo-directfb.h>
 

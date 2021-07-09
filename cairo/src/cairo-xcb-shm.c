@@ -34,13 +34,13 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if CAIRO_HAS_XCB_SHM_FUNCTIONS
 
-#include "cairo-xcb-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-mempool-private.h"
+#include <cairo/cairo-xcb-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-mempool-private.h>
 
 #include <xcb/shm.h>
 #include <sys/ipc.h>

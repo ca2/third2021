@@ -33,12 +33,12 @@
  *	Kristian Høgsberg <krh@redhat.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if CAIRO_HAS_FONT_SUBSET
 
-#include "cairo-type1-private.h"
-#include "cairo-scaled-font-subsets-private.h"
+#include <cairo/cairo-type1-private.h>
+#include <cairo/cairo-scaled-font-subsets-private.h>
 
 #if 0
 /*

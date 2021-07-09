@@ -17,8 +17,8 @@
 #include <string.h>
 
 #include "strophe.h"
-#include "common.h"
-#include "hash.h"
+#include <strophe/common.h>
+#include <strophe/hash.h>
 
 /* private types */
 typedef struct _hashentry_t hashentry_t;

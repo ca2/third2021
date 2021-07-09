@@ -36,10 +36,10 @@
 
 /* TODO real path type */
 
-#include "cairo-script-private.h"
+#include <cairo/cairo-script-private.h>
 
 #if CAIRO_HAS_SCRIPT_SURFACE
-#include "cairo-script.h"
+#include <cairo/cairo-script.h>
 #endif
 
 #include <stdio.h> /* snprintf */

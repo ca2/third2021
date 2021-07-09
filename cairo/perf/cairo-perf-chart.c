@@ -27,7 +27,7 @@
  *	    Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 #include <stdio.h>
 #include <stdlib.h>

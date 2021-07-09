@@ -52,12 +52,12 @@
  * a separate buffer for the triangles).
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-cogl-context-private.h"
-#include "cairo-freed-pool-private.h"
-#include "cairo-arc-private.h"
-#include "cairo-path-fixed-private.h"
+#include <cairo/cairo-cogl-context-private.h>
+#include <cairo/cairo-freed-pool-private.h>
+#include <cairo/cairo-arc-private.h>
+#include <cairo/cairo-path-fixed-private.h>
 
 #include <glib.h>
 

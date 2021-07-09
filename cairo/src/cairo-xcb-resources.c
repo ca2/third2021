@@ -52,11 +52,11 @@
  * PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xcb-private.h"
+#include <cairo/cairo-xcb-private.h>
 
-#include "cairo-fontconfig-private.h"
+#include <cairo/cairo-fontconfig-private.h>
 
 static void
 parse_boolean (const char *v, cairo_bool_t *out)

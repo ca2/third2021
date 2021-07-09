@@ -46,8 +46,8 @@
 #include <string.h>
 
 #include "strophe.h"
-#include "common.h"
-#include "util.h"
+#include <strophe/common.h>
+#include <strophe/util.h>
 
 /** Initialize the Strophe library.
  *  This function initializes subcomponents of the Strophe library and must

@@ -29,8 +29,8 @@
  *      Alexandros Frantzis <alexandros.frantzis@linaro.org>
  */
 
-#include "cairoint.h"
-#include "cairo-gl-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-gl-private.h>
 
 #include <errno.h>
 

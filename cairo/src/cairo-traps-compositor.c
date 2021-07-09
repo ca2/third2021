@@ -39,26 +39,26 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-box-inline.h"
-#include "cairo-boxes-private.h"
-#include "cairo-clip-inline.h"
-#include "cairo-clip-private.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-compositor-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-pattern-inline.h"
-#include "cairo-paginated-private.h"
-#include "cairo-recording-surface-inline.h"
-#include "cairo-surface-subsurface-private.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-observer-private.h"
-#include "cairo-region-private.h"
-#include "cairo-spans-private.h"
-#include "cairo-traps-private.h"
-#include "cairo-tristrip-private.h"
+#include <cairo/cairo-box-inline.h>
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-clip-inline.h>
+#include <cairo/cairo-clip-private.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-pattern-inline.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-recording-surface-inline.h>
+#include <cairo/cairo-surface-subsurface-private.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-observer-private.h>
+#include <cairo/cairo-region-private.h>
+#include <cairo/cairo-spans-private.h>
+#include <cairo/cairo-traps-private.h>
+#include <cairo/cairo-tristrip-private.h>
 
 typedef cairo_int_status_t
 (*draw_func_t) (const cairo_traps_compositor_t *compositor,

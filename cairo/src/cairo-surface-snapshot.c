@@ -37,11 +37,11 @@
  *      Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-surface-snapshot-inline.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
 
 static cairo_status_t
 _cairo_surface_snapshot_finish (void *abstract_surface)

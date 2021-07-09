@@ -22,10 +22,10 @@
 
 #include "strophe.h"
 
-#include "common.h"
-#include "util.h"
-#include "parser.h"
-#include "resolver.h"
+#include <strophe/common.h>
+#include <strophe/util.h>
+#include <strophe/parser.h>
+#include <strophe/resolver.h>
 
 #ifndef DEFAULT_SEND_QUEUE_MAX
 /** @def DEFAULT_SEND_QUEUE_MAX

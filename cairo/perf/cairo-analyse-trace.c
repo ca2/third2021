@@ -33,12 +33,12 @@
 
 #include "../cairo-version.h" /* for the real version */
 
-#include "cairo-perf.h"
-#include "cairo-stats.h"
+#include <cairo/cairo-perf.h>
+#include <cairo/cairo-stats.h>
 
-#include "cairo-boilerplate-getopt.h"
+#include <cairo/cairo-boilerplate-getopt.h>
 #include <cairo-script-interpreter.h>
-#include "cairo-missing.h"
+#include <cairo/cairo-missing.h>
 
 /* rudely reuse bits of the library... */
 #include "../src/cairo-error-private.h"

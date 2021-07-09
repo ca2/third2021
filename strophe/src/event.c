@@ -48,8 +48,8 @@
 #endif
 
 #include <strophe.h>
-#include "common.h"
-#include "parser.h"
+#include <strophe/common.h>
+#include <strophe/parser.h>
 
 #ifndef DEFAULT_TIMEOUT
 /** @def DEFAULT_TIMEOUT

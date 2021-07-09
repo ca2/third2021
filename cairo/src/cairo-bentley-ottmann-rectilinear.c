@@ -36,12 +36,12 @@
  */
 
 /* Provide definitions for standalone compilation */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-combsort-inline.h"
-#include "cairo-error-private.h"
-#include "cairo-traps-private.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-combsort-inline.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-traps-private.h>
 
 typedef struct _cairo_bo_edge cairo_bo_edge_t;
 typedef struct _cairo_bo_trap cairo_bo_trap_t;

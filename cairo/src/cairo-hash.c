@@ -36,8 +36,8 @@
  *	Carl Worth <cworth@cworth.org>
  */
 
-#include "cairoint.h"
-#include "cairo-error-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-error-private.h>
 
 /*
  * An entry can be in one of three states:

@@ -25,8 +25,8 @@
  * Authors: Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairo-perf.h"
-#include "cairo-perf-graph.h"
+#include <cairo/cairo-perf.h>
+#include <cairo/cairo-perf-graph.h>
 
 #include <gtk/gtk.h>
 

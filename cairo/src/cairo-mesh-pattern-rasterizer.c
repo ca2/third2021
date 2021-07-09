@@ -34,10 +34,10 @@
  *	Andrea Canciani <ranma42@gmail.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-array-private.h"
-#include "cairo-pattern-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-pattern-private.h>
 
 /*
  * Rasterizer for mesh patterns.

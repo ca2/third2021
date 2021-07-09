@@ -39,11 +39,11 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-compositor-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-surface-offset-private.h"
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-surface-offset-private.h>
 
 /* high-level compositor interface */
 

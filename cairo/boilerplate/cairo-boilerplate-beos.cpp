@@ -38,7 +38,7 @@
  *
  * ***** END LICENSE BLOCK ***** */
 
-#include "cairo-boilerplate.h"
+#include <cairo/cairo-boilerplate.h>
 #include <cairo-beos.h>
 
 // Part of this code was originally part of

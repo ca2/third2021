@@ -25,7 +25,7 @@
  * Authors: Carl Worth <cworth@cworth.org>
  */
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 #include <stdio.h>
 #include <stdlib.h>

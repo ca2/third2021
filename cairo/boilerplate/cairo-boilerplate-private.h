@@ -26,7 +26,7 @@
 #ifndef _CAIRO_BOILERPLATE_PRIVATE_H_
 #define _CAIRO_BOILERPLATE_PRIVATE_H_
 
-#include "cairo-boilerplate.h"
+#include <cairo/cairo-boilerplate.h>
 
 CAIRO_BEGIN_DECLS
 

@@ -29,8 +29,8 @@
  *      Robert Bragg <robert@linux.intel.com>
  */
 
-#include "cairoint.h"
-#include "cairo-cogl-utils-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-cogl-utils-private.h>
 
 #include <cogl/cogl.h>
 #include <glib.h>

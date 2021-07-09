@@ -24,9 +24,9 @@
 #endif
 
 #include "strophe.h"
-#include "common.h"
-#include "ostypes.h"
-#include "util.h"
+#include <strophe/common.h>
+#include <strophe/ostypes.h>
+#include <strophe/util.h>
 
 /** implement our own strdup that uses the ctx allocator */
 /** Duplicate a string.

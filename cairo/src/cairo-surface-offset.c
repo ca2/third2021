@@ -35,12 +35,12 @@
  *      Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-clip-inline.h"
-#include "cairo-error-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-surface-offset-private.h"
+#include <cairo/cairo-clip-inline.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-surface-offset-private.h>
 
 /* A collection of routines to facilitate drawing to an alternate surface. */
 

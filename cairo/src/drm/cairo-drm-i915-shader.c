@@ -31,13 +31,13 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-drm-i915-private.h"
-#include "cairo-surface-offset-private.h"
-#include "cairo-surface-subsurface-private.h"
-#include "cairo-surface-snapshot-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-drm-i915-private.h>
+#include <cairo/cairo-surface-offset-private.h>
+#include <cairo/cairo-surface-subsurface-private.h>
+#include <cairo/cairo-surface-snapshot-private.h>
 
 #if 0
 static cairo_status_t

@@ -21,8 +21,8 @@
 #include <string.h>
 
 #include "strophe.h"
-#include "common.h"
-#include "ostypes.h"
+#include <strophe/common.h>
+#include <strophe/ostypes.h>
 
 /** Fire off all stanza handlers that match.
  *  This function is called internally by the event loop whenever stanzas

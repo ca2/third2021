@@ -38,23 +38,23 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  *	Karl Tomlinson <karlt+@karlt.net>, Mozilla Corporation
  */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if !CAIRO_HAS_XLIB_XCB_FUNCTIONS
 
-#include "cairo-xlib-private.h"
-#include "cairo-xlib-surface-private.h"
+#include <cairo/cairo-xlib-private.h>
+#include <cairo/cairo-xlib-surface-private.h>
 
-#include "cairo-error-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-paginated-private.h"
-#include "cairo-pattern-inline.h"
-#include "cairo-recording-surface-private.h"
-#include "cairo-surface-backend-private.h"
-#include "cairo-surface-offset-private.h"
-#include "cairo-surface-observer-private.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-subsurface-inline.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-pattern-inline.h>
+#include <cairo/cairo-recording-surface-private.h>
+#include <cairo/cairo-surface-backend-private.h>
+#include <cairo/cairo-surface-offset-private.h>
+#include <cairo/cairo-surface-observer-private.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-subsurface-inline.h>
 
 #define PIXMAN_MAX_INT ((pixman_fixed_1 >> 1) - pixman_fixed_e) /* need to ensure deltas also fit */
 

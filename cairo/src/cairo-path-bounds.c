@@ -35,10 +35,10 @@
  *	Carl D. Worth <cworth@cworth.org>
  */
 
-#include "cairoint.h"
-#include "cairo-box-inline.h"
-#include "cairo-error-private.h"
-#include "cairo-path-fixed-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-box-inline.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-path-fixed-private.h>
 
 typedef struct _cairo_path_bounder {
     cairo_point_t current_point;

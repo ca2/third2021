@@ -40,20 +40,20 @@
  *	Karl Tomlinson <karlt+@karlt.net>, Mozilla Corporation
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if !CAIRO_HAS_XLIB_XCB_FUNCTIONS
 
-#include "cairo-xlib-private.h"
+#include <cairo/cairo-xlib-private.h>
 
-#include "cairo-compositor-private.h"
-#include "cairo-damage-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-pattern-private.h"
-#include "cairo-pixman-private.h"
-#include "cairo-traps-private.h"
-#include "cairo-tristrip-private.h"
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-damage-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-pixman-private.h>
+#include <cairo/cairo-traps-private.h>
+#include <cairo/cairo-tristrip-private.h>
 
 static cairo_int_status_t
 check_composite (const cairo_composite_rectangles_t *extents)

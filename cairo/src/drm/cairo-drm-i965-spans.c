@@ -33,12 +33,12 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-boxes-private.h"
-#include "cairo-error-private.h"
-#include "cairo-drm-i965-private.h"
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-drm-i965-private.h>
 
 /* Operates in either immediate or retained mode.
  * When given a clip region we record the sequence of vbo and then

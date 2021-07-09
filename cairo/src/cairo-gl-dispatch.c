@@ -29,9 +29,9 @@
  *      Alexandros Frantzis <alexandros.frantzis@linaro.org>
  */
 
-#include "cairoint.h"
-#include "cairo-gl-private.h"
-#include "cairo-gl-dispatch-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-gl-private.h>
+#include <cairo/cairo-gl-dispatch-private.h>
 #if CAIRO_HAS_DLSYM
 #include <dlfcn.h>
 #endif

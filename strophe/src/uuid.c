@@ -14,8 +14,8 @@
  */
 
 #include "strophe.h"
-#include "common.h"
-#include "rand.h"
+#include <strophe/common.h>
+#include <strophe/rand.h>
 
 /** @def XMPP_UUID_LEN
  *  UUID length in string representation excluding '\0'.

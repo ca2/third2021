@@ -38,17 +38,17 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-private.h"
-#include "cairo-arc-private.h"
-#include "cairo-backend-private.h"
-#include "cairo-clip-inline.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-freed-pool-private.h"
-#include "cairo-path-private.h"
-#include "cairo-pattern-private.h"
+#include <cairo/cairo-private.h>
+#include <cairo/cairo-arc-private.h>
+#include <cairo/cairo-backend-private.h>
+#include <cairo/cairo-clip-inline.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-freed-pool-private.h>
+#include <cairo/cairo-path-private.h>
+#include <cairo/cairo-pattern-private.h>
 
 #define CAIRO_TOLERANCE_MINIMUM	_cairo_fixed_to_double(1)
 

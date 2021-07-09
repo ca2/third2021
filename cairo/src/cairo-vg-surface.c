@@ -34,17 +34,17 @@
  *      Chris Wilson      <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-vg.h"
+#include <cairo/cairo-vg.h>
 
-#include "cairo-cache-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-path-fixed-private.h"
-#include "cairo-recording-surface-inline.h"
-#include "cairo-surface-clipper-private.h"
+#include <cairo/cairo-cache-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-path-fixed-private.h>
+#include <cairo/cairo-recording-surface-inline.h>
+#include <cairo/cairo-surface-clipper-private.h>
 
 #include <pixman.h>
 #include <VG/openvg.h>

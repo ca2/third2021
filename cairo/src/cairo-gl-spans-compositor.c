@@ -39,17 +39,17 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-gl-private.h"
+#include <cairo/cairo-gl-private.h>
 
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-compositor-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-spans-compositor-private.h"
-#include "cairo-surface-backend-private.h"
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-spans-compositor-private.h>
+#include <cairo/cairo-surface-backend-private.h>
 
 typedef struct _cairo_gl_span_renderer {
     cairo_span_renderer_t base;

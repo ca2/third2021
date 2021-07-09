@@ -22,10 +22,10 @@
 #include <assert.h>
 #include <string.h>     /* memset, memcpy */
 
-#include "common.h"     /* xmpp_alloc */
-#include "ostypes.h"    /* uint8_t, size_t */
-#include "sha1.h"
-#include "snprintf.h"   /* xmpp_snprintf */
+#include <strophe/common.h>
+#include <strophe/ostypes.h>    /* uint8_t, size_t */
+#include <strophe/sha1.h>
+#include <strophe/snprintf.h>   /* xmpp_snprintf */
 #include "strophe.h"    /* xmpp_ctx_t, xmpp_free */
 
 struct _xmpp_sha1_t {

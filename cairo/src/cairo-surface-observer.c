@@ -33,25 +33,25 @@
  *      Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-surface-observer-private.h"
-#include "cairo-surface-observer-inline.h"
+#include <cairo/cairo-surface-observer-private.h>
+#include <cairo/cairo-surface-observer-inline.h>
 
-#include "cairo-array-private.h"
-#include "cairo-combsort-inline.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-pattern-private.h"
-#include "cairo-output-stream-private.h"
-#include "cairo-recording-surface-private.h"
-#include "cairo-surface-subsurface-inline.h"
-#include "cairo-reference-count-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-combsort-inline.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-output-stream-private.h>
+#include <cairo/cairo-recording-surface-private.h>
+#include <cairo/cairo-surface-subsurface-inline.h>
+#include <cairo/cairo-reference-count-private.h>
 
 #if CAIRO_HAS_SCRIPT_SURFACE
-#include "cairo-script-private.h"
+#include <cairo/cairo-script-private.h>
 #endif
 
 static const cairo_surface_backend_t _cairo_surface_observer_backend;

@@ -38,15 +38,15 @@
  */
 
 #define _DEFAULT_SOURCE /* for hypot() */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-box-inline.h"
-#include "cairo-boxes-private.h"
-#include "cairo-contour-inline.h"
-#include "cairo-contour-private.h"
-#include "cairo-error-private.h"
-#include "cairo-path-fixed-private.h"
-#include "cairo-slope-private.h"
+#include <cairo/cairo-box-inline.h>
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-contour-inline.h>
+#include <cairo/cairo-contour-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-path-fixed-private.h>
+#include <cairo/cairo-slope-private.h>
 
 #define DEBUG 0
 

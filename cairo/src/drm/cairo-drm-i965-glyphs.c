@@ -33,12 +33,12 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-drm-i965-private.h"
-#include "cairo-error-private.h"
-#include "cairo-rtree-private.h"
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-drm-i965-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-rtree-private.h>
 
 typedef struct _i965_glyphs i965_glyphs_t;
 

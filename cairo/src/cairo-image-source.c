@@ -42,18 +42,18 @@
  * compositor interface.
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-image-surface-private.h"
+#include <cairo/cairo-image-surface-private.h>
 
-#include "cairo-compositor-private.h"
-#include "cairo-error-private.h"
-#include "cairo-pattern-inline.h"
-#include "cairo-paginated-private.h"
-#include "cairo-recording-surface-private.h"
-#include "cairo-surface-observer-private.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-subsurface-private.h"
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-pattern-inline.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-recording-surface-private.h>
+#include <cairo/cairo-surface-observer-private.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-subsurface-private.h>
 
 #define PIXMAN_MAX_INT ((pixman_fixed_1 >> 1) - pixman_fixed_e) /* need to ensure deltas also fit */
 

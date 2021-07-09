@@ -38,20 +38,20 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-private.h"
-#include "cairo-error-private.h"
-#include "cairo-arc-private.h"
-#include "cairo-backend-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-freed-pool-private.h"
-#include "cairo-gstate-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-path-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-skia-private.h"
-#include "cairo-surface-backend-private.h"
+#include <cairo/cairo-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-arc-private.h>
+#include <cairo/cairo-backend-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-freed-pool-private.h>
+#include <cairo/cairo-gstate-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-path-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-skia-private.h>
+#include <cairo/cairo-surface-backend-private.h>
 
 #include <SkPaint.h>
 #include <SkShader.h>

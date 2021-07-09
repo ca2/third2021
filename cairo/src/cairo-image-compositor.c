@@ -41,18 +41,18 @@
  * for validating cairo-xlib (which currently also uses traps).
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-image-surface-private.h"
+#include <cairo/cairo-image-surface-private.h>
 
-#include "cairo-compositor-private.h"
-#include "cairo-spans-compositor-private.h"
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-spans-compositor-private.h>
 
-#include "cairo-region-private.h"
-#include "cairo-traps-private.h"
-#include "cairo-tristrip-private.h"
+#include <cairo/cairo-region-private.h>
+#include <cairo/cairo-traps-private.h>
+#include <cairo/cairo-tristrip-private.h>
 
-#include "cairo-pixman-private.h"
+#include <cairo/cairo-pixman-private.h>
 
 static pixman_image_t *
 to_pixman_image (cairo_surface_t *s)

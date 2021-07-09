@@ -11,7 +11,7 @@
  * and license in png.h
  */
 
-#include "pngpriv.h"
+#include <png/pngpriv.h>
 
 /* Generate a compiler error if there is an old png.h in the search path. */
 typedef png_libpng_version_1_6_37 Your_png_h_is_not_version_1_6_37;

@@ -40,17 +40,17 @@
  * operations.
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xml.h"
+#include <cairo/cairo-xml.h>
 
-#include "cairo-clip-private.h"
-#include "cairo-device-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-error-private.h"
-#include "cairo-output-stream-private.h"
-#include "cairo-recording-surface-inline.h"
+#include <cairo/cairo-clip-private.h>
+#include <cairo/cairo-device-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-output-stream-private.h>
+#include <cairo/cairo-recording-surface-inline.h>
 
 #define static cairo_warn static
 
@@ -911,7 +911,7 @@ _cairo_xml_surface_fill (void			*abstract_surface,
 }
 
 #if CAIRO_HAS_FT_FONT
-#include "cairo-ft-private.h"
+#include <cairo/cairo-ft-private.h>
 static cairo_status_t
 _cairo_xml_emit_type42_font (cairo_xml_t *xml,
 			     cairo_scaled_font_t *scaled_font)

@@ -38,15 +38,15 @@
  *	Eric Anholt <eric@anholt.net>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #ifdef WIN32 // included by camilo on 2021-07-08 22:30 BRT
 #include <GL/glew.h>
 #endif
 
-#include "cairo-error-private.h"
-#include "cairo-gl-gradient-private.h"
-#include "cairo-gl-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-gl-gradient-private.h>
+#include <cairo/cairo-gl-private.h>
 
 
 static int

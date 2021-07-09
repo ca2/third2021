@@ -39,10 +39,10 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-compositor-private.h"
-#include "cairo-surface-fallback-private.h"
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-surface-fallback-private.h>
 
 cairo_int_status_t
 _cairo_surface_fallback_paint (void			*surface,

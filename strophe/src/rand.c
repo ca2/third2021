@@ -23,12 +23,12 @@
 #include <string.h>     /* memeset */
 #include <time.h>       /* clock, time */
 
-#include "common.h"     /* xmpp_alloc, xmpp_free */
-#include "ostypes.h"    /* uint8_t, uint32_t, size_t */
-#include "sha1.h"
-#include "snprintf.h"   /* xmpp_snprintf */
+#include <strophe/common.h>     /* xmpp_alloc, xmpp_free */
+#include <strophe/ostypes.h>    /* uint8_t, uint32_t, size_t */
+#include <strophe/sha1.h>
+#include <strophe/snprintf.h>   /* xmpp_snprintf */
 
-#include "rand.h"       /* xmpp_rand_t */
+#include <strophe/rand.h>       /* xmpp_rand_t */
 
 #define outlen SHA1_DIGEST_SIZE
 #define seedlen (440 / 8)

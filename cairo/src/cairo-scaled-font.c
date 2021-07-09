@@ -38,13 +38,13 @@
  *      Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-pattern-private.h"
-#include "cairo-scaled-font-private.h"
-#include "cairo-surface-backend-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-scaled-font-private.h>
+#include <cairo/cairo-surface-backend-private.h>
 
 /**
  * SECTION:cairo-scaled-font

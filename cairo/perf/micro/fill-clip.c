@@ -26,7 +26,7 @@
 
 /* Compares the overhead for WebKit's drawRect() */
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 #include <pixman.h>
 

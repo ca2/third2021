@@ -36,10 +36,10 @@
  *      Søren Sandmann <sandmann@daimi.au.dk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-region-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-region-private.h>
 
 /* XXX need to update pixman headers to be const as appropriate */
 #define CONST_CAST (pixman_region32_t *)

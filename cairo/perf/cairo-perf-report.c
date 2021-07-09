@@ -27,9 +27,9 @@
 
 #define _GETDELIM 1/* for getline() on AIX */
 
-#include "cairo-perf.h"
-#include "cairo-missing.h"
-#include "cairo-stats.h"
+#include <cairo/cairo-perf.h>
+#include <cairo/cairo-missing.h>
+#include <cairo/cairo-stats.h>
 
 /* We use _GNU_SOURCE for getline and strndup if available. */
 #ifndef _GNU_SOURCE

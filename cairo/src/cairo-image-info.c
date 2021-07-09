@@ -34,10 +34,10 @@
  *	Adrian Johnson <ajohnson@redneon.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-image-info-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-info-private.h>
 
 /* JPEG (image/jpeg)
  *

@@ -35,12 +35,12 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if !CAIRO_HAS_XLIB_XCB_FUNCTIONS
 
-#include "cairo-xlib-private.h"
-#include "cairo-xlib-surface-private.h"
+#include <cairo/cairo-xlib-private.h>
+#include <cairo/cairo-xlib-surface-private.h>
 
 #if !HAVE_X11_EXTENSIONS_XSHM_H || !(HAVE_X11_EXTENSIONS_SHMPROTO_H || HAVE_X11_EXTENSIONS_SHMSTR_H)
 void _cairo_xlib_display_init_shm (cairo_xlib_display_t *display) {}
@@ -135,11 +135,11 @@ void _cairo_xlib_display_fini_shm (cairo_xlib_display_t *display) {}
 
 #else
 
-#include "cairo-damage-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-mempool-private.h"
+#include <cairo/cairo-damage-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-mempool-private.h>
 
 #include <X11/Xlibint.h>
 #include <X11/Xproto.h>

@@ -39,15 +39,15 @@
  *	Adrian Johnson <ajohnson@redneon.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if CAIRO_HAS_PDF_OPERATORS
 
-#include "cairo-error-private.h"
-#include "cairo-pdf-operators-private.h"
-#include "cairo-path-fixed-private.h"
-#include "cairo-output-stream-private.h"
-#include "cairo-scaled-font-subsets-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-pdf-operators-private.h>
+#include <cairo/cairo-path-fixed-private.h>
+#include <cairo/cairo-output-stream-private.h>
+#include <cairo/cairo-scaled-font-subsets-private.h>
 
 static cairo_status_t
 _cairo_pdf_operators_end_text (cairo_pdf_operators_t    *pdf_operators);

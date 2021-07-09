@@ -33,12 +33,12 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-drm-i915-private.h"
-#include "cairo-error-private.h"
-#include "cairo-rtree-private.h"
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-drm-i915-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-rtree-private.h>
 
 static void
 i915_emit_glyph_rectangle_zero (i915_device_t *device,

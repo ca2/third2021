@@ -36,7 +36,7 @@
 #include <cairo.h>
 #include <string.h>
 
-#include "cairo-compiler-private.h"
+#include <cairo/cairo-compiler-private.h>
 
 #if   HAVE_STDINT_H
 # include <stdint.h>
@@ -245,7 +245,7 @@ cairo_boilerplate_version_string (void);
 void
 cairo_boilerplate_fini (void);
 
-#include "cairo-boilerplate-system.h"
+#include <cairo/cairo-boilerplate-system.h>
 
 CAIRO_END_DECLS
 

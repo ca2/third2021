@@ -29,12 +29,12 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-xcb-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-surface-backend-private.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-xcb-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-surface-backend-private.h>
 
 /* XXX dithering */
 

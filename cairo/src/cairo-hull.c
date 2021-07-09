@@ -34,10 +34,10 @@
  *	Carl D. Worth <cworth@cworth.org>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-slope-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-slope-private.h>
 
 typedef struct cairo_hull {
     cairo_point_t point;

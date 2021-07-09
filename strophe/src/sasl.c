@@ -17,13 +17,13 @@
 #include <string.h>
 
 #include "strophe.h"
-#include "common.h"
-#include "ostypes.h"
-#include "sasl.h"
-#include "md5.h"
-#include "sha1.h"
-#include "scram.h"
-#include "rand.h"
+#include <strophe/common.h>
+#include <strophe/ostypes.h>
+#include <strophe/sasl.h>
+#include <strophe/md5.h>
+#include <strophe/sha1.h>
+#include <strophe/scram.h>
+#include <strophe/rand.h>
 
 #ifdef _WIN32
 #define strtok_r strtok_s

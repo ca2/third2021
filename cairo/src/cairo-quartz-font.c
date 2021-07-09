@@ -34,15 +34,15 @@
  *	Vladimir Vukicevic <vladimir@mozilla.com>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #include <dlfcn.h>
 
-#include "cairo-image-surface-private.h"
-#include "cairo-quartz.h"
-#include "cairo-quartz-private.h"
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-quartz.h>
+#include <cairo/cairo-quartz-private.h>
 
-#include "cairo-error-private.h"
+#include <cairo/cairo-error-private.h>
 
 /**
  * SECTION:cairo-quartz-fonts

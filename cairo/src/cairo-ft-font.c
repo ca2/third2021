@@ -39,17 +39,17 @@
  */
 
 #define _DEFAULT_SOURCE /* for strdup() */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-ft-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-pixman-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-ft-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-pixman-private.h>
 
 #include <float.h>
 
-#include "cairo-fontconfig-private.h"
+#include <cairo/cairo-fontconfig-private.h>
 
 #include <ft2build.h>
 #include FT_FREETYPE_H

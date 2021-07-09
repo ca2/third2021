@@ -39,7 +39,7 @@
 #include "config.h"
 #endif
 
-#include "cairo-script-interpreter.h"
+#include <cairo/cairo-script-interpreter.h>
 
 #include <setjmp.h>
 

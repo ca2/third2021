@@ -36,15 +36,15 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-gl-private.h"
+#include <cairo/cairo-gl-private.h>
 
-#include "cairo-compositor-private.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-rtree-private.h"
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-rtree-private.h>
 
 #define GLYPH_CACHE_WIDTH 1024
 #define GLYPH_CACHE_HEIGHT 1024

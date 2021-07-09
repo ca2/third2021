@@ -34,6 +34,6 @@
  *	Carl D. Worth <cworth@cworth.org>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-fixed-private.h"
+#include <cairo/cairo-fixed-private.h>

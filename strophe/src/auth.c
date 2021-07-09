@@ -18,10 +18,10 @@
 #include <string.h>
 
 #include "strophe.h"
-#include "common.h"
-#include "sasl.h"
-#include "sha1.h"
-#include "rand.h"
+#include <strophe/common.h>
+#include <strophe/sasl.h>
+#include <strophe/sha1.h>
+#include <strophe/rand.h>
 
 #ifdef _MSC_VER
 #define strcasecmp _stricmp

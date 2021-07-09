@@ -44,14 +44,14 @@
  */
 
 #define _DEFAULT_SOURCE /* for localtime_r(), gmtime_r(), snprintf(), strdup() */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-pdf.h"
-#include "cairo-pdf-surface-private.h"
+#include <cairo/cairo-pdf.h>
+#include <cairo/cairo-pdf-surface-private.h>
 
-#include "cairo-array-private.h"
-#include "cairo-error-private.h"
-#include "cairo-output-stream-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-output-stream-private.h>
 
 #include <time.h>
 

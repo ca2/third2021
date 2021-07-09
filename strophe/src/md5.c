@@ -26,7 +26,7 @@
  */
 
 #include <string.h> /* memcpy(), memset() */
-#include "md5.h"
+#include <strophe/md5.h>
 
 /* little-endian word access macros */
 #define GET_32BIT_LSB_FIRST(cp) \

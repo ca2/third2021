@@ -36,12 +36,12 @@
 
 // This is a C++ file in order to use the C++ BeOS API
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-beos.h"
+#include <cairo/cairo-beos.h>
 
-#include "cairo-error-private.h"
-#include "cairo-image-surface-inline.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-inline.h>
 
 #include <new>
 

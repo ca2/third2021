@@ -26,8 +26,8 @@
 
 #define CAIRO_VERSION_H 1
 
-#include "cairo-boilerplate-private.h"
-#include "cairo-boilerplate-scaled-font.h"
+#include <cairo/cairo-boilerplate-private.h>
+#include <cairo/cairo-boilerplate-scaled-font.h>
 
 #include <pixman.h>
 

@@ -46,17 +46,17 @@
 # define _WIN32_WINNT 0x0500
 #endif
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-paginated-private.h"
-#include "cairo-pattern-private.h"
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-pattern-private.h>
 #include "cairo-win32-private.h"
-#include "cairo-scaled-font-subsets-private.h"
-#include "cairo-surface-fallback-private.h"
-#include "cairo-surface-backend-private.h"
+#include <cairo/cairo-scaled-font-subsets-private.h>
+#include <cairo/cairo-surface-fallback-private.h>
+#include <cairo/cairo-surface-backend-private.h>
 
 #include <wchar.h>
 #include <windows.h>

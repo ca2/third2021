@@ -29,25 +29,25 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-xcb-private.h"
+#include <cairo/cairo-xcb-private.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-clip-inline.h"
-#include "cairo-clip-private.h"
-#include "cairo-composite-rectangles-private.h"
-#include "cairo-image-surface-inline.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-region-private.h"
-#include "cairo-surface-offset-private.h"
-#include "cairo-surface-snapshot-inline.h"
-#include "cairo-surface-subsurface-private.h"
-#include "cairo-traps-private.h"
-#include "cairo-recording-surface-inline.h"
-#include "cairo-paginated-private.h"
-#include "cairo-pattern-inline.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-clip-inline.h>
+#include <cairo/cairo-clip-private.h>
+#include <cairo/cairo-composite-rectangles-private.h>
+#include <cairo/cairo-image-surface-inline.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-region-private.h>
+#include <cairo/cairo-surface-offset-private.h>
+#include <cairo/cairo-surface-snapshot-inline.h>
+#include <cairo/cairo-surface-subsurface-private.h>
+#include <cairo/cairo-traps-private.h>
+#include <cairo/cairo-recording-surface-inline.h>
+#include <cairo/cairo-paginated-private.h>
+#include <cairo/cairo-pattern-inline.h>
 
 #define PIXMAN_MAX_INT ((pixman_fixed_1 >> 1) - pixman_fixed_e) /* need to ensure deltas also fit */
 

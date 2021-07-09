@@ -44,20 +44,20 @@
  * pixel-aligned fill/blits are all that map into Cairo's drawing model.
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if !CAIRO_HAS_XLIB_XCB_FUNCTIONS
 
-#include "cairo-xlib-private.h"
-#include "cairo-xlib-surface-private.h"
+#include <cairo/cairo-xlib-private.h>
+#include <cairo/cairo-xlib-surface-private.h>
 
-#include "cairo-boxes-private.h"
-#include "cairo-clip-inline.h"
-#include "cairo-compositor-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-pattern-private.h"
-#include "cairo-region-private.h"
-#include "cairo-surface-offset-private.h"
+#include <cairo/cairo-boxes-private.h>
+#include <cairo/cairo-clip-inline.h>
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-pattern-private.h>
+#include <cairo/cairo-region-private.h>
+#include <cairo/cairo-surface-offset-private.h>
 
 /* the low-level interface */
 

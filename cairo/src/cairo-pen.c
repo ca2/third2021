@@ -36,10 +36,10 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-slope-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-slope-private.h>
 
 static void
 _cairo_pen_compute_slopes (cairo_pen_t *pen);

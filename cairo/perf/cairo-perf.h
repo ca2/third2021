@@ -28,7 +28,7 @@
 #ifndef _CAIRO_PERF_H_
 #define _CAIRO_PERF_H_
 
-#include "cairo-boilerplate.h"
+#include <cairo/cairo-boilerplate.h>
 #include "../src/cairo-time-private.h"
 #include <stdio.h>
 

@@ -40,15 +40,15 @@
  *	Karl Tomlinson <karlt+@karlt.net>, Mozilla Corporation
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if !CAIRO_HAS_XLIB_XCB_FUNCTIONS
 
-#include "cairo-xlib-private.h"
+#include <cairo/cairo-xlib-private.h>
 
-#include "cairo-compositor-private.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-surface-offset-private.h"
+#include <cairo/cairo-compositor-private.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-surface-offset-private.h>
 
 static const cairo_compositor_t *
 _get_compositor (cairo_surface_t *surface)

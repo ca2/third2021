@@ -36,11 +36,11 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-gl-private.h"
+#include <cairo/cairo-gl-private.h>
 
-#include "cairo-error-private.h"
+#include <cairo/cairo-error-private.h>
 
 #include <X11/Xutil.h>
 

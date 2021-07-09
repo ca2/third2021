@@ -108,8 +108,13 @@ only if it is not already set. */
 #ifndef PCRE2_EXP_DECL
 #  ifdef _WIN32
 #    ifndef PCRE2_STATIC
+#      ifdef PCRE_LIBRARY // inserted by camilo on 2021-07-08 23:19 BRT
 #      define PCRE2_EXP_DECL       extern __declspec(dllexport)
 #      define PCRE2_EXP_DEFN       __declspec(dllexport)
+#else
+#      define PCRE2_EXP_DECL       extern __declspec(dllimport)
+#      define PCRE2_EXP_DEFN       __declspec(dllimport)
+#endif
 #    else
 #      define PCRE2_EXP_DECL       extern
 #      define PCRE2_EXP_DEFN

@@ -31,8 +31,8 @@
 #include "config.h"
 #endif
 
-#include "cairo-perf.h"
-#include "cairo-stats.h"
+#include <cairo/cairo-perf.h>
+#include <cairo/cairo-stats.h>
 
 #include <stdio.h>
 

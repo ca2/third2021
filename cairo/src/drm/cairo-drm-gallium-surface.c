@@ -31,11 +31,11 @@
  * The Initial Developer of the Original Code is Chris Wilson.
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-drm-private.h"
-#include "cairo-default-context-private.h"
-#include "cairo-error-private.h"
+#include <cairo/cairo-drm-private.h>
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-error-private.h>
 
 #include <dlfcn.h>
 

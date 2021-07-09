@@ -24,9 +24,9 @@
  * Author: Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairo-boilerplate-private.h"
+#include <cairo/cairo-boilerplate-private.h>
 
-#include "cairo-script.h"
+#include <cairo/cairo-script.h>
 
 static cairo_user_data_key_t script_closure_key;
 

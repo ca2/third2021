@@ -30,7 +30,7 @@
 
 #include <gtk/gtk.h>
 
-#include "cairo-perf.h"
+#include <cairo/cairo-perf.h>
 
 typedef struct _test_case {
     const char *backend;

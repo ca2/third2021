@@ -41,15 +41,15 @@
  */
 
 #define _DEFAULT_SOURCE /* for snprintf(), strdup() */
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-array-private.h"
-#include "cairo-error-private.h"
+#include <cairo/cairo-array-private.h>
+#include <cairo/cairo-error-private.h>
 
 #if CAIRO_HAS_FONT_SUBSET
 
-#include "cairo-scaled-font-subsets-private.h"
-#include "cairo-truetype-subset-private.h"
+#include <cairo/cairo-scaled-font-subsets-private.h>
+#include <cairo/cairo-truetype-subset-private.h>
 
 
 typedef struct subset_glyph subset_glyph_t;

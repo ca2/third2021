@@ -20,10 +20,10 @@
  * OF THIS SOFTWARE.
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-error-private.h"
-#include "cairo-freelist-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-freelist-private.h>
 
 void
 _cairo_freelist_init (cairo_freelist_t *freelist, unsigned nodesize)

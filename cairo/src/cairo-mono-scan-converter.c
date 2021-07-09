@@ -23,9 +23,9 @@
  * FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
  * OTHER DEALINGS IN THE SOFTWARE.
  */
-#include "cairoint.h"
-#include "cairo-spans-private.h"
-#include "cairo-error-private.h"
+#include <cairo/cairoint.h>
+#include <cairo/cairo-spans-private.h>
+#include <cairo/cairo-error-private.h>
 
 #include <stdlib.h>
 #include <string.h>

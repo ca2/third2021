@@ -31,7 +31,7 @@
 #ifndef CAIRO_MISSING_H
 #define CAIRO_MISSING_H
 
-#include "cairo-compiler-private.h"
+#include <cairo/cairo-compiler-private.h>
 
 #include <stdio.h>
 #include <string.h>

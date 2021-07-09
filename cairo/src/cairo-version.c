@@ -38,7 +38,7 @@
 
 #define CAIRO_VERSION_H 1
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 /* get the "real" version info instead of dummy cairo-version.h */
 #undef CAIRO_VERSION_H

@@ -72,8 +72,8 @@ move public api to sha1.h
 
 #include <string.h>
 
-#include "ostypes.h"
-#include "sha1.h"
+#include <strophe/ostypes.h>
+#include <strophe/sha1.h>
 
 /* Don't change user's data */
 #define SHA1HANDSOFF

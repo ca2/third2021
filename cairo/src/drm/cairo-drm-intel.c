@@ -27,15 +27,15 @@
  *
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
-#include "cairo-drm-private.h"
-#include "cairo-drm-ioctl-private.h"
-#include "cairo-drm-intel-private.h"
-#include "cairo-drm-intel-ioctl-private.h"
+#include <cairo/cairo-drm-private.h>
+#include <cairo/cairo-drm-ioctl-private.h>
+#include <cairo/cairo-drm-intel-private.h>
+#include <cairo/cairo-drm-intel-ioctl-private.h>
 
-#include "cairo-error-private.h"
-#include "cairo-freelist-private.h"
+#include <cairo/cairo-error-private.h>
+#include <cairo/cairo-freelist-private.h>
 
 #include <sys/ioctl.h>
 #include <sys/mman.h>

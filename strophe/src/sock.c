@@ -33,8 +33,8 @@
 #include <fcntl.h>
 #endif
 
-#include "sock.h"
-#include "snprintf.h"
+#include <strophe/sock.h>
+#include <strophe/snprintf.h>
 
 void sock_initialize(void)
 {

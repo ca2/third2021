@@ -16,7 +16,7 @@
 #include <string.h>
 
 #include "strophe.h"
-#include "common.h"
+#include <strophe/common.h>
 
 /** Create a JID string from component parts node, domain, and resource.
  *

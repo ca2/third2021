@@ -36,20 +36,20 @@
  *	Chris Wilson <chris@chris-wilson.co.uk>
  */
 
-#include "cairoint.h"
+#include <cairo/cairoint.h>
 
 #if CAIRO_HAS_XLIB_XCB_FUNCTIONS
 
-#include "cairo-xlib.h"
-#include "cairo-xcb.h"
+#include <cairo/cairo-xlib.h>
+#include <cairo/cairo-xcb.h>
 
-#include "cairo-xcb-private.h"
-#include "cairo-xlib-xrender-private.h"
+#include <cairo/cairo-xcb-private.h>
+#include <cairo/cairo-xlib-xrender-private.h>
 
-#include "cairo-default-context-private.h"
-#include "cairo-list-inline.h"
-#include "cairo-image-surface-private.h"
-#include "cairo-surface-backend-private.h"
+#include <cairo/cairo-default-context-private.h>
+#include <cairo/cairo-list-inline.h>
+#include <cairo/cairo-image-surface-private.h>
+#include <cairo/cairo-surface-backend-private.h>
 
 #include <X11/Xlib-xcb.h>
 #include <X11/Xlibint.h>	/* For XESetCloseDisplay */
