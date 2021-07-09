@@ -3,7 +3,7 @@
  * For conditions of distribution and use, see copyright notice in zlib.h
  */
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 
 #ifdef _LARGEFILE64_SOURCE

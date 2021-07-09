@@ -4,6 +4,3 @@
 [submodule "appseed/libfreefare"]
 	path = appseed/libfreefare
 	url = ../libfreefare.git
-[submodule "glew"]
-	path = glew
-	url = ../../nigels-com/glew.git
