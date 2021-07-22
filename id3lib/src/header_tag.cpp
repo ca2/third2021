@@ -28,8 +28,8 @@
 
 #include "header_tag.h"
 #include "id3/utils.h" // has <config.h> "id3/id3lib_streams.h" "id3/globals.h" "id3/id3lib_strings.h"
-#include "tag.h"
-#include "io_helpers.h"
+#include "id3/tag.h"
+#include "id3/io_helpers.h"
 #include "spec.h"
 
 using namespace dami;

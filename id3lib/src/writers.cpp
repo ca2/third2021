@@ -28,7 +28,7 @@
 #include <config.h>
 #endif
 
-#include "writers.h"
+#include "id3/writers.h"
 
 //using namespace dami;
 

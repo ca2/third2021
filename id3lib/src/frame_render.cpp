@@ -35,11 +35,11 @@
 #include <memory.h>
 #include <zlib.h>
 
-#include "tag.h"
+#include "id3/tag.h"
 #include "frame_impl.h"
 #include "id3/io_decorators.h" //has "readers.h" "io_helpers.h" "utils.h"
-#include "io_strings.h"
-#include "io_helpers.h"
+#include "id3/io_strings.h"
+#include "id3/io_helpers.h"
 
 using namespace dami;
 

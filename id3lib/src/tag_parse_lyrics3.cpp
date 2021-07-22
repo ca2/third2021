@@ -28,9 +28,9 @@
 #include <ctype.h>
 #include <memory.h>
 #include "tag_impl.h" //has <stdio.h> "tag.h" "header_tag.h" "frame.h" "field.h" "spec.h" "id3lib_strings.h" "utils.h"
-#include "helpers.h"
+#include "id3/helpers.h"
 #include "id3/io_decorators.h" //has "readers.h" "io_helpers.h" "utils.h"
-#include "io_strings.h"
+#include "id3/io_strings.h"
 
 using namespace dami;
 

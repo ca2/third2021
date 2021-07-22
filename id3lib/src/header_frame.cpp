@@ -31,7 +31,7 @@
 #include "frame_def.h"
 #include "field_def.h"
 #include "field_impl.h"
-#include "io_helpers.h"
+#include "id3/io_helpers.h"
 
 using namespace dami;
 

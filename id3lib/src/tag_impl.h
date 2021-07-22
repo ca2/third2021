@@ -31,7 +31,7 @@
 
 #include <list>
 #include <stdio.h>
-#include "tag.h" // has frame.h, field.h
+#include "id3/tag.h" // has frame.h, field.h
 #include "header_tag.h"
 #include "mp3_header.h" //has io_decorators.h
 

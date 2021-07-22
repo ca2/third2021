@@ -37,7 +37,7 @@ using namespace dami;
 
 void io::WindowedReader::setWindow(pos_type beg, size_type size)
 {
-  ID3D_NOTICE( "WindowedReader::setWindow() [beg, size] = [" << 
+  ID3D_NOTICE( "WindowedReader::setWindow() [beg, size] = [" <<
                this->getBeg() << ", " << size << "]" );
   pos_type cur = this->getCur();
   
@@ -76,12 +76,12 @@ ID3_Reader::pos_type io::WindowedReader::setBeg(pos_type beg)
   }
   else if (beg > this->getEnd())
   {
-    ID3D_WARNING( "WindowedReader::setBeg() failed, [beg, _end] = " << 
+    ID3D_WARNING( "WindowedReader::setBeg() failed, [beg, _end] = " <<
                   beg << ", " << this->getEnd() << "]" );
   }
   else
   {
-    ID3D_WARNING( "WindowedReader::setBeg() failed, [beg, _beg] = " << 
+    ID3D_WARNING( "WindowedReader::setBeg() failed, [beg, _beg] = " <<
                   beg << ", " << this->getBeg() << "]" );
   }
   return _beg;
@@ -98,10 +98,10 @@ ID3_Reader::pos_type io::WindowedReader::setEnd(pos_type end)
   else
   {
     ID3D_WARNING( "WindowedReader::setEnd() failed, end = " << end );
-    ID3D_WARNING( "WindowedReader::setEnd() failed, beg = " << 
+    ID3D_WARNING( "WindowedReader::setEnd() failed, beg = " <<
                   this->getBeg() );
-    ID3D_WARNING( "WindowedReader::setEnd() failed, super.end = " << 
-                  _reader.getEnd() );
+    ID3D_WARNING( "WindowedReader::setEnd() failed, super.end = " <<
+                 _reader.getEnd() );
     
   }
   return _end;
@@ -116,9 +116,9 @@ ID3_Reader::int_type io::WindowedReader::readChar()
   }
   else
   {
-    ID3D_WARNING( "io::WindowedReader::readChar: not in window, " << 
-                  "pos = " << this->getCur() << ", window = [" << 
-                  this->getBeg() << ", " << this->getEnd() << "]");
+    ID3D_WARNING( "io::WindowedReader::readChar: not in window, " <<
+                  "pos = " << this->getCur() << ", window = [" <<
+                this->getBeg() << ", " << this->getEnd() << "]");
   }
   return ch;
 }
@@ -276,12 +276,12 @@ void io::CompressedWriter::flush()
   }
   else if (newDataSize < dataSize)
   {
-    ID3D_NOTICE("io::CompressedWriter: compressed size = " << newDataSize << ", original size = " << dataSize ); 
+    ID3D_NOTICE("io::CompressedWriter: compressed size = " << newDataSize << ", original size = " << dataSize );
     _writer.writeChars(newData, newDataSize);
   }
   else
   {
-    ID3D_NOTICE("io::CompressedWriter: no compression!compressed size = " << newDataSize << ", original size = " << dataSize ); 
+    ID3D_NOTICE("io::CompressedWriter: no compression!compressed size = " << newDataSize << ", original size = " << dataSize );
     _writer.writeChars(data, dataSize);
   }
   delete [] newData;
@@ -295,4 +295,3 @@ io::CompressedWriter::writeChars(const char_type buf[], size_type len)
   _data.append(buf, len);
   return len;
 }
-

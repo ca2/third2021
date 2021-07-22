@@ -27,8 +27,8 @@
 
 //#include <string.h>
 #include "id3.h"
-#include "tag.h"
-#include "field.h"
+#include "id3/tag.h"
+#include "id3/field.h"
 
 #if defined HAVE_CONFIG_H
 #include <config.h>

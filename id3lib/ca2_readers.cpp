@@ -1,6 +1,8 @@
 #include "acme/_start.h"
 #include "acme/_.h"
+#undef new
 #include <id3/readers.h>
+#define new ACME_NEW
 #include "acme/_defer.h"
 
 

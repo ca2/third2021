@@ -29,9 +29,9 @@
 #include <memory.h>
 
 #include "field_impl.h"
-#include "reader.h"
-#include "writer.h"
-#include "io_helpers.h"
+#include "id3/reader.h"
+#include "id3/writer.h"
+#include "id3/io_helpers.h"
 #include "id3/utils.h" // has <config.h> "id3/id3lib_streams.h" "id3/globals.h" "id3/id3lib_strings.h"
 
 using namespace dami;
