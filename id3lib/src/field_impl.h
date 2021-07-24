@@ -29,7 +29,7 @@
 #define _ID3LIB_FIELD_IMPL_H_
 
 #include <stdlib.h>
-#include "field.h"
+#include "id3/field.h"
 #include "id3/id3lib_strings.h"
 
 struct ID3_FieldDef;

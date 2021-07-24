@@ -85,7 +85,7 @@ namespace
       ID3_Reader::pos_type beg = rdr.getCur();
       et.setExitPos(beg);
       ID3D_NOTICE( "ID3_FrameImpl::Parse(): parsing field, cur = " << beg );
-      ID3D_NOTICE( "ID3_FrameImpl::Parse(): parsing field, end = " << 
+      ID3D_NOTICE( "ID3_FrameImpl::Parse(): parsing field, end = " <<
                    rdr.getEnd() );
       if (!fp->Parse(rdr) || rdr.getCur() == beg) 
       { 

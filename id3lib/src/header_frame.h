@@ -29,7 +29,7 @@
 #define _ID3LIB_HEADER_FRAME_H_
 
 #include "header.h"
-#include "field.h"
+#include "id3/field.h"
 
 struct ID3_FrameDef;
 

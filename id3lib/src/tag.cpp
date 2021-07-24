@@ -26,7 +26,7 @@
 // http://download.sourceforge.net/id3lib/
 
 //#include "readers.h"
-#include "writers.h"
+#include "id3/writers.h"
 #include "tag_impl.h" //has <stdio.h> "tag.h" "header_tag.h" "frame.h" "field.h" "spec.h" "id3lib_strings.h" "utils.h"
 
 using namespace dami;

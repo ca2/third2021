@@ -26,7 +26,7 @@
 
 #include "field_impl.h"
 #include "id3/utils.h" // has <config.h> "id3/id3lib_streams.h" "id3/globals.h" "id3/id3lib_strings.h"
-#include "io_helpers.h"
+#include "id3/io_helpers.h"
 
 using namespace dami;
 
@@ -335,11 +335,11 @@ bool ID3_FieldImpl::ParseText(ID3_Reader& reader)
   size_t fixed_size = this->Size();
   if (fixed_size)
   {
-    ID3D_NOTICE( "ID3_Field::ParseText(): fixed size string" );
+//    ID3D_NOTICE( "ID3_Field::ParseText(): fixed size string" );
     // The string is of fixed length
     String text = readEncodedText(reader, fixed_size, enc);
     this->SetText(text);
-    ID3D_NOTICE( "ID3_Field::ParseText(): fixed size string = " << text );
+  //  ID3D_NOTICE( "ID3_Field::ParseText(): fixed size string = " << text );
   }
   else if (_flags & ID3FF_LIST)
   {

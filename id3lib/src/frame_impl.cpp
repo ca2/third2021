@@ -29,7 +29,7 @@
 #endif
 
 //#include <string.h>
-#include "tag.h"
+#include "id3/tag.h"
 #include "frame_impl.h"
 #include "field_impl.h"
 #include "frame_def.h"
