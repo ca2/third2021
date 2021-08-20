@@ -52,12 +52,26 @@
 		9A19A16819C6E1DC0018DF7D /* tlds.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14F19C6E1DC0018DF7D /* tlds.c */; };
 		9A19A16919C6E1DC0018DF7D /* toutf8.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A15019C6E1DC0018DF7D /* toutf8.c */; };
 		9A19A16C19C6E80F0018DF7D /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A19A16B19C6E80F0018DF7D /* config.h */; };
+		9A23A9E026CF819800F98012 /* libidn.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AA5E6D616F7C61B005C45CE /* libidn.dylib */; };
 		9A26A6271D7EFA86001F47A8 /* strerror-idna.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14619C6E1DC0018DF7D /* strerror-idna.c */; };
 		9A26A6281D7EFA86001F47A8 /* strerror-pr29.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14719C6E1DC0018DF7D /* strerror-pr29.c */; };
 		9A26A6291D7EFA86001F47A8 /* strerror-punycode.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14819C6E1DC0018DF7D /* strerror-punycode.c */; };
 		9A26A62A1D7EFA86001F47A8 /* strerror-stringprep.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14919C6E1DC0018DF7D /* strerror-stringprep.c */; };
 		9A26A62B1D7EFA86001F47A8 /* strerror-tld.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A19A14A19C6E1DC0018DF7D /* strerror-tld.c */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A23A9DF26CF818300F98012 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)";
+			dstSubfolderSpec = 0;
+			files = (
+				9A23A9E026CF819800F98012 /* libidn.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		077A00AB1B4D4F9E001C85FF /* libios_idn.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libios_idn.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +240,7 @@
 				9AA5E5FE16F7C61B005C45CE /* Headers */,
 				9AA5E4C316F7C61B005C45CE /* Sources */,
 				9AA5E5FC16F7C61B005C45CE /* Frameworks */,
+				9A23A9DF26CF818300F98012 /* CopyFiles */,
 			);
 			buildRules = (
 			);
