@@ -78,7 +78,7 @@
 		9ACFCCE924CF0D380058092D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)";
+			dstPath = "$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(ARCHS)/$(CONFIGURATION)";
 			dstSubfolderSpec = 0;
 			files = (
 				9ACFCCEA24CF0D440058092D /* libpcre.dylib in CopyFiles */,
