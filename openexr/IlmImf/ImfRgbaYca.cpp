@@ -135,7 +135,7 @@ decimateChromaHoriz (int n,
 		     const Rgba ycaIn[/*n+N-1*/],
 		     Rgba ycaOut[/*n*/])
 {
-    #ifdef _DEBUG
+    #ifdef DEBUG
 	assert (ycaIn != ycaOut);
     #endif
 
@@ -259,7 +259,7 @@ reconstructChromaHoriz (int n,
 			const Rgba ycaIn[/*n+N-1*/],
 			Rgba ycaOut[/*n*/])
 {
-    #ifdef _DEBUG
+    #ifdef DEBUG
 	assert (ycaIn != ycaOut);
     #endif
 

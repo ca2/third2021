@@ -34,7 +34,7 @@
 
 #include <fribidi-begindecls.h>
 
-#ifdef _DEBUG
+#ifdef DEBUG
 
 char
 fribidi_char_from_joining_type (

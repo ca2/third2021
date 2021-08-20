@@ -37,7 +37,7 @@
 #define FRIBIDI_LEVEL_INVALID FRIBIDI_BIDI_MAX_RESOLVED_LEVELS
 #define FRIBIDI_SENTINEL -1
 
-#ifdef _DEBUG
+#ifdef DEBUG
 
 char
 fribidi_char_from_bidi_type (

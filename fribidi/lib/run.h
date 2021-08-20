@@ -126,7 +126,7 @@ new_run (
 	for ((x) = (list)->next; (x)->type != FRIBIDI_TYPE_SENTINEL; (x) = (x)->next)
 
 
-#ifdef _DEBUG
+#ifdef DEBUG
 
      void fribidi_validate_run_list (
   FriBidiRun *run_list		/* input run list */
