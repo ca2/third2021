@@ -2,7 +2,7 @@
 	debug.h: 
 		if DEBUG defined: debugging macro fprintf wrappers
 		else: macros defined to do nothing
-	That saves typing #ifdef DEBUG all the time and still preserves
+	That saves typing #ifdef _DEBUG all the time and still preserves
 	lean code without debugging.
 	
 	public domain (or LGPL / GPL, if you like that more;-)
@@ -28,7 +28,7 @@
 #define DBGPRFX ""
 #endif
 
-#ifdef DEBUG
+#ifdef _DEBUG
 
 #include <stdio.h>
 #define debug(s) fprintf(stderr, DBGPRFX"[" __FILE__ ":%i] debug: " s "\n", __LINE__)
