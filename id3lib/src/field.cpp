@@ -826,62 +826,6 @@ static  ID3_FrameDef ID3_FrameDefs[] =
   {ID3FID_NOFRAME}
 };
 
-/** \class ID3_Field field.h id3/field.h
- ** \brief The representative class of an ID3v2 field.
- **
- ** As a general rule, you need never create an object of this type.  id3lib
- ** uses them internally as part of the id3_frame class.  You must know how to
- ** interact with these objects, though, and that's what this section is about.
- **
- ** The ID3_Field contains many overloaded methods to provide these facilities
- ** for four different data types: integers, ASCII strings, Unicode strings,
- ** and binary data.
- **
- ** An integer field supports the Get(), Set(uint32), and operator=(uint32)
- ** methods.
- **
- ** Both types of strings support the GetNumTextItems() method.
- **
- ** An ASCII string field supports the Get(char*, size_t, size_t)),
- ** Set(const char*), Add(const char*), and operator=(const char*) methods.
- **
- ** A Unicode field also supports Get(unicode_t*, size_t, size_t),
- ** Set(const unicode_t*), Add(const unicode_t*), and
- ** operator=(const unicode_t*).  Without elaborating, the Unicode
- ** methods behave exactly the same as their ASCII counterparts, taking
- ** \c unicode_t pointers in place of \c char pointers.
- **
- ** All strings in id3lib are handled internally as Unicode.  This means that
- ** when you set a field with an ASCII source type, it will be converted and
- ** stored internally as a Unicode string.  id3lib will handle all necessary
- ** conversions when parsing, rendering, and retrieving.  If you set a field as
- ** an ASCII string, then try to read the string into a \c unicode_t buffer,
- ** id3lib will automatically convert the string into Unicode so this will
- ** function as expected.  The same holds true in reverse.  Of course, when
- ** converting from Unicode to ASCII, you will experience problems when the
- ** Unicode string contains characters that don't map to ISO-8859-1.
- **
- ** A binary field supports the Get(uchar*, size_t), Set(const uchar*, size_t),
- ** FromFile(const char*), and ToFile(const char*) methods.  The binary field
- ** holds miscellaneous data that can't easily be described any other way, such
- ** as a JPEG image.
- **
- ** As a general implementation note, you should be prepared to support all
- ** fields in an id3lib frame, even if all fields in the id3lib version of the
- ** frame aren't present in the id3v2 version.  This is because of frames like
- ** the picture frame, which changed slightly from one version of the id3v2
- ** standard to the next (the IMAGEFORMAT format in 2.0 changed to a MIMETYPE
- ** in 3.0).  If you support all id3lib fields in a given frame, id3lib can
- ** generate the correct id3v2 frame for the id3v2 version you wish to support.
- ** Alternatively, just support the fields you know will be used in, say, 3.0
- ** if you only plan to generate 3.0 tags.
- **
- ** @author Dirk Mahoney
- ** @version $Id: field.cpp,v 1.47 2002/11/03 00:41:27 t1mpy Exp $
- ** \sa ID3_Tag
- ** \sa ID3_Frame
- ** \sa ID3_Err
- **/
 
 ID3_FieldImpl::ID3_FieldImpl()
   : _id(ID3FN_NOFIELD),
@@ -1184,60 +1128,6 @@ bool ID3_FieldImpl::SetEncoding(ID3_TextEnc enc)
   }
   return changed;
 }
-
-/** \class ID3_FrameInfo field.h id3/field.h
- ** \brief Provides information about the frame and field types supported by id3lib
- **
- ** You normally only need (at most) one instance of the ID3_FrameInfo.  It
- ** has no member data -- only methods which provide information about the
- ** frame types (and their component fields) supported by id3lib as defined
- ** in field.cpp .
- **
- ** Usage is straightforward.  The following function uses ID3_FrameInfo
- ** to display a summary of all the frames known to id3lib:
- ** \code
- **
- ** void ShowKnownFrameInfo {
- **   ID3_FrameInfo myFrameInfo;
- **   for (int cur = ID3FID_NOFRAME+1; cur <= myFrameInfo.MaxFrameID(); cur ++)
- **   {
- **     cout << "Short ID: " << myFrameInfo.ShortName(ID3_FrameID(cur)) <<
- **     " Long ID: " << myFrameInfo.LongName(ID3_FrameID(cur)) <<
- **     " Desription: " << myFrameInfo.Description(ID3_FrameID(cur)) << endl;
- **   }
- ** }
- ** \endcode
- **
- ** Functions are also provided to glean more information about the individual
- ** fields which make up any given frame type.  The following for() loop,
- ** embedded into the previous for() loop would provide a raw look at such
- ** information.  Realize, of course, that the field type is meaningless
- ** when printed.  Only when it is taken in the context of the ID3_FieldType enum
- ** does it take on any meaningful significance.
- **
- ** \code
- **  for (int cur = ID3FID_NOFRAME+1; cur <= fi.MaxFrameID(); cur ++)
- **  {
- **    int numfields = fi.NumFields(ID3_FrameID(cur));
- **
- **    cout << "ID: " << fi.LongName(ID3_FrameID(cur)) <<
- **    " FIELDS: " << numfields << endl;
- **    for(int i=0;i<numfields;i++) {
- **      cout << "TYPE: " << fi.FieldType(ID3_FrameID(cur),i) <<
- **      " SIZE: " << fi.FieldSize(ID3_FrameID(cur),i) <<
- **      " FLAGS: " << fi.FieldFlags(ID3_FrameID(cur),i) << endl;
- **
- **    }
- **
- **    cout << endl;
- **
- **  }
- ** \endcode
- **
- ** @author Cedric Tefft
- ** @version $Id: field.cpp,v 1.47 2002/11/03 00:41:27 t1mpy Exp $
- **/
-
 
 char *ID3_FrameInfo::ShortName(ID3_FrameID frameID)
 {

@@ -29,10 +29,10 @@
 #include "id3.h"
 #include "id3/tag.h"
 #include "id3/field.h"
-
 #if defined HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
+
 
 #ifdef __cplusplus
 extern "C"

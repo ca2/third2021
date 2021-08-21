@@ -43,7 +43,7 @@ using namespace dami;
  ** Performs similarly as the ASCII Set() method, taking a unicode_t string
  ** as a parameter rather than an ascii string.
  **
- ** \param string The unicode string to set this field to.
+ ** \param data The unicode string to set this field to.
  ** \sa Add(const unicode_t*)
  **/
 size_t ID3_FieldImpl::Set(const unicode_t* data)
@@ -85,8 +85,7 @@ size_t ID3_FieldImpl::Add(const unicode_t* data)
  ** \endcode
  **
  ** \param buffer   Where the field's data is copied to
- ** \param maxChars The maximum number of characters to copy to the buffer.
- ** \param itemNum  For fields with multiple items (such as the involved
+ ** \param maxLength The maximum number of characters to copy to the buffer.
  **                 people frame, the item number to retrieve.
  ** \sa Get(char *, size_t, size_t)
  **/
@@ -135,6 +134,8 @@ const unicode_t* ID3_FieldImpl::GetRawUnicodeTextItem(size_t index) const
   }
   return text;
 }
+
+/// \param itemNum  For fields with multiple items (such as the involved
 
 size_t ID3_FieldImpl::Get(unicode_t *buffer, size_t maxLength, size_t itemNum) const
 {

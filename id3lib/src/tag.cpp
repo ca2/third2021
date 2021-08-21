@@ -284,7 +284,7 @@ using namespace dami;
  ** file will remain unchanged, and will continue to do so until you use the
  ** Update() method on the tag (if you choose to Update() at all).
  **
- ** \param name The filename of the mp3 file to link to
+ ** \param preader The filename of the mp3 file to link to
  **/
 ID3_Tag::ID3_Tag(ID3_Reader* preader)
   : _impl(new ID3_TagImpl(preader))
@@ -395,11 +395,11 @@ size_t ID3_Tag::Size() const
  **   myTag.SetUnsync(false);
  ** \endcode
  **
- ** \param bSync Whether the tag should be unsynchronized
+ ** \param bUnsync Whether the tag should be unsynchronized
  **/
-bool ID3_Tag::SetUnsync(bool b)
+bool ID3_Tag::SetUnsync(bool bUnsync)
 {
-  return _impl->SetUnsync(b);
+  return _impl->SetUnsync(bUnsync);
 }
 
 
@@ -416,9 +416,9 @@ bool ID3_Tag::SetUnsync(bool b)
  **
  ** \param bExt Whether to render an extended header
  **/
-bool ID3_Tag::SetExtendedHeader(bool ext)
+bool ID3_Tag::SetExtendedHeader(bool bExt)
 {
-  return _impl->SetExtended(ext);
+  return _impl->SetExtended(bExt);
 }
 
 /** Turns padding on or off, dependant on the value of the boolean
@@ -450,9 +450,9 @@ bool ID3_Tag::SetExtendedHeader(bool ext)
  **
  ** \param bPad Whether or not render the tag with padding.
  **/
-bool ID3_Tag::SetPadding(bool pad)
+bool ID3_Tag::SetPadding(bool bPad)
 {
-  return _impl->SetPadding(pad);
+  return _impl->SetPadding(bPad);
 }
 
 bool ID3_Tag::SetExperimental(bool exp)
@@ -496,7 +496,7 @@ void ID3_Tag::AddFrame(const ID3_Frame& frame)
  ** not create its own copy of the frame.  Frames created by an application
  ** must exist until the frame is removed or the tag is finished with it.
  **
- ** \param pFrame A pointer to the frame that is being added to the tag.
+ ** \param frame A pointer to the frame that is being added to the tag.
  ** \sa ID3_Frame
  **/
 void ID3_Tag::AddFrame(const ID3_Frame* frame)
@@ -544,9 +544,9 @@ bool ID3_Tag::AttachFrame(ID3_Frame *frame)
  ** \param pOldFrame A pointer to the frame that is to be removed from the
  **                  tag
  **/
-ID3_Frame* ID3_Tag::RemoveFrame(const ID3_Frame *frame)
+ID3_Frame* ID3_Tag::RemoveFrame(const ID3_Frame *pOldFrame)
 {
-  return _impl->RemoveFrame(frame);
+  return _impl->RemoveFrame(pOldFrame);
 }
 
 bool ID3_Tag::Parse(ID3_Reader& reader)
@@ -732,7 +732,7 @@ const Mp3_Headerinfo* ID3_Tag::GetMp3HeaderInfo() const
 /** Strips the tag(s) from the attached file. The type of tag stripped
  ** can be specified as a parameter.  The default is to strip all tag types.
  **
- ** \param tt The type of tag to strip
+ ** \param flags The type of tag to strip
  ** \sa ID3_TagType
  **/
 flags_t ID3_Tag::Strip(flags_t flags)
@@ -982,8 +982,8 @@ void ID3_Tag::AddNewFrame(ID3_Frame* f)
  **
  ** \sa ID3_Frame
  ** \sa ID3_Frame#AddFrame
- ** \param pNewFrames A pointer to an array of frames to be added to the tag.
- ** \param nFrames The number of frames in the array pNewFrames.
+ ** \param frames A pointer to an array of frames to be added to the tag.
+ ** \param numFrames The number of frames in the array pNewFrames.
  **/
 void ID3_Tag::AddFrames(const ID3_Frame *frames, size_t numFrames)
 {

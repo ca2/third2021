@@ -25,6 +25,12 @@
 // id3lib.  These files are distributed with id3lib at
 // http://download.sourceforge.net/id3lib/
 
+
+#if defined HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+
 #include <ctype.h>
 #include <memory.h>
 #include "tag_impl.h" //has <stdio.h> "tag.h" "header_tag.h" "frame.h" "field.h" "spec.h" "id3lib_strings.h" "utils.h"
@@ -33,7 +39,6 @@
 #include "id3/io_strings.h"
 
 using namespace dami;
-
 namespace
 {
   uint32 readIntegerString(ID3_Reader& reader, size_t numBytes)

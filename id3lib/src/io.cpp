@@ -25,8 +25,9 @@
 // http://download.sourceforge.net/id3lib/
 
 #if defined HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
+
 
 #include "id3/reader.h"
 #include "id3/writer.h"

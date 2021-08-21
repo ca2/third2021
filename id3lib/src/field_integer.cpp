@@ -42,7 +42,7 @@ using namespace dami;
  **/
 
 /** \brief Sets the value of the field to the specified integer.
- ** \param data The data to assign to this field
+ ** \param val The data to assign to this field
  **/
 void ID3_FieldImpl::Set(uint32 val)
 {

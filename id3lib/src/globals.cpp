@@ -27,7 +27,7 @@
 #include "id3/globals.h" //has <stdlib.h> "id3/sized_types.h"
 
 #if defined HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 #ifdef _cplusplus

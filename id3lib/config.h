@@ -116,6 +116,10 @@
 /* Define if you have the <unistd.h> header file.  */
 /* #undef HAVE_UNISTD_H */
 
+#ifdef __APPLE__
+#define HAVE_UNISTD_H 1
+#endif
+
 /* Define if you have the <wchar.h> header file.  */
 #define HAVE_WCHAR_H 1
 

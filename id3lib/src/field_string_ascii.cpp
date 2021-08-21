@@ -208,7 +208,7 @@ size_t ID3_FieldImpl::SetText(String data)
  **   myFrame.GetField(ID3FN_TEXT)->Add("this is a test");
  ** \endcode
  **
- ** \param string The string to add to the field
+ ** \param data The string to add to the field
  **/
 size_t ID3_FieldImpl::AddText_i(String data)
 {

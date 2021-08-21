@@ -25,6 +25,11 @@
 // id3lib.  These files are distributed with id3lib at
 // http://download.sourceforge.net/id3lib/
 
+
+#if defined HAVE_CONFIG_H
+#include "config.h"
+#endif
+
 #include <stdio.h>  //for BUFSIZ and functions remove & rename
 #include "id3/writers.h"
 #include "id3/io_strings.h"

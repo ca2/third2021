@@ -25,8 +25,9 @@
 // http://download.sourceforge.net/id3lib/
 
 #if defined HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
+
 
 #include "id3/io_decorators.h" //has "readers.h" "io_helpers.h" "utils.h"
 
@@ -276,7 +277,7 @@ uint32 io::readUInt28(ID3_Reader& reader)
       break;
     }
     // ...append the last 7 bits to the end of the temp integer...
-    val = (val << BITSUSED) | static_cast<uint32>(reader.readChar()) & MASK(BITSUSED);
+    val = ((val << BITSUSED) | static_cast<uint32>(reader.readChar())) & MASK(BITSUSED);
   }
 
   // We should always parse 4 characters

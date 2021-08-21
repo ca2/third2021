@@ -26,7 +26,7 @@
 // http://download.sourceforge.net/id3lib/
 
 #if defined HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 //#include "frame.h"
@@ -136,7 +136,7 @@ ID3_V2Spec ID3_Frame::GetSpec() const
  **   enc = (ID3_TextEnc) myFrame.GetField(ID3FN_TEXTENC)->Get();
  ** \endcode
  ** 
- ** @param name The name of the field to be retrieved
+ ** @param fieldName The name of the field to be retrieved
  ** @returns A reference to the desired field
  **/
 ID3_Field& ID3_Frame::Field(ID3_FieldID fieldName) const

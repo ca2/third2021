@@ -28,7 +28,7 @@
 #include "header.h"
 
 #if defined HAVE_CONFIG_H
-#include <config.h>
+#include "config.h"
 #endif
 
 bool ID3_Header::SetSpec(ID3_V2Spec spec)

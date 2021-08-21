@@ -25,13 +25,18 @@
 // id3lib.  These files are distributed with id3lib at
 // http://download.sourceforge.net/id3lib/
 
+#if defined HAVE_CONFIG_H
+#include "config.h"
+#endif
+
+
+
 #include "tag_impl.h" //has <stdio.h> "tag.h" "header_tag.h" "frame.h" "field.h" "spec.h" "id3lib_strings.h" "utils.h"
 #include "id3/helpers.h"
 #include "id3/io_decorators.h" //has "readers.h" "io_helpers.h" "utils.h"
 #include "id3/io_strings.h"
 
 using namespace dami;
-
 bool id3::v1::parse(ID3_TagImpl& tag, ID3_Reader& reader)
 {
   io::ExitTrigger et(reader);
@@ -131,7 +136,7 @@ bool id3::v1::parse(ID3_TagImpl& tag, ID3_Reader& reader)
     const int paddingsize = (ID3_V1_LEN_COMMENT-2) - comment.size();
     const char * padding = "                            "; //28 spaces
 
-    if (trackno[1] == '\0' || trackno[1] == 0x20 && trackno[0] != 0x20)
+    if ((trackno[1] == '\0' || trackno[1] == 0x20) && trackno[0] != 0x20)
     {
       // if there used to be spaces they are gone now, we need to rebuild them
       comment.append(padding, paddingsize);
