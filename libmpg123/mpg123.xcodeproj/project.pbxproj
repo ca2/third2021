@@ -99,7 +99,7 @@
 		9ACFCCE724CF0D230058092D /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "$(WorkspaceDir)/archive $(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)";
+			dstPath = "$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)";
 			dstSubfolderSpec = 0;
 			files = (
 				9ACFCCE824CF0D2F0058092D /* libmpg123.dylib in CopyFiles */,
