@@ -1073,12 +1073,25 @@ static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b
 
 #elif defined(__x86_64__) || defined(__amd64__) || defined(_M_AMD64)
 
+#ifdef _WIN32
+
 static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
 {
 
    return (b) | (g << 8) | (r << 16) | (a << 24);
 
 }
+
+#else
+
+static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
+{
+
+   return (r) | (g << 8) | (b << 16) | (a << 24);
+
+}
+
+#endif
 
 #endif
 
