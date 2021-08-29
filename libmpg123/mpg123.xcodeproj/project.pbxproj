@@ -92,21 +92,7 @@
 		9ACA4D6424540A10007277DD /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 9ACA4D6324540A10007277DD /* config.h */; };
 		9ACA4D7424541DEB007277DD /* optimize.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA4D7324541DEB007277DD /* optimize.c */; };
 		9ACA4D792454243A007277DD /* dct64_i386.c in Sources */ = {isa = PBXBuildFile; fileRef = 9ACA4D782454243A007277DD /* dct64_i386.c */; };
-		9ACFCCE824CF0D2F0058092D /* libmpg123.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9ACA447A2453EAEE007277DD /* libmpg123.dylib */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		9ACFCCE724CF0D230058092D /* CopyFiles */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)";
-			dstSubfolderSpec = 0;
-			files = (
-				9ACFCCE824CF0D2F0058092D /* libmpg123.dylib in CopyFiles */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9ACA447A2453EAEE007277DD /* libmpg123.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libmpg123.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -357,7 +343,6 @@
 				9ACA44762453EAEE007277DD /* Headers */,
 				9ACA44772453EAEE007277DD /* Sources */,
 				9ACA44782453EAEE007277DD /* Frameworks */,
-				9ACFCCE724CF0D230058092D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -492,6 +477,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
@@ -501,7 +487,6 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
@@ -622,6 +607,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
@@ -631,7 +617,6 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++14";
 				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_STATIC_ANALYZER_MODE = deep;
@@ -686,8 +671,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive//storage-$(PLATFORM_MODIFIER)/library/x64/$(CONFIGURATION)",
-					"$(WorkspaceDir)/archive",
+					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(ARCHS)/$(CONFIGURATION)",
+					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
 				MTL_ENABLE_DEBUG_INFO = NO;
