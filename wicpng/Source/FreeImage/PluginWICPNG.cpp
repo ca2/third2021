@@ -413,7 +413,7 @@ Load(FreeImageIO *io,fi_handle handle,int page,int flags,void *data) {
 
 #ifdef _UWP
 
-   Windows::Storage::Streams::InMemoryRandomAccessStream ^ randomAccessStream = ref new Windows::Storage::Streams::InMemoryRandomAccessStream();
+   ::winrt::Windows::Storage::Streams::InMemoryRandomAccessStream ^ randomAccessStream = ref new ::winrt::Windows::Storage::Streams::InMemoryRandomAccessStream();
 
    ::wait(randomAccessStream->WriteAsync(mem.get_os_buffer()));
 

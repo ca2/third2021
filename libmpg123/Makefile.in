@@ -1216,10 +1216,10 @@ EXTRA_DIST = src/libmpg123/mpg123.h.in src/libout123/out123.h.in \
 	ports/MSVC++/2015/win32/scan \
 	ports/MSVC++/2015/win32/scan/scan.vcxproj.filters \
 	ports/MSVC++/2015/win32/scan/scan.vcxproj \
-	ports/MSVC++/2015/uwp/libmpg123 \
-	ports/MSVC++/2015/uwp/libmpg123/libmpg123.vcxproj \
-	ports/MSVC++/2015/uwp/libmpg123/libmpg123.vcxproj.filters \
-	ports/MSVC++/2015/uwp/libmpg123.sln \
+	ports/MSVC++/2015/universal_windows/libmpg123 \
+	ports/MSVC++/2015/universal_windows/libmpg123/libmpg123.vcxproj \
+	ports/MSVC++/2015/universal_windows/libmpg123/libmpg123.vcxproj.filters \
+	ports/MSVC++/2015/universal_windows/libmpg123.sln \
 	ports/MSVC++/CMP3Stream/libMPG123/libMPG123.vcproj \
 	ports/MSVC++/CMP3Stream/libMPG123/PLACE_LIBMPG123_SOURCES_HERE \
 	ports/MSVC++/CMP3Stream/README \
