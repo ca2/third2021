@@ -9,7 +9,7 @@ list(APPEND library_references
 
 list(APPEND library_source
    ca2_readers.cpp
-    src/c_wrapper.cpp
+    #src/c_wrapper.cpp
    src/field.cpp
    src/field_binary.cpp
    src/field_def.h
