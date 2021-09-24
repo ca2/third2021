@@ -1049,6 +1049,17 @@ static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b
 
 }
 
+#elif defined(_M_AMD64)
+
+
+static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
+{
+
+   return (b) | (g << 8) | (r << 16) | (a << 24);
+
+}
+
+
 #else
 
 static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)

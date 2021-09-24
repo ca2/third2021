@@ -32,8 +32,8 @@
 
 
 //#include <string.h>
-#include <memory.h>
-#include <zlib.h>
+//#include <memory.h>
+//#include <zlib.h>
 
 #include "id3/tag.h"
 #include "frame_impl.h"

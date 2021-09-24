@@ -48,8 +48,12 @@ using namespace dami;
 #if defined HAVE_SYS_STAT_H
 #  include <sys/stat.h>
 #endif
-
-#if defined _WIN32 && (!defined(WINCE))
+#if defined _UWP
+static int truncate(const char * path, size_t length)
+{
+   return -1;
+}
+#elif defined _WIN32 && (!defined(WINCE))
 #  include <windows.h>
 
 static int truncate(const char *path, size_t length)
