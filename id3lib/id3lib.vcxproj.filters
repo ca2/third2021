@@ -127,9 +127,6 @@
     <None Include="..\..\..\source\app\include\id3\aaa_want_to_remove_id3lib_bitset" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\c_wrapper.cpp">
-      <Filter>Source Files\src</Filter>
-    </ClCompile>
     <ClCompile Include="src\field.cpp">
       <Filter>Source Files\src</Filter>
     </ClCompile>

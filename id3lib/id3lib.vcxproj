@@ -81,7 +81,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ca2_readers.cpp" />
-    <ClCompile Include="src\c_wrapper.cpp" />
     <ClCompile Include="src\field.cpp" />
     <ClCompile Include="src\field_binary.cpp" />
     <ClCompile Include="src\field_integer.cpp" />
