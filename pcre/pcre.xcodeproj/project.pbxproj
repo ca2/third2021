@@ -271,7 +271,7 @@
 		9A1B2F7F16A2AF5C00875A94 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1240;
+				LastUpgradeCheck = 1300;
 				ORGANIZATIONNAME = "Camilo Sasuke Tsumanuma";
 			};
 			buildConfigurationList = 9A1B2F8216A2AF5C00875A94 /* Build configuration list for PBXProject "pcre" */;
@@ -393,7 +393,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
@@ -471,7 +470,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "c++2a";
