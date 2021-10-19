@@ -39,7 +39,6 @@
 		9AEC327626D099080078C8A4 /* spec.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC324926D099080078C8A4 /* spec.cpp */; };
 		9AEC327726D099080078C8A4 /* tag.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC324A26D099080078C8A4 /* tag.cpp */; };
 		9AEC327826D099080078C8A4 /* io.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC324B26D099080078C8A4 /* io.cpp */; };
-		9AEC327926D099080078C8A4 /* c_wrapper.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC324C26D099080078C8A4 /* c_wrapper.cpp */; };
 		9AEC327A26D099080078C8A4 /* frame_render.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC324D26D099080078C8A4 /* frame_render.cpp */; };
 		9AEC327B26D099080078C8A4 /* field_def.h in Headers */ = {isa = PBXBuildFile; fileRef = 9AEC324E26D099080078C8A4 /* field_def.h */; };
 		9AEC327C26D099080078C8A4 /* tag_impl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9AEC324F26D099080078C8A4 /* tag_impl.cpp */; };
@@ -90,7 +89,6 @@
 		9AEC324926D099080078C8A4 /* spec.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = spec.cpp; sourceTree = "<group>"; };
 		9AEC324A26D099080078C8A4 /* tag.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tag.cpp; sourceTree = "<group>"; };
 		9AEC324B26D099080078C8A4 /* io.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = io.cpp; sourceTree = "<group>"; };
-		9AEC324C26D099080078C8A4 /* c_wrapper.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = c_wrapper.cpp; sourceTree = "<group>"; };
 		9AEC324D26D099080078C8A4 /* frame_render.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = frame_render.cpp; sourceTree = "<group>"; };
 		9AEC324E26D099080078C8A4 /* field_def.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = field_def.h; sourceTree = "<group>"; };
 		9AEC324F26D099080078C8A4 /* tag_impl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tag_impl.cpp; sourceTree = "<group>"; };
@@ -140,7 +138,6 @@
 		9AEC322A26D099070078C8A4 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				9AEC324C26D099080078C8A4 /* c_wrapper.cpp */,
 				9AEC324326D099080078C8A4 /* field_binary.cpp */,
 				9AEC324E26D099080078C8A4 /* field_def.h */,
 				9AEC323F26D099080078C8A4 /* field_impl.h */,
@@ -245,7 +242,7 @@
 		9AEC321026D098A00078C8A4 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1300;
 				TargetAttributes = {
 					9AEC321726D098A00078C8A4 = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -279,7 +276,6 @@
 				9AEC328C26D09FE80078C8A4 /* ca2_readers.cpp in Sources */,
 				9AEC326E26D099080078C8A4 /* globals.cpp in Sources */,
 				9AEC326726D099080078C8A4 /* tag_parse_v1.cpp in Sources */,
-				9AEC327926D099080078C8A4 /* c_wrapper.cpp in Sources */,
 				9AEC328226D099080078C8A4 /* tag_parse_lyrics3.cpp in Sources */,
 				9AEC325C26D099080078C8A4 /* tag_parse_musicmatch.cpp in Sources */,
 				9AEC327226D099080078C8A4 /* writers.cpp in Sources */,
@@ -319,7 +315,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
@@ -382,6 +377,7 @@
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
@@ -436,7 +432,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = x86_64;
 				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_DEADCODE_DEADSTORES = YES;
 				CLANG_ANALYZER_GCD = YES;
@@ -493,6 +488,7 @@
 				GCC_PREFIX_HEADER = framework.h;
 				GCC_PREPROCESSOR_DEFINITIONS = HAVE_CONFIG_H;
 				GCC_VERSION = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = NO;
 				GCC_WARN_ABOUT_DEPRECATED_FUNCTIONS = NO;
 				GCC_WARN_ABOUT_POINTER_SIGNEDNESS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = NO;
