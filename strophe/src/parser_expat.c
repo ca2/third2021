@@ -19,7 +19,7 @@
 
 #include <expat.h>
 
-#include <strophe.h>
+#include <strophe/strophe.h>
 #include <strophe/common.h>
 #include <strophe/parser.h>
 

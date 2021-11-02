@@ -302,24 +302,24 @@ static const cairo_surface_backend_t cairo_pdf_surface_backend;
 static const cairo_paginated_surface_backend_t cairo_pdf_surface_paginated_backend;
 
 cairo_pdf_resource_t
-_cairo_pdf_surface_new_object (cairo_pdf_surface_t *surface)
+_cairo_pdf_surface_new_object(cairo_pdf_surface_t* surface)
 {
-    cairo_pdf_resource_t resource;
-    cairo_int_status_t status;
-    cairo_pdf_object_t object;
+	cairo_pdf_resource_t pdfresource;
+	cairo_int_status_t status;
+	cairo_pdf_object_t object;
 
-    object.offset = _cairo_output_stream_get_position (surface->output);
+	object.offset = _cairo_output_stream_get_position(surface->output);
 
-    status = _cairo_array_append (&surface->objects, &object);
-    if (unlikely (status)) {
-	resource.id = 0;
-	return resource;
-    }
+	status = _cairo_array_append(&surface->objects, &object);
+	if (unlikely(status)) {
+		pdfresource.id = 0;
+		return pdfresource;
+	}
 
-    resource = surface->next_available_resource;
-    surface->next_available_resource.id++;
+	pdfresource = surface->next_available_resource;
+	surface->next_available_resource.id++;
 
-    return resource;
+	return pdfresource;
 }
 
 void

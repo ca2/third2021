@@ -23,7 +23,7 @@
 #include <pthread.h>
 #endif
 
-#include "strophe.h"
+#include <strophe/strophe.h>
 #include <strophe/common.h>
 #include <strophe/thread.h>
 

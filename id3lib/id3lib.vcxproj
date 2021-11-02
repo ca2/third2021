@@ -244,26 +244,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='cover|Win32'">$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|Win32'">$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='basis|x64'">$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|x64'">$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='cover|x64'">$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='stage|x64'">$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|x64'">$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='cover|Win32'">$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|Win32'">$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='basis|x64'">$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|x64'">$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='cover|x64'">$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='stage|x64'">$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|x64'">$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='cover|Win32'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|Win32'">$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|Win32'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='basis|x64'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|x64'">$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_basis|x64'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='cover|x64'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='stage|x64'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|x64'">$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='cube_stage|x64'">$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='cover|Win32'">false</LinkIncremental>
@@ -316,7 +316,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -336,17 +336,15 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <Optimization>Disabled</Optimization>
       <OpenMPSupport>false</OpenMPSupport>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <SupportJustMyCode>true</SupportJustMyCode>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\;$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\library\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
@@ -396,7 +394,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -416,13 +414,12 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <Optimization>Disabled</Optimization>
       <OpenMPSupport>false</OpenMPSupport>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <SupportJustMyCode>true</SupportJustMyCode>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <Link>
@@ -467,7 +464,6 @@
       <AdditionalIncludeDirectories>$(SolutionDir)../../..</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -480,7 +476,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -501,7 +497,7 @@
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OpenMPSupport>false</OpenMPSupport>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -510,7 +506,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\;$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\library\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
@@ -553,7 +548,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">
     <ClCompile>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <AdditionalIncludeDirectories>include;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/$(PlatformName)/$(Configuration)/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(__archive)third-windows/third/include/include;$(SolutionDir)../../../archive/platform-windows/_include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../archive/platform-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;HAVE_BITSET;HAVE_CONFIG_H;ID3_LIBRARY;ID3LIB_LINKOPTION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
@@ -562,13 +557,12 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/d2ssa-cse- /bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <SmallerTypeCheck>false</SmallerTypeCheck>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsManaged>false</CompileAsManaged>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -582,12 +576,11 @@
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
       <DisableSpecificWarnings>4244;4267;4018</DisableSpecificWarnings>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OpenMPSupport>false</OpenMPSupport>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -596,7 +589,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\;$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\library\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
@@ -649,13 +641,12 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <SmallerTypeCheck>false</SmallerTypeCheck>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsManaged>false</CompileAsManaged>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -669,11 +660,10 @@
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
       <DisableSpecificWarnings>4244;4267;4018</DisableSpecificWarnings>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OpenMPSupport>false</OpenMPSupport>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
@@ -725,7 +715,6 @@
       <AdditionalIncludeDirectories>$(SolutionDir)../../..</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -738,7 +727,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -756,7 +745,7 @@
       <UseFullPaths>true</UseFullPaths>
       <DisableSpecificWarnings>4244;4267;4018</DisableSpecificWarnings>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OmitFramePointers>false</OmitFramePointers>
       <Optimization>Disabled</Optimization>
       <OpenMPSupport>false</OpenMPSupport>
@@ -764,7 +753,6 @@
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SupportJustMyCode>true</SupportJustMyCode>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <Link>
@@ -782,7 +770,6 @@
       <ModuleDefinitionFile>./$(ProjectName).def</ModuleDefinitionFile>
       <FixedBaseAddress>false</FixedBaseAddress>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <ImportLibrary>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName).lib</ImportLibrary>
     </Link>
     <CustomBuildStep>
@@ -814,7 +801,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -832,7 +819,7 @@
       <UseFullPaths>true</UseFullPaths>
       <DisableSpecificWarnings>4244;4267;4018</DisableSpecificWarnings>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OmitFramePointers>false</OmitFramePointers>
       <Optimization>Disabled</Optimization>
       <OpenMPSupport>false</OpenMPSupport>
@@ -841,7 +828,6 @@
       <SupportJustMyCode>true</SupportJustMyCode>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <Link>
@@ -881,7 +867,6 @@
       <AdditionalIncludeDirectories>$(SolutionDir)../../..</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -894,7 +879,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -915,7 +900,7 @@
       <UseFullPaths>true</UseFullPaths>
       <DisableSpecificWarnings>4244;4267;4018</DisableSpecificWarnings>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OpenMPSupport>false</OpenMPSupport>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -925,7 +910,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\;$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\library\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
@@ -963,7 +947,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|x64'">
     <ClCompile>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <AdditionalIncludeDirectories>include;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/$(PlatformName)/$(Configuration)/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(__archive)third-windows/third/include/include;$(SolutionDir)../../../archive/platform-windows/_include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../archive/platform-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;WIN32;HAVE_BITSET;HAVE_CONFIG_H;ID3_LIBRARY;ID3LIB_LINKOPTION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
@@ -972,7 +956,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/d2ssa-cse- /bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -989,8 +973,6 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <SDLCheck>
       </SDLCheck>
@@ -998,7 +980,7 @@
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
       <DisableSpecificWarnings>4244;4267;4018</DisableSpecificWarnings>
-      <LanguageStandard>stdcpplatest</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OpenMPSupport>false</OpenMPSupport>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -1006,7 +988,6 @@
     </ClCompile>
     <Link>
       <AdditionalDependencies>zlib.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>$(OutDir);$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\;$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\library\;$(SolutionDir)..\..\..\time\$(PlatformName)\$(Configuration)\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreAllDefaultLibraries>
       </IgnoreAllDefaultLibraries>
@@ -1054,7 +1035,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>/bigobj -Zm512</AdditionalOptions>
+      <AdditionalOptions>/bigobj -Zm512 </AdditionalOptions>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
@@ -1071,8 +1052,6 @@
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <SDLCheck>
       </SDLCheck>
@@ -1080,7 +1059,7 @@
       <UseFullPaths>true</UseFullPaths>
       <PrecompiledHeaderOutputFile>$(IntDir)framework.pch</PrecompiledHeaderOutputFile>
       <DisableSpecificWarnings>4244;4267;4018</DisableSpecificWarnings>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <OpenMPSupport>false</OpenMPSupport>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
@@ -1125,7 +1104,6 @@
       <AdditionalIncludeDirectories>$(SolutionDir)../../..</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>

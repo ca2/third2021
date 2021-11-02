@@ -13,7 +13,7 @@
  *  Generation of UUID version 4 according to RFC4122.
  */
 
-#include "strophe.h"
+#include <strophe/strophe.h>
 #include <strophe/common.h>
 #include <strophe/rand.h>
 

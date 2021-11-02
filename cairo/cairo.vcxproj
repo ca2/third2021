@@ -173,64 +173,64 @@
     <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cover|Win32'">
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_stage|Win32'">
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|x64'">
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_basis|x64'">
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cover|x64'">
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|x64'">
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_stage|x64'">
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
@@ -258,7 +258,6 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -267,7 +266,7 @@
       <OpenMPSupport>false</OpenMPSupport>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <SDLCheck>true</SDLCheck>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -278,10 +277,9 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <MinimalRebuild>false</MinimalRebuild>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <ResourceCompile>
@@ -289,7 +287,6 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -338,7 +335,6 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -347,7 +343,7 @@
       <OpenMPSupport>false</OpenMPSupport>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <SDLCheck>true</SDLCheck>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -358,10 +354,9 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <MinimalRebuild>false</MinimalRebuild>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <ResourceCompile>
@@ -394,7 +389,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -421,7 +415,6 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -430,7 +423,7 @@
       <OpenMPSupport>false</OpenMPSupport>
       <FunctionLevelLinking>false</FunctionLevelLinking>
       <SDLCheck>true</SDLCheck>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -441,7 +434,7 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <MinimalRebuild>false</MinimalRebuild>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
       <Optimization>Disabled</Optimization>
@@ -452,7 +445,6 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -488,7 +480,7 @@
       </HeaderFileName>
     </Midl>
     <ClCompile>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <AdditionalIncludeDirectories>$(__archive)third-windows/third/include/pixman;include;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/$(PlatformName)/$(Configuration)/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(__archive)third-windows/third/include/include;$(SolutionDir)../../../archive/platform-windows/_include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../archive/platform-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>false</StringPooling>
@@ -501,7 +493,6 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -509,7 +500,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <FunctionLevelLinking>false</FunctionLevelLinking>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>/d2ssa-cse- -Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -517,14 +508,12 @@
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
       <DisableSpecificWarnings>4244;4146;4603;4267;4311;4334;4312</DisableSpecificWarnings>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <SDLCheck>
       </SDLCheck>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
       <OmitFramePointers>true</OmitFramePointers>
@@ -535,7 +524,6 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -587,7 +575,6 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
@@ -595,7 +582,7 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <FunctionLevelLinking>false</FunctionLevelLinking>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -603,13 +590,11 @@
       <EnableParallelCodeGeneration>false</EnableParallelCodeGeneration>
       <DisableSpecificWarnings>4244;4146;4603;4267;4311;4334;4312</DisableSpecificWarnings>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <SDLCheck>
       </SDLCheck>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
       <OmitFramePointers>false</OmitFramePointers>
@@ -649,7 +634,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <LinkTimeCodeGeneration>true</LinkTimeCodeGeneration>
       <SubSystem>Windows</SubSystem>
     </Lib>
@@ -677,13 +661,12 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -698,10 +681,9 @@
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <DisableSpecificWarnings>4244;4146;4603;4267;4311;4334;4312</DisableSpecificWarnings>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <ResourceCompile>
@@ -726,7 +708,6 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
     </Link>
     <PostBuildEvent>
       <Command>
@@ -759,13 +740,12 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -780,10 +760,9 @@
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <DisableSpecificWarnings>4244;4146;4603;4267;4311;4334;4312</DisableSpecificWarnings>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
       <EnableModules>false</EnableModules>
     </ClCompile>
     <ResourceCompile>
@@ -818,7 +797,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -844,13 +822,12 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
       <SDLCheck>true</SDLCheck>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -865,7 +842,7 @@
       <DisableSpecificWarnings>4244;4146;4603;4267;4311;4334;4312</DisableSpecificWarnings>
       <MinimalRebuild>false</MinimalRebuild>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
       <Optimization>Disabled</Optimization>
@@ -877,7 +854,6 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -915,7 +891,7 @@
       </HeaderFileName>
     </Midl>
     <ClCompile>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <AdditionalIncludeDirectories>$(__archive)third-windows/third/include/pixman;include;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/$(PlatformName)/$(Configuration)/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(__archive)third-windows/third/include/include;$(SolutionDir)../../../archive/platform-windows/_include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../archive/platform-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>HAVE_CONFIG_H;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>false</StringPooling>
@@ -927,12 +903,11 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>/d2ssa-cse- -Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -946,13 +921,11 @@
       <OmitFramePointers>true</OmitFramePointers>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <DisableSpecificWarnings>4244;4146;4603;4267;4311;4334;4312</DisableSpecificWarnings>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <SDLCheck>
       </SDLCheck>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
       <EnableModules>false</EnableModules>
@@ -962,7 +935,6 @@
       <Culture>0x0409</Culture>
     </ResourceCompile>
     <Link>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <RandomizedBaseAddress>true</RandomizedBaseAddress>
       <DataExecutionPrevention>true</DataExecutionPrevention>
@@ -1013,12 +985,11 @@
       <WarningLevel>Level3</WarningLevel>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <CompileAs>Default</CompileAs>
       <ExceptionHandling>Async</ExceptionHandling>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <CompileAsManaged>false</CompileAsManaged>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalOptions>-Zm384 /bigobj</AdditionalOptions>
+      <AdditionalOptions>-Zm384 /bigobj </AdditionalOptions>
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <EnableEnhancedInstructionSet>NotSet</EnableEnhancedInstructionSet>
@@ -1032,13 +1003,11 @@
       <OmitFramePointers>false</OmitFramePointers>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <DisableSpecificWarnings>4244;4146;4603;4267;4311;4334;4312</DisableSpecificWarnings>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <SDLCheck>
       </SDLCheck>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
       <EnableModules>false</EnableModules>
@@ -1076,7 +1045,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>

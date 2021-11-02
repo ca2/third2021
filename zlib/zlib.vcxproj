@@ -166,71 +166,71 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_basis|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cover|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_stage|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_basis|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cover|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\binary\</OutDir>
     <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cube_stage|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>$(__archive)storage-windows\third\symbol\$(PlatformName)\$(Configuration)\</OutDir>
-    <IntDir>$(SolutionDir)..\..\time-windows\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\..\storage-windows\$(PlatformName)\$(Configuration)\third\library</OutDir>
+    <IntDir>$(TimeDir)intermediate\$(PlatformName)\$(Configuration)\$(RootNamespace)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <EmbedManifest>false</EmbedManifest>
   </PropertyGroup>
@@ -256,15 +256,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <AdditionalOptions />
+      <AdditionalOptions> </AdditionalOptions>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <SDLCheck>true</SDLCheck>
       <UseFullPaths>true</UseFullPaths>
       <MinimalRebuild>false</MinimalRebuild>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -279,7 +277,6 @@
       <ImportLibrary>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName).lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
     <PreLinkEvent>
@@ -315,16 +312,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <AdditionalOptions> </AdditionalOptions>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <SDLCheck>true</SDLCheck>
       <UseFullPaths>true</UseFullPaths>
       <MinimalRebuild>false</MinimalRebuild>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -350,7 +344,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -375,14 +368,13 @@
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <AdditionalOptions> </AdditionalOptions>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <SDLCheck>true</SDLCheck>
       <UseFullPaths>true</UseFullPaths>
       <MinimalRebuild>false</MinimalRebuild>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -397,7 +389,6 @@
       <ImportLibrary>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName).lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
     <PreLinkEvent>
@@ -415,7 +406,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <PreprocessorDefinitions>ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/$(PlatformName)/$(Configuration)/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(__archive)third-windows/third/include/include;$(SolutionDir)../../../archive/platform-windows/_include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../archive/platform-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -424,8 +415,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -439,12 +428,11 @@
       <OpenMPSupport>false</OpenMPSupport>
       <SDLCheck>
       </SDLCheck>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <AdditionalOptions>/d2ssa-cse-  </AdditionalOptions>
       <OmitFramePointers>true</OmitFramePointers>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -465,7 +453,6 @@
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
       <ImportLibrary>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName).lib</ImportLibrary>
       <ImageHasSafeExceptionHandlers>true</ImageHasSafeExceptionHandlers>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
     <PreLinkEvent>
@@ -489,8 +476,6 @@
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
       <MinimalRebuild>false</MinimalRebuild>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <StringPooling>false</StringPooling>
       <ExceptionHandling>Async</ExceptionHandling>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -503,12 +488,11 @@
       <OpenMPSupport>false</OpenMPSupport>
       <SDLCheck>
       </SDLCheck>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <AdditionalOptions> </AdditionalOptions>
       <OmitFramePointers>false</OmitFramePointers>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -541,7 +525,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -564,18 +547,16 @@
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
-      <AdditionalOptions />
+      <AdditionalOptions> </AdditionalOptions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <OmitFramePointers>false</OmitFramePointers>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <SDLCheck>true</SDLCheck>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -591,7 +572,6 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
     <PreLinkEvent>
@@ -624,19 +604,16 @@
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Neither</FavorSizeOrSpeed>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <AdditionalOptions> </AdditionalOptions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <OmitFramePointers>false</OmitFramePointers>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <SDLCheck>true</SDLCheck>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -663,7 +640,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>
@@ -687,15 +663,14 @@
       <InlineFunctionExpansion>Default</InlineFunctionExpansion>
       <RuntimeTypeInfo>true</RuntimeTypeInfo>
       <OpenMPSupport>false</OpenMPSupport>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <AdditionalOptions> </AdditionalOptions>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <SmallerTypeCheck>false</SmallerTypeCheck>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
       <SDLCheck>true</SDLCheck>
       <UseFullPaths>true</UseFullPaths>
       <MinimalRebuild>false</MinimalRebuild>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -712,7 +687,6 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
     <PreLinkEvent>
@@ -730,7 +704,7 @@
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <Optimization>MaxSpeed</Optimization>
+      <Optimization>Full</Optimization>
       <PreprocessorDefinitions>ZLIB_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>include;$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__archive)local/include;$(__archive)third-windows/$(PlatformName)/$(Configuration)/include;$(__archive)third-windows/include;$(__archive)third-windows/third/include;$(__archive)third-windows/third/include/include;$(SolutionDir)../../../archive/platform-windows/_include;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../archive/platform-windows_common;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(IntDir);$(SolutionDir)../../../;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <CompileAsManaged>false</CompileAsManaged>
@@ -748,17 +722,15 @@
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
       <SDLCheck>
       </SDLCheck>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions />
+      <AdditionalOptions>/d2ssa-cse-  </AdditionalOptions>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
       <SupportJustMyCode>true</SupportJustMyCode>
@@ -777,7 +749,6 @@
       <ImageHasSafeExceptionHandlers>
       </ImageHasSafeExceptionHandlers>
       <ProgramDatabaseFile>$(OutDir)$(TargetName).pdb</ProgramDatabaseFile>
-      <OutputFile>$(__archive)storage-windows\third\binary\$(PlatformName)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <GenerateDebugInformation>DebugFull</GenerateDebugInformation>
     </Link>
     <PreLinkEvent>
@@ -810,18 +781,15 @@
       <FloatingPointModel>Precise</FloatingPointModel>
       <FloatingPointExceptions>true</FloatingPointExceptions>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
       <OmitFramePointers>false</OmitFramePointers>
       <WholeProgramOptimization>false</WholeProgramOptimization>
       <SDLCheck>
       </SDLCheck>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>
-      </AdditionalOptions>
+      <AdditionalOptions> </AdditionalOptions>
       <CreateHotpatchableImage>false</CreateHotpatchableImage>
       <UseFullPaths>true</UseFullPaths>
-      <LanguageStandard>stdcpp17</LanguageStandard>
+      <LanguageStandard>stdcpp20</LanguageStandard>
       <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
       <AssemblerListingLocation>$(IntDir)%(RelativeDir)</AssemblerListingLocation>
       <ObjectFileName>$(IntDir)%(RelativeDir)</ObjectFileName>
@@ -850,7 +818,6 @@
       <DocumentLibraryDependencies>false</DocumentLibraryDependencies>
     </Xdcmake>
     <Lib>
-      <OutputFile>$(SolutionDir)..\..\..\..\archive\storage-windows\$(PlatformName)\$(Configuration)\third\library\$(TargetName)$(TargetExt)</OutputFile>
       <SubSystem>Windows</SubSystem>
     </Lib>
   </ItemDefinitionGroup>

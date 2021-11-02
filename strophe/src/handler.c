@@ -20,7 +20,7 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "strophe.h"
+#include <strophe/strophe.h>
 #include <strophe/common.h>
 #include <strophe/ostypes.h>
 

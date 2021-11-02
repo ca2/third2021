@@ -26,7 +26,7 @@
 #include <strophe/ostypes.h>    /* uint8_t, size_t */
 #include <strophe/sha1.h>
 #include <strophe/snprintf.h>   /* xmpp_snprintf */
-#include "strophe.h"    /* xmpp_ctx_t, xmpp_free */
+#include <strophe/strophe.h>    /* xmpp_ctx_t, xmpp_free */
 
 struct _xmpp_sha1_t {
     xmpp_ctx_t *xmpp_ctx;
