@@ -1,4 +1,4 @@
-/*
+﻿/*
  * aes_tables.ca
  * 
  * generate tables for the AES cipher
