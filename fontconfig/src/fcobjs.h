@@ -1,4 +1,4 @@
-/*
+﻿/*
  * fontconfig/src/fcobjs.h
  *
  * Copyright © 2000 Keith Packard

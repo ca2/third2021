@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangocairo-coretextfont.c
  *
  * Copyright (C) 2005 Imendio AB

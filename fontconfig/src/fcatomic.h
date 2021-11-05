@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Mutex operations.  Originally copied from HarfBuzz.
  *
  * Copyright © 2007  Chris Wilson

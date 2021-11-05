@@ -1,4 +1,4 @@
-/* viewer-render.c: Common code for rendering in viewers
+﻿/* viewer-render.c: Common code for rendering in viewers
  *
  * Copyright (C) 1999, 2004 Red Hat Software
  * Copyright (C) 2001 Sun Microsystems

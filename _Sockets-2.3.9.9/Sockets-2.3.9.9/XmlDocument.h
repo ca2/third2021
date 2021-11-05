@@ -1,4 +1,4 @@
-/**
+﻿/**
  **	\file XmlDocument.h
  **	\date  2008-02-09
  **	\author grymse@alhem.net

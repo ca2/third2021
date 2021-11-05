@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2006 Keith Packard
  * Copyright © 2010 Behdad Esfahbod
  *

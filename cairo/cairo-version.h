@@ -1,4 +1,4 @@
-#ifndef CAIRO_VERSION_H
+﻿#ifndef CAIRO_VERSION_H
 #define CAIRO_VERSION_H
 
 #define CAIRO_VERSION_MAJOR 1

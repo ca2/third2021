@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-utils.c: Utilities for internal functions and modules
  *
  * Copyright (C) 2000 Red Hat Software

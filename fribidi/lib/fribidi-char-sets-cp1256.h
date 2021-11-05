@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * fribidi-char-sets-cp1256.h - CP1256 character set conversion routines
  *
  * Authors:

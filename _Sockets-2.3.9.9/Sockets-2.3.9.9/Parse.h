@@ -1,4 +1,4 @@
-/** \file Parse.h - parse a string
+﻿/** \file Parse.h - parse a string
  **
  **	Written: 1999-Feb-10 grymse@alhem.net
  **/

@@ -1,4 +1,4 @@
-/* A GNU-like <signal.h>.
+﻿/* A GNU-like <signal.h>.
 
    Copyright (C) 2006-2011 Free Software Foundation, Inc.
 

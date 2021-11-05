@@ -1,4 +1,4 @@
-/**
+﻿/**
  * FreeRDP: A Remote Desktop Protocol Implementation
  *
  * Copyright 2018 Armin Novak <armin.novak@thincast.com>

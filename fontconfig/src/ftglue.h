@@ -1,4 +1,4 @@
-/* ftglue.c: Glue code for compiling the OpenType code from
+﻿/* ftglue.c: Glue code for compiling the OpenType code from
  *           FreeType 1 using only the public API of FreeType 2
  *
  * By David Turner, The FreeType Project (www.freetype.org)

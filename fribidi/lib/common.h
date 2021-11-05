@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * common.h - common include for library sources
  *
  * Author:

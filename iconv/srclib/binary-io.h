@@ -1,4 +1,4 @@
-/* Binary mode I/O.
+﻿/* Binary mode I/O.
    Copyright (C) 2001, 2003, 2005, 2008-2011 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify

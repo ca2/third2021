@@ -1,4 +1,4 @@
-/* Synthesised data. */
+﻿/* Synthesised data. */
 static struct mosaic_region const mosaic_regions[] = {
 {0xef55b4,7},{0xf93bc6,11},{0xf28085,5},{0x92acbc,7},
 {0x85c3b1,7},{0xc3bc79,5},{0xd09d8d,5},{0xa788cb,8},

@@ -1,4 +1,4 @@
-/* fribidi-brackets.h - get bracket character property
+﻿/* fribidi-brackets.h - get bracket character property
  *
  * Copyright (C) 2004  Sharif FarsiWeb, Inc
  * Copyright (C) 2001, 2002, 2004  Behdad Esfahbod

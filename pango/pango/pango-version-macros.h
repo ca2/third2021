@@ -1,4 +1,4 @@
-/* Pango - Internationalized text layout and rendering library
+﻿/* Pango - Internationalized text layout and rendering library
  * Copyright (C) 1999 Red Hat Software
  * Copyright (C) 2012 Ryan Lortie, Matthias Clasen and Emmanuele Bassi
  * Copyright (C) 2016 Chun-wei Fan

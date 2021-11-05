@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-renderer.h: Base class for rendering
  *
  * Copyright (C) 2004, Red Hat, Inc.

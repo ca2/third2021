@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-engine.h: Engines for script and language specific processing
  *
  * Copyright (C) 2000,2003 Red Hat Software

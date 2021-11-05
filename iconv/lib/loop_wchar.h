@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright (C) 2000-2002, 2005-2006, 2008-2009, 2011 Free Software Foundation, Inc.
  * This file is part of the GNU LIBICONV Library.
  *

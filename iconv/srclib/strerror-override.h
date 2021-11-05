@@ -1,4 +1,4 @@
-/* strerror-override.h --- POSIX compatible system error routine
+﻿/* strerror-override.h --- POSIX compatible system error routine
 
    Copyright (C) 2010-2011 Free Software Foundation, Inc.
 

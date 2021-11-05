@@ -1,4 +1,4 @@
-/** \file File.h
+﻿/** \file File.h
  **	\date  2005-04-25
  **	\author grymse@alhem.net
 **/

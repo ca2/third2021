@@ -1,4 +1,4 @@
-/**
+﻿/**
  **	\file 
  **	\date  2007-06-05
  **	\author grymse@alhem.net

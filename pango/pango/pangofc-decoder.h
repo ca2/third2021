@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangofc-decoder.h: Custom encoders/decoders on a per-font basis.
  *
  * Copyright (C) 2004 Red Hat Software

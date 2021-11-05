@@ -1,4 +1,4 @@
-#ifndef _BINARY_H_
+﻿#ifndef _BINARY_H_
 #define _BINARY_H_
 
 typedef enum {false, true} bool;

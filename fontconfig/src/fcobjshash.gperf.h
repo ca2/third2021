@@ -1,4 +1,4 @@
-/*
+﻿/*
  * fontconfig/src/fcobjshash.gperf.h
  *
  * Copyright © 2000 Keith Packard

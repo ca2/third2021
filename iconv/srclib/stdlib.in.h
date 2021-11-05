@@ -1,4 +1,4 @@
-/* A GNU-like <stdlib.h>.
+﻿/* A GNU-like <stdlib.h>.
 
    Copyright (C) 1995, 2001-2004, 2006-2011 Free Software Foundation, Inc.
 

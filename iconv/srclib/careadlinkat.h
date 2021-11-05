@@ -1,4 +1,4 @@
-/* Read symbolic links into a buffer without size limitation, relative to fd.
+﻿/* Read symbolic links into a buffer without size limitation, relative to fd.
 
    Copyright (C) 2011 Free Software Foundation, Inc.
 

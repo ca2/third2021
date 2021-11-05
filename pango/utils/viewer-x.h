@@ -1,4 +1,4 @@
-/* viewer-x.h: Common headers for X-based viewers
+﻿/* viewer-x.h: Common headers for X-based viewers
  *
  * Copyright (C) 1999,2004,2005 Red Hat, Inc.
  * Copyright (C) 2001 Sun Microsystems

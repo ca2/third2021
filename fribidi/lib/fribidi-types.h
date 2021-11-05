@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * fribidi-types.h - define data types for the rest of the library
  *
  * Author:

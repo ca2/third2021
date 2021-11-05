@@ -1,4 +1,4 @@
-/*
+﻿/*
 opensl_io.c:
 Android OpenSL input/output module header
 Copyright (c) 2012, Victor Lazzarini

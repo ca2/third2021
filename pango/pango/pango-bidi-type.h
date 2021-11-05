@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-bidi-type.h: Bidirectional Character Types
  *
  * Copyright (C) 2008 Jürg Billeter <j@bitron.ch>

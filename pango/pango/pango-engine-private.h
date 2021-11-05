@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-engine-private.h: Private routines related to engines for
  *   script and language specific processing
  *

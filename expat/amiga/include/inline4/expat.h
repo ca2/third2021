@@ -1,4 +1,4 @@
-#ifndef INLINE4_EXPAT_H
+﻿#ifndef INLINE4_EXPAT_H
 #define INLINE4_EXPAT_H
 
 /*

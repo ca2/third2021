@@ -1,4 +1,4 @@
-/* A GNU-like <iconv.h>.
+﻿/* A GNU-like <iconv.h>.
 
    Copyright (C) 2007-2014 Free Software Foundation, Inc.
 

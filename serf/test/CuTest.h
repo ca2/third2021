@@ -1,4 +1,4 @@
-/* 
+﻿/* 
  * Copyright (c) 2003 Asim Jalis
  * 
  *  This software is provided 'as-is', without any express or implied

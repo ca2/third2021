@@ -1,4 +1,4 @@
-/** \file IFileUpload.h
+﻿/** \file IFileUpload.h
  **	\date  2009-04-22
  **	\author grymse@alhem.net
 **/

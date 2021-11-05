@@ -1,4 +1,4 @@
-/**
+﻿/**
  **	\file StreamWriter.h
  **	\date  2008-12-20
  **	\author grymse@alhem.net

@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * debug.h - debug-only interfaces
  *
  * Author:

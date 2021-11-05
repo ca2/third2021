@@ -1,4 +1,4 @@
-/** \file Lock.h
+﻿/** \file Lock.h
  **	\date  2005-08-22
  **	\author grymse@alhem.net
 **/

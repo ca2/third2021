@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * fribidi-char-sets.h - character set conversion routines
  *
  * Authors:

@@ -1,4 +1,4 @@
-//
+﻿//
 //  libiconv_interface.h
 //  atomiconv
 //

@@ -1,4 +1,4 @@
-/* fribidi-arabic.h - do Arabic shaping to presentation forms
+﻿/* fribidi-arabic.h - do Arabic shaping to presentation forms
  *
  * Copyright (C) 2005  Behdad Esfahbod
  * 

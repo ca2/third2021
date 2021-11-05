@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2013  Red Hat, Inc.
  *
  *  This is part of HarfBuzz, a text shaping library.

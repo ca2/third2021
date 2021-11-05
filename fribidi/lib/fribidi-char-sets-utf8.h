@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * fribidi-char-sets-utf8.h - UTF-8 character set conversion routines
  *
  * Authors:

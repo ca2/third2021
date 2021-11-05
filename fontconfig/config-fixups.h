@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright 息 2006 Keith Packard
  * Copyright 息 2010 Behdad Esfahbod
  *

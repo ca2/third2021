@@ -1,4 +1,4 @@
-/*
+﻿/*
  * fontconfig/fontconfig/fontconfig.h
  *
  * Copyright © 2001 Keith Packard

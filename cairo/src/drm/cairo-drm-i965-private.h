@@ -1,4 +1,4 @@
-#ifndef CAIRO_DRM_I965_PRIVATE_H
+﻿#ifndef CAIRO_DRM_I965_PRIVATE_H
 #define CAIRO_DRM_I965_PRIVATE_H
 
 #include <cairo/cairo-drm-intel-private.h>

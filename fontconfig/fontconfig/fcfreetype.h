@@ -1,4 +1,4 @@
-/*
+﻿/*
  * fontconfig/fontconfig/fcfreetype.h
  *
  * Copyright © 2001 Keith Packard

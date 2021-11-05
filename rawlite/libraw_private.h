@@ -1,4 +1,4 @@
-#pragma once
+﻿#pragma once
 
 // rawlite was never removed warnings, I guess... (disabling a lot of them)
 #pragma warning( disable : 4018)

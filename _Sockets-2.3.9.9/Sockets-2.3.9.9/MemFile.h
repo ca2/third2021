@@ -1,4 +1,4 @@
-/** \file MemFile.h
+﻿/** \file MemFile.h
  **	\date  2005-04-25
  **	\author grymse@alhem.net
 **/

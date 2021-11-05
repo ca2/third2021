@@ -1,4 +1,4 @@
-/* Provide a more complete sys/stat header file.
+﻿/* Provide a more complete sys/stat header file.
    Copyright (C) 2005-2011 Free Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or modify

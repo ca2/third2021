@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-script-private.h: Script tag handling, private definitions
  *
  * Copyright (C) 2002 Red Hat Software

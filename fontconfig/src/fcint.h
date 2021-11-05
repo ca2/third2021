@@ -1,4 +1,4 @@
-/*
+﻿/*
  * fontconfig/src/fcint.h
  *
  * Copyright © 2000 Keith Packard

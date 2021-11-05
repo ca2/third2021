@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-language.h: Language handling routines
  *
  * Copyright (C) 1999 Red Hat Software

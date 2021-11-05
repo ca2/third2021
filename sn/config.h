@@ -1,4 +1,4 @@
-/* config.h.in.  Generated from configure.in by autoheader.  */
+﻿/* config.h.in.  Generated from configure.in by autoheader.  */
 
 /* Define to 1 if you have the `backtrace' function. */
 #undef HAVE_BACKTRACE

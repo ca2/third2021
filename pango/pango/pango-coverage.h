@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-coverage.h: Coverage sets for fonts
  *
  * Copyright (C) 2000 Red Hat Software

@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2012  Mozilla Foundation.
  *
  *  This is part of HarfBuzz, a text shaping library.

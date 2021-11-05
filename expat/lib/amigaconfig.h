@@ -1,4 +1,4 @@
-#ifndef AMIGACONFIG_H
+﻿#ifndef AMIGACONFIG_H
 #define AMIGACONFIG_H
 
 /* 1234 = LIL_ENDIAN, 4321 = BIGENDIAN */

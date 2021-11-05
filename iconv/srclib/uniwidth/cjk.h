@@ -1,4 +1,4 @@
-/* Test for CJK encoding.
+﻿/* Test for CJK encoding.
    Copyright (C) 2001-2002, 2005-2007, 2009-2011 Free Software Foundation, Inc.
    Written by Bruno Haible <bruno@clisp.org>, 2002.
 

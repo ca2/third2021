@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangofc-private.h: Private routines and declarations for element
  *  fontconfig operation
  *

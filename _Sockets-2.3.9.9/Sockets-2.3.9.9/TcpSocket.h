@@ -1,4 +1,4 @@
-/** \file TcpSocket.h
+﻿/** \file TcpSocket.h
  **	\date  2004-02-13
  **	\author grymse@alhem.net
 **/

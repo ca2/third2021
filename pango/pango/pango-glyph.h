@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-glyph.h: Glyph storage
  *
  * Copyright (C) 2000 Red Hat Software

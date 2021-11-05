@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-matrix.h: Matrix manipulation routines
  *
  * Copyright (C) 2002, 2006 Red Hat Software

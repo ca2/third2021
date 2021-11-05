@@ -1,4 +1,4 @@
-/* idn-free.h --- Invoke the free function to release memory
+﻿/* idn-free.h --- Invoke the free function to release memory
    Copyright (C) 2004-2014 Simon Josefsson
 
    This file is part of GNU Libidn.

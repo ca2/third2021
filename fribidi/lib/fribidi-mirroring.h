@@ -1,4 +1,4 @@
-/* fribidi-mirroring.h - get mirrored character
+﻿/* fribidi-mirroring.h - get mirrored character
  *
  * Copyright (C) 2004  Sharif FarsiWeb, Inc
  * Copyright (C) 2001, 2002, 2004  Behdad Esfahbod

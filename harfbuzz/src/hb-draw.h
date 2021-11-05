@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Copyright © 2019-2020  Ebrahim Byagowi
  *
  *  This is part of HarfBuzz, a text shaping library.

@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangocoretext-private.h:
  *
  * Copyright (C) 2003 Red Hat Software

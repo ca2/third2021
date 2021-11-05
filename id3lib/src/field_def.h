@@ -1,4 +1,4 @@
-// -*- C++ -*-
+﻿// -*- C++ -*-
 // $Id: field_def.h,v 1.2 2002/07/02 22:12:07 t1mpy Exp $
 
 // id3lib: a C++ library for creating and manipulating id3v1/v2 tags

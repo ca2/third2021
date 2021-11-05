@@ -1,4 +1,4 @@
-/** \file StdLog.h
+﻿/** \file StdLog.h
  **	\date  2004-06-01
  **	\author grymse@alhem.net
 **/

@@ -1,4 +1,4 @@
-/* A more-standard <time.h>.
+﻿/* A more-standard <time.h>.
 
    Copyright (C) 2007-2011 Free Software Foundation, Inc.
 

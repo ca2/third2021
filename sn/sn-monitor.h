@@ -1,4 +1,4 @@
-/* Monitor API - if you are a program that monitors launch sequences */
+﻿/* Monitor API - if you are a program that monitors launch sequences */
 /*
  * Copyright (C) 2002 Red Hat, Inc.
  *

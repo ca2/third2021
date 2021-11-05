@@ -1,4 +1,4 @@
-/* -*- Mode: c; c-basic-offset: 4; indent-tabs-mode: t; tab-width: 8; -*- */
+﻿/* -*- Mode: c; c-basic-offset: 4; indent-tabs-mode: t; tab-width: 8; -*- */
 /*
  * Copyright © 2007 Red Hat, Inc.
  *

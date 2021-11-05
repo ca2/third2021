@@ -1,4 +1,4 @@
-/* Substitute for and wrapper around <unistd.h>.
+﻿/* Substitute for and wrapper around <unistd.h>.
    Copyright (C) 2003-2011 Free Software Foundation, Inc.
 
    This program is free software; you can redistribute it and/or modify

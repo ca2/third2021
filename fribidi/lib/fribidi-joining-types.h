@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * fribidi-joining-types.h - character joining types
  *
  * Author:

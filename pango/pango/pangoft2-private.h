@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangoft2-private.h:
  *
  * Copyright (C) 1999 Red Hat Software

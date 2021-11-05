@@ -1,4 +1,4 @@
-/**
+﻿/**
  * WinPR: Windows Portable Runtime
  * NoneHandle a.k.a. brathandle should be used where a handle is needed, but
  * functionality is not implemented yet or not implementable.

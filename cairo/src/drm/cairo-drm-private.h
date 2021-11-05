@@ -1,4 +1,4 @@
-/* Cairo - a vector graphics library with display and print output
+﻿/* Cairo - a vector graphics library with display and print output
  *
  * Copyright © 2009 Chris Wilson
  *

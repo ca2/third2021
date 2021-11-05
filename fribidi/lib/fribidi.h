@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * fribidi.h - Unicode bidirectional and Arabic joining/shaping algorithms
  *
  * Author:

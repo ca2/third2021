@@ -1,4 +1,4 @@
-/* The data in this file was created by Zack Rusin and downloaded from:
+﻿/* The data in this file was created by Zack Rusin and downloaded from:
 
    http://ktown.kde.org/~zrusin/examples/cairorender.tar.bz2
 

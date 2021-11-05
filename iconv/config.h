@@ -1,4 +1,4 @@
-/* config.h.in.  Generated from configure.ac by autoheader.  */
+﻿/* config.h.in.  Generated from configure.ac by autoheader.  */
 
 #define HAVE_READLINK 1
 

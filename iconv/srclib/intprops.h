@@ -1,4 +1,4 @@
-/* intprops.h -- properties of integer types
+﻿/* intprops.h -- properties of integer types
 
    Copyright (C) 2001-2005, 2009-2011 Free Software Foundation, Inc.
 

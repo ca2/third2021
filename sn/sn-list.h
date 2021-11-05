@@ -1,4 +1,4 @@
-/* List abstraction used internally */
+﻿/* List abstraction used internally */
 /*
  * Copyright (C) 2002 Red Hat, Inc.
  *

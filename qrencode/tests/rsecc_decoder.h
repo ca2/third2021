@@ -1,4 +1,4 @@
-#ifndef __RSECC_DECODER_H__
+﻿#ifndef __RSECC_DECODER_H__
 #define __RSECC_DECODER_H__
 
 void RSECC_decoder_init();

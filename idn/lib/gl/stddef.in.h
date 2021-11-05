@@ -1,4 +1,4 @@
-/* A substitute for POSIX 2008 <stddef.h>, for platforms that have issues.
+﻿/* A substitute for POSIX 2008 <stddef.h>, for platforms that have issues.
 
    Copyright (C) 2009-2014 Free Software Foundation, Inc.
 

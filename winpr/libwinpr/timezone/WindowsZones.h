@@ -1,4 +1,4 @@
-/*
+﻿/*
  * Automatically generated with scripts/update-windows-zones.py
  */
 #ifndef WINPR_WINDOWS_ZONES_H_

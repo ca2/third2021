@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-gravity.h: Gravity routines
  *
  * Copyright (C) 2006, 2007 Red Hat Software

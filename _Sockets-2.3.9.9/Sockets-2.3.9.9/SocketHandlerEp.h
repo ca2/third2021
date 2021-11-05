@@ -1,4 +1,4 @@
-/** \file SocketHandlerEp.h
+﻿/** \file SocketHandlerEp.h
  **	\date  2010-02-13
  **	\author grymse@alhem.net
 **/

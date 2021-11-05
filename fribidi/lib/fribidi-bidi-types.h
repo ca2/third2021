@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * fribidi-bidi-types.h - character bidi types
  *
  * Author:

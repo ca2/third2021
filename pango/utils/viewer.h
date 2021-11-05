@@ -1,4 +1,4 @@
-/* viewer.h: PangoViewer class
+﻿/* viewer.h: PangoViewer class
  *
  * Copyright (C) 1999,2004,2005 Red Hat, Inc.
  * Copyright (C) 2001 Sun Microsystems

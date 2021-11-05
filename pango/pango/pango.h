@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango.h:
  *
  * Copyright (C) 1999 Red Hat Software

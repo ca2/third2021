@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-font.h: Font handling
  *
  * Copyright (C) 2000 Red Hat Software

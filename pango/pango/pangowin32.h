@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangowin32.h:
  *
  * Copyright (C) 1999 Red Hat Software

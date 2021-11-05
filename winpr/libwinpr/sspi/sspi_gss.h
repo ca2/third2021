@@ -1,4 +1,4 @@
-/**
+﻿/**
  * FreeRDP: A Remote Desktop Protocol Implementation
  * Generic Security Service Application Program Interface (GSSAPI)
  *

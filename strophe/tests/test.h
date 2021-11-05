@@ -1,4 +1,4 @@
-/* test.h
+﻿/* test.h
 ** libstrophe XMPP client library -- common routines for tests
 **
 ** Copyright (C) 2005-2009 Collecta, Inc.

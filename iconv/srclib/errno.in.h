@@ -1,4 +1,4 @@
-/* A POSIX-like <errno.h>.
+﻿/* A POSIX-like <errno.h>.
 
    Copyright (C) 2008-2011 Free Software Foundation, Inc.
 

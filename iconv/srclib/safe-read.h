@@ -1,4 +1,4 @@
-/* An interface to read() that retries after interrupts.
+﻿/* An interface to read() that retries after interrupts.
    Copyright (C) 2002, 2006, 2009-2011 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify

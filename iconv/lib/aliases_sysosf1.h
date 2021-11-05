@@ -1,4 +1,4 @@
-/* ANSI-C code produced by gperf version 3.0.4 */
+﻿/* ANSI-C code produced by gperf version 3.0.4 */
 /* Command-line: gperf -m 10 lib/aliases_sysosf1.gperf  */
 /* Computed positions: -k'1,3-11,$' */
 

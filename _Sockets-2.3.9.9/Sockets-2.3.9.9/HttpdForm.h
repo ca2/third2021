@@ -1,4 +1,4 @@
-/** \file HttpdForm.h - read stdin, parse cgi input
+﻿/** \file HttpdForm.h - read stdin, parse cgi input
  **
  **	Written: 1999-Feb-10 grymse@alhem.net
  **/

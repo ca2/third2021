@@ -1,4 +1,4 @@
-/**
+﻿/**
  **	\file HttpClientSocket.h
  **	\date  2006-04-20
  **	\author grymse@alhem.net

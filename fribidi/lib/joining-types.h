@@ -1,4 +1,4 @@
-/* FriBidi
+﻿/* FriBidi
  * joining-types.h - define internal joining types
  *
  * Author:

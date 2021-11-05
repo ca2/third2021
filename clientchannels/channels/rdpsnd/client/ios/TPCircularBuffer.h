@@ -1,4 +1,4 @@
-//
+﻿//
 //  TPCircularBuffer.h
 //  Circular/Ring buffer implementation
 //

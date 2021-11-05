@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangox-private.h:
  *
  * Copyright (C) 2000 Red Hat Software

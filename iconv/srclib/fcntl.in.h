@@ -1,4 +1,4 @@
-/* Like <fcntl.h>, but with non-working flags defined to 0.
+﻿/* Like <fcntl.h>, but with non-working flags defined to 0.
 
    Copyright (C) 2006-2011 Free Software Foundation, Inc.
 

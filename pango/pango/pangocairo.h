@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pangocairo.h:
  *
  * Copyright (C) 1999, 2004 Red Hat, Inc.

@@ -1,2 +1,2 @@
-#undef gettext
+﻿#undef gettext
 #define gettext

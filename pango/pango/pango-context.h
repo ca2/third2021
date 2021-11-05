@@ -1,4 +1,4 @@
-/* Pango
+﻿/* Pango
  * pango-context.h: Rendering contexts
  *
  * Copyright (C) 2000 Red Hat Software

@@ -1,4 +1,4 @@
-#ifndef __FRIBIDI_DOC
+﻿#ifndef __FRIBIDI_DOC
 /* FriBidi
  * fribidi-char-sets-list.h - list of supported character sets
  *

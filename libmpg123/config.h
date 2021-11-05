@@ -1,4 +1,4 @@
-   /* src/config.h.in.  Generated from configure.ac by autoheader.  */
+﻿   /* src/config.h.in.  Generated from configure.ac by autoheader.  */
 
 #include "operating_system/third_private_config.h"
 
