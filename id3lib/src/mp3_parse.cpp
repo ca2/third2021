@@ -1,4 +1,4 @@
-// -*- C++ -*-
+﻿// -*- C++ -*-
 // $Id: mp3_parse.cpp,v 1.6 2002/11/02 17:48:51 t1mpy Exp $
 
 // id3lib: a C++ library for creating and manipulating id3v1/v2 tags

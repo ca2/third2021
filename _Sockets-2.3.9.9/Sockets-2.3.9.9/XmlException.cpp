@@ -1,4 +1,4 @@
-/**
+﻿/**
  **	\file XmlException.cpp
  **	\date  2008-02-09
  **	\author grymse@alhem.net

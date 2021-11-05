@@ -1,4 +1,4 @@
-/** \file HttpdCookies.cpp
+﻿/** \file HttpdCookies.cpp
 */
 /*
 Copyright (C) 2003-2011  Anders Hedstrom

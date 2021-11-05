@@ -1,4 +1,4 @@
-/** \file File.cpp
+﻿/** \file File.cpp
  **	\date  2005-04-25
  **	\author grymse@alhem.net
 **/

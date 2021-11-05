@@ -1,4 +1,4 @@
-/** \file Thread.cpp
+﻿/** \file Thread.cpp
  **	\date  2004-10-30
  **	\author grymse@alhem.net
 **/

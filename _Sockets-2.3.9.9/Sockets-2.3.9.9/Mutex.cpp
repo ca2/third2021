@@ -1,4 +1,4 @@
-/** \file Mutex.cpp
+﻿/** \file Mutex.cpp
  **	\date  2004-10-30
  **	\author grymse@alhem.net
 **/

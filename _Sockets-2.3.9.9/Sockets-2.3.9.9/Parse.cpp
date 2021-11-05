@@ -1,4 +1,4 @@
-/** \file Parse.cpp - parse a string
+﻿/** \file Parse.cpp - parse a string
  **
  **	Written: 1999-Feb-10 grymse@alhem.net
  **/

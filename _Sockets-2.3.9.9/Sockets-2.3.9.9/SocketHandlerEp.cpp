@@ -1,4 +1,4 @@
-/** \file SocketHandlerEp.cpp
+﻿/** \file SocketHandlerEp.cpp
  **	\date  2010-02-13
  **	\author grymse@alhem.net
 **/

@@ -1,4 +1,4 @@
-#include <Sockets/HTTPSocket.h>
+﻿#include <Sockets/HTTPSocket.h>
 #include <Sockets/SocketHandler.h>
 #include <Sockets/ListenSocket.h>
 #include <Sockets/Exception.h>

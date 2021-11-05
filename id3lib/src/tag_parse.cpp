@@ -1,4 +1,4 @@
-// $Id: tag_parse.cpp,v 1.47 2002/11/24 17:33:30 t1mpy Exp $
+﻿// $Id: tag_parse.cpp,v 1.47 2002/11/24 17:33:30 t1mpy Exp $
 
 // id3lib: a C++ library for creating and manipulating id3v1/v2 tags
 // Copyright 1999, 2000  Scott Thomas Haug

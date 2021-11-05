@@ -1,4 +1,4 @@
-/** \file Lock.cpp
+﻿/** \file Lock.cpp
  **	\date  2005-08-22
  **	\author grymse@alhem.net
 **/

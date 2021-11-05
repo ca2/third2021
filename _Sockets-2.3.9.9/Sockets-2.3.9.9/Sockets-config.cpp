@@ -1,4 +1,4 @@
-/**
+﻿/**
  **	\file Sockets-config.cpp
  **	\date  2006-09-04
  **	\author grymse@alhem.net

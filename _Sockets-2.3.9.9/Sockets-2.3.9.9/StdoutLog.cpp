@@ -1,4 +1,4 @@
-/** \file StdoutLog.cpp
+﻿/** \file StdoutLog.cpp
  **	\date  2004-06-01
  **	\author grymse@alhem.net
 **/

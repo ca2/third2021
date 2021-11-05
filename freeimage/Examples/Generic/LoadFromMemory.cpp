@@ -1,4 +1,4 @@
-// ==========================================================
+﻿// ==========================================================
 // Load From Memory Example
 //
 // Design and implementation by Floris van den Berg

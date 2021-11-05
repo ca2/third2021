@@ -1,4 +1,4 @@
-// $Id: demo_copy.cpp,v 1.11 2002/06/29 17:20:26 t1mpy Exp $
+﻿// $Id: demo_copy.cpp,v 1.11 2002/06/29 17:20:26 t1mpy Exp $
 //
 //  The authors have released ID3Lib as Public Domain (PD) and claim no
 //  copyright, patent or other intellectual property protection in this work.

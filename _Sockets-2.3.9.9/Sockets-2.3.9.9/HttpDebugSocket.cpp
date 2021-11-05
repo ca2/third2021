@@ -1,4 +1,4 @@
-/** \file HttpDebugSocket.cpp
+﻿/** \file HttpDebugSocket.cpp
  **	\date  2004-10-08
 **/
 /*

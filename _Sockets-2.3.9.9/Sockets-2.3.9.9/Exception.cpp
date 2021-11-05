@@ -1,4 +1,4 @@
-/**
+﻿/**
  **	\file Exception.cpp
  **	\date  2007-09-28
  **	\author grymse@alhem.net

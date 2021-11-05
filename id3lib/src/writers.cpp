@@ -1,4 +1,4 @@
-// $Id: writers.cpp,v 1.2 2002/06/29 17:37:42 t1mpy Exp $
+﻿// $Id: writers.cpp,v 1.2 2002/06/29 17:37:42 t1mpy Exp $
 
 // id3lib: a C++ library for creating and manipulating id3v1/v2 tags
 // Copyright 1999, 2000  Scott Thomas Haug

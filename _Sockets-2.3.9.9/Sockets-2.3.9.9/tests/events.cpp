@@ -1,4 +1,4 @@
-#include <Sockets/EventHandler.h>
+﻿#include <Sockets/EventHandler.h>
 #include <Sockets/TcpSocket.h>
 #include <Sockets/IEventOwner.h>
 #include <Sockets/ListenSocket.h>

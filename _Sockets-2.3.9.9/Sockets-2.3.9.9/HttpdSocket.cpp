@@ -1,4 +1,4 @@
-/** \file HttpdSocket.cpp
+﻿/** \file HttpdSocket.cpp
 */
 /*
 Copyright (C) 2001-2011  Anders Hedstrom (grymse@alhem.net)

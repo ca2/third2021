@@ -1,4 +1,4 @@
-/** \file ResolvServer.cpp
+﻿/** \file ResolvServer.cpp
  **	\date  2005-03-24
  **	\author grymse@alhem.net
 **/

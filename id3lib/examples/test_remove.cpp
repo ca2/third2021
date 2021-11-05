@@ -1,4 +1,4 @@
-// $Id: test_remove.cpp,v 1.13 2003/03/02 15:17:21 t1mpy Exp $
+﻿// $Id: test_remove.cpp,v 1.13 2003/03/02 15:17:21 t1mpy Exp $
 
 #if defined(HAVE_CONFIG_H)
 # include "config.h"
