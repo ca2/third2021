@@ -1,4 +1,4 @@
-﻿/* Provide a more complete sys/types.h.
+/* Provide a more complete sys/types.h.
 
    Copyright (C) 2011-2014 Free Software Foundation, Inc.
 

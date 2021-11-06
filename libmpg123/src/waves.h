@@ -1,4 +1,4 @@
-﻿#ifndef MPG123_WAVES_H
+#ifndef MPG123_WAVES_H
 #define MPG123_WAVES_H
 /*
 	waves: some oscillators, for fun

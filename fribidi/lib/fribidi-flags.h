@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-flags.h - option flags
  *
  * Author:

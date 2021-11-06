@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright © 2012 Siarhei Siamashka <siarhei.siamashka@gmail.com>
  *
  * Based on the public domain implementation of small noncryptographic PRNG

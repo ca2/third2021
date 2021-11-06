@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-common.h - common include for library headers
  *
  * Author:

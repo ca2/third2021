@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-shape.h - shaping
  *
  * Author:

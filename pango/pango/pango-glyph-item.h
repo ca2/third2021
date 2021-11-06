@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-glyph-item.h: Pair of PangoItem and a glyph string
  *
  * Copyright (C) 2002 Red Hat Software

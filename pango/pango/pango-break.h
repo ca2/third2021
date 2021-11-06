@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-break.h:
  *
  * Copyright (C) 1999 Red Hat Software

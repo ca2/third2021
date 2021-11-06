@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-impl-utils.h: Macros for get_type() functions
  * Inspired by Jody Goldberg's gsf-impl-utils.h
  *

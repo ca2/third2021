@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Automatically generated with scripts/TimeZones.csx
  */
 

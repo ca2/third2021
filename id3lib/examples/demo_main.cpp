@@ -1,4 +1,4 @@
-﻿//  The authors have released ID3Lib as Public Domain (PD) and claim no
+//  The authors have released ID3Lib as Public Domain (PD) and claim no
 //  copyright, patent or other intellectual property protection in this work.
 //  This means that it may be modified, redistributed and used in commercial
 //  and non-commercial software and hardware without restrictions.  ID3Lib is

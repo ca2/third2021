@@ -1,4 +1,4 @@
-﻿
+
 /*
   The oRTP library is an RTP (Realtime Transport Protocol - rfc3550) stack.
   Copyright (C) 2001  Simon MORLAT simon.morlat@linphone.org

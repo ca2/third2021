@@ -1,4 +1,4 @@
-﻿/** \file IMutex.h
+/** \file IMutex.h
  **	\date  2008-10-25
  **	\author grymse@alhem.net
 **/

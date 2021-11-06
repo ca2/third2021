@@ -1,4 +1,4 @@
-﻿/*
+/*
  * srtp_priv.h
  *
  * private internal data structures and functions for libSRTP

@@ -1,4 +1,4 @@
-﻿/*
+/*
  * common part of test units.
  */
 

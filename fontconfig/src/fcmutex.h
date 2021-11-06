@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Atomic int and pointer operations.  Originally copied from HarfBuzz.
  *
  * Copyright © 2007  Chris Wilson

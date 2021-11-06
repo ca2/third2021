@@ -1,4 +1,4 @@
-﻿/* The data for this test case was provided by Gary Nicholson
+/* The data for this test case was provided by Gary Nicholson
  * <gary@imapping.co.nz> who originally created an interactive SVG map
  * of the world as can be seen here:
  *

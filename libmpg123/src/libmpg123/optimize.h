@@ -1,4 +1,4 @@
-﻿#ifndef MPG123_H_OPTIMIZE
+#ifndef MPG123_H_OPTIMIZE
 #define MPG123_H_OPTIMIZE
 /*
 	optimize: get a grip on the different optimizations

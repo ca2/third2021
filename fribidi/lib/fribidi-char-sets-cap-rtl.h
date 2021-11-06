@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-char-sets-cap-rtl.h - CapRTL character set conversion routines
  *
  * Authors:

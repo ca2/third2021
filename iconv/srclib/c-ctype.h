@@ -1,4 +1,4 @@
-﻿/* Character handling in C locale.
+/* Character handling in C locale.
 
    These functions work like the corresponding functions in <ctype.h>,
    except that they have the C (POSIX) locale hardwired, whereas the

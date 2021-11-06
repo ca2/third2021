@@ -1,4 +1,4 @@
-﻿/* PackTab - Pack a static table
+/* PackTab - Pack a static table
  * Copyright (C) 2001 Behdad Esfahbod. 
  * 
  * This library is free software; you can redistribute it and/or 

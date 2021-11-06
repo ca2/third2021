@@ -1,4 +1,4 @@
-﻿/* Launchee API - if you are a program started by other programs */
+/* Launchee API - if you are a program started by other programs */
 /*
  * Copyright (C) 2002 Red Hat, Inc.
  *

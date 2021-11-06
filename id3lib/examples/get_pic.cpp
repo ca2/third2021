@@ -1,4 +1,4 @@
-﻿// $Id: get_pic.cpp,v 1.8 2002/06/29 17:25:05 t1mpy Exp $
+// $Id: get_pic.cpp,v 1.8 2002/06/29 17:25:05 t1mpy Exp $
 
 #ifdef HAVE_CONFIG_H
 #  include <config.h>

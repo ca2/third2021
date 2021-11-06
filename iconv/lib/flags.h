@@ -1,4 +1,4 @@
-﻿/* Generated automatically by genflags. */
+/* Generated automatically by genflags. */
 
 /* Set if the encoding can encode
    the acute and grave accents U+00B4 and U+0060. */

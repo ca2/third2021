@@ -1,4 +1,4 @@
-﻿#ifndef TEST_SETTINGS_PROPERTY_LISTS
+#ifndef TEST_SETTINGS_PROPERTY_LISTS
 #define TEST_SETTINGS_PROPERTY_LISTS
 
 #define have_bool_list_indices

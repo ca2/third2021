@@ -1,4 +1,4 @@
-﻿/**
+/**
  * FreeRDP: A Remote Desktop Protocol Implementation
  * RDP Keyboard layout ID detection from common X11 xkb keyboard layout names
  *

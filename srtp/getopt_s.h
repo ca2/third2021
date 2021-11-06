@@ -1,4 +1,4 @@
-﻿/*
+/*
  * getopt.h
  *
  * interface to a minimal implementation of the getopt() function,

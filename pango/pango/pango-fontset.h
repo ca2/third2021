@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-fontset.h: Font set handling
  *
  * Copyright (C) 2001 Red Hat Software

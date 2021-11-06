@@ -1,4 +1,4 @@
-﻿static const long _vq_quantlist__44p0_l0_0[] = {
+static const long _vq_quantlist__44p0_l0_0[] = {
 	6,
 	5,
 	7,

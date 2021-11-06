@@ -1,4 +1,4 @@
-﻿#ifndef PROTO_EXPAT_H
+#ifndef PROTO_EXPAT_H
 #define PROTO_EXPAT_H
 
 #ifndef LIBRARIES_EXPAT_H

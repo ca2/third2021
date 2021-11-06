@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-attributes.h: Attributed text
  *
  * Copyright (C) 2000 Red Hat Software

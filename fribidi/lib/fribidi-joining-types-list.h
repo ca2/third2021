@@ -1,4 +1,4 @@
-﻿#ifndef __FRIBIDI_DOC
+#ifndef __FRIBIDI_DOC
 /* FriBidi
  * fribidi-joining-types-list.h - list of joining types
  *

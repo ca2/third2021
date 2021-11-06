@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright © 2006 Mozilla Corporation
  * Copyright © 2006 Red Hat, Inc.
  *

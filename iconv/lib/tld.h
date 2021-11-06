@@ -1,4 +1,4 @@
-﻿/* tld.h --- Declarations for TLD restriction checking.
+/* tld.h --- Declarations for TLD restriction checking.
    Copyright (C) 2004-2014 Simon Josefsson.
    Copyright (C) 2003-2014 Free Software Foundation, Inc.
 

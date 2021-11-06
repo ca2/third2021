@@ -1,4 +1,4 @@
-﻿#ifndef __FRIBIDI_DOC
+#ifndef __FRIBIDI_DOC
 /* FriBidi
  * fribidi-bidi-types-list.h - list of bidi types
  *

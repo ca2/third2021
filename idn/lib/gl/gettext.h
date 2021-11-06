@@ -1,4 +1,4 @@
-﻿/* Convenience header for conditional use of GNU <libintl.h>.
+/* Convenience header for conditional use of GNU <libintl.h>.
    Copyright (C) 1995-1998, 2000-2002, 2004-2006, 2009-2014 Free Software
    Foundation, Inc.
 

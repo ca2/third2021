@@ -1,4 +1,4 @@
-﻿#include <Sockets/TcpSocket.h>
+#include <Sockets/TcpSocket.h>
 #include <Sockets/SocketHandler.h>
 #include <Sockets/StdoutLog.h>
 #include <iostream>

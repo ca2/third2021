@@ -1,4 +1,4 @@
-﻿// -*- C++ -*-
+// -*- C++ -*-
 // $Id: header_tag.h,v 1.2 2002/07/31 13:20:49 t1mpy Exp $
 
 // id3lib: a C++ library for creating and manipulating id3v1/v2 tags

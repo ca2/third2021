@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * bidi-types.h - define internal bidi types
  *
  * Author:

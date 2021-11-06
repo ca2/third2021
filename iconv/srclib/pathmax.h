@@ -1,4 +1,4 @@
-﻿/* Define PATH_MAX somehow.  Requires sys/types.h.
+/* Define PATH_MAX somehow.  Requires sys/types.h.
    Copyright (C) 1992, 1999, 2001, 2003, 2005, 2009-2011 Free Software
    Foundation, Inc.
 

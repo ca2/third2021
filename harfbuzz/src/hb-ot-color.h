@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright © 2016  Google, Inc.
  * Copyright © 2018  Khaled Hosny
  * Copyright © 2018  Ebrahim Byagowi

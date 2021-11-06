@@ -1,4 +1,4 @@
-﻿/* vim:set ts=8 sw=4 noet cin: */
+/* vim:set ts=8 sw=4 noet cin: */
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *

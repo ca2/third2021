@@ -1,4 +1,4 @@
-﻿#include <Sockets/SocketHandler.h>
+#include <Sockets/SocketHandler.h>
 #include <Sockets/TcpSocket.h>
 #include <Sockets/StdoutLog.h>
 #ifndef _WIN32

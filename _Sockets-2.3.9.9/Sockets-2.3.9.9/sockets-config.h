@@ -1,4 +1,4 @@
-﻿/**
+/**
  **	\file sockets-config.h
  **	\date  2007-04-14
  **	\author grymse@alhem.net

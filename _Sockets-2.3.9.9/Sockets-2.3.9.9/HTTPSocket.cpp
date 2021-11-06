@@ -1,4 +1,4 @@
-﻿/** \file HTTPSocket.cpp
+/** \file HTTPSocket.cpp
  **	\date  2004-04-06
  **	\author grymse@alhem.net
 **/

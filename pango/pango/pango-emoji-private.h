@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-emoji-private.h: Emoji handling, private definitions
  *
  * Copyright (C) 2017 Google, Inc.

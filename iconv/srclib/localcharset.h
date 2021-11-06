@@ -1,4 +1,4 @@
-﻿/* Determine a canonical name for the current locale's character encoding.
+/* Determine a canonical name for the current locale's character encoding.
    Copyright (C) 2000-2003, 2009-2011 Free Software Foundation, Inc.
    This file is part of the GNU CHARSET Library.
 

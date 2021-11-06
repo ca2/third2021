@@ -1,4 +1,4 @@
-﻿/* idna.h --- Prototypes for Internationalized Domain Name library.
+/* idna.h --- Prototypes for Internationalized Domain Name library.
    Copyright (C) 2002-2014 Simon Josefsson
 
    This file is part of GNU Libidn.

@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pangocairo-fc.h: Private header file for Cairo/fontconfig combination
  *
  * Copyright (C) 2005 Red Hat, Inc.

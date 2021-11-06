@@ -1,4 +1,4 @@
-﻿/**
+/**
  * WinPR: Windows Portable Runtime
  * Windows Terminal Services API
  *

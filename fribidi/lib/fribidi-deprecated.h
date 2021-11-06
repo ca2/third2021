@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-deprecated.h - Deprecated interfaces
  *
  * Author:

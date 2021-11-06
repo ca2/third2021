@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pangocoretext.h:
  *
  * Copyright (C) 2005 Imendio AB

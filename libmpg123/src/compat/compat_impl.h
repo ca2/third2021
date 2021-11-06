@@ -1,4 +1,4 @@
-﻿/*
+/*
 	compat: Some compatibility functions.
 
 	The mpg123 code is determined to keep it's legacy. A legacy of old, old UNIX.

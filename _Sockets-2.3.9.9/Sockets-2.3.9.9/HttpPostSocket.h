@@ -1,4 +1,4 @@
-﻿/** \file HttpPostSocket.h
+/** \file HttpPostSocket.h
  **	\date  2004-10-30
  **	\author grymse@alhem.net
 **/

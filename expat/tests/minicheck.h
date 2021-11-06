@@ -1,4 +1,4 @@
-﻿/* Miniature re-implementation of the "check" library.
+/* Miniature re-implementation of the "check" library.
  *
  * This is intended to support just enough of check to run the Expat
  * tests.  This interface is based entirely on the portion of the

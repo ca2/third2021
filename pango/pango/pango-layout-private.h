@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-layout-private.h: Internal structures of PangoLayout
  *
  * Copyright (C) 2004 Red Hat Software

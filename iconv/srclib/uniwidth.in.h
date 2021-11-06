@@ -1,4 +1,4 @@
-﻿/* Display width functions.
+/* Display width functions.
    Copyright (C) 2001-2002, 2005, 2007, 2009-2011 Free Software Foundation,
    Inc.
 

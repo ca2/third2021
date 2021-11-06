@@ -1,4 +1,4 @@
-﻿// -*- C++ -*-
+// -*- C++ -*-
 // $Id: flags.h,v 1.1 2000/10/24 16:22:47 eldamitri Exp $
 
 // id3lib: a C++ library for creating and manipulating id3v1/v2 tags

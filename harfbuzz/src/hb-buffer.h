@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright © 1998-2004  David Turner and Werner Lemberg
  * Copyright © 2004,2007,2009  Red Hat, Inc.
  * Copyright © 2011,2012  Google, Inc.

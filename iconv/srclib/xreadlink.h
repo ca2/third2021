@@ -1,4 +1,4 @@
-﻿/* Reading symbolic links without size limitation.
+/* Reading symbolic links without size limitation.
 
    Copyright (C) 2001, 2003-2004, 2007, 2009-2011 Free Software Foundation,
    Inc.

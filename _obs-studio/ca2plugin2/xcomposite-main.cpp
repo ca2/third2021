@@ -1,4 +1,4 @@
-﻿#include <obs-module.h>
+#include <obs-module.h>
 
 #include "ca2plugin-main.hpp"
 

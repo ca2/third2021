@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-tabs.h: Tab-related stuff
  *
  * Copyright (C) 2000 Red Hat Software

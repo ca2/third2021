@@ -1,4 +1,4 @@
-﻿#include "platform/platform/config.h"
+#include "platform/platform/config.h"
 #include <stdio.h>
 #include <stdlib.h>
 

@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-item.h: Structure for storing run information
  *
  * Copyright (C) 2000 Red Hat Software

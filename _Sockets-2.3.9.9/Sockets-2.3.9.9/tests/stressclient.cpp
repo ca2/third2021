@@ -1,4 +1,4 @@
-﻿/**
+/**
  **  \file stressclient.cpp
  **  \date  2006-10-02
  **  \author grymse@alhem.net

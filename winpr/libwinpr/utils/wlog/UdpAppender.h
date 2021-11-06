@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Copyright © 2015 Thincast Technologies GmbH
  * Copyright © 2015 David FORT <contact@hardening-consulting.com>
  *

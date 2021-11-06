@@ -1,4 +1,4 @@
-﻿/* Launcher API - if you are a program that starts other programs */
+/* Launcher API - if you are a program that starts other programs */
 /*
  * Copyright (C) 2002 Red Hat, Inc.
  *

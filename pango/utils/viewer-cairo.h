@@ -1,4 +1,4 @@
-﻿/* viewer-cairo.h: Common headers for Cairo-based viewers
+/* viewer-cairo.h: Common headers for Cairo-based viewers
  *
  * Copyright (C) 1999,2004,2005 Red Hat, Inc.
  * Copyright (C) 2001 Sun Microsystems

@@ -1,4 +1,4 @@
-﻿/* A GNU-like <string.h>.
+/* A GNU-like <string.h>.
 
    Copyright (C) 1995-1996, 2001-2011 Free Software Foundation, Inc.
 

@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pangofc-font.h: Base fontmap type for fontconfig-based backends
  *
  * Copyright (C) 2003 Red Hat Software

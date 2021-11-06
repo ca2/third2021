@@ -1,4 +1,4 @@
-﻿/* malloc with out of memory checking.
+/* malloc with out of memory checking.
    Copyright (C) 2001-2004, 2006 Free Software Foundation, Inc.
    Written by Bruno Haible <haible@clisp.cons.org>, 2001.
 

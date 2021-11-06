@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-char-sets-iso8859-6.h - ISO8859-6 character set conversion routines
  *
  * Authors:

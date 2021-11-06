@@ -1,4 +1,4 @@
-﻿#ifndef __DATACHUNK_H__
+#ifndef __DATACHUNK_H__
 #define __DATACHUNK_H__
 
 #include "../qrencode.h"

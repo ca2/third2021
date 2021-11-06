@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-unicode.h - general Unicode definitions
  *
  * Author:

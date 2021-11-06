@@ -1,4 +1,4 @@
-﻿/** \file HttpPutSocket.h
+/** \file HttpPutSocket.h
  **	\date  2004-10-30
  **	\author grymse@alhem.net
 **/

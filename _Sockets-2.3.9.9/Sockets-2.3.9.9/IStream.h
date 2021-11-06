@@ -1,4 +1,4 @@
-﻿/** \file IStream.h
+/** \file IStream.h
  **	\date  2008-11-15
  **	\author grymse@alhem.net
 **/

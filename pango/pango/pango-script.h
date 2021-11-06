@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-script.h: Script tag handling
  *
  * Copyright (C) 2002 Red Hat Software

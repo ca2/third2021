@@ -1,4 +1,4 @@
-﻿/*
+/*
  * Copyright © 2008 Chris Wilson
  *
  * Permission to use, copy, modify, distribute, and sell this software

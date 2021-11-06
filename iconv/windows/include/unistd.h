@@ -1,1 +1,1 @@
-﻿/* Dummy file to satisfy source file dependencies on Windows platform */
+/* Dummy file to satisfy source file dependencies on Windows platform */

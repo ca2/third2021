@@ -1,4 +1,4 @@
-﻿#ifndef H_LOCAL
+#ifndef H_LOCAL
 #define H_LOCAL
 /*
 	local: some stuff for localisation

@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * run.h - text run data type
  *
  * Authors:

@@ -1,4 +1,4 @@
-﻿/* Elementary types and macros for the GNU UniString library.
+/* Elementary types and macros for the GNU UniString library.
    Copyright (C) 2002, 2005-2006, 2009-2014 Free Software Foundation, Inc.
 
    This program is free software: you can redistribute it and/or modify it

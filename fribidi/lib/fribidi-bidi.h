@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-bidi.h - bidirectional algorithm
  *
  * Authors:

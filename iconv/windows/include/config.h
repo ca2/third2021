@@ -1,4 +1,4 @@
-﻿/* config.h --- System definitions for Windows
+/* config.h --- System definitions for Windows
    Copyright (C) 2008-2014 Free Software Foundation, Inc.
 
    This file is part of GNU Libidn.

@@ -1,4 +1,4 @@
-﻿///*
+///*
 // * srtp.h
 // *
 // * interface to libsrtp

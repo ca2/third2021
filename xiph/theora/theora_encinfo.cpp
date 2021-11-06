@@ -1,4 +1,4 @@
-﻿#include "framework.h"
+#include "framework.h"
 
 
 /*Packs a series of octets from a given byte array into the pack buffer.

@@ -1,4 +1,4 @@
-﻿#include <Sockets/SocketHandler.h>
+#include <Sockets/SocketHandler.h>
 #include <Sockets/TcpSocket.h>
 
 #ifdef SOCKETS_NAMESPACE

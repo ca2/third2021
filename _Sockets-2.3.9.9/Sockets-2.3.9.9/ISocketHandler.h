@@ -1,4 +1,4 @@
-﻿/** \file ISocketHandler.h
+/** \file ISocketHandler.h
  **	\date  2004-02-13
  **	\author grymse@alhem.net
 **/

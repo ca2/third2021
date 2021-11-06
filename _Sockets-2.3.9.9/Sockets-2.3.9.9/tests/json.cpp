@@ -1,4 +1,4 @@
-﻿#include <Sockets/Json.h>
+#include <Sockets/Json.h>
 #include <iostream>
 
 

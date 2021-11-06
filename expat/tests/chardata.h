@@ -1,4 +1,4 @@
-﻿/* chardata.h
+/* chardata.h
 
    Interface to some helper routines used to accumulate and check text
    and attribute content.

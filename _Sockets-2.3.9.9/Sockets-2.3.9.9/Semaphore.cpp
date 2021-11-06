@@ -1,4 +1,4 @@
-﻿/**
+/**
  **	\file Semaphore.cpp
  **	\date  2007-04-13
  **	\author grymse@alhem.net

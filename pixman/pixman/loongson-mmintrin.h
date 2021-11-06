@@ -1,4 +1,4 @@
-﻿/* The gcc-provided loongson intrinsic functions are way too fucking broken
+/* The gcc-provided loongson intrinsic functions are way too fucking broken
  * to be of any use, otherwise I'd use them.
  *
  * - The hardware instructions are very similar to MMX or iwMMXt. Certainly

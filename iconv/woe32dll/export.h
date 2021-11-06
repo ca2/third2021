@@ -1,4 +1,4 @@
-﻿/* Exporting symbols from Cygwin shared libraries.
+/* Exporting symbols from Cygwin shared libraries.
    Copyright (C) 2006 Free Software Foundation, Inc.
    Written by Bruno Haible <bruno@clisp.org>, 2006.
 

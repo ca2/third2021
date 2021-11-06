@@ -1,4 +1,4 @@
-﻿/*
+/*
  * fontconfig/fontconfig/fcprivate.h
  *
  * Copyright © 2001 Keith Packard

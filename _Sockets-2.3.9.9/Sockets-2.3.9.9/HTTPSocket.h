@@ -1,4 +1,4 @@
-﻿/** \file HTTPSocket.h 	Class HTTPSocket definition.
+/** \file HTTPSocket.h 	Class HTTPSocket definition.
  **	\date  2004-04-06
  **	\author grymse@alhem.net
 **/

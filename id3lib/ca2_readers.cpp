@@ -1,4 +1,4 @@
-﻿#include "acme/_start.h"
+#include "acme/_start.h"
 #include "acme/_.h"
 #undef new
 #include <id3/readers.h>

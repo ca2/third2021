@@ -1,4 +1,4 @@
-﻿/* prim_internal.h
+/* prim_internal.h
  * vi:ts=4 sw=4
  *
  * (c) Copyright 2012 Hewlett-Packard Development Company, L.P.

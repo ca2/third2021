@@ -1,4 +1,4 @@
-﻿#include "framework.h"
+#include "framework.h"
 
 
 /*The default Huffman codes used for VP3.1.*/

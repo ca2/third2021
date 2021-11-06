@@ -1,4 +1,4 @@
-﻿/* FriBidi
+/* FriBidi
  * fribidi-joining.h - Arabic joining algorithm
  *
  * Authors:

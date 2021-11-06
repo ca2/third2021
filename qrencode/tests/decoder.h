@@ -1,4 +1,4 @@
-﻿#ifndef __DECODER_H__
+#ifndef __DECODER_H__
 #define __DECODER_H__
 
 #include "../qrencode.h"

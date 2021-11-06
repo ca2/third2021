@@ -1,4 +1,4 @@
-﻿/* ATTENTION: This file doesn't compile.  It is only here as a reference */
+/* ATTENTION: This file doesn't compile.  It is only here as a reference */
 /*            of an alternative latin hinting algorithm that was always  */
 /*            marked as experimental.                                    */
 

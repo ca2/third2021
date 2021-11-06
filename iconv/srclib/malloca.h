@@ -1,4 +1,4 @@
-﻿/* Safe automatic memory allocation.
+/* Safe automatic memory allocation.
    Copyright (C) 2003-2007, 2009-2011 Free Software Foundation, Inc.
    Written by Bruno Haible <bruno@clisp.org>, 2003.
 

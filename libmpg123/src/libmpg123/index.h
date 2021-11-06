@@ -1,4 +1,4 @@
-﻿#ifndef MPG123_H_INDEX
+#ifndef MPG123_H_INDEX
 #define MPG123_H_INDEX
 
 /*

@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pangoxft.h:
  *
  * Copyright (C) 1999 Red Hat Software

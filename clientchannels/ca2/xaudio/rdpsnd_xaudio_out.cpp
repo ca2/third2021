@@ -1,4 +1,4 @@
-﻿
+
 #include "rdpsnd_xaudio_out.h"
 
 /* wave data block header */

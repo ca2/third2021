@@ -1,4 +1,4 @@
-﻿/** \file ResolvSocket.cpp
+/** \file ResolvSocket.cpp
  **	\date  2005-03-24
  **	\author grymse@alhem.net
 **/

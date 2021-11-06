@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-ot-private.h: Implementation details for Pango OpenType code
  *
  * Copyright (C) 2000 Red Hat Software

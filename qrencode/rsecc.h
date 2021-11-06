@@ -1,4 +1,4 @@
-﻿/*
+/*
  * qrencode - QR Code encoder
  *
  * Reed solomon error correction code encoder specialized for QR code.

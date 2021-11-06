@@ -1,4 +1,4 @@
-﻿/**
+/**
  **	\file HttpTransaction.h
  **	\date  2007-10-05
  **	\author grymse@alhem.net

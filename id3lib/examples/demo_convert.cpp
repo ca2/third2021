@@ -1,4 +1,4 @@
-﻿// $Id: demo_convert.cpp,v 1.15 2002/06/27 12:46:55 t1mpy Exp $
+// $Id: demo_convert.cpp,v 1.15 2002/06/27 12:46:55 t1mpy Exp $
 //
 //  The authors have released ID3Lib as Public Domain (PD) and claim no
 //  copyright, patent or other intellectual property protection in this work.

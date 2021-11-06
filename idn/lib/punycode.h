@@ -1,4 +1,4 @@
-﻿/* punycode.h --- Declarations for punycode functions.
+/* punycode.h --- Declarations for punycode functions.
    Copyright (C) 2002-2014 Simon Josefsson
 
    This file is part of GNU Libidn.

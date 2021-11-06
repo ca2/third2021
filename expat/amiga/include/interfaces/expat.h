@@ -1,4 +1,4 @@
-﻿#ifndef EXPAT_INTERFACE_DEF_H
+#ifndef EXPAT_INTERFACE_DEF_H
 #define EXPAT_INTERFACE_DEF_H
 
 /*

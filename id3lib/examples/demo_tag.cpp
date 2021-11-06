@@ -1,4 +1,4 @@
-﻿// $Id: demo_tag.cpp,v 1.15 2002/06/29 17:18:35 t1mpy Exp $
+// $Id: demo_tag.cpp,v 1.15 2002/06/29 17:18:35 t1mpy Exp $
 
 #ifdef HAVE_CONFIG_H
 #  include <config.h>

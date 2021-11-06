@@ -1,4 +1,4 @@
-﻿/* A GNU-like <stdio.h>.
+/* A GNU-like <stdio.h>.
 
    Copyright (C) 2004, 2007-2011 Free Software Foundation, Inc.
 

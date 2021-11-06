@@ -1,4 +1,4 @@
-﻿/*
+/*
    Copyright (C) Intel Corp.  2006.  All Rights Reserved.
    Intel funded Tungsten Graphics (http://www.tungstengraphics.com) to
    develop this 3D driver.

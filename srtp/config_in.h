@@ -1,4 +1,4 @@
-﻿/* config_in.h.  Generated from configure.in by autoheader.  */
+/* config_in.h.  Generated from configure.in by autoheader.  */
 
 /* Define if building for a CISC machine (e.g. Intel). */
 #undef CPU_CISC

@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pangoxft-render.h: Rendering routines for the Xft library
  *
  * Copyright (C) 2004 Red Hat Software

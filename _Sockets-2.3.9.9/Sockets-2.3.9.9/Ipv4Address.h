@@ -1,4 +1,4 @@
-﻿/**
+/**
  **	\file Ipv4Address.h
  **	\date  2006-09-21
  **	\author grymse@alhem.net

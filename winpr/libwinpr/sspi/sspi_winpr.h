@@ -1,4 +1,4 @@
-﻿/**
+/**
  * WinPR: Windows Portable Runtime
  * Security Support Provider Interface (SSPI)
  *

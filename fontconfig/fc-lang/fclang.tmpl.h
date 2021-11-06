@@ -1,4 +1,4 @@
-﻿/*
+/*
  * fontconfig/fc-lang/fclang.tmpl.h
  *
  * Copyright © 2002 Keith Packard

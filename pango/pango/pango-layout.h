@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pango-layout.h: High-level layout driver
  *
  * Copyright (C) 2000 Red Hat Software

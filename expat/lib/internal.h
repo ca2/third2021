@@ -1,4 +1,4 @@
-﻿/* internal.h
+/* internal.h
 
    Internal definitions used by Expat.  This is not needed to compile
    client code.

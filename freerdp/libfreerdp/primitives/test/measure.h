@@ -1,4 +1,4 @@
-﻿/* measure.h
+/* measure.h
  * Macros to help with performance measurement.
  * vi:ts=4 sw=4
  *

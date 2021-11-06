@@ -1,4 +1,4 @@
-﻿/* Pango
+/* Pango
  * pangocairo-private.h: private symbols for the Cairo backend
  *
  * Copyright (C) 2000,2004 Red Hat, Inc.

@@ -1,4 +1,4 @@
-﻿#pragma once
+#pragma once
 
 //#define WINVER _WIN32_WINNT_WIN8
 #ifdef HAVE_CONFIG_H

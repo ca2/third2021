@@ -1,4 +1,4 @@
-﻿/**
+/**
  **	\file SocketHandlerThread.cpp
  **	\date  2010-03-21
  **	\author grymse@alhem.net

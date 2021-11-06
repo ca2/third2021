@@ -1,4 +1,4 @@
-﻿#ifndef LIBRARIES_EXPAT_H
+#ifndef LIBRARIES_EXPAT_H
 #define LIBRARIES_EXPAT_H
 
 /*

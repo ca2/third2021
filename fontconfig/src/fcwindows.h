@@ -1,4 +1,4 @@
-﻿/*
+/*
  * fontconfig/src/fcwindows.h
  *
  * Copyright © 2013  Google, Inc.
