@@ -15,7 +15,6 @@
 #include <util/threading.h>
 
 
-
 #pragma once
 
 #include <stdint.h>
@@ -62,6 +61,10 @@ struct dc_capture
    HDC          hdc;
    HBITMAP      bmp, old_bmp;
    BYTE         *bits;
+
+   bool         capture_cursor;
+   bool         cursor_captured;
+   CURSORINFO   ci;
 
    bool         valid;
    COLORREF *   pcolorref;

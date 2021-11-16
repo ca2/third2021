@@ -14,13 +14,13 @@
 
 #include <util/threading.h>
 
+void ca2_plugin_frame_capture(struct bitmap_source * pbitmapsource);
+const char * file_path_name(const char * path);
+void fill_bitmap_source_list(obs_property_t *p);
 #pragma once
 
 #include <stdint.h>
 #include <inttypes.h>
-char *bitmap_source_decode_str(const char *src);
-struct bitmap_source;
-void bitmap_reader_read_size(struct bitmap_source * pbitmapsource);
 
 #if defined(_UNICODE)
 #define _T(x) L ##x
@@ -31,26 +31,66 @@ void bitmap_reader_read_size(struct bitmap_source * pbitmapsource);
 #ifdef __cplusplus
 extern "C" {
 #endif
+
 #ifdef _WIN32
-	char szName[] = "Local\\bitmap-source-%s";
-	char szNameMutex[] = "Local\\bitmap-source-%s";
+CHAR szFrameCaptureFolder[] = "%s\\ca2\\bitmap-source";
+CHAR szFrameCaptureFile[] = "%s\\ca2\\bitmap-source\\%s";
+CHAR szFrameCaptureMutex[] = "Local\\ca2-bitmap-source:%s";
 #pragma comment(lib, "psapi.lib")
 #else
-	char szName[] = "$HOME/.ca2/bitmap-source-%s;
-		char szNameMutex[] = "$HOME/.ca2/bitmap-source-%s;
+char szName[] = "$HOME/.ca2/ca2screen-%" PRIu64;
+char szNameMutex[] = "$HOME/.ca2/ca2screen-%" PRIu64 "-mutex";
 #endif
 
-		char *bitmap_source_get_path(const char *);
 
-	bool bitmap_source_audio_render(obs_source_t *transition, uint64_t *ts_out,
-		struct obs_source_audio_mix *audio_output,
-		uint32_t mixers, size_t channels,
-		size_t sample_rate);
+const char * file_path_name(const char * path)
+{
+
+	const char * name1 = strrchr(path, '\\');
+
+	const char * name2 = strrchr(path, '/');
+
+	if (!name1)
+	{
+
+		if (!name2)
+		{
+
+			return path;
+
+		}
+		else
+		{
+
+			return name2 + 1;
+
+		}
+
+	}
+	else
+	{
+
+		if (name1 > name2) // || !name2 not needed
+		{
+
+			return name1 + 1;
+
+		}
+		else
+		{
+
+			return name2 + 1;
+
+		}
+
+	}
+
+}
 
 
-	/* this is a workaround to A/Vs going crazy whenever certain functions (such as
-	* OpenProcess) are used */
-	extern void *get_obfuscated_func(HMODULE module, const char *str, uint64_t val);
+/* this is a workaround to A/Vs going crazy whenever certain functions (such as
+* OpenProcess) are used */
+extern void *get_obfuscated_func(HMODULE module, const char *str, uint64_t val);
 
 #ifdef __cplusplus
 }
@@ -58,125 +98,345 @@ extern "C" {
 
 #define NUM_TEXTURES 2
 
-struct file_mapping
+struct bitmap_source_buffer
 {
 
-	HANDLE			m_hmutex;
-	HANDLE			m_hFile;
-	HANDLE			m_hMapFile;
-	int64_t	*		m_bitmap;
-	int64_t			m_iFileLen;
+   int          cur_tex;
+   gs_texture_t *textures[NUM_TEXTURES];
+   bool         textures_written[NUM_TEXTURES];
+   int          x, y;
+   uint32_t     width;
+   uint32_t     height;
+   int          num_textures;
+
+   bool         compatibility;
+   HDC          hdc;
+   HBITMAP      bmp, old_bmp;
+   BYTE         *bits;
+
+   bool         valid;
+   COLORREF *   pcolorref;
 
 };
-
-int file_mapping_init(struct file_mapping * pfilemapping, const char * pszName);
-void file_mapping_term(struct file_mapping * pfilemapping);
-
-
-struct bitmap_reader
-{
-
-	struct file_mapping	m_filemapping;
-
-	int          cur_tex;
-	gs_texture_t *textures[NUM_TEXTURES];
-	bool         textures_written[NUM_TEXTURES];
-	int64_t x, y;
-	int64_t     width;
-	int64_t height;
-	int          num_textures;
-
-	bool         compatibility;
-	HDC          hdc;
-	HBITMAP      bmp, old_bmp;
-	BYTE         *bits;
-
-	bool         valid;
-	COLORREF *   pcolorref;
-
-};
-
-struct bitmap_source;
-
-extern void bitmap_reader_init(struct bitmap_source * pbitmapsource);
-extern void bitmap_reader_free(struct bitmap_source * pbitmapsource);
-extern void bitmap_reader_read(struct bitmap_source * pbitmapsource);
-extern void bitmap_reader_draw(struct bitmap_source * pbitmapsource, gs_effect_t *effect);
-
-#pragma once
-
-#include <util/dstr.h>
-
-
-
-
-extern void fill_bitmap_list(obs_property_t *p);
-
-
 
 
 struct bitmap_source
 {
 
-	obs_source_t *		source;
-	obs_property_t *	plist;
+   obs_source_t *	               source;
+   obs_property_t *              plist;
 
-	char *			name;
-	bool			compatibility;
+   bool                          compatibility;
 
-	struct bitmap_reader    reader;
+   struct bitmap_source_buffer   m_buffer;
 
-	float			resize_timer;
+   float                         resize_timer;
 
-	int64_t			last_width;
-	int64_t			last_height;
+   char *		                  m_pszNameNew;
+   RECT                          last_rect;
+   pthread_mutex_t               m_mutex;
 
-	pthread_mutex_t		mutex;
+
+   int64_t                       m_iWidth;
+   int64_t                       m_iHeight;
+   int64_t                       m_iScan;
+   uint32_t *                    m_pBitmapData;
+
+   HANDLE                        m_hmutex;
+   char *		                  m_pszName;
+   HANDLE                        m_hfile;
+   HANDLE                        m_hMapFile;
+   void *	                     m_pMemoryMap;
 
 
 };
 
-obs_source_t *bitmap_source_get_transition(struct bitmap_source *ss)
+
+
+extern void bitmap_source_buffer_init(struct bitmap_source * pbitmapsource, struct bitmap_source_buffer *pbuffer, int x, int y,
+                            uint32_t width, uint32_t height, bool compatibility);
+extern void bitmap_source_buffer_free(struct bitmap_source_buffer *pbuffer);
+
+
+extern void bitmap_source_buffer_capture(struct bitmap_source * pbitmapsource, struct bitmap_source_buffer *pbuffer, HWND window);
+extern void bitmap_source_buffer_render(struct bitmap_source_buffer *pbuffer, gs_effect_t *effect);
+
+
+#include <util/dstr.h>
+
+
+static obs_source_t * get_transition(struct bitmap_source *ss)
 {
-	obs_source_t *tr;
 
-	pthread_mutex_lock(&ss->mutex);
-	tr = ss->source;
-	obs_source_addref(tr);
-	pthread_mutex_unlock(&ss->mutex);
+   obs_source_t *tr;
 
-	return tr;
+   pthread_mutex_lock(&ss->m_mutex);
+
+   tr = ss->source;
+
+   obs_source_addref(tr);
+
+   pthread_mutex_unlock(&ss->m_mutex);
+
+   return tr;
+
 }
 
 
-#define TEXT_BITMAP_SOURCE  obs_module_text("BitmapSource")
-#define TEXT_WINDOW         obs_module_text("BitmapSource.Window")
-#define TEXT_MATCH_PRIORITY obs_module_text("BitmapSource.Priority")
-#define TEXT_MATCH_TITLE    obs_module_text("BitmapSource.Priority.Title")
-#define TEXT_MATCH_CLASS    obs_module_text("BitmapSource.Priority.Class")
-#define TEXT_MATCH_EXE      obs_module_text("BitmapSource.Priority.Exe")
-#define TEXT_CAPTURE_CURSOR obs_module_text("CaptureCursor")
-#define TEXT_COMPATIBILITY  obs_module_text("Compatibility")
+#define TEXT_BITMAP_SOURCE obs_module_text("BitmapSource")
+#define TEXT_BITMAP_SOURCE_BITMAP_SOURCE         obs_module_text("BitmapSource.BitmapSource")
+
+
+static inline void init_textures(struct bitmap_source_buffer *pbuffer)
+{
+
+   for (int i = 0; i < pbuffer->num_textures; i++)
+   {
+
+      if (pbuffer->compatibility)
+      {
+
+         pbuffer->textures[i] = gs_texture_create(pbuffer->width, pbuffer->height, GS_BGRA, 1, NULL, GS_DYNAMIC);
+
+      }
+      else
+      {
+
+         pbuffer->textures[i] = gs_texture_create_gdi(pbuffer->width, pbuffer->height);
+
+      }
+
+      if (!pbuffer->textures[i])
+      {
+
+         blog(LOG_WARNING, "[bitmap_source_buffer_init] Failed to create textures");
+
+         return;
+
+      }
+
+   }
+
+   pbuffer->valid = true;
+
+}
+
+
+void bitmap_source_buffer_init(struct bitmap_source * pbitmapsource, struct bitmap_source_buffer * pbuffer, int x, int y, uint32_t width, uint32_t height, bool compatibility)
+{
+
+   memset(pbuffer, 0, sizeof(struct bitmap_source_buffer));
+
+   pbuffer->x = x;
+   pbuffer->y = y;
+   pbuffer->width = width;
+   pbuffer->height = height;
+
+   obs_enter_graphics();
+
+   compatibility = true;
+
+   pbuffer->compatibility = compatibility;
+   pbuffer->num_textures = compatibility ? 1 : 2;
+
+   init_textures(pbuffer);
+
+   obs_leave_graphics();
+
+   if (!pbuffer->valid)
+   {
+
+      return;
+
+   }
+
+   if (compatibility)
+   {
+
+      BITMAPINFO bi = { 0 };
+      BITMAPINFOHEADER *bih = &bi.bmiHeader;
+      bih->biSize = sizeof(BITMAPINFOHEADER);
+      bih->biBitCount = 32;
+      bih->biWidth = width;
+      bih->biHeight = height;
+      bih->biPlanes = 1;
+
+      pbuffer->hdc = CreateCompatibleDC(NULL);
+      pbuffer->bmp = CreateDIBSection(pbuffer->hdc, &bi,
+                                      DIB_RGB_COLORS, (void**)&pbuffer->bits,
+                                      NULL, 0);
+      pbuffer->pcolorref = (COLORREF *)malloc(width * height * 4);
+      pbuffer->old_bmp = SelectObject(pbuffer->hdc, pbuffer->bmp);
+
+   }
+
+}
+
+
+void bitmap_source_buffer_free(struct bitmap_source_buffer *pbuffer)
+{
+
+   if (pbuffer->hdc)
+   {
+
+      free(pbuffer->pcolorref);
+      SelectObject(pbuffer->hdc, pbuffer->old_bmp);
+      DeleteDC(pbuffer->hdc);
+      DeleteObject(pbuffer->bmp);
+
+   }
+
+   obs_enter_graphics();
+
+   for (int i = 0; i < pbuffer->num_textures; i++)
+   {
+
+      gs_texture_destroy(pbuffer->textures[i]);
+
+   }
+
+   obs_leave_graphics();
+
+   memset(pbuffer, 0, sizeof(struct bitmap_source_buffer));
+
+}
+
+
+static inline HDC bitmap_source_buffer_get_dc(struct bitmap_source_buffer *pbuffer)
+{
+
+   if (!pbuffer->valid)
+   {
+
+      return NULL;
+
+   }
+
+   if (pbuffer->compatibility)
+   {
+
+      return pbuffer->hdc;
+
+   }
+   else
+   {
+
+      return gs_texture_get_dc(pbuffer->textures[pbuffer->cur_tex]);
+
+   }
+
+}
+
+
+static inline void bitmap_source_buffer_release_dc(struct bitmap_source_buffer *pbuffer)
+{
+
+   if (pbuffer->compatibility)
+   {
+
+      gs_texture_set_image(pbuffer->textures[pbuffer->cur_tex], pbuffer->bits, pbuffer->width * 4, false);
+
+   }
+   else
+   {
+
+      gs_texture_release_dc(pbuffer->textures[pbuffer->cur_tex]);
+
+   }
+
+}
+
+
+static void draw_texture(struct bitmap_source_buffer *pbuffer, int id, gs_effect_t * effect)
+{
+
+   gs_texture_t * texture = pbuffer->textures[id];
+
+   gs_technique_t * tech = gs_effect_get_technique(effect, "Draw");
+
+   gs_eparam_t * image = gs_effect_get_param_by_name(effect, "image");
+
+   size_t passes;
+
+   gs_effect_set_texture(image, texture);
+
+   passes = gs_technique_begin(tech);
+
+   for (size_t i = 0; i < passes; i++)
+   {
+
+      if (gs_technique_begin_pass(tech, i))
+      {
+
+         if (pbuffer->compatibility)
+         {
+
+            gs_blend_state_push();
+            // gs_blend_function_separate(GS_BLEND_ONE, GS_BLEND_INVSRCALPHA, GS_BLEND_ONE, GS_BLEND_INVSRCALPHA);
+            gs_blend_function(GS_BLEND_SRCALPHA, GS_BLEND_INVSRCALPHA);
+            // gs_blend_function(GS_BLEND_SRCALPHA, GS_BLEND_SRCALPHA);
+            // gs_blend_function_separate(GS_BLEND_SRCALPHA, GS_BLEND_ONE, GS_BLEND_SRCALPHA, GS_BLEND_INVSRCALPHA);
+            gs_enable_blending(true);
+            // gs_reset_blend_state();
+            gs_draw_sprite(texture, GS_FLIP_V, 0, 0);
+            gs_blend_state_pop();
+
+         }
+         else
+         {
+
+            gs_draw_sprite(texture, 0, 0, 0);
+
+         }
+
+         gs_technique_end_pass(tech);
+
+      }
+
+   }
+
+   gs_technique_end(tech);
+
+}
+
+
+void bitmap_source_buffer_render(struct bitmap_source_buffer *pbuffer, gs_effect_t *effect)
+{
+
+   int last_tex = (pbuffer->cur_tex > 0) ? pbuffer->cur_tex - 1 : pbuffer->num_textures - 1;
+
+   if (!pbuffer->valid)
+   {
+
+      return;
+
+   }
+
+   if (pbuffer->textures_written[last_tex])
+   {
+
+      draw_texture(pbuffer, last_tex, effect);
+
+   }
+
+}
 
 
 static void update_settings(struct bitmap_source *pbitmapsource, obs_data_t *s)
 {
 
-	if (!gs_gdi_texture_available()) {
+   const char * pszBitmapSource = obs_data_get_string(s, "bitmap-source");
 
-		pbitmapsource->compatibility = true;
-	}
+   char * pszNameNewOld = pbitmapsource->m_pszNameNew;
 
-	const char * name = obs_data_get_string(s, "bitmap-name");
+   pbitmapsource->m_pszNameNew = strdup(pszBitmapSource);
 
-	bfree(pbitmapsource->name);
+   if(pszNameNewOld)
+   {
 
-	pbitmapsource->name = bitmap_source_decode_str(name);
+	   free(pszNameNewOld);
 
-	bitmap_reader_free(pbitmapsource);
-
-	bitmap_reader_init(pbitmapsource);
-
+   }
 
 }
 
@@ -184,168 +444,327 @@ static void update_settings(struct bitmap_source *pbitmapsource, obs_data_t *s)
 static void bitmap_source_update(void *data, obs_data_t *settings)
 {
 
-	struct bitmap_source *pbitmapsource = data;
+   struct bitmap_source * pbitmapsource = data;
 
-	update_settings(pbitmapsource, settings);
+   update_settings(pbitmapsource, settings);
 
 }
 
 
 static uint32_t bitmap_source_width(void *data)
 {
-	struct bitmap_source *pbitmapsource = data;
-	return (uint32_t)pbitmapsource->reader.width;
+
+   struct bitmap_source *pbitmapsource = data;
+
+   return pbitmapsource->m_buffer.width;
+
 }
+
 
 static uint32_t bitmap_source_height(void *data)
 {
-	struct bitmap_source *pbitmapsource = data;
-	return (uint32_t)pbitmapsource->reader.height;
+
+   struct bitmap_source *pbitmapsource = data;
+
+   return pbitmapsource->m_buffer.height;
+
 }
+
 
 static obs_properties_t *bitmap_source_properties(void *unused)
 {
-	UNUSED_PARAMETER(unused);
 
-	obs_properties_t *ppts = obs_properties_create();
-	obs_property_t *p;
+   UNUSED_PARAMETER(unused);
 
-	p = obs_properties_add_list(ppts, "bitmap-name", TEXT_WINDOW, OBS_COMBO_TYPE_LIST, OBS_COMBO_FORMAT_STRING);
+   obs_properties_t *ppts = obs_properties_create();
 
-	fill_bitmap_list(p);
+   obs_property_t *p;
 
-	return ppts;
+   p = obs_properties_add_list(ppts, "bitmap-source", TEXT_BITMAP_SOURCE_BITMAP_SOURCE, OBS_COMBO_TYPE_LIST, OBS_COMBO_FORMAT_STRING);
+
+   fill_bitmap_source_list(p);
+
+   return ppts;
 
 }
 
 
 #define RESIZE_CHECK_TIME 0.2f
 
+
 static void bitmap_source_tick(void *data, float seconds)
 {
 
-	struct bitmap_source *pbitmapsource = data;
+   struct bitmap_source * pbitmapsource = data;
 
-	if (!obs_source_showing(pbitmapsource->source))
-		return;
+   bool reset_capture = false;
 
-	obs_enter_graphics();
-
-	bool bResizeReader = false;
-
-	if (!pbitmapsource->reader.m_filemapping.m_bitmap) {
-		bResizeReader = true;
-	}
-	if (pbitmapsource->reader.m_filemapping.m_bitmap)
-	{
-
-		pbitmapsource->resize_timer += seconds;
-
-		if (pbitmapsource->resize_timer >= RESIZE_CHECK_TIME)
-		{
-
-			if (pbitmapsource->reader.m_filemapping.m_bitmap[0] !=
-				pbitmapsource->last_width ||
-				pbitmapsource->reader.m_filemapping.m_bitmap[1] !=
-				pbitmapsource->last_height) {
-				bResizeReader = true;
-			}
-
-
-			pbitmapsource->resize_timer = 0.0f;
-		}
-	}
-
-   if (bResizeReader)
+   if (!obs_source_showing(pbitmapsource->source))
    {
 
-      pbitmapsource->resize_timer = 0.0f;
+      return;
 
-	bitmap_reader_free(pbitmapsource);
+   }
 
-	bitmap_reader_init(pbitmapsource);
+   if (!pbitmapsource->m_pszNameNew)
+   {
+
+	   return;
+
+   }
+
+   if (pbitmapsource->m_pszNameNew && (!pbitmapsource->m_pszName || strcmp(pbitmapsource->m_pszName, pbitmapsource->m_pszNameNew)))
+   {
+
+      if(pbitmapsource->m_pszName)
+      {
+
+         free(pbitmapsource->m_pszName);
+
+      }
+
+      pbitmapsource->m_pszName = strdup(pbitmapsource->m_pszNameNew);
+
+      if (pbitmapsource->m_hmutex != NULL)
+      {
+
+         if (WaitForSingleObject(pbitmapsource->m_hmutex, INFINITE) == WAIT_OBJECT_0)
+         {
+
+            if (pbitmapsource->m_pMemoryMap != NULL)
+            {
+
+               UnmapViewOfFile(pbitmapsource->m_pMemoryMap);
+
+               pbitmapsource->m_pMemoryMap = NULL;
+
+            }
+
+            if (pbitmapsource->m_hMapFile != NULL)
+            {
+
+               CloseHandle(pbitmapsource->m_hMapFile);
+
+               pbitmapsource->m_hMapFile = NULL;
+
+            }
+
+            ReleaseMutex(pbitmapsource->m_hmutex);
+
+         }
+
+         CloseHandle(pbitmapsource->m_hmutex);
+
+      }
+
+      char szNameMutex2[2048];
+
+      sprintf(szNameMutex2, szFrameCaptureMutex, pbitmapsource->m_pszName);
+
+      pbitmapsource->m_hmutex = CreateMutexA(NULL, FALSE, szNameMutex2);
+
+      if (WaitForSingleObject(pbitmapsource->m_hmutex, INFINITE) == WAIT_OBJECT_0)
+      {
+
+         char szName2[2048];
+
+         const char * pszFolder = NULL;
+
+#ifdef WIN32
+
+         pszFolder = getenv("APPDATA");
+
+#else
+
+         pszFolder*******;
+
+#endif
+
+         sprintf(szName2, szFrameCaptureFile, pszFolder, pbitmapsource->m_pszName);
+
+         pbitmapsource->m_hfile = CreateFileA(szName2, FILE_READ_DATA, FILE_SHARE_WRITE | FILE_SHARE_READ, NULL, OPEN_EXISTING, FILE_ATTRIBUTE_NORMAL, NULL);
+
+         if (pbitmapsource->m_hfile != INVALID_HANDLE_VALUE)
+         {
+
+            pbitmapsource->m_hMapFile = CreateFileMappingA(
+               pbitmapsource->m_hfile,    // use paging file
+               NULL,                    // default security
+               PAGE_READONLY,          // read/write access
+               0,                       // maximum object size (high-order DWORD)
+               8192 * 4096 * 4,                // maximum object size (low-order DWORD)
+               NULL);                 // name of mapping object
+
+         }
+
+         if (pbitmapsource->m_hMapFile == NULL)
+         {
+
+            ReleaseMutex(pbitmapsource->m_hmutex);
+
+            CloseHandle(pbitmapsource->m_hmutex);
+
+         }
+         else
+         {
+
+            pbitmapsource->m_pMemoryMap = (LPTSTR)MapViewOfFile(pbitmapsource->m_hMapFile,   // handle to map object
+                                                                FILE_MAP_READ, // read/write permission
+                                                                0,
+                                                                0,
+                                                                8192 * 4096 * 4);
+
+            if (pbitmapsource->m_pMemoryMap == NULL)
+            {
+
+               CloseHandle(pbitmapsource->m_hMapFile);
+
+               ReleaseMutex(pbitmapsource->m_hmutex);
+
+               CloseHandle(pbitmapsource->m_hmutex);
+
+            }
+
+         }
+
+         ReleaseMutex(pbitmapsource->m_hmutex);
+
+      }
+
+   }
+
+   if(pbitmapsource->m_pMemoryMap)
+   {
+
+      int64_t * pi = (int64_t *) pbitmapsource->m_pMemoryMap;
+
+      pbitmapsource->m_iWidth = *pi++;
+      pbitmapsource->m_iHeight = *pi++;
+      pbitmapsource->m_iScan = *pi++;
+      pbitmapsource->m_pBitmapData = (uint32_t *) pi;
+
+      obs_enter_graphics();
+
+      ca2_plugin_frame_capture(pbitmapsource);
+
+      obs_leave_graphics();
+
+   }
 
 }
 
-	bitmap_reader_read(pbitmapsource);
-	obs_leave_graphics();
-}
 
 static const char *bitmap_source_getname(void *unused)
 {
-	UNUSED_PARAMETER(unused);
-	return TEXT_BITMAP_SOURCE;
+
+   UNUSED_PARAMETER(unused);
+
+   return TEXT_BITMAP_SOURCE;
+
 }
-
-
-
-
-
 
 
 static void *bitmap_source_create(obs_data_t *settings, obs_source_t *source)
 {
-	struct bitmap_source *pbitmapsource = bzalloc(sizeof(struct bitmap_source));
-	pbitmapsource->source = source;
-	pbitmapsource->reader.m_filemapping.m_hFile = INVALID_HANDLE_VALUE;
-	pthread_mutex_init_value(&pbitmapsource->mutex);
-	if (pthread_mutex_init(&pbitmapsource->mutex, NULL) != 0)
-		return NULL;
 
-	update_settings(pbitmapsource, settings);
-	return pbitmapsource;
+   struct bitmap_source *pbitmapsource = bzalloc(sizeof(struct bitmap_source));
+
+   pbitmapsource->source = source;
+
+   pbitmapsource->compatibility = true;
+
+   pthread_mutex_init_value(&pbitmapsource->m_mutex);
+
+   if (pthread_mutex_init(&pbitmapsource->m_mutex, NULL) != 0)
+   {
+
+      return NULL;
+
+   }
+
+   update_settings(pbitmapsource, settings);
+
+   return pbitmapsource;
+
 }
+
 
 static void bitmap_source_destroy(void *data)
 {
-	struct bitmap_source *pbitmapsource = data;
 
-	if (pbitmapsource)
-	{
+   struct bitmap_source *pbitmapsource = data;
 
-		obs_enter_graphics();
+   if (pbitmapsource)
+   {
 
-		bitmap_reader_free(pbitmapsource);
+      obs_enter_graphics();
 
-		obs_leave_graphics();
+      bitmap_source_buffer_free(&pbitmapsource->m_buffer);
 
-		bfree(pbitmapsource->name);
+      obs_leave_graphics();
 
-		bfree(pbitmapsource);
+      if (pbitmapsource->m_hmutex != NULL)
+      {
 
-	}
+         if (WaitForSingleObject(pbitmapsource->m_hmutex, INFINITE) == WAIT_OBJECT_0)
+         {
+
+            if (pbitmapsource->m_pMemoryMap != NULL)
+            {
+
+               UnmapViewOfFile(pbitmapsource->m_pMemoryMap);
+
+               pbitmapsource->m_pMemoryMap = NULL;
+
+            }
+
+            if (pbitmapsource->m_hMapFile != NULL)
+            {
+
+               CloseHandle(pbitmapsource->m_hMapFile);
+
+               pbitmapsource->m_hMapFile = NULL;
+
+            }
+
+            ReleaseMutex(pbitmapsource->m_hmutex);
+
+         }
+
+         CloseHandle(pbitmapsource->m_hmutex);
+
+      }
+
+      bfree(pbitmapsource);
+
+   }
+
 }
-
-
 
 
 static void bitmap_source_defaults(obs_data_t *defaults)
 {
 
-	obs_data_set_default_bool(defaults, "cursor", true);
-
-	obs_data_set_default_bool(defaults, "compatibility", false);
-
 }
-
 
 
 static void bitmap_source_render(void *data, gs_effect_t *effect)
 {
 
-	struct bitmap_source *pbitmapsource = data;
+   struct bitmap_source *pbitmapsource = data;
 
-	bitmap_reader_draw(pbitmapsource, obs_get_base_effect(OBS_EFFECT_PREMULTIPLIED_ALPHA));
+   bitmap_source_buffer_render(&pbitmapsource->m_buffer, obs_get_base_effect(OBS_EFFECT_PREMULTIPLIED_ALPHA));
 
-	UNUSED_PARAMETER(effect);
+   UNUSED_PARAMETER(effect);
 
 }
 
 
+#include "audio_render.c"
 
 struct obs_source_info bitmap_source_info =
 {
-   .id = "bitmap-source",
+   .id = "bitmap_source",
    .type = OBS_SOURCE_TYPE_INPUT,
    .output_flags = OBS_SOURCE_VIDEO | OBS_SOURCE_CUSTOM_DRAW | OBS_SOURCE_COMPOSITE,
    .get_name = bitmap_source_getname,
@@ -354,7 +773,7 @@ struct obs_source_info bitmap_source_info =
    .update = bitmap_source_update,
    .video_render = bitmap_source_render,
    .video_tick = bitmap_source_tick,
-   .audio_render = bitmap_source_audio_render,
+   .audio_render = ss_audio_render,
 
 
    .get_width = bitmap_source_width,
@@ -364,505 +783,171 @@ struct obs_source_info bitmap_source_info =
 };
 
 
-
-
-static inline void init_textures(struct bitmap_source * pbitmapsource)
-{
-	for (int i = 0; i < pbitmapsource->reader.num_textures; i++)
-	{
-		if (pbitmapsource->reader.compatibility)
-			pbitmapsource->reader.textures[i] = gs_texture_create((uint32_t)pbitmapsource->reader.width,
-			(uint32_t)pbitmapsource->reader.height,
-				GS_BGRA, 1, NULL, GS_DYNAMIC);
-		else
-			pbitmapsource->reader.textures[i] = gs_texture_create_gdi(
-			(uint32_t)pbitmapsource->reader.width, (uint32_t)pbitmapsource->reader.height);
-
-		if (!pbitmapsource->reader.textures[i])
-		{
-			blog(LOG_WARNING, "[bitmap_reader_init] Failed to "
-				"create textures");
-			return;
-		}
-	}
-
-	pbitmapsource->reader.valid = true;
-}
-
-
-int file_mapping_init(struct file_mapping * pfilemapping, const char * pszName)
+void ca2_plugin_frame_capture(struct bitmap_source * pbitmapsource)
 {
 
-	pfilemapping->m_iFileLen = -1;
+   struct bitmap_source_buffer * pbuffer = &pbitmapsource->m_buffer;
 
-	char szNameMutex2[2048];
+   HBITMAP bmp = pbuffer->bmp;
 
-	sprintf(szNameMutex2, szNameMutex, pszName);
+   if(pbitmapsource->m_iWidth != pbuffer->width || pbitmapsource->m_iHeight != pbuffer->height)
+   {
 
-	pfilemapping->m_hmutex = CreateMutexA(NULL, FALSE, szNameMutex2);
+      bitmap_source_buffer_free(&pbitmapsource->m_buffer);
 
-	if (pfilemapping->m_hmutex == NULL)
-	{
+      bitmap_source_buffer_init(pbitmapsource, &pbitmapsource->m_buffer, 0, 0,
+                                (uint32_t) pbitmapsource->m_iWidth,
+                                (uint32_t) pbitmapsource->m_iHeight,
+                                pbitmapsource->compatibility);
 
-		return 0;
+   }
 
-	}
+   if (pbitmapsource->m_hmutex != NULL)
+   {
 
-	if (WaitForSingleObject(pfilemapping->m_hmutex, INFINITE) != WAIT_OBJECT_0)
-	{
+      if (WaitForSingleObject(pbitmapsource->m_hmutex, 1) == WAIT_OBJECT_0)
+      {
 
-		HANDLE hmutex = pfilemapping->m_hmutex;
+         if (pbitmapsource->m_pMemoryMap != NULL)
+         {
 
-		pfilemapping->m_hmutex = NULL;
+            BITMAPINFO bitmapinfo;
 
-		CloseHandle(hmutex);
+            ZeroMemory(&bitmapinfo, sizeof(bitmapinfo));
 
-		return 0;
+            bitmapinfo.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
+            bitmapinfo.bmiHeader.biWidth = (LONG)pbitmapsource->m_iWidth;
+            bitmapinfo.bmiHeader.biHeight = (LONG)-pbitmapsource->m_iHeight;
+            bitmapinfo.bmiHeader.biPlanes = 1;
+            bitmapinfo.bmiHeader.biBitCount = 32;
+            bitmapinfo.bmiHeader.biCompression = BI_RGB;
+            bitmapinfo.bmiHeader.biSizeImage = (LONG)(pbitmapsource->m_iHeight * pbitmapsource->m_iScan);
 
-	}
+	         if (++pbuffer->cur_tex >= pbuffer->num_textures)
+	         {
 
-	char *szPath = bitmap_source_get_path(pszName);
+		         pbuffer->cur_tex = 0;
 
-	if (szPath == NULL)
-	{
+	         }
 
-		file_mapping_term(pfilemapping);
+	         HDC hdc = bitmap_source_buffer_get_dc(pbuffer);
 
-		return 0;
+	         if (hdc)
+            {
 
-	}
+               SetDIBits(hdc, bmp, 0, (UINT) pbitmapsource->m_iHeight,
+                         pbitmapsource->m_pBitmapData, &bitmapinfo, DIB_RGB_COLORS);
 
-	pfilemapping->m_hFile = CreateFileA(
-		szPath,
-		FILE_READ_DATA,
-		FILE_SHARE_WRITE | FILE_SHARE_READ, NULL,
-		OPEN_EXISTING,
-		FILE_ATTRIBUTE_NORMAL, NULL);
+               bitmap_source_buffer_release_dc(pbuffer);
 
-	bfree(szPath);
+            }
 
-	if (pfilemapping->m_hFile == INVALID_HANDLE_VALUE)
-	{
+		      pbuffer->textures_written[pbuffer->cur_tex] = true;
 
-		file_mapping_term(pfilemapping);
+	      }
 
-		return 0;
+	   }
 
-	}
+      ReleaseMutex(pbitmapsource->m_hmutex);
 
-
-	pfilemapping->m_iFileLen = GetFileSize(pfilemapping->m_hFile, NULL);
-
-	if (pfilemapping->m_iFileLen < 20)
-	{
-
-		file_mapping_term(pfilemapping);
-
-		return 0;
-
-	}
-
-
-	pfilemapping->m_hMapFile = CreateFileMappingA(
-		pfilemapping->m_hFile, // use paging file
-		NULL,                 // default security
-		PAGE_READONLY,       // read/write access
-		0, // maximum object size (high-order DWORD)
-		8192 * 4096 *
-		4, // maximum object size (low-order DWORD)
-		NULL);   // name of mapping object
-
-	if (pfilemapping->m_hMapFile == NULL)
-	{
-
-		file_mapping_term(pfilemapping);
-
-		return 0;
-
-	}
-
-
-	pfilemapping->m_bitmap = (int64_t*)MapViewOfFile(
-		pfilemapping->m_hMapFile, // handle to map object
-		FILE_MAP_READ, // read/write permission
-		0, 0, 8192 * 4096 * 4);
-
-	if (pfilemapping->m_bitmap == NULL)
-	{
-
-		file_mapping_term(pfilemapping);
-
-		return 0;
-
-	}
-
-	ReleaseMutex(pfilemapping->m_hmutex);
-
-	return 1;
+   }
 
 }
-
-
-void file_mapping_term(struct file_mapping * pfilemapping)
-{
-
-	if (pfilemapping->m_hmutex == NULL)
-	{
-
-		pfilemapping->m_hmutex = NULL;
-
-		pfilemapping->m_hMapFile = NULL;
-
-		pfilemapping->m_hFile = INVALID_HANDLE_VALUE;
-
-		pfilemapping->m_iFileLen = -1;
-
-
-		return;
-
-	}
-
-	if (WaitForSingleObject(pfilemapping->m_hmutex, INFINITE) != WAIT_OBJECT_0)
-	{
-
-		pfilemapping->m_hmutex = NULL;
-
-		pfilemapping->m_hMapFile = NULL;
-
-		pfilemapping->m_hFile = INVALID_HANDLE_VALUE;
-
-		pfilemapping->m_iFileLen = -1;
-
-
-
-		return;
-
-
-	}
-
-	if (pfilemapping->m_bitmap != NULL)
-	{
-
-		UnmapViewOfFile(pfilemapping->m_bitmap);
-
-	}
-
-	if (pfilemapping->m_hMapFile != NULL)
-	{
-
-		CloseHandle(pfilemapping->m_hMapFile);
-
-	}
-
-	if (pfilemapping->m_hFile != INVALID_HANDLE_VALUE)
-	{
-
-		CloseHandle(pfilemapping->m_hFile);
-
-	}
-
-	HANDLE hmutex = pfilemapping->m_hmutex;
-
-	pfilemapping->m_hmutex = NULL;
-
-	pfilemapping->m_hMapFile = NULL;
-
-	pfilemapping->m_hFile = INVALID_HANDLE_VALUE;
-
-	pfilemapping->m_iFileLen = -1;
-
-
-	ReleaseMutex(hmutex);
-
-	CloseHandle(hmutex);
-
-
-}
-
-
-void bitmap_reader_init(struct bitmap_source * pbitmapsource)
-{
-
-	memset(&pbitmapsource->reader, 0, sizeof(struct bitmap_reader));
-
-	if (!file_mapping_init(&pbitmapsource->reader.m_filemapping, pbitmapsource->name))
-	{
-
-		memset(&pbitmapsource->reader, 0, sizeof(struct bitmap_reader));
-
-		return;
-
-	}
-
-	if (pbitmapsource->reader.m_filemapping.m_bitmap == NULL) {
-
-		return;
-	}
-
-	obs_enter_graphics();
-
-	if (pbitmapsource->reader.m_filemapping.m_iFileLen < 16)
-	{
-
-		file_mapping_term(&pbitmapsource->reader.m_filemapping);
-
-		return;
-
-	}
-	
-	pbitmapsource->reader.width = pbitmapsource->reader.m_filemapping.m_bitmap[0];
-	pbitmapsource->reader.height = pbitmapsource->reader.m_filemapping.m_bitmap[1];
-
-	if (pbitmapsource->reader.m_filemapping.m_iFileLen < (pbitmapsource->reader.width * pbitmapsource->reader.height * 4 + 16))
-	{
-
-		file_mapping_term(&pbitmapsource->reader.m_filemapping);
-
-		return;
-
-	}
-
-
-	pbitmapsource->last_width = pbitmapsource->reader.m_filemapping.m_bitmap[0];
-	pbitmapsource->last_height = pbitmapsource->reader.m_filemapping.m_bitmap[1];
-	pbitmapsource->reader.compatibility = pbitmapsource->compatibility;
-	pbitmapsource->reader.num_textures = pbitmapsource->compatibility ? 1 : 2;
-
-	init_textures(pbitmapsource);
-
-	obs_leave_graphics();
-
-	if (!pbitmapsource->reader.valid)
-		return;
-
-	if (pbitmapsource->compatibility)
-	{
-		BITMAPINFO bi = { 0 };
-		BITMAPINFOHEADER *bih = &bi.bmiHeader;
-		bih->biSize = sizeof(BITMAPINFOHEADER);
-		bih->biBitCount = 32;
-		bih->biWidth = (LONG)pbitmapsource->reader.width;
-		bih->biHeight = (LONG)pbitmapsource->reader.height;
-		bih->biPlanes = 1;
-
-		pbitmapsource->reader.hdc = CreateCompatibleDC(NULL);
-		pbitmapsource->reader.bmp = CreateDIBSection(pbitmapsource->reader.hdc, &bi,
-			DIB_RGB_COLORS, (void**)&pbitmapsource->reader.bits,
-			NULL, 0);
-		pbitmapsource->reader.pcolorref = (COLORREF *)malloc(pbitmapsource->reader.width * pbitmapsource->reader.height * 4);
-		pbitmapsource->reader.old_bmp = SelectObject(pbitmapsource->reader.hdc, pbitmapsource->reader.bmp);
-	}
-
-
-}
-
-
-void bitmap_reader_free(struct bitmap_source * pbitmapsource)
-{
-	if (pbitmapsource->reader.hdc)
-	{
-		free(pbitmapsource->reader.pcolorref);
-		SelectObject(pbitmapsource->reader.hdc, pbitmapsource->reader.old_bmp);
-		DeleteDC(pbitmapsource->reader.hdc);
-		DeleteObject(pbitmapsource->reader.bmp);
-	}
-
-	obs_enter_graphics();
-
-	for (int i = 0; i < pbitmapsource->reader.num_textures; i++)
-		gs_texture_destroy(pbitmapsource->reader.textures[i]);
-
-	obs_leave_graphics();
-
-	file_mapping_term(&pbitmapsource->reader.m_filemapping);
-
-	memset(&pbitmapsource->reader, 0, sizeof(struct bitmap_reader));
-
-
-
-}
-
-
-static inline HDC bitmap_reader_get_dc(struct bitmap_source * pbitmapsource)
-{
-	if (!pbitmapsource->reader.valid)
-		return NULL;
-
-	if (pbitmapsource->reader.compatibility)
-		return pbitmapsource->reader.hdc;
-	else
-		return gs_texture_get_dc(pbitmapsource->reader.textures[pbitmapsource->reader.cur_tex]);
-}
-
-static inline void bitmap_reader_release_dc(struct bitmap_source *pbitmapsource)
-{
-	if (pbitmapsource->reader.compatibility)
-	{
-		gs_texture_set_image(pbitmapsource->reader.textures[pbitmapsource->reader.cur_tex], pbitmapsource->reader.bits,
-			(uint32_t)pbitmapsource->reader.width * 4, false);
-	}
-	else
-	{
-		gs_texture_release_dc(pbitmapsource->reader.textures[pbitmapsource->reader.cur_tex]);
-	}
-}
-
-
-void bitmap_reader_read(struct bitmap_source * pbitmapsource)
-{
-
-	HDC hdc;
-
-	if (!pbitmapsource->reader.m_filemapping.m_bitmap) {
-		return;
-
-	}
-
-
-	if (++pbitmapsource->reader.cur_tex == pbitmapsource->reader.num_textures)
-	{
-
-		pbitmapsource->reader.cur_tex = 0;
-
-	}
-
-	hdc = bitmap_reader_get_dc(pbitmapsource);
-
-	if (!hdc)
-	{
-
-		blog(LOG_WARNING, "[capture_screen] Failed to get texture DC");
-
-		return;
-
-	}
-
-	HBITMAP bmp = pbitmapsource->reader.bmp;
-
-	if (pbitmapsource->reader.m_filemapping.m_hmutex != NULL)
-	{
-
-		if (WaitForSingleObject(pbitmapsource->reader.m_filemapping.m_hmutex, 1) == WAIT_OBJECT_0)
-		{
-
-			if (pbitmapsource->reader.m_filemapping.m_bitmap != NULL)
-			{
-
-				BITMAPINFO m_bitmapinfo;
-
-				ZeroMemory(&m_bitmapinfo, sizeof(m_bitmapinfo));
-
-				int64_t * p = pbitmapsource->reader.m_filemapping.m_bitmap;
-
-				int64_t cx = *p++;
-				int64_t cy = *p++;
-				int64_t scan = *p++;
-
-				m_bitmapinfo.bmiHeader.biSize = sizeof(BITMAPINFOHEADER);
-				m_bitmapinfo.bmiHeader.biWidth = (LONG)cx;
-				m_bitmapinfo.bmiHeader.biHeight = (LONG)-cy;
-				m_bitmapinfo.bmiHeader.biPlanes = 1;
-				m_bitmapinfo.bmiHeader.biBitCount = 32;
-				m_bitmapinfo.bmiHeader.biCompression = BI_RGB;
-				m_bitmapinfo.bmiHeader.biSizeImage = (LONG)(cy * scan);
-
-				//if (bmp == NULL)
-				//{
-
-				//   bmp = (HBITMAP) GetCurrentObject(hdc, OBJ_BITMAP);
-				//}
-
-				SetDIBits(hdc, bmp, 0, (UINT)cy, p, &m_bitmapinfo, DIB_RGB_COLORS);
-
-			}
-
-			ReleaseMutex(pbitmapsource->reader.m_filemapping.m_hmutex);
-
-		}
-
-	}
-
-	bitmap_reader_release_dc(pbitmapsource);
-
-	pbitmapsource->reader.textures_written[pbitmapsource->reader.cur_tex] =
-		true;
-
-}
-
-static void draw_texture(struct bitmap_source *pbitmapsource, int id, gs_effect_t *effect)
-{
-
-	gs_texture_t   *texture = pbitmapsource->reader.textures[id];
-	gs_technique_t *tech = gs_effect_get_technique(effect, "Draw");
-	gs_eparam_t    *image = gs_effect_get_param_by_name(effect, "image");
-	size_t      passes;
-
-	gs_effect_set_texture(image, texture);
-
-	passes = gs_technique_begin(tech);
-	for (size_t i = 0; i < passes; i++)
-	{
-		if (gs_technique_begin_pass(tech, i))
-		{
-			if (pbitmapsource->reader.compatibility)
-			{
-				gs_blend_state_push();
-				// gs_blend_function_separate(GS_BLEND_ONE, GS_BLEND_INVSRCALPHA, GS_BLEND_ONE, GS_BLEND_INVSRCALPHA);
-				gs_blend_function(GS_BLEND_SRCALPHA, GS_BLEND_INVSRCALPHA);
-				// gs_blend_function(GS_BLEND_SRCALPHA, GS_BLEND_SRCALPHA);
-				// gs_blend_function_separate(GS_BLEND_SRCALPHA, GS_BLEND_ONE, GS_BLEND_SRCALPHA, GS_BLEND_INVSRCALPHA);
-				gs_enable_blending(true);
-				// gs_reset_blend_state();
-				gs_draw_sprite(texture, GS_FLIP_V, 0, 0);
-				gs_blend_state_pop();
-			}
-			else
-				gs_draw_sprite(texture, 0, 0, 0);
-
-			gs_technique_end_pass(tech);
-		}
-	}
-	gs_technique_end(tech);
-}
-
-void bitmap_reader_draw(struct bitmap_source *pbitmapsource, gs_effect_t *effect)
-{
-	int last_tex = (pbitmapsource->reader.cur_tex > 0) ?
-		pbitmapsource->reader.cur_tex - 1 : pbitmapsource->reader.num_textures - 1;
-
-	if (!pbitmapsource->reader.valid)
-		return;
-
-	if (pbitmapsource->reader.textures_written[last_tex])
-		draw_texture(pbitmapsource, last_tex, effect);
-}
-
 
 
 static inline void encode_dstr(struct dstr *str)
 {
-	dstr_replace(str, "#", "#22");
-	dstr_replace(str, ":", "#3A");
+
+   dstr_replace(str, "#", "#22");
+
+   dstr_replace(str, ":", "#3A");
+
 }
 
-char *bitmap_source_decode_str(const char *src)
+
+static inline char *decode_str(const char *src)
 {
-	struct dstr str = { 0 };
-	dstr_copy(&str, src);
-	dstr_replace(&str, "#3A", ":");
-	dstr_replace(&str, "#22", "#");
-	return str.array;
+
+   struct dstr str = { 0 };
+
+   dstr_copy(&str, src);
+
+   dstr_replace(&str, "#3A", ":");
+
+   dstr_replace(&str, "#22", "#");
+
+   return str.array;
+
 }
 
-static HMODULE kernel32(void)
+
+static void add_frame_capture(obs_property_t *p, const char * name)
 {
-	static HMODULE kernel32_handle = NULL;
-	if (!kernel32_handle)
-		kernel32_handle = GetModuleHandleA("kernel32");
-	return kernel32_handle;
+
+   struct dstr desc = { 0 };
+
+   dstr_printf(&desc, "%s", name);
+
+   obs_property_list_add_string(p, desc.array, desc.array);
+
+   dstr_free(&desc);
+
 }
 
 
+void fill_bitmap_source_list(obs_property_t *p)
+{
+
+   obs_property_list_clear(p);
+
+   char szFolder[2048];
+
+   const char * pszFolder = NULL;
+
+#ifdef WIN32
+
+   pszFolder = getenv("APPDATA");
+
+#else
+
+   pszHome = getenv("HOME");
+
+#endif
+
+   sprintf(szFolder, szFrameCaptureFolder, pszFolder);
+
+   os_dir_t *dir = os_opendir(szFolder);
+
+   if (!dir)
+   {
+
+      return;
+
+   }
+
+   struct dstr selected_path;
+
+   dstr_init(&selected_path);
+
+   struct os_dirent * pdirent = os_readdir(dir);
+
+   while (pdirent)
+   {
+
+	   if (!pdirent->directory)
+	   {
+
+		   add_frame_capture(p, file_path_name(pdirent->d_name));
+
+	   }
+
+      pdirent = os_readdir(dir);
+
+   }
+
+   dstr_free(&selected_path);
+
+}
 
 
 OBS_DECLARE_MODULE()
@@ -883,34 +968,35 @@ extern struct obs_source_info bitmap_source_info;
 
 bool obs_module_load(void)
 {
-	struct win_version_info ver;
-	bool win8_or_above = false;
-	char *config_dir;
+   struct win_version_info ver;
+   bool win8_or_above = false;
+   char *config_dir;
 
-	config_dir = obs_module_config_path(NULL);
-	if (config_dir)
-	{
-		os_mkdirs(config_dir);
-		bfree(config_dir);
-	}
+   config_dir = obs_module_config_path(NULL);
+   if (config_dir)
+   {
+      os_mkdirs(config_dir);
+      bfree(config_dir);
+   }
 
-	get_win_ver(&ver);
+   get_win_ver(&ver);
 
-	win8_or_above = ver.major > 6 || (ver.major == 6 && ver.minor >= 2);
+   win8_or_above = ver.major > 6 || (ver.major == 6 && ver.minor >= 2);
 
-	obs_enter_graphics();
-
-
-	obs_leave_graphics();
-
-	obs_register_source(&bitmap_source_info);
+   obs_enter_graphics();
 
 
-	return true;
+   obs_leave_graphics();
+
+   obs_register_source(&bitmap_source_info);
+
+
+   return true;
 }
 
 
 
+//#define _CRT_SECURE_NO_WARNINGS
 
 #ifdef _MSC_VER
 #pragma warning(disable : 4152) /* casting func ptr to void */
@@ -923,37 +1009,37 @@ bool obs_module_load(void)
 
 static void deobfuscate_str(char *str, uint64_t val)
 {
-	uint8_t *dec_val = (uint8_t*)&val;
-	int i = 0;
+   uint8_t *dec_val = (uint8_t*)&val;
+   int i = 0;
 
-	while (*str != 0)
-	{
-		int pos = i / 2;
-		bool bottom = (i % 2) == 0;
-		uint8_t *ch = (uint8_t*)str;
-		uint8_t xor = bottom ?
-			LOWER_HALFBYTE(dec_val[pos]) :
-			UPPER_HALFBYTE(dec_val[pos]);
+   while (*str != 0)
+   {
+      int pos = i / 2;
+      bool bottom = (i % 2) == 0;
+      uint8_t *ch = (uint8_t*)str;
+      uint8_t xor = bottom ?
+                    LOWER_HALFBYTE(dec_val[pos]) :
+                    UPPER_HALFBYTE(dec_val[pos]);
 
-		*ch ^= xor;
+      *ch ^= xor;
 
-		if (++i == sizeof(uint64_t) * 2)
-			i = 0;
+      if (++i == sizeof(uint64_t) * 2)
+         i = 0;
 
-		str++;
-	}
+      str++;
+   }
 }
 
 void *get_obfuscated_func(HMODULE module, const char *str, uint64_t val)
 {
 
-	char new_name[128];
+   char new_name[128];
 
-	strcpy(new_name, str);
+   strcpy(new_name, str);
 
-	deobfuscate_str(new_name, val);
+   deobfuscate_str(new_name, val);
 
-	return GetProcAddress(module, new_name);
+   return GetProcAddress(module, new_name);
 
 }
 

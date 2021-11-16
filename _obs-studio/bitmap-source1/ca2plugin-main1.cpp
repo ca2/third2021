@@ -1,7 +1,7 @@
 #include <glad/glad.h>
 #include <glad/glad_glx.h>
-#include <X11/Xlib.h>
-#include <X11/extensions/Xcomposite.h>
+//!!!#include <X11/Xlib.h>
+//!!!#include <X11/extensions/Xcomposite.h>
 #include <pthread.h>
 
 #include <vector>

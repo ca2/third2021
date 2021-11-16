@@ -6,14 +6,13 @@
 #include <util/dstr.h>
 #include <stdlib.h>
 #include <util/dstr.h>
-#include <stdbool.h
+#include <stdbool.h>
 #include <windows.h>
 #include <psapi.h>
 #include <util/windows/win-version.h>
 #include <util/platform.h>
 
 #include <util/threading.h>
-
 
 
 #pragma once
@@ -62,6 +61,10 @@ struct dc_capture
    HDC          hdc;
    HBITMAP      bmp, old_bmp;
    BYTE         *bits;
+
+   bool         capture_cursor;
+   bool         cursor_captured;
+   CURSORINFO   ci;
 
    bool         valid;
    COLORREF *   pcolorref;
@@ -313,7 +316,7 @@ bool RefreshListClicked(obs_properties_t * props, obs_property_t *p, void *data)
    //   wc->resize_timer = 0.0f;
    //   dc_capture_free(&wc->capture);
    //   RECT rect;
-   //   deprecated_get_client_rect(wc->window, &rect);
+   //   GetClientRect(wc->window, &rect);
    //   dc_capture_init(wc, &wc->capture, 0, 0, rect.right, rect.bottom,
    //      wc->cursor, wc->compatibility);
    //}
@@ -391,7 +394,7 @@ static void wc_tick(void *data, float seconds)
 
    obs_enter_graphics();
 
-   deprecated_get_client_rect(wc->window, &rect);
+   GetClientRect(wc->window, &rect);
 
    if (!reset_capture)
    {
@@ -1118,7 +1121,7 @@ static bool check_window_valid(HWND window, enum window_search_mode mode)
    // (mode == EXCLUDE_MINIMIZED && IsIconic(window)))
    //return false;
 
-   deprecated_get_client_rect(window, &rect);
+   GetClientRect(window, &rect);
    styles = (DWORD)GetWindowLongPtr(window, GWL_STYLE);
    ex_styles = (DWORD)GetWindowLongPtr(window, GWL_EXSTYLE);
 
@@ -1146,7 +1149,7 @@ static inline HWND next_window(HWND window, enum window_search_mode mode)
 
 static inline HWND first_window(enum window_search_mode mode)
 {
-   HWND window = GetWindow(get_desktop_window(), GW_CHILD);
+   HWND window = GetWindow(GetDesktopWindow(), GW_CHILD);
    if (!check_window_valid(window, mode))
       window = next_window(window, mode);
    return window;

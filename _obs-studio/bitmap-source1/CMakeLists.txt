@@ -32,19 +32,26 @@ include_directories(SYSTEM
 endif()
 
 if(MSVC)
-	set(ca2plugin_PLATFORM_DEPS
+	set(bitmap-source_PLATFORM_DEPS
 		w32-pthreads)
 endif()
 
 if(WIN32)
-	set(ca2plugin_SOURCES
-		bitmap-source.c)
+	set(bitmap-source_SOURCES
+		cpp.cpp
+		bitmap-source.c
+		audio_render.c
+		obs-slideshow.c)
 elseif(APPLE)
-	set(ca2plugin_SOURCES
-		win32.c
+	set(bitmap-source_SOURCES
+		cpp.cpp
+		bitmap-source.c
+		audio_render.c
 		obs-slideshow.c)
 elseif("${CMAKE_SYSTEM_NAME}" MATCHES "Linux")
-	set(ca2plugin_SOURCES
+	set(bitmap-source_SOURCES
+		cpp.cpp
+		audio_render.c
 		linux.c
 		xcursor.c
 		xcursor-xcb.c
@@ -55,7 +62,7 @@ elseif("${CMAKE_SYSTEM_NAME}" MATCHES "Linux")
 endif()
 
 add_library(bitmap-source MODULE
-	${ca2plugin_SOURCES})
+	${bitmap-source_SOURCES})
 
 if(MSVC)
 target_link_libraries(bitmap-source
@@ -66,7 +73,7 @@ target_link_libraries(bitmap-source
 	${X11_X11_LIB}
 	${X11_Xcomposite_LIB}
 	${XCB_LIBRARIES}
-	${ca2plugin_PLATFORM_DEPS})
+	${bitmap-source_PLATFORM_DEPS})
 else()
 target_link_libraries(bitmap-source
 	libobs

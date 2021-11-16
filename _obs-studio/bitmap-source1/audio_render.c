@@ -1,4 +1,29 @@
-static inline bool ss_audio_render_(obs_source_t *transition, uint64_t *ts_out,
+#pragma once
+#include <obs-module.h>
+#define PSAPI_VERSION 1
+#define WIN32_LEAN_AND_MEAN
+#include <obs.h>
+#include <util/dstr.h>
+#include <stdlib.h>
+#include <util/dstr.h>
+#include <stdbool.h>
+#include <windows.h>
+#include <psapi.h>
+#include <util/windows/win-version.h>
+#include <util/platform.h>
+
+#include <util/threading.h>
+struct bitmap_source;
+
+bool bitmap_source_audio_render_(void *data, uint64_t *ts_out,
+				 struct obs_source_audio_mix *audio_output,
+				 uint32_t mixers, size_t channels,
+				 size_t sample_rate);
+
+obs_source_t *bitmap_source_get_transition(struct bitmap_source *ss);
+
+
+bool bitmap_source_audio_render(obs_source_t *transition, uint64_t *ts_out,
    struct obs_source_audio_mix *audio_output,
    uint32_t mixers, size_t channels, size_t sample_rate)
 {
@@ -32,18 +57,19 @@ static inline bool ss_audio_render_(obs_source_t *transition, uint64_t *ts_out,
    return true;
 }
 
-static bool ss_audio_render(void *data, uint64_t *ts_out,
+bool
+bitmap_source_audio_render_(void *data, uint64_t *ts_out,
    struct obs_source_audio_mix *audio_output,
    uint32_t mixers, size_t channels, size_t sample_rate)
 {
-   struct bitmap_source *wc = data;
-   obs_source_t *transition = get_transition(wc);
+   struct bitmap_source * pbitmapsource = data;
+	obs_source_t *transition = bitmap_source_get_transition(pbitmapsource);
    bool success;
 
    if (!transition)
       return false;
 
-   success = ss_audio_render_(transition, ts_out, audio_output, mixers,
+   success = bitmap_source_audio_render_(transition, ts_out, audio_output, mixers,
       channels, sample_rate);
 
    obs_source_release(transition);
