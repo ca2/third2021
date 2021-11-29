@@ -6,6 +6,7 @@ cmake-time-*/
 **/.DS_Store
 **/.git
 **/.svn
+**/.linkobject
 **/CVS
 **xcuserdata
 .DS_Store
