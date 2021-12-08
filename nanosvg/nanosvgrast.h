@@ -151,6 +151,7 @@ struct NSVGrasterizer
 
    unsigned char* bitmap;
    int width, height, stride;
+   int m_iRedLower;
 };
 
 NSVGrasterizer* nsvgCreateRasterizer()
@@ -1036,109 +1037,31 @@ static void nsvg__fillActiveEdges(unsigned char* scanline, int len, NSVGactiveEd
 
 static float nsvg__clampf(float a, float mn, float mx) { return a < mn ? mn : (a > mx ? mx : a); }
 
-#if defined(_UWP)
-
-// RGBA RGBA
-
-#if defined (_M_IX86)
-
-static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
+unsigned int nsvg__RGBA(NSVGrasterizer * prasterizer, unsigned char r, unsigned char g, unsigned char b, unsigned char a)
 {
 
-   return (b) | (g << 8) | (r << 16) | (a << 24);
+   return prasterizer->m_iRedLower ? ((r) | (g << 8) | (b << 16) | (a << 24)) : ((b) | (g << 8) | (r << 16) | (a << 24));
 
 }
 
-#elif defined(_M_AMD64)
-
-
-static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
-{
-
-   return (b) | (g << 8) | (r << 16) | (a << 24);
-
-}
-
-
-#else
-
-static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
-{
-
-   return (r) | (g << 8) | (b << 16) | (a << 24);
-
-}
-
-#endif
-
-#else
-
-#if defined (_M_IX86)
-
-#ifdef WINDOWS_DESKTOP
-
-static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
-{
-
-   return (r) | (g << 8) | (b << 16) | (a << 24);
-
-}
-
-#else
-
-static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
-{
-
-   return (r) | (g << 8) | (b << 16) | (a << 24);
-
-}
-
-#endif
-
-#elif defined(__x86_64__) || defined(__amd64__) || defined(_M_AMD64)
-
-#ifdef _WIN32
-
-static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
-{
-
-   return (r) | (g << 8) | (b << 16) | (a << 24);
-
-}
-
-#else
-
-static unsigned int nsvg__RGBA(unsigned char r, unsigned char g, unsigned char b, unsigned char a)
-{
-
-   return (r) | (g << 8) | (b << 16) | (a << 24);
-
-}
-
-#endif
-
-#endif
-
-#endif
-
-static unsigned int nsvg__lerpRGBA(unsigned int c0, unsigned int c1, float u)
+static unsigned int nsvg__lerpRGBA(NSVGrasterizer * prasterizer, unsigned int c0, unsigned int c1, float u)
 {
    int iu = (int)(nsvg__clampf(u, 0.0f, 1.0f) * 256.0f);
    int r = (((c0) & 0xff)*(256 - iu) + (((c1) & 0xff)*iu)) >> 8;
    int g = (((c0 >> 8) & 0xff)*(256 - iu) + (((c1 >> 8) & 0xff)*iu)) >> 8;
    int b = (((c0 >> 16) & 0xff)*(256 - iu) + (((c1 >> 16) & 0xff)*iu)) >> 8;
    int a = (((c0 >> 24) & 0xff)*(256 - iu) + (((c1 >> 24) & 0xff)*iu)) >> 8;
-   return nsvg__RGBA((unsigned char)r, (unsigned char)g, (unsigned char)b, (unsigned char)a);
+   return nsvg__RGBA(prasterizer, (unsigned char)r, (unsigned char)g, (unsigned char)b, (unsigned char)a);
 }
 
-static unsigned int nsvg__applyOpacity(unsigned int c, float u)
+static unsigned int nsvg__applyOpacity(NSVGrasterizer * prasterizer, unsigned int c, float u)
 {
    int iu = (int)(nsvg__clampf(u, 0.0f, 1.0f) * 256.0f);
    int r = (c) & 0xff;
    int g = (c >> 8) & 0xff;
    int b = (c >> 16) & 0xff;
    int a = (((c >> 24) & 0xff)*iu) >> 8;
-   return nsvg__RGBA((unsigned char)r, (unsigned char)g, (unsigned char)b, (unsigned char)a);
+   return nsvg__RGBA(prasterizer, (unsigned char)r, (unsigned char)g, (unsigned char)b, (unsigned char)a);
 }
 
 static inline int nsvg__div255(int x)
@@ -1470,7 +1393,7 @@ static void nsvg__unpremultiplyAlpha(unsigned char* image, int w, int h, int str
 }
 
 
-static void nsvg__initPaint(NSVGcachedPaint* cache, NSVGpaint* paint, float opacity)
+static void nsvg__initPaint(NSVGrasterizer * prasterizer, NSVGcachedPaint* cache, NSVGpaint* paint, float opacity)
 {
    int i, j;
    NSVGgradient* grad;
@@ -1479,7 +1402,7 @@ static void nsvg__initPaint(NSVGcachedPaint* cache, NSVGpaint* paint, float opac
 
    if (paint->type == NSVG_PAINT_COLOR)
    {
-      cache->colors[0] = nsvg__applyOpacity(paint->color, opacity);
+      cache->colors[0] = nsvg__applyOpacity(prasterizer, paint->color, opacity);
       return;
    }
 
@@ -1495,7 +1418,7 @@ static void nsvg__initPaint(NSVGcachedPaint* cache, NSVGpaint* paint, float opac
    } if (grad->nstops == 1)
    {
       for (i = 0; i < 256; i++)
-         cache->colors[i] = nsvg__applyOpacity(grad->stops[i].color, opacity);
+         cache->colors[i] = nsvg__applyOpacity(prasterizer, grad->stops[i].color, opacity);
    }
    else
    {
@@ -1503,7 +1426,7 @@ static void nsvg__initPaint(NSVGcachedPaint* cache, NSVGpaint* paint, float opac
       float ua, ub, du, u;
       int ia, ib, count;
 
-      ca = nsvg__applyOpacity(grad->stops[0].color, opacity);
+      ca = nsvg__applyOpacity(prasterizer, grad->stops[0].color, opacity);
       ua = nsvg__clampf(grad->stops[0].offset, 0, 1);
       ub = nsvg__clampf(grad->stops[grad->nstops - 1].offset, ua, 1);
       ia = (int)(ua * 255.0f);
@@ -1515,8 +1438,8 @@ static void nsvg__initPaint(NSVGcachedPaint* cache, NSVGpaint* paint, float opac
 
       for (i = 0; i < grad->nstops - 1; i++)
       {
-         ca = nsvg__applyOpacity(grad->stops[i].color, opacity);
-         cb = nsvg__applyOpacity(grad->stops[i + 1].color, opacity);
+         ca = nsvg__applyOpacity(prasterizer, grad->stops[i].color, opacity);
+         cb = nsvg__applyOpacity(prasterizer, grad->stops[i + 1].color, opacity);
          ua = nsvg__clampf(grad->stops[i].offset, 0, 1);
          ub = nsvg__clampf(grad->stops[i + 1].offset, 0, 1);
          ia = (int)(ua * 255.0f);
@@ -1527,7 +1450,7 @@ static void nsvg__initPaint(NSVGcachedPaint* cache, NSVGpaint* paint, float opac
          du = 1.0f / (float)count;
          for (j = 0; j < count; j++)
          {
-            cache->colors[ia + j] = nsvg__lerpRGBA(ca, cb, u);
+            cache->colors[ia + j] = nsvg__lerpRGBA(prasterizer, ca, cb, u);
             u += du;
          }
       }
@@ -1631,7 +1554,7 @@ void nsvgRasterize(NSVGrasterizer* r,
          qsort(r->edges, r->nedges, sizeof(NSVGedge), nsvg__cmpEdge);
 
          // now, traverse the scanlines and find the intersections on each scanline, use non-zero rule
-         nsvg__initPaint(&cache, &shape->fill, shape->opacity);
+         nsvg__initPaint(r, &cache, &shape->fill, shape->opacity);
 
          nsvg__rasterizeSortedEdges(r, tx, ty, scale, &cache, shape->fillRule);
       }
@@ -1659,7 +1582,7 @@ void nsvgRasterize(NSVGrasterizer* r,
          qsort(r->edges, r->nedges, sizeof(NSVGedge), nsvg__cmpEdge);
 
          // now, traverse the scanlines and find the intersections on each scanline, use non-zero rule
-         nsvg__initPaint(&cache, &shape->stroke, shape->opacity);
+         nsvg__initPaint(r, &cache, &shape->stroke, shape->opacity);
 
          nsvg__rasterizeSortedEdges(r, tx, ty, scale, &cache, NSVG_FILLRULE_NONZERO);
       }

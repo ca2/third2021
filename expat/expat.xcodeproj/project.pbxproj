@@ -31,8 +31,8 @@
 		9A415C982473945800EF2BCD /* xmltok_ns.c in Sources */ = {isa = PBXBuildFile; fileRef = 07CE92411CA2172C0039EE8B /* xmltok_ns.c */; };
 		9A415C992473945800EF2BCD /* xmltok.c in Sources */ = {isa = PBXBuildFile; fileRef = 07CE92421CA2172C0039EE8B /* xmltok.c */; };
 		9AAECACD2321CAF4005CEB43 /* libexpat.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AA539B119B763C400B9F861 /* libexpat.dylib */; };
-		9AD0CB0F272B8FAC00468A67 /* libcrypto.1.1.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD0CB0E272B8FAC00468A67 /* libcrypto.1.1.dylib */; };
-		9AD0CB10272B8FAC00468A67 /* libcrypto.1.1.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9AD0CB0E272B8FAC00468A67 /* libcrypto.1.1.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		9AD0CB0F272B8FAC00468A67 /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD0CB0E272B8FAC00468A67 /* libcrypto.dylib */; };
+		9AD0CB10272B8FAC00468A67 /* libcrypto.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 9AD0CB0E272B8FAC00468A67 /* libcrypto.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -52,7 +52,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 6;
 			files = (
-				9AD0CB10272B8FAC00468A67 /* libcrypto.1.1.dylib in Embed Libraries */,
+				9AD0CB10272B8FAC00468A67 /* libcrypto.dylib in Embed Libraries */,
 			);
 			name = "Embed Libraries";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,7 +80,7 @@
 		07CE92431CA2172C0039EE8B /* xmltok.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = xmltok.h; path = lib/xmltok.h; sourceTree = SOURCE_ROOT; };
 		07D6A8471B4CBB45004FEBC2 /* libios_expat.a */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libios_expat.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AA539B119B763C400B9F861 /* libexpat.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libexpat.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		9AD0CB0E272B8FAC00468A67 /* libcrypto.1.1.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.1.1.dylib; path = "../../../archive/storage-macos/library/x86_64/Debug/libcrypto.1.1.dylib"; sourceTree = "<group>"; };
+		9AD0CB0E272B8FAC00468A67 /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = "../../../archive/storage-macos/library/x86_64/Debug/libcrypto.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD0CB0F272B8FAC00468A67 /* libcrypto.1.1.dylib in Frameworks */,
+				9AD0CB0F272B8FAC00468A67 /* libcrypto.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,7 @@
 		9AD0CB0D272B8FAC00468A67 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9AD0CB0E272B8FAC00468A67 /* libcrypto.1.1.dylib */,
+				9AD0CB0E272B8FAC00468A67 /* libcrypto.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -354,7 +354,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(ARCHS)/$(CONFIGURATION)",
+					"\"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(ARCHS)/$(CONFIGURATION)\"",
+					"\"$(WorkspaceDir)/time-$(PLATFORM_MODIFIER)/$(ARCHS)/$(CONFIGURATION)\"",
 					"$(WorkspaceDir)/archive",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -426,7 +427,8 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(ARCHS)/$(CONFIGURATION)",
+					"\"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library/$(ARCHS)/$(CONFIGURATION)\"",
+					"\"$(WorkspaceDir)/time-$(PLATFORM_MODIFIER)/$(ARCHS)/$(CONFIGURATION)\"",
 					"$(WorkspaceDir)/archive",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
