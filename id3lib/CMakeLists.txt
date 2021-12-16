@@ -97,9 +97,12 @@ endif()
 target_include_directories(id3lib PRIVATE .)
 target_include_directories(id3lib PRIVATE $ENV{HOME}/sensitive/sensitive/include)
 target_include_directories(id3lib PRIVATE $ENV{__sensitive}/sensitive/include)
-target_include_directories(id3lib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../..)
-target_include_directories(id3lib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/..)
-target_include_directories(id3lib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+list(APPEND library_include_directories ${CMAKE_CURRENT_SOURCE_DIR}/../..)
+list(APPEND library_include_directories ${CMAKE_CURRENT_SOURCE_DIR}/..)
+list(APPEND library_include_directories ${CMAKE_CURRENT_SOURCE_DIR})
+
+
+target_include_directories(${PROJECT_NAME} PRIVATE ${library_include_directories})
 target_include_directories(id3lib PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 
 
