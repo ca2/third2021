@@ -54,8 +54,8 @@
 		9A5DFB491CEE3B5D008916A4 /* resolver.c in Sources */ = {isa = PBXBuildFile; fileRef = 9A5DFB451CEE3B5D008916A4 /* resolver.c */; };
 		9AAECB0C2321CC6A005CEB43 /* libexpat.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AAECAD42321CAFF005CEB43 /* libexpat.dylib */; };
 		9ACFCCED24CF0D600058092D /* libstrophe.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9AEB75A316F78DF10085103B /* libstrophe.dylib */; };
-		9AD45C9124CE3634006637AC /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C8F24CE3634006637AC /* libcrypto.dylib */; };
-		9AD45C9224CE3634006637AC /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9024CE3634006637AC /* libssl.dylib */; };
+		9AD45C9124CE3634006637AC /* libcrypto.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C8F24CE3634006637AC /* libcrypto.3.dylib */; };
+		9AD45C9224CE3634006637AC /* libssl.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9024CE3634006637AC /* libssl.3.dylib */; };
 		9AE24EA11904CFFD001AEFFB /* libios_strophe.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE24E8A1904CFFD001AEFFB /* libios_strophe.a */; };
 		9AE24EA71904CFFD001AEFFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9AE24EA51904CFFD001AEFFB /* InfoPlist.strings */; };
 		9AE24EA91904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9AE24EA81904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.m */; };
@@ -140,8 +140,8 @@
 		9A5DFB431CEE3B5D008916A4 /* rand.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rand.c; sourceTree = "<group>"; };
 		9A5DFB451CEE3B5D008916A4 /* resolver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = resolver.c; sourceTree = "<group>"; };
 		9AAECACE2321CAFF005CEB43 /* expat.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = expat.xcodeproj; path = ../expat/expat.xcodeproj; sourceTree = "<group>"; };
-		9AD45C8F24CE3634006637AC /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = "../../time-macos/library/Debug/libcrypto.dylib"; sourceTree = "<group>"; };
-		9AD45C9024CE3634006637AC /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = "../../time-macos/library/Debug/libssl.dylib"; sourceTree = "<group>"; };
+		9AD45C8F24CE3634006637AC /* libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.3.dylib; path = "../../time-macos/library/Debug/libcrypto.3.dylib"; sourceTree = "<group>"; };
+		9AD45C9024CE3634006637AC /* libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.3.dylib; path = "../../time-macos/library/Debug/libssl.3.dylib"; sourceTree = "<group>"; };
 		9AE24E8A1904CFFD001AEFFB /* libios_strophe.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libios_strophe.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE24E991904CFFD001AEFFB /* app_core_hellomultiverse_iosTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = app_core_hellomultiverse_iosTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE24EA41904CFFD001AEFFB /* app_core_hellomultiverse_iosTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "app_core_hellomultiverse_iosTests-Info.plist"; sourceTree = "<group>"; };
@@ -172,8 +172,8 @@
 			files = (
 				9AAECB0C2321CC6A005CEB43 /* libexpat.dylib in Frameworks */,
 				0762212E1CA21CEF007D4F43 /* libresolv.tbd in Frameworks */,
-				9AD45C9124CE3634006637AC /* libcrypto.dylib in Frameworks */,
-				9AD45C9224CE3634006637AC /* libssl.dylib in Frameworks */,
+				9AD45C9124CE3634006637AC /* libcrypto.3.dylib in Frameworks */,
+				9AD45C9224CE3634006637AC /* libssl.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,8 +228,8 @@
 		9ACBD20A1DE0438C004AF08F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9AD45C8F24CE3634006637AC /* libcrypto.dylib */,
-				9AD45C9024CE3634006637AC /* libssl.dylib */,
+				9AD45C8F24CE3634006637AC /* libcrypto.3.dylib */,
+				9AD45C9024CE3634006637AC /* libssl.3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

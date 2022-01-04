@@ -455,8 +455,8 @@
 		9AC1FCC5204C402B00305BFF /* timer.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7771920470433009C3590 /* timer.c */; };
 		9AC1FCC6204C402B00305BFF /* ntlm.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7771E204704F1009C3590 /* ntlm.c */; };
 		9ACFCCEF24CF0D770058092D /* libwinpr.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = 9A1B358C16A2D7A500875A94 /* libwinpr.dylib */; };
-		9AD45C8D24CE3617006637AC /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C8B24CE3617006637AC /* libcrypto.dylib */; };
-		9AD45C8E24CE3617006637AC /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C8C24CE3617006637AC /* libssl.dylib */; };
+		9AD45C8D24CE3617006637AC /* libcrypto.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C8B24CE3617006637AC /* libcrypto.3.dylib */; };
+		9AD45C8E24CE3617006637AC /* libssl.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C8C24CE3617006637AC /* libssl.3.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -710,8 +710,8 @@
 		9AB77724204705AF009C3590 /* kerberos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = kerberos.h; sourceTree = "<group>"; };
 		9AB77729204705C1009C3590 /* sspi_gss.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sspi_gss.h; sourceTree = "<group>"; };
 		9AB7772A204705C2009C3590 /* sspi_gss.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sspi_gss.c; sourceTree = "<group>"; };
-		9AD45C8B24CE3617006637AC /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = "../../time-macos/library/Debug/libcrypto.dylib"; sourceTree = "<group>"; };
-		9AD45C8C24CE3617006637AC /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = "../../time-macos/library/Debug/libssl.dylib"; sourceTree = "<group>"; };
+		9AD45C8B24CE3617006637AC /* libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.3.dylib; path = "../../time-macos/library/Debug/libcrypto.3.dylib"; sourceTree = "<group>"; };
+		9AD45C8C24CE3617006637AC /* libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.3.dylib; path = "../../time-macos/library/Debug/libssl.3.dylib"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -726,8 +726,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9AD45C8D24CE3617006637AC /* libcrypto.dylib in Frameworks */,
-				9AD45C8E24CE3617006637AC /* libssl.dylib in Frameworks */,
+				9AD45C8D24CE3617006637AC /* libcrypto.3.dylib in Frameworks */,
+				9AD45C8E24CE3617006637AC /* libssl.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1435,8 +1435,8 @@
 		9ACBD1DC1DDFDB35004AF08F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9AD45C8B24CE3617006637AC /* libcrypto.dylib */,
-				9AD45C8C24CE3617006637AC /* libssl.dylib */,
+				9AD45C8B24CE3617006637AC /* libcrypto.3.dylib */,
+				9AD45C8C24CE3617006637AC /* libssl.3.dylib */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

@@ -434,9 +434,9 @@
 		9AC1FCD9204C406300305BFF /* region.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7774120470A31009C3590 /* region.c */; };
 		9AC1FCDA204C406300305BFF /* shape.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7773620470A30009C3590 /* shape.c */; };
 		9AC1FCDB204C406300305BFF /* video.c in Sources */ = {isa = PBXBuildFile; fileRef = 9AB7774020470A31009C3590 /* video.c */; };
-		9AD45C9624CE365C006637AC /* libssl.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9324CE365C006637AC /* libssl.dylib */; };
+		9AD45C9624CE365C006637AC /* libssl.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9324CE365C006637AC /* libssl.3.dylib */; };
 		9AD45C9724CE365C006637AC /* libavcodec.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9424CE365C006637AC /* libavcodec.dylib */; };
-		9AD45C9824CE365C006637AC /* libcrypto.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9524CE365C006637AC /* libcrypto.dylib */; };
+		9AD45C9824CE365C006637AC /* libcrypto.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AD45C9524CE365C006637AC /* libcrypto.3.dylib */; };
 		9AE9FCB51F7F6DA700367001 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE9FCB41F7F6DA600367001 /* AudioToolbox.framework */; };
 		9AE9FCB71F7F6DBD00367001 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE9FCB61F7F6DBD00367001 /* CoreFoundation.framework */; };
 		9AE9FCBD1F7F6E0900367001 /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9AE9FCBC1F7F6E0900367001 /* CoreMedia.framework */; };
@@ -711,9 +711,9 @@
 		9AB7776220470C43009C3590 /* proxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = proxy.h; sourceTree = "<group>"; };
 		9AB7776620470CAC009C3590 /* rpc_bind.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rpc_bind.c; sourceTree = "<group>"; };
 		9AB7776820470CDE009C3590 /* tsg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tsg.c; sourceTree = "<group>"; };
-		9AD45C9324CE365C006637AC /* libssl.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.dylib; path = "../../time-macos/library/Debug/libssl.dylib"; sourceTree = "<group>"; };
+		9AD45C9324CE365C006637AC /* libssl.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libssl.3.dylib; path = "../../time-macos/library/Debug/libssl.3.dylib"; sourceTree = "<group>"; };
 		9AD45C9424CE365C006637AC /* libavcodec.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libavcodec.dylib; path = "../../time-macos/library/Debug/libavcodec.dylib"; sourceTree = "<group>"; };
-		9AD45C9524CE365C006637AC /* libcrypto.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.dylib; path = "../../time-macos/library/Debug/libcrypto.dylib"; sourceTree = "<group>"; };
+		9AD45C9524CE365C006637AC /* libcrypto.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libcrypto.3.dylib; path = "../../time-macos/library/Debug/libcrypto.3.dylib"; sourceTree = "<group>"; };
 		9AE9FCB41F7F6DA600367001 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		9AE9FCB61F7F6DBD00367001 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		9AE9FCB81F7F6DD500367001 /* VideoToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = VideoToolbox.framework; path = System/Library/Frameworks/VideoToolbox.framework; sourceTree = SDKROOT; };
@@ -740,10 +740,10 @@
 				9AE9FCC01F7F6E3400367001 /* VideoToolbox.framework in Frameworks */,
 				9AE9FCBD1F7F6E0900367001 /* CoreMedia.framework in Frameworks */,
 				9AE9FCB71F7F6DBD00367001 /* CoreFoundation.framework in Frameworks */,
-				9AD45C9624CE365C006637AC /* libssl.dylib in Frameworks */,
+				9AD45C9624CE365C006637AC /* libssl.3.dylib in Frameworks */,
 				9AD45C9724CE365C006637AC /* libavcodec.dylib in Frameworks */,
 				9AE9FCB51F7F6DA700367001 /* AudioToolbox.framework in Frameworks */,
-				9AD45C9824CE365C006637AC /* libcrypto.dylib in Frameworks */,
+				9AD45C9824CE365C006637AC /* libcrypto.3.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1076,8 +1076,8 @@
 			isa = PBXGroup;
 			children = (
 				9AD45C9424CE365C006637AC /* libavcodec.dylib */,
-				9AD45C9524CE365C006637AC /* libcrypto.dylib */,
-				9AD45C9324CE365C006637AC /* libssl.dylib */,
+				9AD45C9524CE365C006637AC /* libcrypto.3.dylib */,
+				9AD45C9324CE365C006637AC /* libssl.3.dylib */,
 				9AE9FCBE1F7F6E1D00367001 /* CoreVideo.framework */,
 				9AE9FCBC1F7F6E0900367001 /* CoreMedia.framework */,
 				9AE9FCBA1F7F6DEC00367001 /* VideoDecodeAcceleration.framework */,
