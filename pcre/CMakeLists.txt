@@ -89,7 +89,7 @@
 PROJECT(PCRE2 C)
 
 # Increased minimum to 2.8.0 to support newer add_test features.
-CMAKE_MINIMUM_REQUIRED(VERSION 3.17)
+cmake_minimum_required(VERSION 3.16)
 
 # Set policy CMP0026 to avoid warnings for the use of LOCATION in
 # GET_TARGET_PROPERTY. This should no longer be required.
