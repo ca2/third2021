@@ -3348,7 +3348,7 @@ _cairo_ft_font_face_create (cairo_ft_unscaled_font_t *unscaled,
     return &font_face->base;
 }
 
-/* implement the platform-specific interface */
+/* implement the operating-system-specific interface */
 
 #if CAIRO_HAS_FC_FONT
 static cairo_status_t

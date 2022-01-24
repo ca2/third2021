@@ -634,7 +634,7 @@ Version 1.0.5:
 	  compiler version 7.0.
 	* Added new intersectT method in ImathSphere.h
 	* Fixed some bugs in ImathQuat.h
-	* Proper use of fltk-config to get platform-specific FLTK
+	* Proper use of fltk-config to get operating-system-specific FLTK
 	  compile- and link-time flags.
 	* exrdisplay uses Imath::Math<T>::pow instead of powf now.
 	  powf is not availble on all platforms.

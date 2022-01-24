@@ -4994,7 +4994,7 @@ func_cygming_dll_for_implib ()
 # func_cygming_dll_for_implib_fallback_core SECTION_NAME LIBNAMEs
 #
 # The is the core of a fallback implementation of a
-# platform-specific function to extract the name of the
+# operating-system-specific function to extract the name of the
 # DLL associated with the specified import library LIBNAME.
 #
 # SECTION_NAME is either .idata$6 or .idata$7, depending

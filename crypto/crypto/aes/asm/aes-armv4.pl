@@ -36,7 +36,7 @@
 
 # February 2011.
 #
-# Profiler-assisted and platform-specific optimization resulted in 16%
+# Profiler-assisted and operating-system-specific optimization resulted in 16%
 # improvement on Cortex A8 core and ~21.5 cycles per byte.
 
 $flavour = shift;

@@ -606,7 +606,7 @@ macros to give the functions distinct names. */
 
 #ifndef SUPPORT_UNICODE
 
-/* UTF-8 support is not enabled; use the platform-dependent character literals
+/* UTF-8 support is not enabled; use the operating-system-dependent character literals
 so that PCRE2 works in both ASCII and EBCDIC environments, but only in non-UTF
 mode. Newline characters are problematic in EBCDIC. Though it has CR and LF
 characters, a common practice has been to use its NL (0x15) character as the

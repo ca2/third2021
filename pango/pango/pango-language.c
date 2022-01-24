@@ -223,7 +223,7 @@ _pango_get_lc_ctype (void)
     return g_strdup (p);
 
   /* If the environment variables are not set, determine the locale
-   * through the platform-native API.
+   * through the operating-system-native API.
    */
   languages = CFLocaleCopyPreferredLanguages ();
   language = CFArrayGetValueAtIndex (languages, 0);

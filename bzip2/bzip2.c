@@ -1687,7 +1687,7 @@ void redundant ( Char* flag )
   filenames for OSs which don't know how to do it
   themselves, like MSDOS, Windows 95 and NT.
 
-  The actual Dirty Work is done by the platform-
+  The actual Dirty Work is done by the operating-system-
   specific macro APPEND_FILESPEC.
 --*/
 

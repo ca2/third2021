@@ -808,7 +808,7 @@
 	builds/vms/ftsystem.c (FT_New_Memory, FT_Done_Memory),
 	builds/amiga/ftsystem.c (FT_New_Memory, FT_Done_Memory),
 	src/base/ftdbgmem.c: Updated the memory debugger and
-	platform-specific implementations of `ftsystem' in order to be able
+	operating-system-specific implementations of `ftsystem' in order to be able
 	to debug memory allocations on Unix, VMS and Amiga too!
 
 	* src/pshinter/pshalgo2.c (psh2_hint_table_record_mask): Removed

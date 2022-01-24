@@ -3018,7 +3018,7 @@ cairo_tag_end (cairo_t *cr, const char *tag_name)
  *
  * If text is drawn without a call to cairo_select_font_face(), (nor
  * cairo_set_font_face() nor cairo_set_scaled_font()), the default
- * family is platform-specific, but is essentially "sans-serif".
+ * family is operating-system-specific, but is essentially "sans-serif".
  * Default slant is %CAIRO_FONT_SLANT_NORMAL, and default weight is
  * %CAIRO_FONT_WEIGHT_NORMAL.
  *

@@ -1978,7 +1978,7 @@ _cairo_win32_font_face_keys_equal (const void *key_a,
 	return FALSE;
 }
 
-/* implement the platform-specific interface */
+/* implement the operating-system-specific interface */
 
 static cairo_bool_t
 _is_scale (const cairo_matrix_t *matrix, double scale)

@@ -59,7 +59,7 @@ extern "C" {
 
 /** \defgroup out123_api out123 library API
  *  This is out123, a library focused on continuous playback of audio streams
- *  via various platform-specific output methods. It glosses over details of
+ *  via various operating-system-specific output methods. It glosses over details of
  *  the native APIs to give an interface close to simply writing data to a
  *  file. There might be the option to tune details like buffer (period) sizes
  *  and the number of them on the device side in future, but the focus of the

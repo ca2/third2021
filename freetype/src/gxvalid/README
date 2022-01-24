@@ -340,7 +340,7 @@ gxvalid: TrueType GX validator
 ----------------------
 
   In common terminology of TrueType, `kern' is classified as a basic and
-  platform-independent table.  But there are Apple extensions of `kern',
+  operating-system-independent table.  But there are Apple extensions of `kern',
   and  there is  an  extension which  requires  a GX  state machine  for
   contextual kerning.   Therefore, gxvalid includes  a special validator
   for  `kern' tables.   Unfortunately, there  is no  exact  algorithm to

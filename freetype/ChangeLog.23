@@ -3960,7 +3960,7 @@
 	(open_face_from_buffer): Build on any platform when old MacOS font
 	support is enabled.  The counting of the face in a font file is
 	slightly different between Carbon-dependent parser and Carbon-free
-	parser.  They are merged with the platform-specific conditional.
+	parser.  They are merged with the operating-system-specific conditional.
 	(ft_lookup_PS_in_sfnt): Ditto.
 
 	* src/base/ftmac.c: Include ftbase.h.
@@ -4182,7 +4182,7 @@
 	[!FT_CONFIG_OPTION_NO_ASSEMBLER] (FT_MulFix_i386): Assembler
 	implementation taken from `ftcalc.c'.
 	[!FT_CONFIG_OPTION_NO_ASSEMBLER] (FT_MULFIX_ASSEMBLER): New macro
-	which is defined to the platform-specific assembler implementation
+	which is defined to the operating-system-specific assembler implementation
 	of FT_MulFix.
 	[FT_CONFIG_OPTION_INLINE_MULFIX && FT_MULFIX_ASSEMBLER]
 	(FT_MULFIX_INLINED): New macro.

@@ -56,7 +56,7 @@
 
 # February 2011.
 #
-# Profiler-assisted and platform-specific optimization resulted in 10%
+# Profiler-assisted and operating-system-specific optimization resulted in 10%
 # improvement on Cortex A8 core and 12.2 cycles per byte.
 
 # September 2013.

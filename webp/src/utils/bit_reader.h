@@ -99,7 +99,7 @@ int32_t VP8GetSignedValue(VP8BitReader* const br, int num_bits);
 //   static WEBP_INLINE int VP8GetSigned(VP8BitReader* const br, int v)
 // and should be included by the .c files that actually need them.
 // This is to avoid recompiling the whole library whenever this file is touched,
-// and also allowing platform-specific ad-hoc hacks.
+// and also allowing operating-system-specific ad-hoc hacks.
 
 // -----------------------------------------------------------------------------
 // Bitreader for lossless format

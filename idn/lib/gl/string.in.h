@@ -122,7 +122,7 @@ _GL_CXXALIASWARN (memchr);
 #elif defined GNULIB_POSIXCHECK
 # undef memchr
 /* Assume memchr is always declared.  */
-_GL_WARN_ON_USE (memchr, "memchr has platform-specific bugs - "
+_GL_WARN_ON_USE (memchr, "memchr has operating-system-specific bugs - "
                  "use gnulib module memchr for portability" );
 #endif
 

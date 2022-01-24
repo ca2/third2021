@@ -64,7 +64,7 @@ determine which dependencies are needed for the backends of interest.
 For the surface backends, we have both "supported" and "experimental"
 backends. Further, the supported backends can be divided into the
 "standard" backends which can be easily built on any platform, and the
-"platform" backends which depend on some underlying platform-specific
+"platform" backends which depend on some underlying operating-system-specific
 system, (such as the X Window System or some other window system).
 
 As an example, for a standard Linux build similar to what's shipped by

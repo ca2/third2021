@@ -15,7 +15,7 @@
 
  ********************************************************************/
 
-/*Some common macros for potential platform-specific optimization.*/
+/*Some common macros for potential operating-system-specific optimization.*/
 #include <math.h>
 #if !defined(_ocintrin_H)
 # define _ocintrin_H (1)

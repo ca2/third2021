@@ -154,7 +154,7 @@
       <IgnoreSpecificDefaultLibraries>
       </IgnoreSpecificDefaultLibraries>
       <ModuleDefinitionFile>$(TargetName).def</ModuleDefinitionFile>
-      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__archive)third-universal_windows/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)../../time/library/x86/$(ConfigurationName);$(__operating_system)third-universal_windows/thirdparty/library;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ImportLibrary>$(OutDir)$(TargetName).lib</ImportLibrary>
     </Link>
     <PreBuildEvent>
@@ -187,8 +187,8 @@
     <PreBuildEvent>
       <Command>copy "$(SolutionDir)..\..\..\platform\stage\matter\msvc++\msvcp110d.dll" "$(OutDir)"
 copy "$(SolutionDir)..\..\..\platform\stage\matter\msvc++\msvcr110d.dll" "$(OutDir)"
-copy "$(__archive)third-universal_windows\thirdparty\binary\m_freetype.dll" "$(OutDir)"
-copy "$(__archive)third-universal_windows\thirdparty\binary\FreeImage.dll" "$(OutDir)"
+copy "$(__operating_system)third-universal_windows\thirdparty\binary\m_freetype.dll" "$(OutDir)"
+copy "$(__operating_system)third-universal_windows\thirdparty\binary\FreeImage.dll" "$(OutDir)"
 </Command>
     </PreBuildEvent>
   </ItemDefinitionGroup>

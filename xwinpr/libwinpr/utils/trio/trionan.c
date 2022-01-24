@@ -27,7 +27,7 @@
  *
  *   1. Use C99 functionality when available.
  *   2. Use IEEE 754 bit-patterns if possible.
- *   3. Use platform-specific techniques.
+ *   3. Use operating-system-specific techniques.
  *
  ************************************************************************/
 

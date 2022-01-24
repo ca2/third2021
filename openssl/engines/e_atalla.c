@@ -353,7 +353,7 @@ static int atalla_init(ENGINE *e)
 		}
 	/* Attempt to load libatasi.so/atasi.dll/whatever. Needs to be
 	 * changed unfortunately because the Atalla drivers don't have
-	 * standard library names that can be platform-translated well. */
+	 * standard library names that can be operating-system-translated well. */
 	/* TODO: Work out how to actually map to the names the Atalla
 	 * drivers really use - for now a symbollic link needs to be
 	 * created on the host system from libatasi.so to atasi.so on

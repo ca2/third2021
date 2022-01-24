@@ -44,7 +44,7 @@ struct dso_st {
      */
     DSO_MERGER_FUNC merger;
     /*
-     * This is populated with (a copy of) the platform-independent filename
+     * This is populated with (a copy of) the operating-system-independent filename
      * used for this DSO.
      */
     char *filename;
@@ -53,7 +53,7 @@ struct dso_st {
      * the DSO was actually loaded. It is NULL iff the DSO is not currently
      * loaded. NB: This is here because the filename translation process may
      * involve a callback being invoked more than once not only to convert to
-     * a platform-specific form, but also to try different filenames in the
+     * a operating-system-specific form, but also to try different filenames in the
      * process of trying to perform a load. As such, this variable can be
      * used to indicate (a) whether this DSO structure corresponds to a
      * loaded library or not, and (b) the filename with which it was actually

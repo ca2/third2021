@@ -73,7 +73,7 @@ set(IDN_SRCS
 add_library(idn SHARED ${IDN_SRCS} ${IDN_PUBLIC_HDRS} ${IDN_PRIVATE_HDRS})
 target_compile_definitions(idn PRIVATE HAVE_CONFIG_H)
 target_include_directories(idn PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
-target_include_directories(idn PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../archive/third-${PLATFORM_NAME}/third/include/idn)
+target_include_directories(idn PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/../../../operating-system/third-${PLATFORM_NAME}/third/include/idn)
 #add_library(zlibstatic STATIC ${ZLIB_SRCS} ${ZLIB_ASMS} ${ZLIB_PUBLIC_HDRS} ${ZLIB_PRIVATE_HDRS})
 set_target_properties(idn PROPERTIES DEFINE_SYMBOL IDN_DLL)
 #set_target_properties(idn PROPERTIES SOVERSION 1)

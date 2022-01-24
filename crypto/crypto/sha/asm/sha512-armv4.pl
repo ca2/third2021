@@ -29,7 +29,7 @@
 
 # February 2011.
 #
-# Profiler-assisted and platform-specific optimization resulted in 7%
+# Profiler-assisted and operating-system-specific optimization resulted in 7%
 # improvement on Coxtex A8 core and ~38 cycles per byte.
 
 # March 2011.

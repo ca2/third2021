@@ -11,7 +11,7 @@
  * This module is meant to be used as template for non-x87 floating-
  * point assembly modules. The template itself is x86_64-specific
  * though, as it was debugged on x86_64. So that implementor would
- * have to recognize platform-specific parts, UxTOy and inline asm,
+ * have to recognize operating-system-specific parts, UxTOy and inline asm,
  * and act accordingly.
  *
  * Huh? x86_64-specific code as template for non-x87? Note seven, which

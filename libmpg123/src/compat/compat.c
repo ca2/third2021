@@ -564,7 +564,7 @@ char* compat_nextdir(struct compat_dir *cd)
 
 #ifdef USE_MODULES
 /*
-	This is what I expected the platform-specific dance for dynamic module
+	This is what I expected the operating-system-specific dance for dynamic module
 	support to be. Little did I know about the peculiarities of (long)
 	paths and directory/file search on Windows.
 */

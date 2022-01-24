@@ -97,7 +97,7 @@ int DSO_up_ref(DSO *dso);
 long DSO_ctrl(DSO *dso, int cmd, long larg, void *parg);
 
 /*
- * These functions can be used to get/set the platform-independent filename
+ * These functions can be used to get/set the operating-system-independent filename
  * used for a DSO. NB: set will fail if the DSO is already loaded.
  */
 const char *DSO_get_filename(DSO *dso);

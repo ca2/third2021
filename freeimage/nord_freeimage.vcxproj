@@ -179,45 +179,45 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings" />
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <Import Project="..\..\..\archive\platform-android\Common.props" />
+    <Import Project="..\..\..\operating-system\operating-system-android\Common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
-    <Import Project="..\..\..\archive\platform-android\Common.props" />
+    <Import Project="..\..\..\operating-system\operating-system-android\Common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
-    <Import Project="..\..\..\archive\platform-android\Common.props" />
+    <Import Project="..\..\..\operating-system\operating-system-android\Common.props" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <Import Project="..\..\..\archive\platform-android\Common.props" />
+    <Import Project="..\..\..\operating-system\operating-system-android\Common.props" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
-    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__operating_system)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
     <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
-    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__operating_system)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
     <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
-    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__operating_system)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
     <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
-    <OutDir>$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
-    <IntDir>$(__archive)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\</OutDir>
+    <IntDir>$(__operating_system)time-android\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <UseMultiToolTask>true</UseMultiToolTask>
     <TargetName>libaura$(ProjectName)</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(__archive)third-android\third\include\zlib;$(__archive)third-android\third\include\include;$(__archive)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\third\include\zlib;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../operating-system-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;_LIB;FT2_BUILD_LIBRARY</PreprocessorDefinitions>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
@@ -231,14 +231,14 @@
     <Link />
     <Link>
       <LibraryDependencies>aura_openjpeg;aura_openexr;aurajpeg;aura_webp;aura_tiff4;aura_rawlite;aurapng;aurazlib;m;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__archive)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../operating-system-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
@@ -249,14 +249,14 @@
     </ClCompile>
     <Link />
     <Link>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
       <LibraryDependencies>_openjpeg;_openexr;jpeg;_webp;_tiff4;_rawlite;ace;png;zlib;m;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
     <ClCompile>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__archive)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../operating-system-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <CLanguageStandard>c11</CLanguageStandard>
@@ -270,7 +270,7 @@
     </ClCompile>
     <Link>
       <LibraryDependencies>_openjpeg;_openexr;jpeg;_webp;_tiff4;_rawlite;ace;png;zlib;m;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|x86'">
@@ -281,7 +281,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
-      <AdditionalIncludeDirectories>$(__archive)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../platform-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\third\include;$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../operating-system-android;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
       <PreprocessorDefinitions>__ANDROID_API__=19;_LIB;FT2_BUILD_LIBRARY</PreprocessorDefinitions>
@@ -289,7 +289,7 @@
     </ClCompile>
     <Link>
       <LibraryDependencies>_openjpeg;_openexr;jpeg;_webp;_tiff4;_rawlite;png;zlib;m;$(StlLibraryName);%(LibraryDependencies)</LibraryDependencies>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)storage-android\third\library\$(Platform)\$(Configuration)\;$(__archive)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)storage-android\third\library\$(Platform)\$(Configuration)\;$(__operating_system)storage-android\library\$(Platform)\$(Configuration)\;$(SolutionDir)..\..\..\time\$(Platform)\$(Configuration)\;%(AdditionalLibraryDirectories);$(ToolchainPrebuiltPath)\lib\gcc\i686-linux-android\$(ToolchainVersion);$(StlLibraryPath)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

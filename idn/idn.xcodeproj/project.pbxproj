@@ -414,9 +414,9 @@
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)/source/app",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/_include",
+					"$(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/platform-macos",
+					"$(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos",
 					"$(WorkspaceDir)/archive",
 					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include",
 					"$(WorkspaceDir)/source/third/include",
@@ -504,9 +504,9 @@
 				SYSTEM_HEADER_SEARCH_PATHS = (
 					"$(WorkspaceDir)/source/app",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/_include",
+					"$(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/platform-$(PLATFORM_MODIFIER)/platform-macos",
+					"$(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos",
 					"$(WorkspaceDir)/archive",
 					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include",
 					"$(WorkspaceDir)/source/third/include",

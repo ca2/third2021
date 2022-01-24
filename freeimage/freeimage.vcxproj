@@ -129,49 +129,49 @@
     <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|Win32'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='small|Win32'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cover|Win32'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='stage|x64'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='small|x64'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='cover|x64'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <LinkIncremental>false</LinkIncremental>
     <GenerateManifest>false</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|Win32'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <TargetName>$(ProjectName)d</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='basis|x64'">
-    <OutDir>$(__archive)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
+    <OutDir>$(__operating_system)third-windows\thirdparty\binary\$(PlatformName)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)..\..\..\time\intermediate\$(PlatformName)\$(Configuration)\$(ProjectName)\</IntDir>
     <GenerateManifest>false</GenerateManifest>
     <TargetName>$(ProjectName)d</TargetName>
@@ -192,7 +192,7 @@
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;OPENEXR_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -221,7 +221,7 @@
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies />
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x32
@@ -248,7 +248,7 @@ copy Source\FreeImage.h Dist\x32
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OPJ_STATIC;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;LIBRAW_NODLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -280,7 +280,7 @@ copy Source\FreeImage.h Dist\x32
       <AdditionalDependencies>
       </AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x32
@@ -307,7 +307,7 @@ copy Source\FreeImage.h Dist\x32
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;OPENEXR_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -338,7 +338,7 @@ copy Source\FreeImage.h Dist\x32
       <AdditionalDependencies>
       </AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x32
@@ -364,7 +364,7 @@ copy Source\FreeImage.h Dist\x32
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;OPENEXR_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -395,7 +395,7 @@ copy Source\FreeImage.h Dist\x32
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies />
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x64
@@ -422,7 +422,7 @@ copy Source\FreeImage.h Dist\x64
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;OPJ_STATIC;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;LIBRAW_NODLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -456,7 +456,7 @@ copy Source\FreeImage.h Dist\x64
       <AdditionalDependencies>
       </AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x64
@@ -483,7 +483,7 @@ copy Source\FreeImage.h Dist\x64
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
       <OmitFramePointers>true</OmitFramePointers>
       <WholeProgramOptimization>true</WholeProgramOptimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;OPENEXR_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
@@ -516,7 +516,7 @@ copy Source\FreeImage.h Dist\x64
       <AdditionalDependencies>
       </AdditionalDependencies>
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x64
@@ -537,7 +537,7 @@ copy Source\FreeImage.h Dist\x64
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;OPENEXR_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -564,7 +564,7 @@ copy Source\FreeImage.h Dist\x64
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies />
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x32
@@ -585,7 +585,7 @@ copy Source\FreeImage.h Dist\x32
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../archive/platform-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../../source/third/freeimage;Source;Source\ZLib;Source\DeprecationManager;$(SolutionDir)../../../source/third/openexr;$(SolutionDir)../../../source/third/openexr/Half;$(SolutionDir)../../../source/third/openexr/Iex;$(SolutionDir)../../../source/third/openexr/IlmImf;$(SolutionDir)../../../source/third/openexr/Imath;$(SolutionDir)../../../source/third/openexr/IlmThread;$(SolutionDir)../../../source/third/jxr/jxrgluelib;$(SolutionDir)../../../source/third/jxr/image/sys;$(SolutionDir)../../../operating-system/operating-system-windows;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(ProjectDir)..;$(ProjectDir)../..;$(ProjectDir)../../..;$(ProjectDir)../../include;include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FREEIMAGE_EXPORTS;_CRT_SECURE_NO_DEPRECATE;OPENEXR_DLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -614,7 +614,7 @@ copy Source\FreeImage.h Dist\x32
       <OptimizeReferences>true</OptimizeReferences>
       <AdditionalDependencies />
       <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
-      <AdditionalLibraryDirectories>$(OutDir);$(__archive)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__archive)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(OutDir);$(__operating_system)third-universal_windows/$(PlatformName)/$(Configuration)/lib;$(__operating_system)third-universal_windows/thirdparty/library/$(PlatformName)/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>mkdir Dist\x64

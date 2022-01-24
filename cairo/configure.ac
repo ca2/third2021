@@ -483,8 +483,8 @@ dnl ===========================================================================
 # FreeType versions come in three forms:
 #   release (such as 2.1.9)
 #   libtool (such as 9.7.3) (returned by freetype-config and pkg-config)
-#   platform-specific/soname (such as 6.3.4)
-# and they recommend you never use the platform-specific version
+#   operating-system-specific/soname (such as 6.3.4)
+# and they recommend you never use the operating-system-specific version
 # (see docs/VERSION.DLL in freetype2 sources)
 #
 # Set these as appropriate:

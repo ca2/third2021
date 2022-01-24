@@ -51,7 +51,7 @@
     <ClInclude Include="lib\xmltok_impl.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\archive\platform-android\include\expat_config.h">
+    <ClInclude Include="..\..\..\..\operating-system\operating-system-android\include\expat_config.h">
       <Filter>include</Filter>
     </ClInclude>
   </ItemGroup>

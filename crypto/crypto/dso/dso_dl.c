@@ -54,7 +54,7 @@ static int dl_load(DSO *dso)
     /*
      * We don't do any fancy retries or anything, just take the method's (or
      * DSO's if it has the callback set) best translation of the
-     * platform-independent filename and try once with that.
+     * operating-system-independent filename and try once with that.
      */
     char *filename = DSO_convert_filename(dso, NULL);
 

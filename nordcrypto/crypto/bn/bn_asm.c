@@ -838,7 +838,7 @@ void bn_sqr_comba4(BN_ULONG *r, const BN_ULONG *a)
  * faster rsa4096 ones, while on AMD64 it improves rsa1024 sign only
  * by 10% and *worsens* rsa4096 sign by 15%. Once again, it's a
  * reference implementation, one to be used as starting point for
- * platform-specific assembler. Mentioned numbers apply to compiler
+ * operating-system-specific assembler. Mentioned numbers apply to compiler
  * generated code compiled with and without -DOPENSSL_BN_ASM_MONT and
  * can vary not only from platform to platform, but even for compiler
  * versions. Assembler vs. assembler improvement coefficients can
@@ -854,7 +854,7 @@ int bn_mul_mont(BN_ULONG *rp, const BN_ULONG *ap, const BN_ULONG *bp,
     volatile BN_ULONG *vp;
     int i = 0, j;
 
-#   if 0                        /* template for platform-specific
+#   if 0                        /* template for operating-system-specific
                                  * implementation */
     if (ap == bp)
         return bn_sqr_mont(rp, ap, np, n0p, num);

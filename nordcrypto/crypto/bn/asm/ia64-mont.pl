@@ -495,7 +495,7 @@ bn_mul_mont_8:
 // to measure with help of Interval Time Counter indicated that the
 // factor is a tad higher: 33 or 34, if not 35. Exact measurement and
 // addressing the issue is problematic, because I don't have access
-// to platform-specific instruction-level profiler. On Itanium it
+// to operating-system-specific instruction-level profiler. On Itanium it
 // should run in 56*n ticks, because of higher xma latency...
 .Louter_8_ctop:
 	.pred.rel		"mutex",p40,p42

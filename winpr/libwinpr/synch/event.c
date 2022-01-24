@@ -429,7 +429,7 @@ int SetEventFileDescriptor(HANDLE hEvent, int FileDescriptor, ULONG mode)
 }
 
 /**
- * Returns platform-specific wait object as a void pointer
+ * Returns operating-system-specific wait object as a void pointer
  *
  * On Windows, the returned object is the same as the hEvent
  * argument and is an event HANDLE usable in WaitForMultipleObjects

@@ -11667,7 +11667,7 @@ CommitDate: Mon Jan 31 16:11:37 2005 +0000
     Make building the PDF backend conditional on having FreeType.
     src/Makefile.am src/cairo_win32_surface.c src/cairo_win32_font.c src/cairo-win32.h: Add a Win32 backend using GDI and software fallbacks Font code is not yet there yet, but it works with the fontconfig backend.
     src/cairo_gdip_font.cpp src/cairo_gdip_surface.cpp: Remove remnants of a GDI+ based backend.
-    Prefer platform-specific font backends to the fontconfig backend.
+    Prefer operating-system-specific font backends to the fontconfig backend.
 
  ChangeLog                 |  20 +
  configure.in              | 117 ++++--
@@ -12675,7 +12675,7 @@ CommitDate: Thu Jan 20 08:28:54 2005 +0000
     Track various renamings.
     Insert new includes for backend-specific header files.
     Remove redundant include of cairo-features.h.
-    Rename header-exclusion macro from _CAIRO_H_ to CAIRO_H. Remove platform-specific grubbing for cairo-features.h and pixman.h in odd places.
+    Rename header-exclusion macro from _CAIRO_H_ to CAIRO_H. Remove operating-system-specific grubbing for cairo-features.h and pixman.h in odd places.
     Remove all backend-specific prototypes, (as they are now in their own header files).
     Remove deprecated
     Remove printf.
@@ -19685,7 +19685,7 @@ AuthorDate: Wed Apr 23 07:17:57 2003 +0000
 Commit:     Carl Worth <cworth@cworth.org>
 CommitDate: Wed Apr 23 07:17:57 2003 +0000
 
-    extern "C" stuff to support C++ (Fredrik Höglund)
+    extern "C" stuff to support C++ (Fredrik Hï¿½glund)
 
  pixman/src/ic.h | 12 ++++++++++++
  src/Xr.h        |  6 +++++-

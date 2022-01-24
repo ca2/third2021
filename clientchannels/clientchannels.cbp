@@ -20,7 +20,7 @@
 					<Add option="-g" />
 					<Add option="`pkg-config --cflags uuid`" />
 					<Add option="-D_DEBUG" />
-					<Add directory="$(#archive.include)/platform-linux/third/include" />
+					<Add directory="$(#archive.include)/operating-system-linux/third/include" />
 				</Compiler>
 				<Linker>
 					<Add directory="$(WORKSPACEDIR)/../../../time-$(#platform_modifier)/x64/$(TARGET_NAME)" />
@@ -40,8 +40,8 @@
 					<Add option="-D_DEBUG" />
 					<Add option="-DMEMDLEAK" />
 					<Add directory="../../ca2" />
-					<Add directory="$(WORKSPACE_DIR)/../../../archive/platform/linux" />
-					<Add directory="$(WORKSPACE_DIR)/../../../archive/platform/linux/include" />
+					<Add directory="$(WORKSPACE_DIR)/../../../operating-system/platform/linux" />
+					<Add directory="$(WORKSPACE_DIR)/../../../operating-system/platform/linux/include" />
 					<Add directory="$(WORKSPACE_DIR)/../../.." />
 				</Compiler>
 				<Linker>
@@ -72,12 +72,12 @@
 			<Add directory="$(WORKSPACE_DIR)/../../../source/include" />
 			<Add directory="$(WORKSPACE_DIR)/../../../source/app/_include" />
 			<Add directory="$(WORKSPACE_DIR)/../../../source/app/" />
-			<Add directory="$(WORKSPACE_DIR)/../../../archive/platform-$(#platform_modifier)" />
-			<Add directory="$(WORKSPACE_DIR)/../../../archive/platform-$(#platform_modifier)/_include" />
+			<Add directory="$(WORKSPACE_DIR)/../../../operating-system/operating-system-$(#platform_modifier)" />
+			<Add directory="$(WORKSPACE_DIR)/../../../operating-system/operating-system-$(#platform_modifier)/_include" />
 			<Add directory="$(#archive)/third-$(#platform_modifier)/third/include" />
 			<Add directory="$(WORKSPACE_DIR)/../../../source/app" />
 			<Add directory="$(#sensitive)/sensitive/include" />
-			<Add directory="$(#archive.include)/platform-linux/third/include" />
+			<Add directory="$(#archive.include)/operating-system-linux/third/include" />
 			<Add directory="$(PROJECT_DIR)/channels/audin/client" />
 			<Add directory="$(PROJECT_DIR)/rdpsnd/client" />
 			<Add directory="$(PROJECT_DIR)/tsmf/client" />

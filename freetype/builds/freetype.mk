@@ -35,7 +35,7 @@
 #                  variable before the standard include directories.
 #
 #   CFLAGS         Compilation flags.  This overrides the default settings
-#                  in the platform-specific configuration files.
+#                  in the operating-system-specific configuration files.
 #
 #   FTSYS_SRC      If set, its value is used as the name of a replacement
 #                  file for `src/base/ftsystem.c'.

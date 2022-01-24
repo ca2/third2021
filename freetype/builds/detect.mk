@@ -29,7 +29,7 @@
 #                on the compiler defined in the `CC' environment variable.
 #   DELETE       The shell command used to remove a given file.
 #   COPY         The shell command used to copy one file.
-#   SEP          The platform-specific directory separator.
+#   SEP          The operating-system-specific directory separator.
 #   COMPILER_SEP The separator used in arguments of the compilation tools.
 #   CC           The compiler to use.
 #

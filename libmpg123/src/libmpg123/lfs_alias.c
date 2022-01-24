@@ -7,7 +7,7 @@
 
 	Use case: Client code on Linux/x86-64 that defines _FILE_OFFSET_BITS to 64,
 	which is the only choice on that platform anyway. It should be no-op, but
-	prompts the platform-agnostic header of mpg123 to define API calls with the
+	prompts the operating-system-agnostic header of mpg123 to define API calls with the
 	corresponding suffix. This file provides the names for this case. It's cruft,
 	but glibc does it, too -- so people rely on it.
 	Oh, and it also caters for the lunatics that define _FILE_OFFSET_BITS=32 on

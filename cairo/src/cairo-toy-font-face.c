@@ -238,7 +238,7 @@ _cairo_toy_font_face_keys_equal (const void *key_a,
  * These font faces are used in implementation of the the #cairo_t "toy"
  * font API.
  *
- * If @family is the zero-length string "", the platform-specific default
+ * If @family is the zero-length string "", the operating-system-specific default
  * family is assumed.  The default family then can be queried using
  * cairo_toy_font_face_get_family().
  *

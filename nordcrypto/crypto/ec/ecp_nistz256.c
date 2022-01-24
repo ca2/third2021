@@ -102,7 +102,7 @@ struct nistz256_pre_comp_st {
  * fully reduced result [as long as inputs are, just like remaining
  * functions]; b) addition is allowed to produce partially reduced
  * result, but multiplications by 2 and 3 perform additional reduction
- * step. Choice between the two can be platform-specific, but it was a)
+ * step. Choice between the two can be operating-system-specific, but it was a)
  * in all cases so far...
  */
 /* Modular add: res = a+b mod P   */

@@ -779,7 +779,7 @@
     <ClCompile Include="libwinpr\sspi\sspi.c">
       <Filter>Source Files\libwinpr\sspi</Filter>
     </ClCompile>
-    <ClCompile Include="C:\archive\platform-windows-common\cross\ansi\__dirent.c">
+    <ClCompile Include="C:\operating-system\operating-system-windows-common\cross\ansi\__dirent.c">
       <Filter>Source Files\ca2</Filter>
     </ClCompile>
   </ItemGroup>
