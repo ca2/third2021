@@ -39,7 +39,7 @@
 		9AAECACC2321CABE005CEB43 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = "$(WorkspaceDir)/archive $(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)";
+			dstPath = "$(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/storage-$(PLATFORM_MODIFIER)/third/library/$(ARCHS)/$(CONFIGURATION)";
 			dstSubfolderSpec = 0;
 			files = (
 				9AAECACD2321CAF4005CEB43 /* libexpat.dylib in CopyFiles */,
@@ -280,7 +280,7 @@
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/third-ios/third/include/include";
+				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/third-ios/third/include/include";
 			};
 			name = Debug;
 		};
@@ -294,7 +294,7 @@
 				PLATFORM_MODIFIER = ios;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = NO;
-				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/third-ios/third/include/include";
+				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/third-ios/third/include/include";
 			};
 			name = Release;
 		};
@@ -353,7 +353,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library",
+					"$(WorkspaceDir)/operating-system/storage-$(PLATFORM_MODIFIER)/library",
 					"$(WorkspaceDir)/time-$(PLATFORM_MODIFIER)/output",
 					"$(WorkspaceDir)/archive",
 				);
@@ -364,8 +364,8 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/archive/platform_root/include";
-				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/operating-system/operating-system_root/include";
+				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
@@ -425,7 +425,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library",
+					"$(WorkspaceDir)/operating-system/storage-$(PLATFORM_MODIFIER)/library",
 					"$(WorkspaceDir)/time-$(PLATFORM_MODIFIER)/output",
 					"$(WorkspaceDir)/archive",
 				);
@@ -434,8 +434,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/archive/platform_root/include";
-				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/operating-system/operating-system_root/include";
+				USER_HEADER_SEARCH_PATHS = "framework . .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include";
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
@@ -446,7 +446,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				PLATFORM_MODIFIER = macos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/archive/platform_root/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/operating-system/operating-system_root/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include";
 			};
 			name = Debug;
 		};
@@ -455,7 +455,7 @@
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = YES;
 				PLATFORM_MODIFIER = macos;
-				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/archive/platform_root/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include";
+				SYSTEM_HEADER_SEARCH_PATHS = "$(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/_include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include $(HOME)/operating-system/operating-system_root/include $(WorkspaceDir)/source/third/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include";
 			};
 			name = Release;
 		};

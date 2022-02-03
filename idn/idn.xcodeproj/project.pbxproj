@@ -401,7 +401,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library",
+					"$(WorkspaceDir)/operating-system/storage-$(PLATFORM_MODIFIER)/library",
 					"$(WorkspaceDir)/time-$(PLATFORM_MODIFIER)/output",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -418,22 +418,22 @@
 					"$(WorkspaceDir)/archive",
 					"$(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/include",
 					"$(WorkspaceDir)/source/third/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include",
-					"$(HOME)/archive/platform/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include",
+					"$(HOME)/operating-system/operating-system/include",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(WorkspaceDir)",
 					"$(WorkspaceDir)/source/third/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/idn",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/idn",
 				);
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
@@ -493,7 +493,7 @@
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/storage-$(PLATFORM_MODIFIER)/library",
+					"$(WorkspaceDir)/operating-system/storage-$(PLATFORM_MODIFIER)/library",
 					"$(WorkspaceDir)/time-$(PLATFORM_MODIFIER)/output",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
@@ -508,22 +508,22 @@
 					"$(WorkspaceDir)/archive",
 					"$(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)/operating-system-macos",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/include",
 					"$(WorkspaceDir)/source/third/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include",
-					"$(HOME)/archive/platform/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include",
+					"$(HOME)/operating-system/operating-system/include",
 				);
 				USER_HEADER_SEARCH_PATHS = (
 					"$(PROJECT_DIR)",
 					"$(WorkspaceDir)",
 					"$(WorkspaceDir)/source/third/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/include",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/include",
 					"$(WorkspaceDir)/archive",
-					"$(WorkspaceDir)/archive/third-$(PLATFORM_MODIFIER)/third/include/idn",
+					"$(WorkspaceDir)/operating-system/third-$(PLATFORM_MODIFIER)/third/include/idn",
 				);
 				USE_HEADERMAP = NO;
 				WorkspaceDir = "$(SRCROOT)/../../..";
