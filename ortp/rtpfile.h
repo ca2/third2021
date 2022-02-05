@@ -47,7 +47,7 @@ namespace rtp
 
 
    #ifdef _DEBUG
-      virtual void assert_valid() const;
+      virtual void assert_ok() const;
       virtual void dump(dump_context & dumpcontext) const;
    #endif
 

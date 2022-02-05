@@ -226,9 +226,9 @@ auto tickStart = ::millis::now();
    }
 
 #ifdef _DEBUG
-void file::assert_valid() const
+void file::assert_ok() const
 {
-   ::file::file::assert_valid();
+   ::file::file::assert_ok();
 }
 void file::dump(dump_context & dumpcontext) const
 {
