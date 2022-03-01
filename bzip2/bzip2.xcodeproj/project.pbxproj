@@ -286,7 +286,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = ". .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)   ";
+				USER_HEADER_SEARCH_PATHS = ". .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/operating-system $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)   ";
 				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
 			name = Debug;
@@ -324,7 +324,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				USER_HEADER_SEARCH_PATHS = ". .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/archive $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)   ";
+				USER_HEADER_SEARCH_PATHS = ". .. $(WorkspaceDir) $(WorkspaceDir)/source/app $(WorkspaceDir)/operating-system $(WorkspaceDir)/operating-system/operating-system-$(PLATFORM_MODIFIER)   ";
 				WorkspaceDir = "$(SRCROOT)/../../..";
 			};
 			name = Release;
