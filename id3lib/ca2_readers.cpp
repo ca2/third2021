@@ -10,7 +10,7 @@ ID3_IStreamReader::ID3_IStreamReader(::file::file* reader) : _stream(reader) { ;
    ID3_IStreamReader::~ID3_IStreamReader() { ; }
    void ID3_IStreamReader::close() { ; }
 
-   ID3_Reader::int_type ID3_IStreamReader::peekChar() { return _stream->peek(); }
+   ID3_Reader::int_type ID3_IStreamReader::peekChar() { auto b = _stream->peek_byte(); return _stream->is_end_of_file() ? EOF : b; }
 
    /** Read up to \c len chars into buf and advance the internal position
     ** accordingly.  Returns the number of characters read into buf.
