@@ -1,0 +1,43 @@
+file(REMOVE_RECURSE
+  "../../../output/libid3lib.pdb"
+  "../../../output/libid3lib.so"
+  "CMakeFiles/id3lib.dir/ca2_readers.cpp.o"
+  "CMakeFiles/id3lib.dir/cmake_pch.hxx.gch"
+  "CMakeFiles/id3lib.dir/src/field.cpp.o"
+  "CMakeFiles/id3lib.dir/src/field_binary.cpp.o"
+  "CMakeFiles/id3lib.dir/src/field_integer.cpp.o"
+  "CMakeFiles/id3lib.dir/src/field_string_ascii.cpp.o"
+  "CMakeFiles/id3lib.dir/src/field_string_unicode.cpp.o"
+  "CMakeFiles/id3lib.dir/src/frame.cpp.o"
+  "CMakeFiles/id3lib.dir/src/frame_impl.cpp.o"
+  "CMakeFiles/id3lib.dir/src/frame_parse.cpp.o"
+  "CMakeFiles/id3lib.dir/src/frame_render.cpp.o"
+  "CMakeFiles/id3lib.dir/src/globals.cpp.o"
+  "CMakeFiles/id3lib.dir/src/header.cpp.o"
+  "CMakeFiles/id3lib.dir/src/header_frame.cpp.o"
+  "CMakeFiles/id3lib.dir/src/header_tag.cpp.o"
+  "CMakeFiles/id3lib.dir/src/helpers.cpp.o"
+  "CMakeFiles/id3lib.dir/src/io.cpp.o"
+  "CMakeFiles/id3lib.dir/src/io_decorators.cpp.o"
+  "CMakeFiles/id3lib.dir/src/io_helpers.cpp.o"
+  "CMakeFiles/id3lib.dir/src/misc_support.cpp.o"
+  "CMakeFiles/id3lib.dir/src/mp3_parse.cpp.o"
+  "CMakeFiles/id3lib.dir/src/readers.cpp.o"
+  "CMakeFiles/id3lib.dir/src/spec.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_file.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_find.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_impl.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_parse.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_parse_lyrics3.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_parse_musicmatch.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_parse_v1.cpp.o"
+  "CMakeFiles/id3lib.dir/src/tag_render.cpp.o"
+  "CMakeFiles/id3lib.dir/src/utils.cpp.o"
+  "CMakeFiles/id3lib.dir/src/writers.cpp.o"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/id3lib.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

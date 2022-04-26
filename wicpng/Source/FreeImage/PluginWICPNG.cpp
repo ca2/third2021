@@ -983,17 +983,17 @@ Save(FreeImageIO *io, FIBITMAP *dib, fi_handle handle, int page, int flags, void
 //ULONG quality;
 ////switch(psaveimage->m_eformat)
 ////{
-////case ::visual::image::format_png:
+////case ::visual::image::e_format_png:
 //   GetEncoderClsid(L"image/png",&encoderClsid);
 ////   break;
-////case ::visual::image::format_bmp:
+////case ::visual::image::e_format_bmp:
 ////   GetEncoderClsid(L"image/bmp",&encoderClsid);
 ////   break;
-////case ::visual::image::format_gif:
+////case ::visual::image::e_format_gif:
 ////   b8 = true;
 ////   GetEncoderClsid(L"image/gif",&encoderClsid);
 ////   break;
-////case ::visual::image::format_jpeg:
+////case ::visual::image::e_format_jpeg:
 ////   b24 = true;
 ////   GetEncoderClsid(L"image/jpeg",&encoderClsid);
 ////   encoderParameters.Count = 1;
@@ -1021,7 +1021,7 @@ Save(FreeImageIO *io, FIBITMAP *dib, fi_handle handle, int page, int flags, void
 //
 //#define new ACME_NEW
 //
-////if(psaveimage->m_eformat == ::visual::image::format_jpeg)
+////if(psaveimage->m_eformat == ::visual::image::e_format_jpeg)
 ////{
 //   //pbitmap->Save(pstream,&encoderClsid,&encoderParameters);
 //pbitmap->Save(pstream,&encoderClsid);
