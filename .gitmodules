@@ -1,12 +1,3 @@
-[submodule "appseed/libnfc"]
-	path = appseed/libnfc
-	url = ../libnfc.git
-[submodule "appseed/libfreefare"]
-	path = appseed/libfreefare
-	url = ../libfreefare.git
 [submodule "graphics_mathematics"]
 	path = graphics_mathematics
-	url = ../../g-truc/glm
-[submodule "tridimensional_object_importer"]
-	path = tridimensional_object_importer
-	url = ../../assimp/assimp
+	url = ../graphics_mathematics
