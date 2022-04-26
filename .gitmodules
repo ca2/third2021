@@ -7,3 +7,6 @@
 [submodule "graphics_mathematics"]
 	path = graphics_mathematics
 	url = ../../g-truc/glm
+[submodule "tridimensional_object_importer"]
+	path = tridimensional_object_importer
+	url = ../../assimp/assimp
