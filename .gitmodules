@@ -4,15 +4,9 @@
 [submodule "appseed/libfreefare"]
 	path = appseed/libfreefare
 	url = ../libfreefare.git
-<<<<<<< HEAD
-[submodule "object_importer_3d"]
-	path = object_importer_3d
-	url = ../../assimp/assimp
 [submodule "tridimensional_object_importer"]
 	path = tridimensional_object_importer
 	url = ../../assimp/assimp
-=======
 [submodule "glm"]
 	path = glm
 	url = ../../g-truc/glm
->>>>>>> origin/basis
