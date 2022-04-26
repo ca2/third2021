@@ -4,9 +4,6 @@
 [submodule "appseed/libfreefare"]
 	path = appseed/libfreefare
 	url = ../libfreefare.git
-[submodule "glm"]
-	path = glm
-	url = ../../g-truc/glm
 [submodule "graphics_mathematics"]
 	path = graphics_mathematics
 	url = ../../g-truc/glm
