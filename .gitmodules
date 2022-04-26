@@ -7,3 +7,6 @@
 [submodule "glm"]
 	path = glm
 	url = ../../g-truc/glm
+[submodule "graphics_mathematics"]
+	path = graphics_mathematics
+	url = ../../g-truc/glm
