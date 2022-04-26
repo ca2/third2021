@@ -99,7 +99,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'">
     <ClCompile>
-      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\pixman;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\pixman;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;HAVE_CONFIG_H</PreprocessorDefinitions>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
       <PrecompiledHeaderFile>
@@ -125,7 +125,7 @@
       <PreprocessorDefinitions>__ANDROID_API__=19;HAVE_CONFIG_H</PreprocessorDefinitions>
       <AdditionalOptions>-Wno-attributes -Wno-sign-compare -Wno-comment -Wno-strict-overflow -Wno-unused-local-typedefs -Wno-unknown-pragmas -Wno-unused-function -Wno-unused-variable -Wno-unused-value -Wno-unknown-pragmas -Wno-unused-function -Wno-implicit-int -Wno-unused-variable  -Wno-pointer-sign -Wdynamic-exception-spec -Wregister -Wenum-conversion</AdditionalOptions>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <ExceptionHandling>Enabled</ExceptionHandling>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
@@ -141,7 +141,7 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='stage|ARM'">
     <ClCompile>
       <ObjectFileName>$(IntDir)%(RelativeDir)%(filename).o</ObjectFileName>
-      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;HAVE_CONFIG_H</PreprocessorDefinitions>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>
@@ -166,7 +166,7 @@
       <BufferSecurityCheck>false</BufferSecurityCheck>
       <CLanguageStandard>c11</CLanguageStandard>
       <CppLanguageStandard>c++1z</CppLanguageStandard>
-      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(__operating_system)third-android\include;$(__operating_system)third-android\third\include\include;$(__operating_system)third-android\third\include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;$(SolutionDir)../../operating-system-android/;$(ProjectDir);$(ProjectDir)../../include/;$(ProjectDir)../../..;pixman;$(StlIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__ANDROID_API__=19;HAVE_CONFIG_H</PreprocessorDefinitions>
       <ForcedIncludeFiles>
       </ForcedIncludeFiles>

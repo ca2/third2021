@@ -1,9 +1,0 @@
-[submodule "graphics_mathematics"]
-	path = graphics_mathematics
-	url = ../graphics_mathematics
-[submodule "tridimensional_object_importer"]
-	path = tridimensional_object_importer
-	url = ../tridimensional_object_importer
-[submodule "assimp"]
-	path = assimp
-	url = ../../assimp/assimp
