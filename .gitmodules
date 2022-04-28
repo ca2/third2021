@@ -1,9 +1,0 @@
-[submodule "appseed/libnfc"]
-	path = appseed/libnfc
-	url = ../libnfc.git
-[submodule "appseed/libfreefare"]
-	path = appseed/libfreefare
-	url = ../libfreefare.git
-[submodule "glm"]
-	path = glm
-	url = ../../g-truc/glm

@@ -245,7 +245,7 @@
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;ZLIB_DLL;ASMV;ASMINF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <ExceptionHandling>Async</ExceptionHandling>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -286,7 +286,7 @@ ml /safeseh /coff /Zi /Fo"$(IntDir)match.o" /c /Fl"$(IntDir)match.lst" "$(Projec
       <CompileAsWinRT>false</CompileAsWinRT>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;ZLIB_DLL;ASMV;ASMINF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <ExceptionHandling>Async</ExceptionHandling>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -327,7 +327,7 @@ ml /safeseh /coff /Zi /Fo"$(IntDir)match.o" /c /Fl"$(IntDir)match.lst" "$(Projec
       <CompileAsWinRT>true</CompileAsWinRT>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>__C__DLL;_WINDLL;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <ExceptionHandling>Async</ExceptionHandling>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -366,7 +366,7 @@ copy "$(__operating_system)third-universal_windows\thirdparty\binary\FreeImage.d
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;ZLIB_DLL;ASMV;ASMINF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
@@ -387,7 +387,7 @@ copy "$(__operating_system)third-universal_windows\thirdparty\binary\FreeImage.d
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>true</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeaderFile>framework.h</PrecompiledHeaderFile>
       <PreprocessorDefinitions>_BASE_LIBRARY;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
@@ -405,7 +405,7 @@ copy "$(__operating_system)third-universal_windows\thirdparty\binary\FreeImage.d
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -429,7 +429,7 @@ copy "$(__operating_system)third-universal_windows\thirdparty\binary\FreeImage.d
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_CRT_NONSTDC_NO_DEPRECATE;_CRT_SECURE_NO_DEPRECATE;_CRT_NONSTDC_NO_WARNINGS;ZLIB_DLL;ASMV;ASMINF;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalOptions>-Zm384 /bigobj %(AdditionalOptions)</AdditionalOptions>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -455,7 +455,7 @@ ml64 /Zi /Fo"$(IntDir)gvmat64.o" /c /Fl"$(IntDir)gvmat.lst" "$(ProjectDir)contri
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -468,7 +468,7 @@ ml64 /Zi /Fo"$(IntDir)gvmat64.o" /c /Fl"$(IntDir)gvmat.lst" "$(ProjectDir)contri
     <ClCompile>
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <CompileAsWinRT>false</CompileAsWinRT>
-      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)../../inc;$(__sensitive)/sensitive/include;$(SolutionDir)../../../source/include;$(__operating_system)local/include;$(SolutionDir)../../../source/app/_include;$(SolutionDir)../../../source/third/include;$(SolutionDir)../../../source/third_graphics/include;.;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../source/app/thirdparty/include;$(SolutionDir)../../../source;$(SolutionDir)../../../source/app;$(SolutionDir)../../../;$(SolutionDir)../../../;$(ProjectDir)../..;$(ProjectDir)../../;$(ProjectDir)../;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
