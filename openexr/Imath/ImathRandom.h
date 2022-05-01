@@ -37,7 +37,7 @@
 #define INCLUDED_IMATHRANDOM_H
 
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 #ifdef ANDROID
 #include <stdlib.h>
 #endif

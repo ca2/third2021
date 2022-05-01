@@ -37,7 +37,7 @@
 #ifndef INCLUDED_IMF_SIMD_H
 #define INCLUDED_IMF_SIMD_H
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 //
 // Compile time SSE detection:

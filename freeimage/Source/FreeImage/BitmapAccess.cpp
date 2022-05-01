@@ -23,7 +23,7 @@
 //
 // Use at your own risk!
 // ==========================================================
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 #ifdef _MSC_VER 
 #pragma warning (disable : 4786) // identifier was truncated to 'number' characters
 #endif 

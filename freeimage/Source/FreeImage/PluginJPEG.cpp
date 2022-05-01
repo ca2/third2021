@@ -27,7 +27,7 @@
 // ==========================================================
 
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 
 #ifdef _MSC_VER

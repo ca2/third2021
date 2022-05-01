@@ -511,6 +511,5 @@ BZ2_hbCreateDecodeTables ( Int32*, Int32*, Int32*, UChar*,
 
 #ifdef WIN32
 #include <wchar.h>
-//#include "__standard_type.h"
 #endif
 

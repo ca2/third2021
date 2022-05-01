@@ -2,7 +2,7 @@
 #define TIF_CONFIG_H
 
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 
 /* Define to 1 if you have the <assert.h> header file. */

@@ -21,7 +21,7 @@
 // Use at your own risk!
 // ==========================================================
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 extern "C" {
 #define XMD_H

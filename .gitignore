@@ -27,4 +27,8 @@ solution.vc.db*
 *.pch
 *.expand_fileset
 *.expand_fileset.spa
+*.a
+*.a.recipe
+*.so
+*.so.recipe
 Thumbs.db

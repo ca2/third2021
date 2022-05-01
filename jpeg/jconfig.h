@@ -18,7 +18,7 @@
  * EDIT A COPY NAMED JCONFIG.H.
  */
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 /*
  * These symbols indicate the properties of your machine or compiler.

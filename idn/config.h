@@ -1,5 +1,6 @@
 /* config.h.in.  Generated from configure.ac by autoheader.  */
 
+#include "operating_system/third_private_c.h"
 #include <stdlib.h>
 #include <stdint.h>
 

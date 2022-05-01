@@ -26,7 +26,7 @@
 #ifndef FREEIMAGE_H
 #define FREEIMAGE_H
 
-#include "platform/third_private_config.h"
+#include "operating_system/third_private_config.h"
 
 // Version information ------------------------------------------------------
 
