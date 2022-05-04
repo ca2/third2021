@@ -314,7 +314,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <AndroidAPILevel>android-27</AndroidAPILevel>
+    <AndroidAPILevel>android-24</AndroidAPILevel>
     <UseOfStl>c++_shared</UseOfStl>
     <PlatformToolset>Clang_5_0</PlatformToolset>
   </PropertyGroup>
